@@ -257,10 +257,10 @@
         "temperature_2m": 30,
         "relative_humidity_2m": 35,
         "apparent_temperature": 32,
-        "weather_code": 1,
-        "wind_speed_10m": 11,
-        "pressure_msl": 1010,
-        "visibility": 52
+        "weather_code": 2,
+        "wind_speed_10m": 12,
+        "pressure_msl": 1011,
+        "visibility": 51
       },
       "air_quality": {
         "available": true,
@@ -271,13 +271,13 @@
       },
       "marine": {
         "available": true,
-        "wave_height": 0.14,
-        "wave_period": 5.8
+        "wave_height": 0.16,
+        "wave_period": 5.65
       },
       "hourly": [
         {
           "time": "15:00",
-          "temperature": 31,
+          "temperature": 32,
           "weather_code": 3,
           "is_current": true
         },
@@ -289,13 +289,13 @@
         },
         {
           "time": "17:00",
-          "temperature": 29,
+          "temperature": 31,
           "weather_code": 3,
           "is_current": false
         },
         {
           "time": "18:00",
-          "temperature": 28,
+          "temperature": 30,
           "weather_code": 3,
           "is_current": false
         },
@@ -325,26 +325,26 @@
         },
         {
           "time": "23:00",
-          "temperature": 23,
+          "temperature": 24,
           "weather_code": 3,
           "is_current": false
         },
         {
           "time": "00:00",
-          "temperature": 24,
-          "weather_code": 3,
+          "temperature": 23,
+          "weather_code": 61,
           "is_current": false
         },
         {
           "time": "01:00",
-          "temperature": 24,
-          "weather_code": 51,
+          "temperature": 22,
+          "weather_code": 63,
           "is_current": false
         },
         {
           "time": "02:00",
           "temperature": 22,
-          "weather_code": 53,
+          "weather_code": 61,
           "is_current": false
         },
         {
@@ -450,7 +450,7 @@
         ],
         "weather_code": [
           3,
-          53,
+          63,
           3,
           80,
           53,
@@ -499,10 +499,10 @@
     "weather": {
       "current": {
         "temperature_2m": 26,
-        "relative_humidity_2m": 33,
-        "apparent_temperature": 25,
+        "relative_humidity_2m": 32,
+        "apparent_temperature": 24,
         "weather_code": 3,
-        "wind_speed_10m": 9,
+        "wind_speed_10m": 10,
         "pressure_msl": 1018,
         "visibility": 45
       },
@@ -743,9 +743,9 @@
     "weather": {
       "current": {
         "temperature_2m": 23,
-        "relative_humidity_2m": 78,
+        "relative_humidity_2m": 79,
         "apparent_temperature": 26,
-        "weather_code": 0,
+        "weather_code": 1,
         "wind_speed_10m": 7,
         "pressure_msl": 1009,
         "visibility": 9
@@ -987,7 +987,7 @@
     "weather": {
       "current": {
         "temperature_2m": 21,
-        "relative_humidity_2m": 43,
+        "relative_humidity_2m": 42,
         "apparent_temperature": 19,
         "weather_code": 3,
         "wind_speed_10m": 10,
@@ -1492,7 +1492,7 @@
       "marine": {
         "available": true,
         "wave_height": 1.0,
-        "wave_period": 5.85
+        "wave_period": 5.9
       },
       "hourly": [
         {
@@ -1719,11 +1719,11 @@
     "weather": {
       "current": {
         "temperature_2m": 33,
-        "relative_humidity_2m": 57,
+        "relative_humidity_2m": 58,
         "apparent_temperature": 38,
         "weather_code": 0,
         "wind_speed_10m": 8,
-        "pressure_msl": 1000,
+        "pressure_msl": 1001,
         "visibility": 18
       },
       "air_quality": {
@@ -1962,13 +1962,13 @@
     "slug": "singapore",
     "weather": {
       "current": {
-        "temperature_2m": 25,
-        "relative_humidity_2m": 96,
-        "apparent_temperature": 30,
-        "weather_code": 3,
-        "wind_speed_10m": 8,
-        "pressure_msl": 1013,
-        "visibility": 6
+        "temperature_2m": 31,
+        "relative_humidity_2m": null,
+        "apparent_temperature": 31,
+        "weather_code": 2,
+        "wind_speed_10m": null,
+        "pressure_msl": null,
+        "visibility": null
       },
       "air_quality": {
         "available": true,
@@ -1984,390 +1984,146 @@
       },
       "hourly": [
         {
-          "time": "15:00",
+          "time": "18:00",
           "temperature": 31,
-          "weather_code": 51,
-          "is_current": true
-        },
-        {
-          "time": "16:00",
-          "temperature": 30,
-          "weather_code": 53,
-          "is_current": false
-        },
-        {
-          "time": "17:00",
-          "temperature": 30,
-          "weather_code": 51,
-          "is_current": false
-        },
-        {
-          "time": "18:00",
-          "temperature": 30,
-          "weather_code": 51,
-          "is_current": false
-        },
-        {
-          "time": "19:00",
-          "temperature": 28,
-          "weather_code": 51,
-          "is_current": false
-        },
-        {
-          "time": "20:00",
-          "temperature": 27,
-          "weather_code": 1,
-          "is_current": false
-        },
-        {
-          "time": "21:00",
-          "temperature": 26,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "22:00",
-          "temperature": 25,
-          "weather_code": 3,
-          "is_current": false
-        },
-        {
-          "time": "23:00",
-          "temperature": 25,
-          "weather_code": 51,
-          "is_current": false
-        },
-        {
-          "time": "00:00",
-          "temperature": 25,
-          "weather_code": 3,
-          "is_current": false
-        },
-        {
-          "time": "01:00",
-          "temperature": 25,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "02:00",
-          "temperature": 24,
-          "weather_code": 3,
-          "is_current": false
-        },
-        {
-          "time": "03:00",
-          "temperature": 24,
-          "weather_code": 3,
-          "is_current": false
-        },
-        {
-          "time": "04:00",
-          "temperature": 24,
-          "weather_code": 3,
-          "is_current": false
-        },
-        {
-          "time": "05:00",
-          "temperature": 24,
-          "weather_code": 51,
-          "is_current": false
-        },
-        {
-          "time": "06:00",
-          "temperature": 23,
-          "weather_code": 51,
-          "is_current": false
-        },
-        {
-          "time": "07:00",
-          "temperature": 24,
-          "weather_code": 51,
-          "is_current": false
-        },
-        {
-          "time": "08:00",
-          "temperature": 24,
-          "weather_code": 51,
-          "is_current": false
-        },
-        {
-          "time": "09:00",
-          "temperature": 26,
-          "weather_code": 3,
-          "is_current": false
-        },
-        {
-          "time": "10:00",
-          "temperature": 28,
-          "weather_code": 51,
-          "is_current": false
-        },
-        {
-          "time": "11:00",
-          "temperature": 29,
-          "weather_code": 51,
-          "is_current": false
-        },
-        {
-          "time": "12:00",
-          "temperature": 27,
-          "weather_code": 80,
-          "is_current": false
-        },
-        {
-          "time": "13:00",
-          "temperature": 28,
-          "weather_code": 53,
-          "is_current": false
-        },
-        {
-          "time": "14:00",
-          "temperature": 29,
-          "weather_code": 51,
-          "is_current": false
-        }
-      ],
-      "daily": {
-        "time": [
-          "2026-06-14",
-          "2026-06-15",
-          "2026-06-16",
-          "2026-06-17",
-          "2026-06-18",
-          "2026-06-19",
-          "2026-06-20"
-        ],
-        "temperature_2m_max": [
-          31,
-          30,
-          30,
-          30,
-          30,
-          29,
-          28
-        ],
-        "temperature_2m_min": [
-          25,
-          23,
-          24,
-          24,
-          23,
-          23,
-          22
-        ],
-        "weather_code": [
-          53,
-          81,
-          95,
-          81,
-          81,
-          80,
-          81
-        ],
-        "precipitation_probability_max": [
-          89,
-          97,
-          100,
-          96,
-          97,
-          90,
-          95
-        ]
-      },
-      "source": "open-meteo",
-      "api_status": [
-        {
-          "source": "open-meteo",
-          "ok": "true",
-          "error": ""
-        },
-        {
-          "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
-        },
-        {
-          "source": "open-meteo-marine",
-          "ok": "true",
-          "error": ""
-        }
-      ]
-    }
-  },
-  {
-    "name": "Seoul",
-    "country": "South Korea",
-    "lat": 37.5665,
-    "lon": 126.978,
-    "emoji": "🏙️",
-    "timezone": "Asia/Seoul",
-    "base_temp": 25,
-    "slug": "seoul",
-    "weather": {
-      "current": {
-        "temperature_2m": 22,
-        "relative_humidity_2m": null,
-        "apparent_temperature": 22,
-        "weather_code": 2,
-        "wind_speed_10m": null,
-        "pressure_msl": null,
-        "visibility": null
-      },
-      "air_quality": {
-        "available": true,
-        "us_aqi": 88,
-        "pm2_5": 34.8,
-        "pm10": 43.1,
-        "uv_index": 0.0
-      },
-      "marine": {
-        "available": true,
-        "wave_height": 0,
-        "wave_period": 0
-      },
-      "hourly": [
-        {
-          "time": "18:00",
-          "temperature": 22,
           "weather_code": 2,
           "is_current": true
         },
         {
           "time": "21:00",
-          "temperature": 20,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "00:00",
-          "temperature": 17,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "03:00",
-          "temperature": 17,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "06:00",
-          "temperature": 17,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "09:00",
-          "temperature": 24,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "12:00",
-          "temperature": 29,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "15:00",
-          "temperature": 31,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "18:00",
-          "temperature": 29,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "21:00",
-          "temperature": 25,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "00:00",
-          "temperature": 23,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "03:00",
-          "temperature": 22,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "06:00",
-          "temperature": 21,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "09:00",
-          "temperature": 26,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "12:00",
-          "temperature": 31,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "15:00",
-          "temperature": 32,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "18:00",
-          "temperature": 28,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "21:00",
-          "temperature": 26,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "00:00",
-          "temperature": 24,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "03:00",
-          "temperature": 23,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "06:00",
-          "temperature": 22,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "09:00",
           "temperature": 27,
           "weather_code": 2,
           "is_current": false
         },
         {
+          "time": "00:00",
+          "temperature": 26,
+          "weather_code": 2,
+          "is_current": false
+        },
+        {
+          "time": "03:00",
+          "temperature": 25,
+          "weather_code": 2,
+          "is_current": false
+        },
+        {
+          "time": "06:00",
+          "temperature": 25,
+          "weather_code": 2,
+          "is_current": false
+        },
+        {
+          "time": "09:00",
+          "temperature": 26,
+          "weather_code": 2,
+          "is_current": false
+        },
+        {
           "time": "12:00",
-          "temperature": 31,
+          "temperature": 29,
           "weather_code": 2,
           "is_current": false
         },
         {
           "time": "15:00",
-          "temperature": 33,
+          "temperature": 31,
+          "weather_code": 2,
+          "is_current": false
+        },
+        {
+          "time": "18:00",
+          "temperature": 30,
+          "weather_code": 2,
+          "is_current": false
+        },
+        {
+          "time": "21:00",
+          "temperature": 26,
+          "weather_code": 2,
+          "is_current": false
+        },
+        {
+          "time": "00:00",
+          "temperature": 25,
+          "weather_code": 2,
+          "is_current": false
+        },
+        {
+          "time": "03:00",
+          "temperature": 24,
+          "weather_code": 2,
+          "is_current": false
+        },
+        {
+          "time": "06:00",
+          "temperature": 24,
+          "weather_code": 2,
+          "is_current": false
+        },
+        {
+          "time": "09:00",
+          "temperature": 24,
+          "weather_code": 2,
+          "is_current": false
+        },
+        {
+          "time": "12:00",
+          "temperature": 27,
+          "weather_code": 2,
+          "is_current": false
+        },
+        {
+          "time": "15:00",
+          "temperature": 24,
+          "weather_code": 2,
+          "is_current": false
+        },
+        {
+          "time": "18:00",
+          "temperature": 24,
+          "weather_code": 2,
+          "is_current": false
+        },
+        {
+          "time": "21:00",
+          "temperature": 24,
+          "weather_code": 2,
+          "is_current": false
+        },
+        {
+          "time": "00:00",
+          "temperature": 24,
+          "weather_code": 2,
+          "is_current": false
+        },
+        {
+          "time": "03:00",
+          "temperature": 24,
+          "weather_code": 2,
+          "is_current": false
+        },
+        {
+          "time": "06:00",
+          "temperature": 24,
+          "weather_code": 2,
+          "is_current": false
+        },
+        {
+          "time": "09:00",
+          "temperature": 24,
+          "weather_code": 2,
+          "is_current": false
+        },
+        {
+          "time": "12:00",
+          "temperature": 26,
+          "weather_code": 2,
+          "is_current": false
+        },
+        {
+          "time": "15:00",
+          "temperature": 27,
           "weather_code": 2,
           "is_current": false
         }
@@ -2380,16 +2136,16 @@
           "2026-06-17"
         ],
         "temperature_2m_max": [
-          22,
           31,
-          32,
-          33
+          31,
+          27,
+          27
         ],
         "temperature_2m_min": [
-          20,
-          17,
-          21,
-          22
+          27,
+          25,
+          24,
+          24
         ],
         "weather_code": [
           2,
@@ -2435,6 +2191,250 @@
     }
   },
   {
+    "name": "Seoul",
+    "country": "South Korea",
+    "lat": 37.5665,
+    "lon": 126.978,
+    "emoji": "🏙️",
+    "timezone": "Asia/Seoul",
+    "base_temp": 25,
+    "slug": "seoul",
+    "weather": {
+      "current": {
+        "temperature_2m": 21,
+        "relative_humidity_2m": 87,
+        "apparent_temperature": 24,
+        "weather_code": 0,
+        "wind_speed_10m": 2,
+        "pressure_msl": 1012,
+        "visibility": 18
+      },
+      "air_quality": {
+        "available": true,
+        "us_aqi": 88,
+        "pm2_5": 34.8,
+        "pm10": 43.1,
+        "uv_index": 0.0
+      },
+      "marine": {
+        "available": false,
+        "wave_height": null,
+        "wave_period": null
+      },
+      "hourly": [
+        {
+          "time": "00:00",
+          "temperature": 21,
+          "weather_code": 0,
+          "is_current": true
+        },
+        {
+          "time": "01:00",
+          "temperature": 21,
+          "weather_code": 0,
+          "is_current": false
+        },
+        {
+          "time": "02:00",
+          "temperature": 20,
+          "weather_code": 1,
+          "is_current": false
+        },
+        {
+          "time": "03:00",
+          "temperature": 20,
+          "weather_code": 1,
+          "is_current": false
+        },
+        {
+          "time": "04:00",
+          "temperature": 19,
+          "weather_code": 2,
+          "is_current": false
+        },
+        {
+          "time": "05:00",
+          "temperature": 19,
+          "weather_code": 0,
+          "is_current": false
+        },
+        {
+          "time": "06:00",
+          "temperature": 19,
+          "weather_code": 0,
+          "is_current": false
+        },
+        {
+          "time": "07:00",
+          "temperature": 20,
+          "weather_code": 0,
+          "is_current": false
+        },
+        {
+          "time": "08:00",
+          "temperature": 21,
+          "weather_code": 0,
+          "is_current": false
+        },
+        {
+          "time": "09:00",
+          "temperature": 23,
+          "weather_code": 0,
+          "is_current": false
+        },
+        {
+          "time": "10:00",
+          "temperature": 25,
+          "weather_code": 0,
+          "is_current": false
+        },
+        {
+          "time": "11:00",
+          "temperature": 26,
+          "weather_code": 0,
+          "is_current": false
+        },
+        {
+          "time": "12:00",
+          "temperature": 28,
+          "weather_code": 0,
+          "is_current": false
+        },
+        {
+          "time": "13:00",
+          "temperature": 29,
+          "weather_code": 0,
+          "is_current": false
+        },
+        {
+          "time": "14:00",
+          "temperature": 30,
+          "weather_code": 0,
+          "is_current": false
+        },
+        {
+          "time": "15:00",
+          "temperature": 30,
+          "weather_code": 0,
+          "is_current": false
+        },
+        {
+          "time": "16:00",
+          "temperature": 31,
+          "weather_code": 0,
+          "is_current": false
+        },
+        {
+          "time": "17:00",
+          "temperature": 30,
+          "weather_code": 0,
+          "is_current": false
+        },
+        {
+          "time": "18:00",
+          "temperature": 29,
+          "weather_code": 0,
+          "is_current": false
+        },
+        {
+          "time": "19:00",
+          "temperature": 27,
+          "weather_code": 0,
+          "is_current": false
+        },
+        {
+          "time": "20:00",
+          "temperature": 26,
+          "weather_code": 1,
+          "is_current": false
+        },
+        {
+          "time": "21:00",
+          "temperature": 24,
+          "weather_code": 1,
+          "is_current": false
+        },
+        {
+          "time": "22:00",
+          "temperature": 23,
+          "weather_code": 2,
+          "is_current": false
+        },
+        {
+          "time": "23:00",
+          "temperature": 22,
+          "weather_code": 2,
+          "is_current": false
+        }
+      ],
+      "daily": {
+        "time": [
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20",
+          "2026-06-21"
+        ],
+        "temperature_2m_max": [
+          31,
+          31,
+          31,
+          30,
+          35,
+          38,
+          33
+        ],
+        "temperature_2m_min": [
+          19,
+          20,
+          20,
+          21,
+          21,
+          25,
+          25
+        ],
+        "weather_code": [
+          2,
+          2,
+          61,
+          3,
+          3,
+          3,
+          3
+        ],
+        "precipitation_probability_max": [
+          43,
+          31,
+          8,
+          7,
+          8,
+          29,
+          25
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "false",
+          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
+        }
+      ]
+    }
+  },
+  {
     "name": "Bangkok",
     "country": "Thailand",
     "lat": 13.7563,
@@ -2449,7 +2449,7 @@
         "relative_humidity_2m": 86,
         "apparent_temperature": 34,
         "weather_code": 2,
-        "wind_speed_10m": 8,
+        "wind_speed_10m": 7,
         "pressure_msl": 1011,
         "visibility": 28
       },
@@ -2689,13 +2689,13 @@
     "slug": "hong-kong",
     "weather": {
       "current": {
-        "temperature_2m": 27,
-        "relative_humidity_2m": 96,
-        "apparent_temperature": 31,
-        "weather_code": 3,
-        "wind_speed_10m": 18,
-        "pressure_msl": 1007,
-        "visibility": 11
+        "temperature_2m": 28,
+        "relative_humidity_2m": null,
+        "apparent_temperature": 28,
+        "weather_code": 2,
+        "wind_speed_10m": null,
+        "pressure_msl": null,
+        "visibility": null
       },
       "air_quality": {
         "available": true,
@@ -2711,147 +2711,147 @@
       },
       "hourly": [
         {
-          "time": "15:00",
-          "temperature": 26,
-          "weather_code": 81,
+          "time": "18:00",
+          "temperature": 28,
+          "weather_code": 2,
           "is_current": true
         },
         {
-          "time": "16:00",
+          "time": "21:00",
           "temperature": 26,
-          "weather_code": 81,
+          "weather_code": 2,
           "is_current": false
         },
         {
-          "time": "17:00",
+          "time": "00:00",
+          "temperature": 26,
+          "weather_code": 2,
+          "is_current": false
+        },
+        {
+          "time": "03:00",
+          "temperature": 25,
+          "weather_code": 2,
+          "is_current": false
+        },
+        {
+          "time": "06:00",
           "temperature": 24,
-          "weather_code": 95,
+          "weather_code": 2,
+          "is_current": false
+        },
+        {
+          "time": "09:00",
+          "temperature": 26,
+          "weather_code": 2,
+          "is_current": false
+        },
+        {
+          "time": "12:00",
+          "temperature": 26,
+          "weather_code": 2,
+          "is_current": false
+        },
+        {
+          "time": "15:00",
+          "temperature": 24,
+          "weather_code": 2,
+          "is_current": false
+        },
+        {
+          "time": "18:00",
+          "temperature": 24,
+          "weather_code": 2,
+          "is_current": false
+        },
+        {
+          "time": "21:00",
+          "temperature": 25,
+          "weather_code": 2,
+          "is_current": false
+        },
+        {
+          "time": "00:00",
+          "temperature": 24,
+          "weather_code": 2,
+          "is_current": false
+        },
+        {
+          "time": "03:00",
+          "temperature": 24,
+          "weather_code": 2,
+          "is_current": false
+        },
+        {
+          "time": "06:00",
+          "temperature": 24,
+          "weather_code": 2,
+          "is_current": false
+        },
+        {
+          "time": "09:00",
+          "temperature": 25,
+          "weather_code": 2,
+          "is_current": false
+        },
+        {
+          "time": "12:00",
+          "temperature": 26,
+          "weather_code": 2,
+          "is_current": false
+        },
+        {
+          "time": "15:00",
+          "temperature": 25,
+          "weather_code": 2,
           "is_current": false
         },
         {
           "time": "18:00",
           "temperature": 25,
-          "weather_code": 81,
-          "is_current": false
-        },
-        {
-          "time": "19:00",
-          "temperature": 25,
-          "weather_code": 81,
-          "is_current": false
-        },
-        {
-          "time": "20:00",
-          "temperature": 26,
-          "weather_code": 53,
+          "weather_code": 2,
           "is_current": false
         },
         {
           "time": "21:00",
-          "temperature": 26,
-          "weather_code": 53,
-          "is_current": false
-        },
-        {
-          "time": "22:00",
-          "temperature": 27,
-          "weather_code": 95,
-          "is_current": false
-        },
-        {
-          "time": "23:00",
-          "temperature": 27,
-          "weather_code": 3,
+          "temperature": 25,
+          "weather_code": 2,
           "is_current": false
         },
         {
           "time": "00:00",
-          "temperature": 27,
-          "weather_code": 3,
-          "is_current": false
-        },
-        {
-          "time": "01:00",
-          "temperature": 27,
-          "weather_code": 3,
-          "is_current": false
-        },
-        {
-          "time": "02:00",
-          "temperature": 26,
-          "weather_code": 80,
+          "temperature": 24,
+          "weather_code": 2,
           "is_current": false
         },
         {
           "time": "03:00",
-          "temperature": 26,
-          "weather_code": 80,
-          "is_current": false
-        },
-        {
-          "time": "04:00",
-          "temperature": 25,
-          "weather_code": 80,
-          "is_current": false
-        },
-        {
-          "time": "05:00",
-          "temperature": 26,
-          "weather_code": 80,
+          "temperature": 24,
+          "weather_code": 2,
           "is_current": false
         },
         {
           "time": "06:00",
-          "temperature": 25,
-          "weather_code": 81,
-          "is_current": false
-        },
-        {
-          "time": "07:00",
-          "temperature": 25,
-          "weather_code": 81,
-          "is_current": false
-        },
-        {
-          "time": "08:00",
-          "temperature": 25,
-          "weather_code": 81,
+          "temperature": 24,
+          "weather_code": 2,
           "is_current": false
         },
         {
           "time": "09:00",
           "temperature": 24,
-          "weather_code": 81,
-          "is_current": false
-        },
-        {
-          "time": "10:00",
-          "temperature": 25,
-          "weather_code": 81,
-          "is_current": false
-        },
-        {
-          "time": "11:00",
-          "temperature": 25,
-          "weather_code": 81,
+          "weather_code": 2,
           "is_current": false
         },
         {
           "time": "12:00",
-          "temperature": 25,
-          "weather_code": 81,
+          "temperature": 24,
+          "weather_code": 2,
           "is_current": false
         },
         {
-          "time": "13:00",
-          "temperature": 26,
-          "weather_code": 81,
-          "is_current": false
-        },
-        {
-          "time": "14:00",
-          "temperature": 26,
-          "weather_code": 80,
+          "time": "15:00",
+          "temperature": 24,
+          "weather_code": 2,
           "is_current": false
         }
       ],
@@ -2860,52 +2860,47 @@
           "2026-06-14",
           "2026-06-15",
           "2026-06-16",
-          "2026-06-17",
-          "2026-06-18",
-          "2026-06-19",
-          "2026-06-20"
+          "2026-06-17"
         ],
         "temperature_2m_max": [
-          27,
           28,
           26,
-          27,
-          27,
-          30,
-          30
+          26,
+          24
         ],
         "temperature_2m_min": [
-          24,
-          24,
-          24,
-          25,
-          25,
           26,
-          27
+          24,
+          24,
+          24
         ],
         "weather_code": [
-          95,
-          81,
-          81,
-          81,
-          80,
-          95,
-          53
+          2,
+          2,
+          2,
+          2
         ],
         "precipitation_probability_max": [
-          100,
-          100,
-          100,
-          100,
-          96,
-          96,
-          98
+          0,
+          0,
+          0,
+          0
         ]
       },
-      "source": "open-meteo",
+      "source": "7timer",
       "api_status": [
         {
           "source": "open-meteo",
+          "ok": "false",
+          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
+        },
+        {
+          "source": "visual-crossing",
+          "ok": "false",
+          "error": "VISUALCROSSING_KEY not configured"
+        },
+        {
+          "source": "7timer",
           "ok": "true",
           "error": ""
         },
@@ -2951,7 +2946,7 @@
       "marine": {
         "available": true,
         "wave_height": 0.76,
-        "wave_period": 12.4
+        "wave_period": 12.45
       },
       "hourly": [
         {
@@ -3173,10 +3168,10 @@
     "weather": {
       "current": {
         "temperature_2m": 16,
-        "relative_humidity_2m": 92,
-        "apparent_temperature": 16,
+        "relative_humidity_2m": 93,
+        "apparent_temperature": 17,
         "weather_code": 3,
-        "wind_speed_10m": 7,
+        "wind_speed_10m": 6,
         "pressure_msl": 1014,
         "visibility": 13
       },
@@ -3188,9 +3183,9 @@
         "uv_index": 1.05
       },
       "marine": {
-        "available": false,
-        "wave_height": null,
-        "wave_period": null
+        "available": true,
+        "wave_height": 0.88,
+        "wave_period": 12.45
       },
       "hourly": [
         {
@@ -3207,25 +3202,25 @@
         },
         {
           "time": "17:00",
-          "temperature": 18,
-          "weather_code": 1,
-          "is_current": false
-        },
-        {
-          "time": "18:00",
           "temperature": 17,
           "weather_code": 1,
           "is_current": false
         },
         {
-          "time": "19:00",
+          "time": "18:00",
           "temperature": 16,
+          "weather_code": 1,
+          "is_current": false
+        },
+        {
+          "time": "19:00",
+          "temperature": 15,
           "weather_code": 3,
           "is_current": false
         },
         {
           "time": "20:00",
-          "temperature": 15,
+          "temperature": 14,
           "weather_code": 3,
           "is_current": false
         },
@@ -3349,7 +3344,7 @@
           "2026-06-20"
         ],
         "temperature_2m_max": [
-          20,
+          21,
           18,
           26,
           22,
@@ -3399,8 +3394,8 @@
         },
         {
           "source": "open-meteo-marine",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
+          "ok": "true",
+          "error": ""
         }
       ]
     }
@@ -3416,13 +3411,13 @@
     "slug": "toronto",
     "weather": {
       "current": {
-        "temperature_2m": 16,
-        "relative_humidity_2m": null,
-        "apparent_temperature": 16,
-        "weather_code": 2,
-        "wind_speed_10m": null,
-        "pressure_msl": null,
-        "visibility": null
+        "temperature_2m": 17,
+        "relative_humidity_2m": 97,
+        "apparent_temperature": 18,
+        "weather_code": 3,
+        "wind_speed_10m": 4,
+        "pressure_msl": 1006,
+        "visibility": 12
       },
       "air_quality": {
         "available": true,
@@ -3438,147 +3433,147 @@
       },
       "hourly": [
         {
-          "time": "18:00",
+          "time": "15:00",
           "temperature": 16,
-          "weather_code": 2,
+          "weather_code": 63,
           "is_current": true
         },
         {
-          "time": "21:00",
+          "time": "16:00",
           "temperature": 17,
-          "weather_code": 2,
+          "weather_code": 53,
           "is_current": false
         },
         {
-          "time": "00:00",
-          "temperature": 13,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "03:00",
-          "temperature": 13,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "06:00",
-          "temperature": 14,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "09:00",
-          "temperature": 13,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "12:00",
-          "temperature": 10,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "15:00",
-          "temperature": 7,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "18:00",
-          "temperature": 6,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "21:00",
-          "temperature": 8,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "00:00",
-          "temperature": 13,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "03:00",
-          "temperature": 17,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "06:00",
-          "temperature": 20,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "09:00",
+          "time": "17:00",
           "temperature": 16,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "12:00",
-          "temperature": 14,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "15:00",
-          "temperature": 13,
-          "weather_code": 2,
+          "weather_code": 55,
           "is_current": false
         },
         {
           "time": "18:00",
-          "temperature": 12,
-          "weather_code": 2,
+          "temperature": 15,
+          "weather_code": 51,
+          "is_current": false
+        },
+        {
+          "time": "19:00",
+          "temperature": 16,
+          "weather_code": 61,
+          "is_current": false
+        },
+        {
+          "time": "20:00",
+          "temperature": 16,
+          "weather_code": 51,
           "is_current": false
         },
         {
           "time": "21:00",
+          "temperature": 16,
+          "weather_code": 3,
+          "is_current": false
+        },
+        {
+          "time": "22:00",
+          "temperature": 15,
+          "weather_code": 1,
+          "is_current": false
+        },
+        {
+          "time": "23:00",
           "temperature": 14,
-          "weather_code": 2,
+          "weather_code": 0,
           "is_current": false
         },
         {
           "time": "00:00",
-          "temperature": 20,
-          "weather_code": 2,
+          "temperature": 13,
+          "weather_code": 0,
+          "is_current": false
+        },
+        {
+          "time": "01:00",
+          "temperature": 13,
+          "weather_code": 3,
+          "is_current": false
+        },
+        {
+          "time": "02:00",
+          "temperature": 13,
+          "weather_code": 0,
           "is_current": false
         },
         {
           "time": "03:00",
-          "temperature": 23,
-          "weather_code": 2,
+          "temperature": 12,
+          "weather_code": 0,
+          "is_current": false
+        },
+        {
+          "time": "04:00",
+          "temperature": 11,
+          "weather_code": 0,
+          "is_current": false
+        },
+        {
+          "time": "05:00",
+          "temperature": 11,
+          "weather_code": 3,
           "is_current": false
         },
         {
           "time": "06:00",
-          "temperature": 21,
-          "weather_code": 2,
+          "temperature": 11,
+          "weather_code": 3,
+          "is_current": false
+        },
+        {
+          "time": "07:00",
+          "temperature": 11,
+          "weather_code": 3,
+          "is_current": false
+        },
+        {
+          "time": "08:00",
+          "temperature": 11,
+          "weather_code": 3,
           "is_current": false
         },
         {
           "time": "09:00",
-          "temperature": 20,
-          "weather_code": 2,
+          "temperature": 12,
+          "weather_code": 3,
+          "is_current": false
+        },
+        {
+          "time": "10:00",
+          "temperature": 12,
+          "weather_code": 3,
+          "is_current": false
+        },
+        {
+          "time": "11:00",
+          "temperature": 13,
+          "weather_code": 3,
           "is_current": false
         },
         {
           "time": "12:00",
-          "temperature": 15,
-          "weather_code": 2,
+          "temperature": 14,
+          "weather_code": 3,
           "is_current": false
         },
         {
-          "time": "15:00",
-          "temperature": 13,
-          "weather_code": 2,
+          "time": "13:00",
+          "temperature": 15,
+          "weather_code": 3,
+          "is_current": false
+        },
+        {
+          "time": "14:00",
+          "temperature": 15,
+          "weather_code": 3,
           "is_current": false
         }
       ],
@@ -3587,47 +3582,52 @@
           "2026-06-14",
           "2026-06-15",
           "2026-06-16",
-          "2026-06-17"
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
         ],
         "temperature_2m_max": [
-          17,
-          14,
-          20,
-          23
+          18,
+          16,
+          21,
+          22,
+          22,
+          21,
+          21
         ],
         "temperature_2m_min": [
-          16,
-          6,
-          12,
-          13
+          14,
+          11,
+          10,
+          14,
+          14,
+          13,
+          12
         ],
         "weather_code": [
-          2,
-          2,
-          2,
-          2
+          63,
+          3,
+          3,
+          80,
+          81,
+          51,
+          51
         ],
         "precipitation_probability_max": [
+          75,
           0,
-          0,
-          0,
-          0
+          21,
+          63,
+          79,
+          14,
+          18
         ]
       },
-      "source": "7timer",
+      "source": "open-meteo",
       "api_status": [
         {
           "source": "open-meteo",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
-        },
-        {
-          "source": "visual-crossing",
-          "ok": "false",
-          "error": "VISUALCROSSING_KEY not configured"
-        },
-        {
-          "source": "7timer",
           "ok": "true",
           "error": ""
         },
@@ -3655,13 +3655,13 @@
     "slug": "vancouver",
     "weather": {
       "current": {
-        "temperature_2m": 19,
-        "relative_humidity_2m": 74,
-        "apparent_temperature": 19,
+        "temperature_2m": 20,
+        "relative_humidity_2m": 73,
+        "apparent_temperature": 20,
         "weather_code": 0,
-        "wind_speed_10m": 8,
+        "wind_speed_10m": 10,
         "pressure_msl": 1022,
-        "visibility": 24
+        "visibility": 25
       },
       "air_quality": {
         "available": true,
@@ -3678,13 +3678,13 @@
       "hourly": [
         {
           "time": "15:00",
-          "temperature": 28,
+          "temperature": 27,
           "weather_code": 0,
           "is_current": true
         },
         {
           "time": "16:00",
-          "temperature": 28,
+          "temperature": 27,
           "weather_code": 0,
           "is_current": false
         },
@@ -3720,7 +3720,7 @@
         },
         {
           "time": "22:00",
-          "temperature": 21,
+          "temperature": 20,
           "weather_code": 3,
           "is_current": false
         },
@@ -3899,13 +3899,13 @@
     "slug": "mexico-city",
     "weather": {
       "current": {
-        "temperature_2m": 17,
-        "relative_humidity_2m": 75,
-        "apparent_temperature": 18,
-        "weather_code": 3,
+        "temperature_2m": 18,
+        "relative_humidity_2m": 71,
+        "apparent_temperature": 19,
+        "weather_code": 2,
         "wind_speed_10m": 2,
-        "pressure_msl": 1020,
-        "visibility": 8
+        "pressure_msl": 1019,
+        "visibility": 12
       },
       "air_quality": {
         "available": true,
@@ -4148,7 +4148,7 @@
         "apparent_temperature": 21,
         "weather_code": 2,
         "wind_speed_10m": 15,
-        "pressure_msl": 1018,
+        "pressure_msl": 1017,
         "visibility": 33
       },
       "air_quality": {
@@ -4391,7 +4391,7 @@
         "relative_humidity_2m": 70,
         "apparent_temperature": 27,
         "weather_code": 3,
-        "wind_speed_10m": 4,
+        "wind_speed_10m": 5,
         "pressure_msl": 1018,
         "visibility": 17
       },
@@ -4404,8 +4404,8 @@
       },
       "marine": {
         "available": true,
-        "wave_height": 0.88,
-        "wave_period": 9.25
+        "wave_height": 0.86,
+        "wave_period": 9.2
       },
       "hourly": [
         {
@@ -4632,11 +4632,11 @@
     "weather": {
       "current": {
         "temperature_2m": 8,
-        "relative_humidity_2m": 59,
+        "relative_humidity_2m": 56,
         "apparent_temperature": 5,
         "weather_code": 0,
         "wind_speed_10m": 7,
-        "pressure_msl": 1026,
+        "pressure_msl": 1025,
         "visibility": 55
       },
       "air_quality": {
@@ -4648,7 +4648,7 @@
       },
       "marine": {
         "available": true,
-        "wave_height": 0.18,
+        "wave_height": 0.16,
         "wave_period": 3.0
       },
       "hourly": [
@@ -4875,11 +4875,11 @@
     "slug": "santiago",
     "weather": {
       "current": {
-        "temperature_2m": 16,
-        "relative_humidity_2m": 29,
+        "temperature_2m": 17,
+        "relative_humidity_2m": 28,
         "apparent_temperature": 14,
         "weather_code": 3,
-        "wind_speed_10m": 2,
+        "wind_speed_10m": 1,
         "pressure_msl": 1017,
         "visibility": 45
       },
@@ -5120,12 +5120,12 @@
     "weather": {
       "current": {
         "temperature_2m": 24,
-        "relative_humidity_2m": 66,
+        "relative_humidity_2m": 67,
         "apparent_temperature": 26,
-        "weather_code": 2,
-        "wind_speed_10m": 6,
+        "weather_code": 1,
+        "wind_speed_10m": 7,
         "pressure_msl": 1016,
-        "visibility": 22
+        "visibility": 21
       },
       "air_quality": {
         "available": true,
@@ -5364,12 +5364,12 @@
     "weather": {
       "current": {
         "temperature_2m": 18,
-        "relative_humidity_2m": 61,
-        "apparent_temperature": 17,
+        "relative_humidity_2m": 59,
+        "apparent_temperature": 18,
         "weather_code": 3,
         "wind_speed_10m": 8,
         "pressure_msl": 1019,
-        "visibility": 11
+        "visibility": 10
       },
       "air_quality": {
         "available": true,
@@ -5379,9 +5379,9 @@
         "uv_index": 7.3
       },
       "marine": {
-        "available": true,
-        "wave_height": 0,
-        "wave_period": 0
+        "available": false,
+        "wave_height": null,
+        "wave_period": null
       },
       "hourly": [
         {
@@ -5590,8 +5590,8 @@
         },
         {
           "source": "open-meteo-marine",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
         }
       ]
     }
@@ -5608,7 +5608,7 @@
     "weather": {
       "current": {
         "temperature_2m": 33,
-        "relative_humidity_2m": 18,
+        "relative_humidity_2m": 17,
         "apparent_temperature": 32,
         "weather_code": 3,
         "wind_speed_10m": 6,
@@ -5860,11 +5860,11 @@
         "visibility": 43
       },
       "air_quality": {
-        "available": true,
-        "us_aqi": 39,
-        "pm2_5": 11.7,
-        "pm10": 15.8,
-        "uv_index": 4.05
+        "available": false,
+        "us_aqi": null,
+        "pm2_5": null,
+        "pm10": null,
+        "uv_index": null
       },
       "marine": {
         "available": true,
@@ -6073,8 +6073,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
         },
         {
           "source": "open-meteo-marine",
@@ -6104,11 +6104,11 @@
         "visibility": 45
       },
       "air_quality": {
-        "available": true,
-        "us_aqi": 46,
-        "pm2_5": 4.5,
-        "pm10": 6.4,
-        "uv_index": 2.9
+        "available": false,
+        "us_aqi": null,
+        "pm2_5": null,
+        "pm10": null,
+        "uv_index": null
       },
       "marine": {
         "available": true,
@@ -6317,8 +6317,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
         },
         {
           "source": "open-meteo-marine",
@@ -6341,18 +6341,18 @@
       "current": {
         "temperature_2m": 31,
         "relative_humidity_2m": 38,
-        "apparent_temperature": 31,
+        "apparent_temperature": 30,
         "weather_code": 1,
-        "wind_speed_10m": 15,
+        "wind_speed_10m": 16,
         "pressure_msl": 1009,
         "visibility": 43
       },
       "air_quality": {
-        "available": true,
-        "us_aqi": 42,
-        "pm2_5": 6.5,
-        "pm10": 10.8,
-        "uv_index": 2.6
+        "available": false,
+        "us_aqi": null,
+        "pm2_5": null,
+        "pm10": null,
+        "uv_index": null
       },
       "marine": {
         "available": true,
@@ -6561,8 +6561,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
         },
         {
           "source": "open-meteo-marine",
@@ -6831,7 +6831,7 @@
         "relative_humidity_2m": 34,
         "apparent_temperature": 19,
         "weather_code": 2,
-        "wind_speed_10m": 15,
+        "wind_speed_10m": 16,
         "pressure_msl": 1013,
         "visibility": 44
       },
@@ -6843,9 +6843,9 @@
         "uv_index": 2.45
       },
       "marine": {
-        "available": false,
-        "wave_height": null,
-        "wave_period": null
+        "available": true,
+        "wave_height": 0,
+        "wave_period": 0
       },
       "hourly": [
         {
@@ -7054,8 +7054,8 @@
         },
         {
           "source": "open-meteo-marine",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
+          "ok": "true",
+          "error": ""
         }
       ]
     }
@@ -7075,7 +7075,7 @@
         "relative_humidity_2m": 55,
         "apparent_temperature": 14,
         "weather_code": 2,
-        "wind_speed_10m": 21,
+        "wind_speed_10m": 20,
         "pressure_msl": 1018,
         "visibility": 28
       },
@@ -7316,9 +7316,9 @@
     "weather": {
       "current": {
         "temperature_2m": 19,
-        "relative_humidity_2m": 44,
+        "relative_humidity_2m": 43,
         "apparent_temperature": 16,
-        "weather_code": 3,
+        "weather_code": 2,
         "wind_speed_10m": 14,
         "pressure_msl": 1019,
         "visibility": 35
@@ -7331,9 +7331,9 @@
         "uv_index": 2.1
       },
       "marine": {
-        "available": false,
-        "wave_height": null,
-        "wave_period": null
+        "available": true,
+        "wave_height": 0,
+        "wave_period": 0
       },
       "hourly": [
         {
@@ -7542,8 +7542,8 @@
         },
         {
           "source": "open-meteo-marine",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
+          "ok": "true",
+          "error": ""
         }
       ]
     }
@@ -7575,9 +7575,9 @@
         "uv_index": 3.1
       },
       "marine": {
-        "available": false,
-        "wave_height": null,
-        "wave_period": null
+        "available": true,
+        "wave_height": 0,
+        "wave_period": 0
       },
       "hourly": [
         {
@@ -7786,8 +7786,8 @@
         },
         {
           "source": "open-meteo-marine",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
+          "ok": "true",
+          "error": ""
         }
       ]
     }
@@ -8047,13 +8047,13 @@
     "slug": "prague",
     "weather": {
       "current": {
-        "temperature_2m": 13,
-        "relative_humidity_2m": null,
-        "apparent_temperature": 13,
-        "weather_code": 2,
-        "wind_speed_10m": null,
-        "pressure_msl": null,
-        "visibility": null
+        "temperature_2m": 17,
+        "relative_humidity_2m": 46,
+        "apparent_temperature": 14,
+        "weather_code": 3,
+        "wind_speed_10m": 15,
+        "pressure_msl": 1012,
+        "visibility": 42
       },
       "air_quality": {
         "available": true,
@@ -8069,147 +8069,147 @@
       },
       "hourly": [
         {
-          "time": "18:00",
-          "temperature": 13,
-          "weather_code": 2,
+          "time": "15:00",
+          "temperature": 17,
+          "weather_code": 3,
           "is_current": true
         },
         {
-          "time": "21:00",
-          "temperature": 15,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "00:00",
-          "temperature": 16,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "03:00",
-          "temperature": 14,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "06:00",
-          "temperature": 10,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "09:00",
-          "temperature": 9,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "12:00",
-          "temperature": 8,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "15:00",
-          "temperature": 12,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "18:00",
-          "temperature": 15,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "21:00",
-          "temperature": 17,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "00:00",
-          "temperature": 17,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "03:00",
-          "temperature": 14,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "06:00",
-          "temperature": 10,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "09:00",
-          "temperature": 8,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "12:00",
-          "temperature": 7,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "15:00",
-          "temperature": 13,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "18:00",
+          "time": "16:00",
           "temperature": 18,
+          "weather_code": 3,
+          "is_current": false
+        },
+        {
+          "time": "17:00",
+          "temperature": 17,
+          "weather_code": 61,
+          "is_current": false
+        },
+        {
+          "time": "18:00",
+          "temperature": 17,
+          "weather_code": 3,
+          "is_current": false
+        },
+        {
+          "time": "19:00",
+          "temperature": 17,
+          "weather_code": 3,
+          "is_current": false
+        },
+        {
+          "time": "20:00",
+          "temperature": 17,
           "weather_code": 2,
           "is_current": false
         },
         {
           "time": "21:00",
-          "temperature": 22,
-          "weather_code": 2,
+          "temperature": 16,
+          "weather_code": 1,
+          "is_current": false
+        },
+        {
+          "time": "22:00",
+          "temperature": 15,
+          "weather_code": 1,
+          "is_current": false
+        },
+        {
+          "time": "23:00",
+          "temperature": 14,
+          "weather_code": 1,
           "is_current": false
         },
         {
           "time": "00:00",
-          "temperature": 22,
-          "weather_code": 2,
+          "temperature": 13,
+          "weather_code": 0,
+          "is_current": false
+        },
+        {
+          "time": "01:00",
+          "temperature": 13,
+          "weather_code": 0,
+          "is_current": false
+        },
+        {
+          "time": "02:00",
+          "temperature": 12,
+          "weather_code": 0,
           "is_current": false
         },
         {
           "time": "03:00",
-          "temperature": 15,
+          "temperature": 11,
           "weather_code": 2,
+          "is_current": false
+        },
+        {
+          "time": "04:00",
+          "temperature": 11,
+          "weather_code": 1,
+          "is_current": false
+        },
+        {
+          "time": "05:00",
+          "temperature": 10,
+          "weather_code": 0,
           "is_current": false
         },
         {
           "time": "06:00",
-          "temperature": 14,
-          "weather_code": 2,
+          "temperature": 10,
+          "weather_code": 1,
           "is_current": false
         },
         {
-          "time": "09:00",
-          "temperature": 13,
-          "weather_code": 2,
+          "time": "07:00",
+          "temperature": 11,
+          "weather_code": 1,
           "is_current": false
         },
         {
-          "time": "12:00",
+          "time": "08:00",
           "temperature": 12,
           "weather_code": 2,
           "is_current": false
         },
         {
-          "time": "15:00",
-          "temperature": 16,
+          "time": "09:00",
+          "temperature": 14,
           "weather_code": 2,
+          "is_current": false
+        },
+        {
+          "time": "10:00",
+          "temperature": 16,
+          "weather_code": 3,
+          "is_current": false
+        },
+        {
+          "time": "11:00",
+          "temperature": 16,
+          "weather_code": 3,
+          "is_current": false
+        },
+        {
+          "time": "12:00",
+          "temperature": 16,
+          "weather_code": 3,
+          "is_current": false
+        },
+        {
+          "time": "13:00",
+          "temperature": 17,
+          "weather_code": 3,
+          "is_current": false
+        },
+        {
+          "time": "14:00",
+          "temperature": 18,
+          "weather_code": 3,
           "is_current": false
         }
       ],
@@ -8218,47 +8218,52 @@
           "2026-06-14",
           "2026-06-15",
           "2026-06-16",
-          "2026-06-17"
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
         ],
         "temperature_2m_max": [
-          15,
-          17,
-          22,
-          22
+          18,
+          20,
+          23,
+          25,
+          31,
+          31,
+          31
         ],
         "temperature_2m_min": [
-          13,
-          8,
-          7,
-          12
+          14,
+          10,
+          12,
+          15,
+          15,
+          20,
+          20
         ],
         "weather_code": [
-          2,
-          2,
-          2,
-          2
+          61,
+          3,
+          61,
+          61,
+          45,
+          80,
+          3
         ],
         "precipitation_probability_max": [
-          0,
-          0,
-          0,
-          0
+          8,
+          3,
+          18,
+          18,
+          1,
+          6,
+          17
         ]
       },
-      "source": "7timer",
+      "source": "open-meteo",
       "api_status": [
         {
           "source": "open-meteo",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
-        },
-        {
-          "source": "visual-crossing",
-          "ok": "false",
-          "error": "VISUALCROSSING_KEY not configured"
-        },
-        {
-          "source": "7timer",
           "ok": "true",
           "error": ""
         },
@@ -8287,12 +8292,12 @@
     "weather": {
       "current": {
         "temperature_2m": 13,
-        "relative_humidity_2m": 84,
-        "apparent_temperature": 11,
+        "relative_humidity_2m": 81,
+        "apparent_temperature": 12,
         "weather_code": 61,
-        "wind_speed_10m": 10,
+        "wind_speed_10m": 13,
         "pressure_msl": 1005,
-        "visibility": 5
+        "visibility": 8
       },
       "air_quality": {
         "available": true,
@@ -8531,12 +8536,12 @@
     "weather": {
       "current": {
         "temperature_2m": 15,
-        "relative_humidity_2m": 71,
+        "relative_humidity_2m": 70,
         "apparent_temperature": 13,
         "weather_code": 3,
         "wind_speed_10m": 12,
         "pressure_msl": 996,
-        "visibility": 6
+        "visibility": 7
       },
       "air_quality": {
         "available": true,
@@ -8778,9 +8783,9 @@
         "relative_humidity_2m": 48,
         "apparent_temperature": 15,
         "weather_code": 3,
-        "wind_speed_10m": 22,
+        "wind_speed_10m": 23,
         "pressure_msl": 1003,
-        "visibility": 21
+        "visibility": 19
       },
       "air_quality": {
         "available": true,
@@ -9024,7 +9029,7 @@
         "weather_code": 2,
         "wind_speed_10m": 20,
         "pressure_msl": 1003,
-        "visibility": 30
+        "visibility": 34
       },
       "air_quality": {
         "available": true,
@@ -9263,11 +9268,11 @@
     "weather": {
       "current": {
         "temperature_2m": 14,
-        "relative_humidity_2m": 91,
+        "relative_humidity_2m": 90,
         "apparent_temperature": 12,
         "weather_code": 3,
-        "wind_speed_10m": 20,
-        "pressure_msl": 1000,
+        "wind_speed_10m": 19,
+        "pressure_msl": 1001,
         "visibility": 9
       },
       "air_quality": {
@@ -9278,9 +9283,9 @@
         "uv_index": 1.15
       },
       "marine": {
-        "available": true,
-        "wave_height": 0.3,
-        "wave_period": 2.45
+        "available": false,
+        "wave_height": null,
+        "wave_period": null
       },
       "hourly": [
         {
@@ -9489,8 +9494,8 @@
         },
         {
           "source": "open-meteo-marine",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
         }
       ]
     }
@@ -9510,7 +9515,7 @@
         "relative_humidity_2m": 58,
         "apparent_temperature": 14,
         "weather_code": 1,
-        "wind_speed_10m": 14,
+        "wind_speed_10m": 13,
         "pressure_msl": 1020,
         "visibility": 34
       },
@@ -9751,24 +9756,24 @@
     "weather": {
       "current": {
         "temperature_2m": 26,
-        "relative_humidity_2m": 45,
+        "relative_humidity_2m": 47,
         "apparent_temperature": 26,
         "weather_code": 0,
-        "wind_speed_10m": 16,
+        "wind_speed_10m": 15,
         "pressure_msl": 1016,
         "visibility": 41
       },
       "air_quality": {
-        "available": true,
-        "us_aqi": 53,
-        "pm2_5": 9.7,
-        "pm10": 17.8,
-        "uv_index": 5.45
+        "available": false,
+        "us_aqi": null,
+        "pm2_5": null,
+        "pm10": null,
+        "uv_index": null
       },
       "marine": {
         "available": true,
         "wave_height": 0.52,
-        "wave_period": 8.3
+        "wave_period": 8.2
       },
       "hourly": [
         {
@@ -9972,8 +9977,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
         },
         {
           "source": "open-meteo-marine",
@@ -9998,20 +10003,20 @@
         "relative_humidity_2m": 40,
         "apparent_temperature": 28,
         "weather_code": 0,
-        "wind_speed_10m": 5,
+        "wind_speed_10m": 4,
         "pressure_msl": 1014,
         "visibility": 43
       },
       "air_quality": {
-        "available": true,
-        "us_aqi": 47,
-        "pm2_5": 7.5,
-        "pm10": 9.8,
-        "uv_index": 1.65
+        "available": false,
+        "us_aqi": null,
+        "pm2_5": null,
+        "pm10": null,
+        "uv_index": null
       },
       "marine": {
         "available": true,
-        "wave_height": 0.32,
+        "wave_height": 0.3,
         "wave_period": 2.15
       },
       "hourly": [
@@ -10216,8 +10221,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
         },
         {
           "source": "open-meteo-marine",
@@ -10239,7 +10244,7 @@
     "weather": {
       "current": {
         "temperature_2m": 24,
-        "relative_humidity_2m": 54,
+        "relative_humidity_2m": 55,
         "apparent_temperature": 24,
         "weather_code": 0,
         "wind_speed_10m": 9,
@@ -10247,16 +10252,16 @@
         "visibility": 40
       },
       "air_quality": {
-        "available": true,
-        "us_aqi": 46,
-        "pm2_5": 22.4,
-        "pm10": 29.8,
-        "uv_index": 1.2
+        "available": false,
+        "us_aqi": null,
+        "pm2_5": null,
+        "pm10": null,
+        "uv_index": null
       },
       "marine": {
         "available": true,
         "wave_height": 0.14,
-        "wave_period": 1.85
+        "wave_period": 1.9
       },
       "hourly": [
         {
@@ -10460,8 +10465,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
         },
         {
           "source": "open-meteo-marine",
@@ -10483,7 +10488,7 @@
     "weather": {
       "current": {
         "temperature_2m": 18,
-        "relative_humidity_2m": 63,
+        "relative_humidity_2m": 62,
         "apparent_temperature": 18,
         "weather_code": 2,
         "wind_speed_10m": 6,
@@ -10726,8 +10731,8 @@
     "slug": "saint-petersburg",
     "weather": {
       "current": {
-        "temperature_2m": 21,
-        "relative_humidity_2m": 44,
+        "temperature_2m": 22,
+        "relative_humidity_2m": 43,
         "apparent_temperature": 20,
         "weather_code": 3,
         "wind_speed_10m": 10,
@@ -10744,7 +10749,7 @@
       "marine": {
         "available": true,
         "wave_height": 0.04,
-        "wave_period": 2.8
+        "wave_period": 2.75
       },
       "hourly": [
         {
@@ -10970,9 +10975,9 @@
     "slug": "cairo",
     "weather": {
       "current": {
-        "temperature_2m": 33,
+        "temperature_2m": 32,
         "relative_humidity_2m": 31,
-        "apparent_temperature": 32,
+        "apparent_temperature": 31,
         "weather_code": 1,
         "wind_speed_10m": 16,
         "pressure_msl": 1009,
@@ -11215,12 +11220,12 @@
     "weather": {
       "current": {
         "temperature_2m": 12,
-        "relative_humidity_2m": 92,
+        "relative_humidity_2m": 93,
         "apparent_temperature": 11,
         "weather_code": 55,
-        "wind_speed_10m": 10,
+        "wind_speed_10m": 8,
         "pressure_msl": 1023,
-        "visibility": 9
+        "visibility": 8
       },
       "air_quality": {
         "available": true,
@@ -11231,7 +11236,7 @@
       },
       "marine": {
         "available": true,
-        "wave_height": 2.26,
+        "wave_height": 2.24,
         "wave_period": 9.65
       },
       "hourly": [
@@ -11458,13 +11463,13 @@
     "slug": "johannesburg",
     "weather": {
       "current": {
-        "temperature_2m": 15,
-        "relative_humidity_2m": 59,
+        "temperature_2m": 14,
+        "relative_humidity_2m": 61,
         "apparent_temperature": 12,
         "weather_code": 0,
         "wind_speed_10m": 12,
         "pressure_msl": 1024,
-        "visibility": 41
+        "visibility": 40
       },
       "air_quality": {
         "available": true,
@@ -11702,13 +11707,13 @@
     "slug": "nairobi",
     "weather": {
       "current": {
-        "temperature_2m": 21,
-        "relative_humidity_2m": 53,
-        "apparent_temperature": 20,
+        "temperature_2m": 20,
+        "relative_humidity_2m": 55,
+        "apparent_temperature": 19,
         "weather_code": 2,
         "wind_speed_10m": 8,
         "pressure_msl": 1018,
-        "visibility": 48
+        "visibility": 47
       },
       "air_quality": {
         "available": true,
@@ -11950,9 +11955,9 @@
         "relative_humidity_2m": 85,
         "apparent_temperature": 32,
         "weather_code": 53,
-        "wind_speed_10m": 9,
+        "wind_speed_10m": 10,
         "pressure_msl": 1012,
-        "visibility": 5
+        "visibility": 4
       },
       "air_quality": {
         "available": true,
@@ -12191,7 +12196,7 @@
     "weather": {
       "current": {
         "temperature_2m": 25,
-        "relative_humidity_2m": 60,
+        "relative_humidity_2m": 61,
         "apparent_temperature": 26,
         "weather_code": 1,
         "wind_speed_10m": 14,
@@ -12434,11 +12439,11 @@
     "slug": "riyadh",
     "weather": {
       "current": {
-        "temperature_2m": 43,
+        "temperature_2m": 42,
         "relative_humidity_2m": 6,
         "apparent_temperature": 39,
         "weather_code": 0,
-        "wind_speed_10m": 10,
+        "wind_speed_10m": 8,
         "pressure_msl": 1002,
         "visibility": 17
       },
@@ -12678,24 +12683,24 @@
     "slug": "doha",
     "weather": {
       "current": {
-        "temperature_2m": 37,
+        "temperature_2m": 36,
         "relative_humidity_2m": 39,
         "apparent_temperature": 39,
         "weather_code": 0,
-        "wind_speed_10m": 11,
+        "wind_speed_10m": 10,
         "pressure_msl": 1001,
         "visibility": 17
       },
       "air_quality": {
-        "available": false,
-        "us_aqi": null,
-        "pm2_5": null,
-        "pm10": null,
-        "uv_index": null
+        "available": true,
+        "us_aqi": 91,
+        "pm2_5": 23.5,
+        "pm10": 70.1,
+        "uv_index": 0.05
       },
       "marine": {
         "available": true,
-        "wave_height": 0.46,
+        "wave_height": 0.44,
         "wave_period": 3.0
       },
       "hourly": [
@@ -12900,8 +12905,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
+          "ok": "true",
+          "error": ""
         },
         {
           "source": "open-meteo-marine",
@@ -12923,24 +12928,24 @@
     "weather": {
       "current": {
         "temperature_2m": 26,
-        "relative_humidity_2m": 69,
+        "relative_humidity_2m": 70,
         "apparent_temperature": 28,
         "weather_code": 1,
-        "wind_speed_10m": 11,
+        "wind_speed_10m": 10,
         "pressure_msl": 1010,
         "visibility": 36
       },
       "air_quality": {
-        "available": false,
-        "us_aqi": null,
-        "pm2_5": null,
-        "pm10": null,
-        "uv_index": null
+        "available": true,
+        "us_aqi": 44,
+        "pm2_5": 10.9,
+        "pm10": 17.1,
+        "uv_index": 0.75
       },
       "marine": {
         "available": true,
-        "wave_height": 0.64,
-        "wave_period": 5.25
+        "wave_height": 0.66,
+        "wave_period": 5.3
       },
       "hourly": [
         {
@@ -13144,8 +13149,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
+          "ok": "true",
+          "error": ""
         },
         {
           "source": "open-meteo-marine",
@@ -13172,7 +13177,7 @@
         "weather_code": 51,
         "wind_speed_10m": 14,
         "pressure_msl": 1009,
-        "visibility": 9
+        "visibility": 11
       },
       "air_quality": {
         "available": true,
@@ -13182,9 +13187,9 @@
         "uv_index": 0.0
       },
       "marine": {
-        "available": false,
-        "wave_height": null,
-        "wave_period": null
+        "available": true,
+        "wave_height": 1.26,
+        "wave_period": 7.2
       },
       "hourly": [
         {
@@ -13393,8 +13398,8 @@
         },
         {
           "source": "open-meteo-marine",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
+          "ok": "true",
+          "error": ""
         }
       ]
     }
@@ -13411,19 +13416,19 @@
     "weather": {
       "current": {
         "temperature_2m": 32,
-        "relative_humidity_2m": 50,
+        "relative_humidity_2m": 51,
         "apparent_temperature": 36,
         "weather_code": 0,
-        "wind_speed_10m": 6,
+        "wind_speed_10m": 5,
         "pressure_msl": 1001,
         "visibility": 12
       },
       "air_quality": {
-        "available": false,
-        "us_aqi": null,
-        "pm2_5": null,
-        "pm10": null,
-        "uv_index": null
+        "available": true,
+        "us_aqi": 244,
+        "pm2_5": 120.1,
+        "pm10": 391.2,
+        "uv_index": 0.0
       },
       "marine": {
         "available": true,
@@ -13632,8 +13637,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
+          "ok": "true",
+          "error": ""
         },
         {
           "source": "open-meteo-marine",
@@ -13660,14 +13665,14 @@
         "weather_code": 1,
         "wind_speed_10m": 7,
         "pressure_msl": 1012,
-        "visibility": 34
+        "visibility": 33
       },
       "air_quality": {
-        "available": true,
-        "us_aqi": 48,
-        "pm2_5": 11.4,
-        "pm10": 16.3,
-        "uv_index": 0.0
+        "available": false,
+        "us_aqi": null,
+        "pm2_5": null,
+        "pm10": null,
+        "uv_index": null
       },
       "marine": {
         "available": true,
@@ -13876,8 +13881,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
         },
         {
           "source": "open-meteo-marine",
@@ -13898,20 +13903,20 @@
     "slug": "kathmandu",
     "weather": {
       "current": {
-        "temperature_2m": 21,
-        "relative_humidity_2m": 96,
+        "temperature_2m": 20,
+        "relative_humidity_2m": 97,
         "apparent_temperature": 24,
         "weather_code": 0,
         "wind_speed_10m": 2,
-        "pressure_msl": 1007,
-        "visibility": 5
+        "pressure_msl": 1008,
+        "visibility": 4
       },
       "air_quality": {
-        "available": true,
-        "us_aqi": 92,
-        "pm2_5": 55.4,
-        "pm10": 75.2,
-        "uv_index": 0.0
+        "available": false,
+        "us_aqi": null,
+        "pm2_5": null,
+        "pm10": null,
+        "uv_index": null
       },
       "marine": {
         "available": true,
@@ -14120,8 +14125,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
         },
         {
           "source": "open-meteo-marine",
@@ -14145,10 +14150,10 @@
         "temperature_2m": 28,
         "relative_humidity_2m": 84,
         "apparent_temperature": 32,
-        "weather_code": 2,
+        "weather_code": 3,
         "wind_speed_10m": 12,
         "pressure_msl": 1011,
-        "visibility": 14
+        "visibility": 12
       },
       "air_quality": {
         "available": true,
@@ -14387,12 +14392,12 @@
     "weather": {
       "current": {
         "temperature_2m": 30,
-        "relative_humidity_2m": 76,
+        "relative_humidity_2m": 77,
         "apparent_temperature": 34,
         "weather_code": 51,
         "wind_speed_10m": 20,
         "pressure_msl": 1004,
-        "visibility": 10
+        "visibility": 11
       },
       "air_quality": {
         "available": true,
@@ -14402,9 +14407,9 @@
         "uv_index": 0.0
       },
       "marine": {
-        "available": true,
-        "wave_height": 2.16,
-        "wave_period": 7.85
+        "available": false,
+        "wave_height": null,
+        "wave_period": null
       },
       "hourly": [
         {
@@ -14613,8 +14618,8 @@
         },
         {
           "source": "open-meteo-marine",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
         }
       ]
     }
@@ -14630,13 +14635,13 @@
     "slug": "dhaka",
     "weather": {
       "current": {
-        "temperature_2m": 28,
-        "relative_humidity_2m": 88,
-        "apparent_temperature": 34,
-        "weather_code": 3,
-        "wind_speed_10m": 11,
-        "pressure_msl": 1004,
-        "visibility": 12
+        "temperature_2m": 33,
+        "relative_humidity_2m": null,
+        "apparent_temperature": 33,
+        "weather_code": 2,
+        "wind_speed_10m": null,
+        "pressure_msl": null,
+        "visibility": null
       },
       "air_quality": {
         "available": true,
@@ -14652,147 +14657,147 @@
       },
       "hourly": [
         {
-          "time": "15:00",
-          "temperature": 30,
-          "weather_code": 53,
+          "time": "18:00",
+          "temperature": 33,
+          "weather_code": 2,
           "is_current": true
         },
         {
-          "time": "16:00",
-          "temperature": 28,
-          "weather_code": 80,
-          "is_current": false
-        },
-        {
-          "time": "17:00",
-          "temperature": 29,
-          "weather_code": 51,
-          "is_current": false
-        },
-        {
-          "time": "18:00",
-          "temperature": 29,
-          "weather_code": 3,
-          "is_current": false
-        },
-        {
-          "time": "19:00",
-          "temperature": 28,
-          "weather_code": 3,
-          "is_current": false
-        },
-        {
-          "time": "20:00",
-          "temperature": 28,
-          "weather_code": 3,
-          "is_current": false
-        },
-        {
           "time": "21:00",
-          "temperature": 28,
-          "weather_code": 3,
-          "is_current": false
-        },
-        {
-          "time": "22:00",
-          "temperature": 28,
-          "weather_code": 3,
-          "is_current": false
-        },
-        {
-          "time": "23:00",
-          "temperature": 28,
-          "weather_code": 3,
+          "temperature": 32,
+          "weather_code": 2,
           "is_current": false
         },
         {
           "time": "00:00",
-          "temperature": 27,
-          "weather_code": 3,
-          "is_current": false
-        },
-        {
-          "time": "01:00",
-          "temperature": 27,
-          "weather_code": 3,
-          "is_current": false
-        },
-        {
-          "time": "02:00",
-          "temperature": 27,
-          "weather_code": 3,
+          "temperature": 29,
+          "weather_code": 2,
           "is_current": false
         },
         {
           "time": "03:00",
-          "temperature": 27,
-          "weather_code": 1,
+          "temperature": 29,
+          "weather_code": 2,
           "is_current": false
         },
         {
-          "time": "04:00",
+          "time": "06:00",
+          "temperature": 28,
+          "weather_code": 2,
+          "is_current": false
+        },
+        {
+          "time": "09:00",
+          "temperature": 28,
+          "weather_code": 2,
+          "is_current": false
+        },
+        {
+          "time": "12:00",
+          "temperature": 32,
+          "weather_code": 2,
+          "is_current": false
+        },
+        {
+          "time": "15:00",
+          "temperature": 35,
+          "weather_code": 2,
+          "is_current": false
+        },
+        {
+          "time": "18:00",
+          "temperature": 33,
+          "weather_code": 2,
+          "is_current": false
+        },
+        {
+          "time": "21:00",
+          "temperature": 32,
+          "weather_code": 2,
+          "is_current": false
+        },
+        {
+          "time": "00:00",
+          "temperature": 29,
+          "weather_code": 2,
+          "is_current": false
+        },
+        {
+          "time": "03:00",
+          "temperature": 28,
+          "weather_code": 2,
+          "is_current": false
+        },
+        {
+          "time": "06:00",
+          "temperature": 28,
+          "weather_code": 2,
+          "is_current": false
+        },
+        {
+          "time": "09:00",
           "temperature": 27,
           "weather_code": 2,
           "is_current": false
         },
         {
-          "time": "05:00",
-          "temperature": 27,
-          "weather_code": 1,
+          "time": "12:00",
+          "temperature": 32,
+          "weather_code": 2,
+          "is_current": false
+        },
+        {
+          "time": "15:00",
+          "temperature": 35,
+          "weather_code": 2,
+          "is_current": false
+        },
+        {
+          "time": "18:00",
+          "temperature": 35,
+          "weather_code": 2,
+          "is_current": false
+        },
+        {
+          "time": "21:00",
+          "temperature": 33,
+          "weather_code": 2,
+          "is_current": false
+        },
+        {
+          "time": "00:00",
+          "temperature": 30,
+          "weather_code": 2,
+          "is_current": false
+        },
+        {
+          "time": "03:00",
+          "temperature": 29,
+          "weather_code": 2,
           "is_current": false
         },
         {
           "time": "06:00",
-          "temperature": 27,
-          "weather_code": 3,
-          "is_current": false
-        },
-        {
-          "time": "07:00",
-          "temperature": 27,
-          "weather_code": 53,
-          "is_current": false
-        },
-        {
-          "time": "08:00",
           "temperature": 28,
-          "weather_code": 53,
+          "weather_code": 2,
           "is_current": false
         },
         {
           "time": "09:00",
-          "temperature": 30,
-          "weather_code": 51,
-          "is_current": false
-        },
-        {
-          "time": "10:00",
-          "temperature": 27,
-          "weather_code": 80,
-          "is_current": false
-        },
-        {
-          "time": "11:00",
-          "temperature": 27,
-          "weather_code": 81,
+          "temperature": 28,
+          "weather_code": 2,
           "is_current": false
         },
         {
           "time": "12:00",
-          "temperature": 28,
-          "weather_code": 80,
+          "temperature": 32,
+          "weather_code": 2,
           "is_current": false
         },
         {
-          "time": "13:00",
-          "temperature": 30,
-          "weather_code": 51,
-          "is_current": false
-        },
-        {
-          "time": "14:00",
-          "temperature": 31,
-          "weather_code": 51,
+          "time": "15:00",
+          "temperature": 35,
+          "weather_code": 2,
           "is_current": false
         }
       ],
@@ -14801,52 +14806,47 @@
           "2026-06-14",
           "2026-06-15",
           "2026-06-16",
-          "2026-06-17",
-          "2026-06-18",
-          "2026-06-19",
-          "2026-06-20"
+          "2026-06-17"
         ],
         "temperature_2m_max": [
-          32,
-          31,
           33,
-          34,
-          32,
-          32,
-          34
+          35,
+          35,
+          35
         ],
         "temperature_2m_min": [
+          32,
+          28,
           27,
-          27,
-          26,
-          27,
-          27,
-          27,
-          27
+          28
         ],
         "weather_code": [
-          95,
-          95,
-          95,
-          95,
-          95,
-          95,
-          95
+          2,
+          2,
+          2,
+          2
         ],
         "precipitation_probability_max": [
-          96,
-          80,
-          77,
-          74,
-          77,
-          86,
-          91
+          0,
+          0,
+          0,
+          0
         ]
       },
-      "source": "open-meteo",
+      "source": "7timer",
       "api_status": [
         {
           "source": "open-meteo",
+          "ok": "false",
+          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
+        },
+        {
+          "source": "visual-crossing",
+          "ok": "false",
+          "error": "VISUALCROSSING_KEY not configured"
+        },
+        {
+          "source": "7timer",
           "ok": "true",
           "error": ""
         },
@@ -14876,7 +14876,7 @@
       "current": {
         "temperature_2m": 27,
         "relative_humidity_2m": 84,
-        "apparent_temperature": 33,
+        "apparent_temperature": 32,
         "weather_code": 1,
         "wind_speed_10m": 4,
         "pressure_msl": 1012,
@@ -15136,7 +15136,7 @@
       "marine": {
         "available": true,
         "wave_height": 1.56,
-        "wave_period": 12.45
+        "wave_period": 12.4
       },
       "hourly": [
         {
@@ -15366,7 +15366,7 @@
         "relative_humidity_2m": 99,
         "apparent_temperature": 33,
         "weather_code": 51,
-        "wind_speed_10m": 1,
+        "wind_speed_10m": 0,
         "pressure_msl": 1013,
         "visibility": 3
       },
@@ -15607,12 +15607,12 @@
     "weather": {
       "current": {
         "temperature_2m": 29,
-        "relative_humidity_2m": 80,
+        "relative_humidity_2m": 79,
         "apparent_temperature": 35,
-        "weather_code": 1,
-        "wind_speed_10m": 6,
+        "weather_code": 2,
+        "wind_speed_10m": 7,
         "pressure_msl": 1012,
-        "visibility": 20
+        "visibility": 17
       },
       "air_quality": {
         "available": true,
@@ -15624,7 +15624,7 @@
       "marine": {
         "available": true,
         "wave_height": 0.14,
-        "wave_period": 3.35
+        "wave_period": 3.4
       },
       "hourly": [
         {
@@ -15851,12 +15851,12 @@
     "weather": {
       "current": {
         "temperature_2m": 30,
-        "relative_humidity_2m": 81,
+        "relative_humidity_2m": 82,
         "apparent_temperature": 37,
         "weather_code": 95,
-        "wind_speed_10m": 7,
-        "pressure_msl": 1004,
-        "visibility": 19
+        "wind_speed_10m": 6,
+        "pressure_msl": 1003,
+        "visibility": 18
       },
       "air_quality": {
         "available": true,
@@ -16095,12 +16095,12 @@
     "weather": {
       "current": {
         "temperature_2m": 27,
-        "relative_humidity_2m": 96,
+        "relative_humidity_2m": 97,
         "apparent_temperature": 34,
         "weather_code": 95,
         "wind_speed_10m": 1,
         "pressure_msl": 1012,
-        "visibility": 17
+        "visibility": 15
       },
       "air_quality": {
         "available": true,
@@ -16338,13 +16338,13 @@
     "slug": "taipei",
     "weather": {
       "current": {
-        "temperature_2m": 24,
+        "temperature_2m": 25,
         "relative_humidity_2m": 97,
         "apparent_temperature": 30,
         "weather_code": 3,
         "wind_speed_10m": 2,
         "pressure_msl": 1007,
-        "visibility": 14
+        "visibility": 15
       },
       "air_quality": {
         "available": true,
@@ -16586,8 +16586,8 @@
         "relative_humidity_2m": 74,
         "apparent_temperature": 22,
         "weather_code": 3,
-        "wind_speed_10m": 6,
-        "pressure_msl": 1014,
+        "wind_speed_10m": 7,
+        "pressure_msl": 1013,
         "visibility": 26
       },
       "air_quality": {
@@ -16830,7 +16830,7 @@
         "relative_humidity_2m": 73,
         "apparent_temperature": 22,
         "weather_code": 3,
-        "wind_speed_10m": 5,
+        "wind_speed_10m": 6,
         "pressure_msl": 1014,
         "visibility": 21
       },
@@ -17070,11 +17070,11 @@
     "slug": "melbourne",
     "weather": {
       "current": {
-        "temperature_2m": 7,
+        "temperature_2m": 6,
         "relative_humidity_2m": 92,
         "apparent_temperature": 5,
         "weather_code": 0,
-        "wind_speed_10m": 3,
+        "wind_speed_10m": 4,
         "pressure_msl": 1031,
         "visibility": 38
       },
@@ -17088,7 +17088,7 @@
       "marine": {
         "available": true,
         "wave_height": 0.32,
-        "wave_period": 5.75
+        "wave_period": 5.8
       },
       "hourly": [
         {
@@ -17315,7 +17315,7 @@
     "weather": {
       "current": {
         "temperature_2m": 15,
-        "relative_humidity_2m": 90,
+        "relative_humidity_2m": 91,
         "apparent_temperature": 15,
         "weather_code": 0,
         "wind_speed_10m": 6,
@@ -17559,7 +17559,7 @@
     "weather": {
       "current": {
         "temperature_2m": 11,
-        "relative_humidity_2m": 97,
+        "relative_humidity_2m": 96,
         "apparent_temperature": 10,
         "weather_code": 3,
         "wind_speed_10m": 10,
@@ -17574,9 +17574,9 @@
         "uv_index": 0.0
       },
       "marine": {
-        "available": false,
-        "wave_height": null,
-        "wave_period": null
+        "available": true,
+        "wave_height": 0.04,
+        "wave_period": 4.4
       },
       "hourly": [
         {
@@ -17785,8 +17785,8 @@
         },
         {
           "source": "open-meteo-marine",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
+          "ok": "true",
+          "error": ""
         }
       ]
     }
@@ -17803,12 +17803,12 @@
     "weather": {
       "current": {
         "temperature_2m": 22,
-        "relative_humidity_2m": 75,
+        "relative_humidity_2m": 77,
         "apparent_temperature": 24,
         "weather_code": 0,
-        "wind_speed_10m": 10,
+        "wind_speed_10m": 11,
         "pressure_msl": 1014,
-        "visibility": 25
+        "visibility": 24
       },
       "air_quality": {
         "available": true,
@@ -18047,19 +18047,19 @@
     "weather": {
       "current": {
         "temperature_2m": 12,
-        "relative_humidity_2m": 94,
-        "apparent_temperature": 12,
+        "relative_humidity_2m": 95,
+        "apparent_temperature": 11,
         "weather_code": 51,
-        "wind_speed_10m": 1,
+        "wind_speed_10m": 3,
         "pressure_msl": 1003,
-        "visibility": 11
+        "visibility": 18
       },
       "air_quality": {
-        "available": true,
-        "us_aqi": 21,
-        "pm2_5": 1.9,
-        "pm10": 2.3,
-        "uv_index": 0.15
+        "available": false,
+        "us_aqi": null,
+        "pm2_5": null,
+        "pm10": null,
+        "uv_index": null
       },
       "marine": {
         "available": true,
@@ -18268,8 +18268,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
         },
         {
           "source": "open-meteo-marine",
@@ -18293,10 +18293,10 @@
         "temperature_2m": 16,
         "relative_humidity_2m": 87,
         "apparent_temperature": 16,
-        "weather_code": 3,
-        "wind_speed_10m": 9,
+        "weather_code": 2,
+        "wind_speed_10m": 11,
         "pressure_msl": 1011,
-        "visibility": 17
+        "visibility": 19
       },
       "air_quality": {
         "available": true,
@@ -18306,9 +18306,9 @@
         "uv_index": 4.35
       },
       "marine": {
-        "available": true,
-        "wave_height": 0.26,
-        "wave_period": 2.45
+        "available": false,
+        "wave_height": null,
+        "wave_period": null
       },
       "hourly": [
         {
@@ -18325,7 +18325,7 @@
         },
         {
           "time": "17:00",
-          "temperature": 19,
+          "temperature": 20,
           "weather_code": 0,
           "is_current": false
         },
@@ -18343,31 +18343,31 @@
         },
         {
           "time": "20:00",
-          "temperature": 16,
+          "temperature": 15,
           "weather_code": 0,
           "is_current": false
         },
         {
           "time": "21:00",
-          "temperature": 15,
+          "temperature": 14,
           "weather_code": 1,
           "is_current": false
         },
         {
           "time": "22:00",
-          "temperature": 14,
+          "temperature": 13,
           "weather_code": 3,
           "is_current": false
         },
         {
           "time": "23:00",
-          "temperature": 14,
+          "temperature": 13,
           "weather_code": 0,
           "is_current": false
         },
         {
           "time": "00:00",
-          "temperature": 13,
+          "temperature": 12,
           "weather_code": 0,
           "is_current": false
         },
@@ -18476,7 +18476,7 @@
           17
         ],
         "temperature_2m_min": [
-          14,
+          13,
           12,
           14,
           13,
@@ -18517,8 +18517,8 @@
         },
         {
           "source": "open-meteo-marine",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
         }
       ]
     }
@@ -18538,21 +18538,21 @@
         "relative_humidity_2m": 60,
         "apparent_temperature": 37,
         "weather_code": 0,
-        "wind_speed_10m": 13,
+        "wind_speed_10m": 14,
         "pressure_msl": 1018,
         "visibility": 28
       },
       "air_quality": {
-        "available": false,
-        "us_aqi": null,
-        "pm2_5": null,
-        "pm10": null,
-        "uv_index": null
+        "available": true,
+        "us_aqi": 29,
+        "pm2_5": 10.0,
+        "pm10": 13.9,
+        "uv_index": 7.5
       },
       "marine": {
-        "available": true,
-        "wave_height": 0.12,
-        "wave_period": 4.6
+        "available": false,
+        "wave_height": null,
+        "wave_period": null
       },
       "hourly": [
         {
@@ -18575,37 +18575,37 @@
         },
         {
           "time": "18:00",
-          "temperature": 27,
-          "weather_code": 51,
+          "temperature": 26,
+          "weather_code": 82,
           "is_current": false
         },
         {
           "time": "19:00",
-          "temperature": 28,
+          "temperature": 26,
           "weather_code": 2,
           "is_current": false
         },
         {
           "time": "20:00",
-          "temperature": 28,
+          "temperature": 26,
           "weather_code": 3,
           "is_current": false
         },
         {
           "time": "21:00",
-          "temperature": 27,
+          "temperature": 26,
           "weather_code": 0,
           "is_current": false
         },
         {
           "time": "22:00",
-          "temperature": 27,
+          "temperature": 26,
           "weather_code": 0,
           "is_current": false
         },
         {
           "time": "23:00",
-          "temperature": 27,
+          "temperature": 26,
           "weather_code": 0,
           "is_current": false
         },
@@ -18623,13 +18623,13 @@
         },
         {
           "time": "02:00",
-          "temperature": 25,
+          "temperature": 26,
           "weather_code": 0,
           "is_current": false
         },
         {
           "time": "03:00",
-          "temperature": 25,
+          "temperature": 26,
           "weather_code": 0,
           "is_current": false
         },
@@ -18756,13 +18756,13 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
+          "ok": "true",
+          "error": ""
         },
         {
           "source": "open-meteo-marine",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
         }
       ]
     }
@@ -18779,19 +18779,19 @@
     "weather": {
       "current": {
         "temperature_2m": 20,
-        "relative_humidity_2m": 70,
+        "relative_humidity_2m": 67,
         "apparent_temperature": 20,
         "weather_code": 0,
-        "wind_speed_10m": 6,
+        "wind_speed_10m": 7,
         "pressure_msl": 1021,
-        "visibility": 25
+        "visibility": 24
       },
       "air_quality": {
-        "available": false,
-        "us_aqi": null,
-        "pm2_5": null,
-        "pm10": null,
-        "uv_index": null
+        "available": true,
+        "us_aqi": 39,
+        "pm2_5": 9.9,
+        "pm10": 13.0,
+        "uv_index": 1.35
       },
       "marine": {
         "available": true,
@@ -19000,8 +19000,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
+          "ok": "true",
+          "error": ""
         },
         {
           "source": "open-meteo-marine",
@@ -19039,8 +19039,8 @@
       },
       "marine": {
         "available": true,
-        "wave_height": 0.2,
-        "wave_period": 7.85
+        "wave_height": 0.22,
+        "wave_period": 7.5
       },
       "hourly": [
         {
@@ -19261,13 +19261,13 @@
     "slug": "washington-dc",
     "weather": {
       "current": {
-        "temperature_2m": 30,
-        "relative_humidity_2m": 59,
-        "apparent_temperature": 34,
-        "weather_code": 1,
+        "temperature_2m": 31,
+        "relative_humidity_2m": 57,
+        "apparent_temperature": 35,
+        "weather_code": 2,
         "wind_speed_10m": 15,
         "pressure_msl": 1011,
-        "visibility": 29
+        "visibility": 38
       },
       "air_quality": {
         "available": true,
@@ -19321,42 +19321,42 @@
         {
           "time": "21:00",
           "temperature": 25,
-          "weather_code": 53,
+          "weather_code": 3,
           "is_current": false
         },
         {
           "time": "22:00",
-          "temperature": 25,
-          "weather_code": 3,
+          "temperature": 26,
+          "weather_code": 51,
           "is_current": false
         },
         {
           "time": "23:00",
-          "temperature": 24,
-          "weather_code": 3,
+          "temperature": 23,
+          "weather_code": 53,
           "is_current": false
         },
         {
           "time": "00:00",
-          "temperature": 24,
+          "temperature": 23,
           "weather_code": 3,
           "is_current": false
         },
         {
           "time": "01:00",
-          "temperature": 24,
+          "temperature": 23,
           "weather_code": 0,
           "is_current": false
         },
         {
           "time": "02:00",
-          "temperature": 22,
+          "temperature": 23,
           "weather_code": 0,
           "is_current": false
         },
         {
           "time": "03:00",
-          "temperature": 21,
+          "temperature": 22,
           "weather_code": 3,
           "is_current": false
         },
@@ -19505,13 +19505,13 @@
     "slug": "las-vegas",
     "weather": {
       "current": {
-        "temperature_2m": 36,
+        "temperature_2m": 35,
         "relative_humidity_2m": 15,
         "apparent_temperature": 33,
         "weather_code": 0,
-        "wind_speed_10m": 8,
+        "wind_speed_10m": 9,
         "pressure_msl": 1009,
-        "visibility": 89
+        "visibility": 84
       },
       "air_quality": {
         "available": true,
@@ -19564,7 +19564,7 @@
         },
         {
           "time": "21:00",
-          "temperature": 35,
+          "temperature": 34,
           "weather_code": 0,
           "is_current": false
         },
@@ -19749,13 +19749,13 @@
     "slug": "denver",
     "weather": {
       "current": {
-        "temperature_2m": 15,
-        "relative_humidity_2m": 55,
-        "apparent_temperature": 13,
-        "weather_code": 2,
+        "temperature_2m": 14,
+        "relative_humidity_2m": 53,
+        "apparent_temperature": 12,
+        "weather_code": 1,
         "wind_speed_10m": 6,
-        "pressure_msl": 1020,
-        "visibility": 32
+        "pressure_msl": 1019,
+        "visibility": 34
       },
       "air_quality": {
         "available": true,
@@ -19772,55 +19772,55 @@
       "hourly": [
         {
           "time": "15:00",
-          "temperature": 25,
+          "temperature": 23,
           "weather_code": 3,
           "is_current": true
         },
         {
           "time": "16:00",
-          "temperature": 26,
+          "temperature": 24,
           "weather_code": 0,
           "is_current": false
         },
         {
           "time": "17:00",
-          "temperature": 25,
+          "temperature": 23,
           "weather_code": 1,
           "is_current": false
         },
         {
           "time": "18:00",
-          "temperature": 24,
+          "temperature": 23,
           "weather_code": 1,
           "is_current": false
         },
         {
           "time": "19:00",
-          "temperature": 24,
-          "weather_code": 0,
-          "is_current": false
-        },
-        {
-          "time": "20:00",
           "temperature": 22,
           "weather_code": 0,
           "is_current": false
         },
         {
-          "time": "21:00",
+          "time": "20:00",
           "temperature": 21,
+          "weather_code": 0,
+          "is_current": false
+        },
+        {
+          "time": "21:00",
+          "temperature": 19,
           "weather_code": 3,
           "is_current": false
         },
         {
           "time": "22:00",
-          "temperature": 20,
+          "temperature": 18,
           "weather_code": 3,
           "is_current": false
         },
         {
           "time": "23:00",
-          "temperature": 19,
+          "temperature": 18,
           "weather_code": 3,
           "is_current": false
         },
@@ -19926,7 +19926,7 @@
           "2026-06-20"
         ],
         "temperature_2m_max": [
-          26,
+          24,
           28,
           34,
           36,
@@ -19993,13 +19993,13 @@
     "slug": "dallas",
     "weather": {
       "current": {
-        "temperature_2m": 29,
+        "temperature_2m": 28,
         "relative_humidity_2m": 73,
-        "apparent_temperature": 33,
+        "apparent_temperature": 32,
         "weather_code": 3,
-        "wind_speed_10m": 12,
+        "wind_speed_10m": 8,
         "pressure_msl": 1016,
-        "visibility": 20
+        "visibility": 19
       },
       "air_quality": {
         "available": true,
@@ -20016,7 +20016,7 @@
       "hourly": [
         {
           "time": "15:00",
-          "temperature": 32,
+          "temperature": 30,
           "weather_code": 0,
           "is_current": true
         },
@@ -20028,7 +20028,7 @@
         },
         {
           "time": "17:00",
-          "temperature": 31,
+          "temperature": 30,
           "weather_code": 3,
           "is_current": false
         },
@@ -20046,13 +20046,13 @@
         },
         {
           "time": "20:00",
-          "temperature": 29,
+          "temperature": 28,
           "weather_code": 0,
           "is_current": false
         },
         {
           "time": "21:00",
-          "temperature": 28,
+          "temperature": 27,
           "weather_code": 3,
           "is_current": false
         },
@@ -20064,7 +20064,7 @@
         },
         {
           "time": "23:00",
-          "temperature": 27,
+          "temperature": 26,
           "weather_code": 3,
           "is_current": false
         },
@@ -20082,7 +20082,7 @@
         },
         {
           "time": "02:00",
-          "temperature": 26,
+          "temperature": 25,
           "weather_code": 3,
           "is_current": false
         },
@@ -20170,7 +20170,7 @@
           "2026-06-20"
         ],
         "temperature_2m_max": [
-          32,
+          31,
           30,
           32,
           33,
@@ -20188,7 +20188,7 @@
           22
         ],
         "weather_code": [
-          3,
+          51,
           3,
           53,
           3,
@@ -20237,13 +20237,13 @@
     "slug": "houston",
     "weather": {
       "current": {
-        "temperature_2m": 27,
-        "relative_humidity_2m": 94,
-        "apparent_temperature": 34,
+        "temperature_2m": 29,
+        "relative_humidity_2m": 92,
+        "apparent_temperature": 39,
         "weather_code": 3,
-        "wind_speed_10m": 6,
+        "wind_speed_10m": 4,
         "pressure_msl": 1015,
-        "visibility": 14
+        "visibility": 18
       },
       "air_quality": {
         "available": true,
@@ -20260,19 +20260,19 @@
       "hourly": [
         {
           "time": "15:00",
-          "temperature": 30,
+          "temperature": 32,
           "weather_code": 3,
           "is_current": true
         },
         {
           "time": "16:00",
-          "temperature": 30,
+          "temperature": 28,
           "weather_code": 3,
           "is_current": false
         },
         {
           "time": "17:00",
-          "temperature": 28,
+          "temperature": 27,
           "weather_code": 51,
           "is_current": false
         },
@@ -20284,26 +20284,26 @@
         },
         {
           "time": "19:00",
-          "temperature": 27,
+          "temperature": 26,
           "weather_code": 95,
           "is_current": false
         },
         {
           "time": "20:00",
-          "temperature": 27,
-          "weather_code": 3,
+          "temperature": 26,
+          "weather_code": 80,
           "is_current": false
         },
         {
           "time": "21:00",
           "temperature": 26,
-          "weather_code": 3,
+          "weather_code": 80,
           "is_current": false
         },
         {
           "time": "22:00",
           "temperature": 26,
-          "weather_code": 80,
+          "weather_code": 3,
           "is_current": false
         },
         {
@@ -20482,12 +20482,12 @@
     "weather": {
       "current": {
         "temperature_2m": 36,
-        "relative_humidity_2m": 25,
-        "apparent_temperature": 35,
+        "relative_humidity_2m": 24,
+        "apparent_temperature": 36,
         "weather_code": 0,
-        "wind_speed_10m": 12,
+        "wind_speed_10m": 4,
         "pressure_msl": 1011,
-        "visibility": 70
+        "visibility": 64
       },
       "air_quality": {
         "available": true,
@@ -20534,25 +20534,25 @@
         },
         {
           "time": "20:00",
-          "temperature": 36,
+          "temperature": 37,
           "weather_code": 0,
           "is_current": false
         },
         {
           "time": "21:00",
-          "temperature": 35,
+          "temperature": 36,
           "weather_code": 0,
           "is_current": false
         },
         {
           "time": "22:00",
-          "temperature": 34,
+          "temperature": 35,
           "weather_code": 0,
           "is_current": false
         },
         {
           "time": "23:00",
-          "temperature": 33,
+          "temperature": 34,
           "weather_code": 0,
           "is_current": false
         },
@@ -20726,12 +20726,12 @@
     "weather": {
       "current": {
         "temperature_2m": 30,
-        "relative_humidity_2m": 72,
-        "apparent_temperature": 36,
-        "weather_code": 2,
-        "wind_speed_10m": 5,
+        "relative_humidity_2m": 70,
+        "apparent_temperature": 38,
+        "weather_code": 1,
+        "wind_speed_10m": 6,
         "pressure_msl": 1017,
-        "visibility": 24
+        "visibility": 26
       },
       "air_quality": {
         "available": true,
@@ -20772,44 +20772,44 @@
         },
         {
           "time": "19:00",
-          "temperature": 31,
+          "temperature": 32,
           "weather_code": 0,
           "is_current": false
         },
         {
           "time": "20:00",
-          "temperature": 28,
+          "temperature": 27,
           "weather_code": 3,
           "is_current": false
         },
         {
           "time": "21:00",
-          "temperature": 25,
-          "weather_code": 80,
+          "temperature": 26,
+          "weather_code": 3,
           "is_current": false
         },
         {
           "time": "22:00",
-          "temperature": 25,
+          "temperature": 26,
           "weather_code": 3,
           "is_current": false
         },
         {
           "time": "23:00",
-          "temperature": 25,
-          "weather_code": 3,
+          "temperature": 24,
+          "weather_code": 51,
           "is_current": false
         },
         {
           "time": "00:00",
           "temperature": 24,
-          "weather_code": 80,
+          "weather_code": 3,
           "is_current": false
         },
         {
           "time": "01:00",
           "temperature": 24,
-          "weather_code": 51,
+          "weather_code": 3,
           "is_current": false
         },
         {
@@ -20920,8 +20920,8 @@
           24
         ],
         "weather_code": [
-          80,
-          80,
+          53,
+          3,
           51,
           51,
           55,
@@ -20970,12 +20970,12 @@
     "weather": {
       "current": {
         "temperature_2m": 19,
-        "relative_humidity_2m": 85,
+        "relative_humidity_2m": 87,
         "apparent_temperature": 19,
-        "weather_code": 55,
+        "weather_code": 53,
         "wind_speed_10m": 16,
-        "pressure_msl": 1008,
-        "visibility": 8
+        "pressure_msl": 1007,
+        "visibility": 12
       },
       "air_quality": {
         "available": true,
@@ -20992,50 +20992,50 @@
       "hourly": [
         {
           "time": "15:00",
-          "temperature": 19,
-          "weather_code": 51,
+          "temperature": 20,
+          "weather_code": 53,
           "is_current": true
         },
         {
           "time": "16:00",
-          "temperature": 19,
-          "weather_code": 51,
+          "temperature": 20,
+          "weather_code": 53,
           "is_current": false
         },
         {
           "time": "17:00",
-          "temperature": 18,
+          "temperature": 20,
           "weather_code": 51,
           "is_current": false
         },
         {
           "time": "18:00",
           "temperature": 19,
-          "weather_code": 53,
+          "weather_code": 3,
           "is_current": false
         },
         {
           "time": "19:00",
           "temperature": 19,
-          "weather_code": 55,
+          "weather_code": 53,
           "is_current": false
         },
         {
           "time": "20:00",
           "temperature": 18,
-          "weather_code": 51,
+          "weather_code": 53,
           "is_current": false
         },
         {
           "time": "21:00",
           "temperature": 18,
-          "weather_code": 61,
+          "weather_code": 53,
           "is_current": false
         },
         {
           "time": "22:00",
           "temperature": 17,
-          "weather_code": 53,
+          "weather_code": 55,
           "is_current": false
         },
         {
@@ -21046,14 +21046,14 @@
         },
         {
           "time": "00:00",
-          "temperature": 17,
-          "weather_code": 53,
+          "temperature": 16,
+          "weather_code": 61,
           "is_current": false
         },
         {
           "time": "01:00",
           "temperature": 16,
-          "weather_code": 53,
+          "weather_code": 51,
           "is_current": false
         },
         {
@@ -21070,7 +21070,7 @@
         },
         {
           "time": "04:00",
-          "temperature": 15,
+          "temperature": 16,
           "weather_code": 0,
           "is_current": false
         },
@@ -21165,7 +21165,7 @@
         ],
         "weather_code": [
           61,
-          53,
+          61,
           51,
           81,
           81,
@@ -21213,13 +21213,13 @@
     "slug": "quebec-city",
     "weather": {
       "current": {
-        "temperature_2m": 22,
-        "relative_humidity_2m": 72,
-        "apparent_temperature": 23,
+        "temperature_2m": 20,
+        "relative_humidity_2m": 70,
+        "apparent_temperature": 19,
         "weather_code": 3,
-        "wind_speed_10m": 14,
+        "wind_speed_10m": 17,
         "pressure_msl": 1006,
-        "visibility": 23
+        "visibility": 18
       },
       "air_quality": {
         "available": true,
@@ -21236,37 +21236,37 @@
       "hourly": [
         {
           "time": "15:00",
-          "temperature": 22,
+          "temperature": 23,
           "weather_code": 3,
           "is_current": true
         },
         {
           "time": "16:00",
           "temperature": 21,
-          "weather_code": 51,
-          "is_current": false
-        },
-        {
-          "time": "17:00",
-          "temperature": 21,
           "weather_code": 3,
           "is_current": false
         },
         {
-          "time": "18:00",
+          "time": "17:00",
           "temperature": 22,
           "weather_code": 3,
           "is_current": false
         },
         {
-          "time": "19:00",
+          "time": "18:00",
           "temperature": 21,
           "weather_code": 3,
           "is_current": false
         },
         {
-          "time": "20:00",
+          "time": "19:00",
           "temperature": 20,
+          "weather_code": 51,
+          "is_current": false
+        },
+        {
+          "time": "20:00",
+          "temperature": 19,
           "weather_code": 3,
           "is_current": false
         },
@@ -21278,7 +21278,7 @@
         },
         {
           "time": "22:00",
-          "temperature": 18,
+          "temperature": 17,
           "weather_code": 51,
           "is_current": false
         },
@@ -21291,13 +21291,13 @@
         {
           "time": "00:00",
           "temperature": 17,
-          "weather_code": 53,
+          "weather_code": 61,
           "is_current": false
         },
         {
           "time": "01:00",
-          "temperature": 17,
-          "weather_code": 3,
+          "temperature": 16,
+          "weather_code": 61,
           "is_current": false
         },
         {
@@ -21308,8 +21308,8 @@
         },
         {
           "time": "03:00",
-          "temperature": 17,
-          "weather_code": 63,
+          "temperature": 16,
+          "weather_code": 53,
           "is_current": false
         },
         {
@@ -21390,7 +21390,7 @@
           "2026-06-20"
         ],
         "temperature_2m_max": [
-          22,
+          23,
           20,
           20,
           24,
@@ -21409,7 +21409,7 @@
         ],
         "weather_code": [
           61,
-          63,
+          61,
           3,
           53,
           82,
@@ -21457,13 +21457,13 @@
     "slug": "calgary",
     "weather": {
       "current": {
-        "temperature_2m": 14,
-        "relative_humidity_2m": 54,
-        "apparent_temperature": 12,
+        "temperature_2m": 16,
+        "relative_humidity_2m": 52,
+        "apparent_temperature": 13,
         "weather_code": 3,
-        "wind_speed_10m": 10,
+        "wind_speed_10m": 12,
         "pressure_msl": 1023,
-        "visibility": 36
+        "visibility": 38
       },
       "air_quality": {
         "available": true,
@@ -21492,19 +21492,19 @@
         },
         {
           "time": "17:00",
-          "temperature": 21,
+          "temperature": 22,
           "weather_code": 3,
           "is_current": false
         },
         {
           "time": "18:00",
-          "temperature": 21,
+          "temperature": 22,
           "weather_code": 3,
           "is_current": false
         },
         {
           "time": "19:00",
-          "temperature": 20,
+          "temperature": 21,
           "weather_code": 3,
           "is_current": false
         },
@@ -21528,7 +21528,7 @@
         },
         {
           "time": "23:00",
-          "temperature": 16,
+          "temperature": 17,
           "weather_code": 1,
           "is_current": false
         },
@@ -21546,7 +21546,7 @@
         },
         {
           "time": "02:00",
-          "temperature": 15,
+          "temperature": 14,
           "weather_code": 3,
           "is_current": false
         },
@@ -21703,11 +21703,11 @@
       "current": {
         "temperature_2m": 13,
         "relative_humidity_2m": 75,
-        "apparent_temperature": 11,
+        "apparent_temperature": 12,
         "weather_code": 3,
-        "wind_speed_10m": 11,
+        "wind_speed_10m": 10,
         "pressure_msl": 1025,
-        "visibility": 33
+        "visibility": 34
       },
       "air_quality": {
         "available": true,
@@ -21946,12 +21946,12 @@
     "weather": {
       "current": {
         "temperature_2m": 16,
-        "relative_humidity_2m": 62,
+        "relative_humidity_2m": 63,
         "apparent_temperature": 13,
         "weather_code": 3,
-        "wind_speed_10m": 14,
+        "wind_speed_10m": 15,
         "pressure_msl": 1021,
-        "visibility": 25
+        "visibility": 24
       },
       "air_quality": {
         "available": true,
@@ -21963,7 +21963,7 @@
       "marine": {
         "available": true,
         "wave_height": 0.04,
-        "wave_period": 4.15
+        "wave_period": 4.2
       },
       "hourly": [
         {
@@ -22439,14 +22439,14 @@
         "weather_code": 1,
         "wind_speed_10m": 9,
         "pressure_msl": 1013,
-        "visibility": 36
+        "visibility": 35
       },
       "air_quality": {
-        "available": true,
-        "us_aqi": 37,
-        "pm2_5": 8.3,
-        "pm10": 14.4,
-        "uv_index": 2.95
+        "available": false,
+        "us_aqi": null,
+        "pm2_5": null,
+        "pm10": null,
+        "uv_index": null
       },
       "marine": {
         "available": true,
@@ -22655,8 +22655,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
         },
         {
           "source": "open-meteo-marine",
@@ -22683,14 +22683,14 @@
         "weather_code": 0,
         "wind_speed_10m": 14,
         "pressure_msl": 1015,
-        "visibility": 51
+        "visibility": 50
       },
       "air_quality": {
-        "available": true,
-        "us_aqi": 30,
-        "pm2_5": 5.8,
-        "pm10": 10.8,
-        "uv_index": 3.5
+        "available": false,
+        "us_aqi": null,
+        "pm2_5": null,
+        "pm10": null,
+        "uv_index": null
       },
       "marine": {
         "available": true,
@@ -22899,8 +22899,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
         },
         {
           "source": "open-meteo-marine",
@@ -22921,13 +22921,13 @@
     "slug": "venice",
     "weather": {
       "current": {
-        "temperature_2m": 26,
-        "relative_humidity_2m": 59,
-        "apparent_temperature": 27,
+        "temperature_2m": 23,
+        "relative_humidity_2m": null,
+        "apparent_temperature": 23,
         "weather_code": 2,
-        "wind_speed_10m": 10,
-        "pressure_msl": 1009,
-        "visibility": 40
+        "wind_speed_10m": null,
+        "pressure_msl": null,
+        "visibility": null
       },
       "air_quality": {
         "available": true,
@@ -22938,152 +22938,152 @@
       },
       "marine": {
         "available": true,
-        "wave_height": 0.18,
-        "wave_period": 2.6
+        "wave_height": 0.2,
+        "wave_period": 2.55
       },
       "hourly": [
         {
-          "time": "15:00",
-          "temperature": 25,
-          "weather_code": 3,
+          "time": "18:00",
+          "temperature": 23,
+          "weather_code": 2,
           "is_current": true
         },
         {
-          "time": "16:00",
-          "temperature": 26,
-          "weather_code": 3,
+          "time": "21:00",
+          "temperature": 24,
+          "weather_code": 2,
           "is_current": false
         },
         {
-          "time": "17:00",
-          "temperature": 26,
-          "weather_code": 3,
-          "is_current": false
-        },
-        {
-          "time": "18:00",
+          "time": "00:00",
           "temperature": 26,
           "weather_code": 2,
           "is_current": false
         },
         {
-          "time": "19:00",
-          "temperature": 24,
-          "weather_code": 0,
+          "time": "03:00",
+          "temperature": 23,
+          "weather_code": 2,
           "is_current": false
         },
         {
-          "time": "20:00",
-          "temperature": 24,
-          "weather_code": 0,
+          "time": "06:00",
+          "temperature": 20,
+          "weather_code": 2,
+          "is_current": false
+        },
+        {
+          "time": "09:00",
+          "temperature": 18,
+          "weather_code": 2,
+          "is_current": false
+        },
+        {
+          "time": "12:00",
+          "temperature": 17,
+          "weather_code": 2,
+          "is_current": false
+        },
+        {
+          "time": "15:00",
+          "temperature": 20,
+          "weather_code": 2,
+          "is_current": false
+        },
+        {
+          "time": "18:00",
+          "temperature": 22,
+          "weather_code": 2,
           "is_current": false
         },
         {
           "time": "21:00",
           "temperature": 23,
-          "weather_code": 1,
-          "is_current": false
-        },
-        {
-          "time": "22:00",
-          "temperature": 23,
-          "weather_code": 1,
-          "is_current": false
-        },
-        {
-          "time": "23:00",
-          "temperature": 22,
-          "weather_code": 0,
+          "weather_code": 2,
           "is_current": false
         },
         {
           "time": "00:00",
-          "temperature": 22,
-          "weather_code": 1,
-          "is_current": false
-        },
-        {
-          "time": "01:00",
-          "temperature": 22,
-          "weather_code": 1,
-          "is_current": false
-        },
-        {
-          "time": "02:00",
-          "temperature": 21,
-          "weather_code": 1,
+          "temperature": 23,
+          "weather_code": 2,
           "is_current": false
         },
         {
           "time": "03:00",
           "temperature": 21,
-          "weather_code": 1,
+          "weather_code": 2,
           "is_current": false
         },
         {
-          "time": "04:00",
-          "temperature": 21,
-          "weather_code": 0,
+          "time": "06:00",
+          "temperature": 18,
+          "weather_code": 2,
           "is_current": false
         },
         {
-          "time": "05:00",
-          "temperature": 21,
-          "weather_code": 0,
+          "time": "09:00",
+          "temperature": 16,
+          "weather_code": 2,
+          "is_current": false
+        },
+        {
+          "time": "12:00",
+          "temperature": 16,
+          "weather_code": 2,
+          "is_current": false
+        },
+        {
+          "time": "15:00",
+          "temperature": 18,
+          "weather_code": 2,
+          "is_current": false
+        },
+        {
+          "time": "18:00",
+          "temperature": 23,
+          "weather_code": 2,
+          "is_current": false
+        },
+        {
+          "time": "21:00",
+          "temperature": 23,
+          "weather_code": 2,
+          "is_current": false
+        },
+        {
+          "time": "00:00",
+          "temperature": 24,
+          "weather_code": 2,
+          "is_current": false
+        },
+        {
+          "time": "03:00",
+          "temperature": 22,
+          "weather_code": 2,
           "is_current": false
         },
         {
           "time": "06:00",
           "temperature": 21,
-          "weather_code": 0,
-          "is_current": false
-        },
-        {
-          "time": "07:00",
-          "temperature": 21,
-          "weather_code": 0,
-          "is_current": false
-        },
-        {
-          "time": "08:00",
-          "temperature": 22,
-          "weather_code": 1,
+          "weather_code": 2,
           "is_current": false
         },
         {
           "time": "09:00",
-          "temperature": 23,
-          "weather_code": 1,
-          "is_current": false
-        },
-        {
-          "time": "10:00",
-          "temperature": 24,
-          "weather_code": 1,
-          "is_current": false
-        },
-        {
-          "time": "11:00",
-          "temperature": 24,
-          "weather_code": 1,
+          "temperature": 20,
+          "weather_code": 2,
           "is_current": false
         },
         {
           "time": "12:00",
-          "temperature": 25,
-          "weather_code": 1,
+          "temperature": 18,
+          "weather_code": 2,
           "is_current": false
         },
         {
-          "time": "13:00",
-          "temperature": 25,
-          "weather_code": 0,
-          "is_current": false
-        },
-        {
-          "time": "14:00",
-          "temperature": 26,
-          "weather_code": 0,
+          "time": "15:00",
+          "temperature": 21,
+          "weather_code": 2,
           "is_current": false
         }
       ],
@@ -23092,52 +23092,47 @@
           "2026-06-14",
           "2026-06-15",
           "2026-06-16",
-          "2026-06-17",
-          "2026-06-18",
-          "2026-06-19",
-          "2026-06-20"
+          "2026-06-17"
         ],
         "temperature_2m_max": [
+          24,
           26,
-          26,
-          28,
-          29,
-          31,
-          33,
-          33
+          23,
+          24
         ],
         "temperature_2m_min": [
-          20,
-          21,
-          20,
-          19,
-          21,
-          21,
-          21
+          23,
+          17,
+          16,
+          18
         ],
         "weather_code": [
-          3,
-          3,
-          3,
-          3,
-          0,
           2,
-          1
+          2,
+          2,
+          2
         ],
         "precipitation_probability_max": [
-          0,
-          3,
-          5,
           0,
           0,
           0,
           0
         ]
       },
-      "source": "open-meteo",
+      "source": "7timer",
       "api_status": [
         {
           "source": "open-meteo",
+          "ok": "false",
+          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
+        },
+        {
+          "source": "visual-crossing",
+          "ok": "false",
+          "error": "VISUALCROSSING_KEY not configured"
+        },
+        {
+          "source": "7timer",
           "ok": "true",
           "error": ""
         },
@@ -23166,7 +23161,7 @@
     "weather": {
       "current": {
         "temperature_2m": 29,
-        "relative_humidity_2m": 33,
+        "relative_humidity_2m": 34,
         "apparent_temperature": 27,
         "weather_code": 0,
         "wind_speed_10m": 18,
@@ -23174,11 +23169,11 @@
         "visibility": 45
       },
       "air_quality": {
-        "available": true,
-        "us_aqi": 41,
-        "pm2_5": 3.8,
-        "pm10": 6.2,
-        "uv_index": 2.95
+        "available": false,
+        "us_aqi": null,
+        "pm2_5": null,
+        "pm10": null,
+        "uv_index": null
       },
       "marine": {
         "available": true,
@@ -23387,8 +23382,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
         },
         {
           "source": "open-meteo-marine",
@@ -23409,11 +23404,11 @@
     "slug": "budapest",
     "weather": {
       "current": {
-        "temperature_2m": 21,
-        "relative_humidity_2m": 59,
-        "apparent_temperature": 20,
+        "temperature_2m": 22,
+        "relative_humidity_2m": 58,
+        "apparent_temperature": 21,
         "weather_code": 0,
-        "wind_speed_10m": 16,
+        "wind_speed_10m": 13,
         "pressure_msl": 1010,
         "visibility": 20
       },
@@ -23653,13 +23648,13 @@
     "slug": "bucharest",
     "weather": {
       "current": {
-        "temperature_2m": 25,
-        "relative_humidity_2m": null,
-        "apparent_temperature": 25,
-        "weather_code": 2,
-        "wind_speed_10m": null,
-        "pressure_msl": null,
-        "visibility": null
+        "temperature_2m": 28,
+        "relative_humidity_2m": 33,
+        "apparent_temperature": 27,
+        "weather_code": 3,
+        "wind_speed_10m": 11,
+        "pressure_msl": 1010,
+        "visibility": 45
       },
       "air_quality": {
         "available": true,
@@ -23675,147 +23670,147 @@
       },
       "hourly": [
         {
-          "time": "18:00",
-          "temperature": 25,
+          "time": "15:00",
+          "temperature": 28,
           "weather_code": 2,
           "is_current": true
         },
         {
+          "time": "16:00",
+          "temperature": 28,
+          "weather_code": 2,
+          "is_current": false
+        },
+        {
+          "time": "17:00",
+          "temperature": 28,
+          "weather_code": 1,
+          "is_current": false
+        },
+        {
+          "time": "18:00",
+          "temperature": 28,
+          "weather_code": 3,
+          "is_current": false
+        },
+        {
+          "time": "19:00",
+          "temperature": 28,
+          "weather_code": 3,
+          "is_current": false
+        },
+        {
+          "time": "20:00",
+          "temperature": 27,
+          "weather_code": 1,
+          "is_current": false
+        },
+        {
           "time": "21:00",
-          "temperature": 27,
-          "weather_code": 2,
+          "temperature": 25,
+          "weather_code": 1,
           "is_current": false
         },
         {
-          "time": "00:00",
-          "temperature": 27,
-          "weather_code": 2,
+          "time": "22:00",
+          "temperature": 23,
+          "weather_code": 3,
           "is_current": false
         },
         {
-          "time": "03:00",
+          "time": "23:00",
           "temperature": 22,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "06:00",
-          "temperature": 17,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "09:00",
-          "temperature": 16,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "12:00",
-          "temperature": 15,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "15:00",
-          "temperature": 20,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "18:00",
-          "temperature": 24,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "21:00",
-          "temperature": 27,
-          "weather_code": 2,
+          "weather_code": 1,
           "is_current": false
         },
         {
           "time": "00:00",
-          "temperature": 27,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "03:00",
-          "temperature": 17,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "06:00",
-          "temperature": 15,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "09:00",
-          "temperature": 15,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "12:00",
-          "temperature": 16,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "15:00",
-          "temperature": 20,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "18:00",
-          "temperature": 24,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "21:00",
-          "temperature": 25,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "00:00",
-          "temperature": 25,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "03:00",
           "temperature": 21,
+          "weather_code": 1,
+          "is_current": false
+        },
+        {
+          "time": "01:00",
+          "temperature": 20,
+          "weather_code": 3,
+          "is_current": false
+        },
+        {
+          "time": "02:00",
+          "temperature": 20,
+          "weather_code": 2,
+          "is_current": false
+        },
+        {
+          "time": "03:00",
+          "temperature": 20,
+          "weather_code": 3,
+          "is_current": false
+        },
+        {
+          "time": "04:00",
+          "temperature": 20,
+          "weather_code": 3,
+          "is_current": false
+        },
+        {
+          "time": "05:00",
+          "temperature": 19,
           "weather_code": 2,
           "is_current": false
         },
         {
           "time": "06:00",
-          "temperature": 18,
-          "weather_code": 2,
+          "temperature": 19,
+          "weather_code": 3,
+          "is_current": false
+        },
+        {
+          "time": "07:00",
+          "temperature": 19,
+          "weather_code": 61,
+          "is_current": false
+        },
+        {
+          "time": "08:00",
+          "temperature": 19,
+          "weather_code": 61,
           "is_current": false
         },
         {
           "time": "09:00",
-          "temperature": 16,
-          "weather_code": 2,
+          "temperature": 20,
+          "weather_code": 3,
+          "is_current": false
+        },
+        {
+          "time": "10:00",
+          "temperature": 22,
+          "weather_code": 3,
+          "is_current": false
+        },
+        {
+          "time": "11:00",
+          "temperature": 24,
+          "weather_code": 3,
           "is_current": false
         },
         {
           "time": "12:00",
-          "temperature": 16,
+          "temperature": 26,
+          "weather_code": 3,
+          "is_current": false
+        },
+        {
+          "time": "13:00",
+          "temperature": 27,
           "weather_code": 2,
           "is_current": false
         },
         {
-          "time": "15:00",
-          "temperature": 22,
-          "weather_code": 2,
+          "time": "14:00",
+          "temperature": 28,
+          "weather_code": 3,
           "is_current": false
         }
       ],
@@ -23824,47 +23819,52 @@
           "2026-06-14",
           "2026-06-15",
           "2026-06-16",
-          "2026-06-17"
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
         ],
         "temperature_2m_max": [
+          28,
+          28,
           27,
-          27,
-          27,
-          25
+          29,
+          29,
+          30,
+          30
         ],
         "temperature_2m_min": [
-          25,
           15,
-          15,
-          16
+          19,
+          16,
+          16,
+          18,
+          19,
+          19
         ],
         "weather_code": [
+          3,
+          61,
+          3,
+          3,
           2,
-          2,
-          2,
-          2
+          3,
+          3
         ],
         "precipitation_probability_max": [
           0,
+          38,
+          23,
           0,
+          3,
           0,
           0
         ]
       },
-      "source": "7timer",
+      "source": "open-meteo",
       "api_status": [
         {
           "source": "open-meteo",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
-        },
-        {
-          "source": "visual-crossing",
-          "ok": "false",
-          "error": "VISUALCROSSING_KEY not configured"
-        },
-        {
-          "source": "7timer",
           "ok": "true",
           "error": ""
         },
@@ -23892,13 +23892,13 @@
     "slug": "belgrade",
     "weather": {
       "current": {
-        "temperature_2m": 28,
-        "relative_humidity_2m": null,
-        "apparent_temperature": 28,
+        "temperature_2m": 32,
+        "relative_humidity_2m": 23,
+        "apparent_temperature": 30,
         "weather_code": 2,
-        "wind_speed_10m": null,
-        "pressure_msl": null,
-        "visibility": null
+        "wind_speed_10m": 13,
+        "pressure_msl": 1008,
+        "visibility": 41
       },
       "air_quality": {
         "available": true,
@@ -23914,147 +23914,147 @@
       },
       "hourly": [
         {
-          "time": "18:00",
-          "temperature": 28,
-          "weather_code": 2,
+          "time": "15:00",
+          "temperature": 32,
+          "weather_code": 0,
           "is_current": true
         },
         {
-          "time": "21:00",
-          "temperature": 30,
+          "time": "16:00",
+          "temperature": 32,
+          "weather_code": 0,
+          "is_current": false
+        },
+        {
+          "time": "17:00",
+          "temperature": 32,
           "weather_code": 2,
           "is_current": false
         },
         {
-          "time": "00:00",
+          "time": "18:00",
+          "temperature": 32,
+          "weather_code": 3,
+          "is_current": false
+        },
+        {
+          "time": "19:00",
           "temperature": 31,
-          "weather_code": 2,
+          "weather_code": 3,
           "is_current": false
         },
         {
-          "time": "03:00",
-          "temperature": 15,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "06:00",
-          "temperature": 14,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "09:00",
-          "temperature": 14,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "12:00",
-          "temperature": 14,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "15:00",
-          "temperature": 16,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "18:00",
-          "temperature": 16,
-          "weather_code": 2,
+          "time": "20:00",
+          "temperature": 27,
+          "weather_code": 3,
           "is_current": false
         },
         {
           "time": "21:00",
           "temperature": 20,
-          "weather_code": 2,
+          "weather_code": 65,
+          "is_current": false
+        },
+        {
+          "time": "22:00",
+          "temperature": 20,
+          "weather_code": 53,
+          "is_current": false
+        },
+        {
+          "time": "23:00",
+          "temperature": 20,
+          "weather_code": 3,
           "is_current": false
         },
         {
           "time": "00:00",
           "temperature": 20,
+          "weather_code": 3,
+          "is_current": false
+        },
+        {
+          "time": "01:00",
+          "temperature": 20,
+          "weather_code": 0,
+          "is_current": false
+        },
+        {
+          "time": "02:00",
+          "temperature": 19,
           "weather_code": 2,
           "is_current": false
         },
         {
           "time": "03:00",
-          "temperature": 13,
-          "weather_code": 2,
+          "temperature": 19,
+          "weather_code": 3,
+          "is_current": false
+        },
+        {
+          "time": "04:00",
+          "temperature": 19,
+          "weather_code": 3,
+          "is_current": false
+        },
+        {
+          "time": "05:00",
+          "temperature": 19,
+          "weather_code": 3,
           "is_current": false
         },
         {
           "time": "06:00",
-          "temperature": 14,
-          "weather_code": 2,
+          "temperature": 18,
+          "weather_code": 3,
+          "is_current": false
+        },
+        {
+          "time": "07:00",
+          "temperature": 18,
+          "weather_code": 3,
+          "is_current": false
+        },
+        {
+          "time": "08:00",
+          "temperature": 18,
+          "weather_code": 3,
           "is_current": false
         },
         {
           "time": "09:00",
-          "temperature": 14,
-          "weather_code": 2,
+          "temperature": 18,
+          "weather_code": 3,
+          "is_current": false
+        },
+        {
+          "time": "10:00",
+          "temperature": 19,
+          "weather_code": 3,
+          "is_current": false
+        },
+        {
+          "time": "11:00",
+          "temperature": 18,
+          "weather_code": 3,
           "is_current": false
         },
         {
           "time": "12:00",
-          "temperature": 11,
-          "weather_code": 2,
+          "temperature": 19,
+          "weather_code": 3,
           "is_current": false
         },
         {
-          "time": "15:00",
-          "temperature": 16,
-          "weather_code": 2,
+          "time": "13:00",
+          "temperature": 21,
+          "weather_code": 0,
           "is_current": false
         },
         {
-          "time": "18:00",
+          "time": "14:00",
           "temperature": 23,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "21:00",
-          "temperature": 25,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "00:00",
-          "temperature": 26,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "03:00",
-          "temperature": 20,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "06:00",
-          "temperature": 17,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "09:00",
-          "temperature": 16,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "12:00",
-          "temperature": 15,
-          "weather_code": 2,
-          "is_current": false
-        },
-        {
-          "time": "15:00",
-          "temperature": 20,
-          "weather_code": 2,
+          "weather_code": 0,
           "is_current": false
         }
       ],
@@ -24063,47 +24063,52 @@
           "2026-06-14",
           "2026-06-15",
           "2026-06-16",
-          "2026-06-17"
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
         ],
         "temperature_2m_max": [
-          30,
-          31,
-          25,
-          26
+          32,
+          24,
+          28,
+          27,
+          26,
+          28,
+          30
         ],
         "temperature_2m_min": [
-          28,
-          14,
-          11,
-          15
+          19,
+          18,
+          17,
+          16,
+          17,
+          18,
+          18
         ],
         "weather_code": [
+          65,
+          61,
+          3,
           2,
-          2,
-          2,
-          2
+          51,
+          0,
+          0
         ],
         "precipitation_probability_max": [
-          0,
-          0,
-          0,
+          94,
+          70,
+          47,
+          6,
+          30,
+          4,
           0
         ]
       },
-      "source": "7timer",
+      "source": "open-meteo",
       "api_status": [
         {
           "source": "open-meteo",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
-        },
-        {
-          "source": "visual-crossing",
-          "ok": "false",
-          "error": "VISUALCROSSING_KEY not configured"
-        },
-        {
-          "source": "7timer",
           "ok": "true",
           "error": ""
         },
@@ -24147,9 +24152,9 @@
         "uv_index": 1.6
       },
       "marine": {
-        "available": false,
-        "wave_height": null,
-        "wave_period": null
+        "available": true,
+        "wave_height": 0,
+        "wave_period": 0
       },
       "hourly": [
         {
@@ -24358,8 +24363,8 @@
         },
         {
           "source": "open-meteo-marine",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
+          "ok": "true",
+          "error": ""
         }
       ]
     }
@@ -24376,7 +24381,7 @@
     "weather": {
       "current": {
         "temperature_2m": 26,
-        "relative_humidity_2m": 30,
+        "relative_humidity_2m": 29,
         "apparent_temperature": 25,
         "weather_code": 0,
         "wind_speed_10m": 6,
@@ -24384,11 +24389,11 @@
         "visibility": 47
       },
       "air_quality": {
-        "available": false,
-        "us_aqi": null,
-        "pm2_5": null,
-        "pm10": null,
-        "uv_index": null
+        "available": true,
+        "us_aqi": 36,
+        "pm2_5": 5.0,
+        "pm10": 8.0,
+        "uv_index": 1.8
       },
       "marine": {
         "available": true,
@@ -24597,8 +24602,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
+          "ok": "true",
+          "error": ""
         },
         {
           "source": "open-meteo-marine",
@@ -24619,13 +24624,13 @@
     "slug": "tallinn",
     "weather": {
       "current": {
-        "temperature_2m": 17,
+        "temperature_2m": 18,
         "relative_humidity_2m": 69,
-        "apparent_temperature": 16,
+        "apparent_temperature": 17,
         "weather_code": 3,
-        "wind_speed_10m": 10,
+        "wind_speed_10m": 9,
         "pressure_msl": 999,
-        "visibility": 20
+        "visibility": 30
       },
       "air_quality": {
         "available": true,
@@ -24863,13 +24868,13 @@
     "slug": "vilnius",
     "weather": {
       "current": {
-        "temperature_2m": 13,
-        "relative_humidity_2m": 77,
-        "apparent_temperature": 11,
+        "temperature_2m": 14,
+        "relative_humidity_2m": 76,
+        "apparent_temperature": 12,
         "weather_code": 3,
-        "wind_speed_10m": 12,
+        "wind_speed_10m": 11,
         "pressure_msl": 1001,
-        "visibility": 13
+        "visibility": 14
       },
       "air_quality": {
         "available": true,
@@ -25108,12 +25113,12 @@
     "weather": {
       "current": {
         "temperature_2m": 16,
-        "relative_humidity_2m": 79,
+        "relative_humidity_2m": 76,
         "apparent_temperature": 16,
         "weather_code": 2,
         "wind_speed_10m": 9,
         "pressure_msl": 999,
-        "visibility": 21
+        "visibility": 31
       },
       "air_quality": {
         "available": true,
