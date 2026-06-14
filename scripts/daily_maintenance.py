@@ -85,6 +85,13 @@ def write_json(path: Path, payload: Any) -> None:
     path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
+def display_path(path: Path) -> str:
+    try:
+        return path.resolve().relative_to(ROOT).as_posix()
+    except ValueError:
+        return path.as_posix()
+
+
 def fallback_svg(slug: str, emoji: str, title: str) -> str:
     return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="{title}">
   <defs><linearGradient id="sky" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#0ea5e9"/><stop offset="0.55" stop-color="#22c55e"/><stop offset="1" stop-color="#f8fafc"/></linearGradient></defs>
@@ -137,8 +144,8 @@ def audit_static_inputs() -> list[dict[str, str]]:
     checks: list[dict[str, str]] = []
     city_path = CONFIG_DIR / "city-seeds.json"
     wiki_path = CONFIG_DIR / "wiki-articles.json"
-    checks.append({"name": "city-seeds", "ok": str(city_path.exists()).lower(), "detail": str(city_path)})
-    checks.append({"name": "wiki-articles", "ok": str(wiki_path.exists()).lower(), "detail": str(wiki_path)})
+    checks.append({"name": "city-seeds", "ok": str(city_path.exists()).lower(), "detail": display_path(city_path)})
+    checks.append({"name": "wiki-articles", "ok": str(wiki_path.exists()).lower(), "detail": display_path(wiki_path)})
     if city_path.exists():
         rows = json.loads(city_path.read_text(encoding="utf-8"))
         checks.append({"name": "city-count", "ok": str(len(rows) >= 100).lower(), "detail": str(len(rows))})
@@ -152,7 +159,7 @@ def audit_static_inputs() -> list[dict[str, str]]:
         checks.append({"name": "wiki-required-topics", "ok": str(expected <= found).lower(), "detail": ", ".join(sorted(found))})
         for article in articles:
             asset = ROOT / article.get("asset", "")
-            checks.append({"name": f"asset:{article.get('slug')}", "ok": str(asset.exists() and asset.stat().st_size > 200).lower(), "detail": str(asset)})
+            checks.append({"name": f"asset:{article.get('slug')}", "ok": str(asset.exists() and asset.stat().st_size > 200).lower(), "detail": display_path(asset)})
     return checks
 
 
@@ -224,6 +231,9 @@ def write_report(stage: str, payload: dict[str, Any]) -> int:
     warnings = [check for check in all_checks if check.get("severity") == "warning"]
     report = {"stage": stage, "generated_at": now_iso(), "issue_count": len(failing), "warning_count": len(warnings), "issues": failing, "warnings": warnings, **payload}
     write_json(DATA_DIR / "maintenance-report.json", report)
+    dist_data_dir = ROOT / "dist" / "data"
+    if dist_data_dir.exists():
+        write_json(dist_data_dir / "maintenance-report.json", report)
     print(json.dumps(report, ensure_ascii=False, indent=2))
     # Asset source outages can be healed with generated fallbacks, so they are
     # recorded but not treated as a deployment blocker. API and data failures are.

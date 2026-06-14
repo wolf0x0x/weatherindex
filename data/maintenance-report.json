@@ -1,6 +1,6 @@
 {
   "stage": "audit",
-  "generated_at": "2026-06-14T15:29:33.341422+00:00",
+  "generated_at": "2026-06-14T15:32:22.440826+00:00",
   "issue_count": 0,
   "warning_count": 0,
   "issues": [],
@@ -14,12 +14,12 @@
     {
       "name": "city-seeds",
       "ok": "true",
-      "detail": "/home/runner/work/weatherindex/weatherindex/config/city-seeds.json"
+      "detail": "config/city-seeds.json"
     },
     {
       "name": "wiki-articles",
       "ok": "true",
-      "detail": "/home/runner/work/weatherindex/weatherindex/config/wiki-articles.json"
+      "detail": "config/wiki-articles.json"
     },
     {
       "name": "city-count",
@@ -39,17 +39,17 @@
     {
       "name": "asset:typhoon-naming",
       "ok": "true",
-      "detail": "/home/runner/work/weatherindex/weatherindex/assets/wiki/typhoon-naming.svg"
+      "detail": "assets/wiki/typhoon-naming.svg"
     },
     {
       "name": "asset:el-nino",
       "ok": "true",
-      "detail": "/home/runner/work/weatherindex/weatherindex/assets/wiki/el-nino.png"
+      "detail": "assets/wiki/el-nino.png"
     },
     {
       "name": "asset:climate-change",
       "ok": "true",
-      "detail": "/home/runner/work/weatherindex/weatherindex/assets/wiki/climate-change.svg"
+      "detail": "assets/wiki/climate-change.svg"
     }
   ],
   "generated_checks": [
