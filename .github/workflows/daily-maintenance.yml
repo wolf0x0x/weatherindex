@@ -11,6 +11,8 @@ env:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 concurrency:
   group: daily-weatherindex-maintenance
@@ -18,6 +20,9 @@ concurrency:
 
 jobs:
   maintain:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -55,3 +60,9 @@ jobs:
           git add -A
           git diff --quiet && git diff --staged --quiet || git commit -m "auto: daily maintenance $(date -u +%Y-%m-%d)"
           git push
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: "dist"
+      - id: deployment
+        uses: actions/deploy-pages@v4
