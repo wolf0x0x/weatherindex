@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="{{ lang_code }}" dir="{{ 'rtl' if lang_code == 'ar' else 'ltr' }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="alternate" hreflang="x-default" href="https://weatherindex.xyz/{% if page_path %}{{ page_path }}{% endif %}" />
+    {% for l in ['en','zh','es','fr','de','ja','ru','kr','ar'] %}
+    <link rel="alternate" hreflang="{{ l }}" href="https://weatherindex.xyz/{% if l != 'en' %}{{ l }}/{% endif %}{% if page_path %}{{ page_path }}{% endif %}" />
+    {% endfor %}
+    <link rel="icon" type="image/svg+xml" href="{{ prefix }}/assets/icons/favicon.svg">
+    <link rel="manifest" href="{{ prefix }}/site.webmanifest">
+    
+    <title>{% block title %}{% endblock %}</title>
+    <meta name="description" content="{% block description %}{% endblock %}">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .ad-container { min-height: 90px; background: rgba(0,0,0,0.02); display: flex; justify-content: center; align-items: center; }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SQCD1J9Y0H"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-SQCD1J9Y0H');
+    </script>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8695398658548679" crossorigin="anonymous"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col">
+    <nav class="bg-white border-b border-slate-100 sticky top-0 z-50 h-16">
+        <div class="max-w-7xl mx-auto px-4 h-full flex items-center justify-between">
+            <a href="{{ prefix }}/{{ lang_code }}/index.html" class="font-bold text-xl text-blue-600 flex items-center gap-2">🌍 GlobalWeather</a>
+            <div class="flex items-center gap-4">
+                <button data-lang-switch class="text-sm font-medium text-slate-600 hover:text-blue-600">🌐 Language</button>
+                <button data-locate class="text-sm font-medium text-slate-600 hover:text-blue-600">📍 Locate Me</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="w-full max-w-7xl mx-auto px-4 py-2 Ad_Wrapper">
+        <div class="ad-container rounded-lg overflow-hidden border border-dashed border-slate-200">
+            <ins class="adsbygoogle"
+                 style="display:block; text-align:center;"
+                 data-ad-layout="in-article"
+                 data-ad-format="fluid"
+                 data-ad-client="ca-pub-8695398658548679"
+                 data-ad-slot="auto"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+    </div>
+
+    <main class="flex-grow">
+        {% block content %}{% endblock %}
+    </main>
+
+    <div class="w-full max-w-7xl mx-auto px-4 py-2 Ad_Wrapper">
+        <div class="ad-container rounded-lg overflow-hidden border border-dashed border-slate-200">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-8695398658548679"
+                 data-ad-slot="auto"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+    </div>
+
+    <footer class="bg-white border-t border-slate-100 py-6 mt-12 text-center text-sm text-slate-400">
+        <p>© 2026 GlobalWeather. Powered by Open-Meteo. Hosted on GitHub Pages.</p>
+    </footer>
+    <script src="{{ prefix }}/assets/js/app.js" defer></script>
+</body>
+</html>

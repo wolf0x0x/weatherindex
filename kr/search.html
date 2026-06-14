@@ -1,26 +1,831 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="kr" dir="ltr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>검색 결과 - GlobalWeather</title>
-  <meta name="description" content="전 세계 100개 이상 도시 실시간 예보">
-  <link rel="stylesheet" href="../assets/css/styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&family=Material+Symbols+Outlined:wght@300;400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="alternate" hreflang="x-default" href="https://weatherindex.xyz/search.html" />
+
+    <link rel="alternate" hreflang="en" href="https://weatherindex.xyz/search.html" />
+
+    <link rel="alternate" hreflang="zh" href="https://weatherindex.xyz/zh/search.html" />
+
+    <link rel="alternate" hreflang="es" href="https://weatherindex.xyz/es/search.html" />
+
+    <link rel="alternate" hreflang="fr" href="https://weatherindex.xyz/fr/search.html" />
+
+    <link rel="alternate" hreflang="de" href="https://weatherindex.xyz/de/search.html" />
+
+    <link rel="alternate" hreflang="ja" href="https://weatherindex.xyz/ja/search.html" />
+
+    <link rel="alternate" hreflang="ru" href="https://weatherindex.xyz/ru/search.html" />
+
+    <link rel="alternate" hreflang="kr" href="https://weatherindex.xyz/kr/search.html" />
+
+    <link rel="alternate" hreflang="ar" href="https://weatherindex.xyz/ar/search.html" />
+
+    <link rel="icon" type="image/svg+xml" href="../assets/icons/favicon.svg">
+    <link rel="manifest" href="../site.webmanifest">
+
+    <title>도시 검색 | GlobalWeather</title>
+    <meta name="description" content="도시 검색 - 도시 검색...">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .ad-container { min-height: 90px; background: rgba(0,0,0,0.02); display: flex; justify-content: center; align-items: center; }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SQCD1J9Y0H"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-SQCD1J9Y0H');
+    </script>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8695398658548679" crossorigin="anonymous"></script>
 </head>
-<body>
-  <nav class="topbar">
-    <a class="brand" href="../index.html"><span class="material-symbols-outlined">routine</span>GlobalWeather</a>
-    <div class="nav-search"><span class="material-symbols-outlined">search</span><input data-search-input placeholder="도시 검색..."></div>
-    <div class="nav-actions">
-      <a class="icon-link" href="../lang.html" title="언어"><span class="material-symbols-outlined">language</span></a>
-      <button class="icon-link" data-locate title="내 위치"><span class="material-symbols-outlined">my_location</span></button>
+<body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col">
+    <nav class="bg-white border-b border-slate-100 sticky top-0 z-50 h-16">
+        <div class="max-w-7xl mx-auto px-4 h-full flex items-center justify-between">
+            <a href="../kr/index.html" class="font-bold text-xl text-blue-600 flex items-center gap-2">🌍 GlobalWeather</a>
+            <div class="flex items-center gap-4">
+                <button data-lang-switch class="text-sm font-medium text-slate-600 hover:text-blue-600">🌐 Language</button>
+                <button data-locate class="text-sm font-medium text-slate-600 hover:text-blue-600">📍 Locate Me</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="w-full max-w-7xl mx-auto px-4 py-2 Ad_Wrapper">
+        <div class="ad-container rounded-lg overflow-hidden border border-dashed border-slate-200">
+            <ins class="adsbygoogle"
+                 style="display:block; text-align:center;"
+                 data-ad-layout="in-article"
+                 data-ad-format="fluid"
+                 data-ad-client="ca-pub-8695398658548679"
+                 data-ad-slot="auto"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
     </div>
-  </nav>
-  <main><section class="section narrow"><h1>검색 결과</h1><div class="page-search"><span class="material-symbols-outlined">search</span><input data-results-search placeholder="도시 검색..."></div><p class="result-count"></p><div class="results-list"><article class="result-card" data-city="tokyo japan"><div><span>🗼</span><b>Tokyo</b><small>Japan</small></div><strong>25°C 🌧️</strong><a href="../city/tokyo.html">날씨 보기</a></article><article class="result-card" data-city="new york usa"><div><span>🗽</span><b>New York</b><small>USA</small></div><strong>22°C 🌧️</strong><a href="../city/new-york.html">날씨 보기</a></article><article class="result-card" data-city="paris france"><div><span>🏛️</span><b>Paris</b><small>France</small></div><strong>21°C ☁️</strong><a href="../city/paris.html">날씨 보기</a></article><article class="result-card" data-city="beijing china"><div><span>🏯</span><b>Beijing</b><small>China</small></div><strong>26°C 🌤️</strong><a href="../city/beijing.html">날씨 보기</a></article><article class="result-card" data-city="london united kingdom"><div><span>🎡</span><b>London</b><small>United Kingdom</small></div><strong>16°C ☁️</strong><a href="../city/london.html">날씨 보기</a></article><article class="result-card" data-city="shanghai china"><div><span>🌆</span><b>Shanghai</b><small>China</small></div><strong>27°C ⛅</strong><a href="../city/shanghai.html">날씨 보기</a></article><article class="result-card" data-city="sydney australia"><div><span>🌉</span><b>Sydney</b><small>Australia</small></div><strong>17°C ☁️</strong><a href="../city/sydney.html">날씨 보기</a></article><article class="result-card" data-city="dubai uae"><div><span>🏙️</span><b>Dubai</b><small>UAE</small></div><strong>37°C 🌧️</strong><a href="../city/dubai.html">날씨 보기</a></article><article class="result-card" data-city="singapore singapore"><div><span>🌿</span><b>Singapore</b><small>Singapore</small></div><strong>33°C ⛅</strong><a href="../city/singapore.html">날씨 보기</a></article><article class="result-card" data-city="seoul south korea"><div><span>🏙️</span><b>Seoul</b><small>South Korea</small></div><strong>25°C 🌧️</strong><a href="../city/seoul.html">날씨 보기</a></article><article class="result-card" data-city="bangkok thailand"><div><span>🛕</span><b>Bangkok</b><small>Thailand</small></div><strong>34°C ⛅</strong><a href="../city/bangkok.html">날씨 보기</a></article><article class="result-card" data-city="hong kong china"><div><span>🌃</span><b>Hong Kong</b><small>China</small></div><strong>32°C 🌧️</strong><a href="../city/hong-kong.html">날씨 보기</a></article><article class="result-card" data-city="los angeles usa"><div><span>🌴</span><b>Los Angeles</b><small>USA</small></div><strong>23°C ⛅</strong><a href="../city/los-angeles.html">날씨 보기</a></article><article class="result-card" data-city="san francisco usa"><div><span>🌁</span><b>San Francisco</b><small>USA</small></div><strong>17°C 🌧️</strong><a href="../city/san-francisco.html">날씨 보기</a></article><article class="result-card" data-city="toronto canada"><div><span>🍁</span><b>Toronto</b><small>Canada</small></div><strong>23°C ☀️</strong><a href="../city/toronto.html">날씨 보기</a></article><article class="result-card" data-city="vancouver canada"><div><span>⛰️</span><b>Vancouver</b><small>Canada</small></div><strong>14°C 🌧️</strong><a href="../city/vancouver.html">날씨 보기</a></article><article class="result-card" data-city="mexico city mexico"><div><span>🌵</span><b>Mexico City</b><small>Mexico</small></div><strong>22°C ☀️</strong><a href="../city/mexico-city.html">날씨 보기</a></article><article class="result-card" data-city="são paulo brazil"><div><span>🌇</span><b>São Paulo</b><small>Brazil</small></div><strong>20°C ⛅</strong><a href="../city/sao-paulo.html">날씨 보기</a></article><article class="result-card" data-city="rio de janeiro brazil"><div><span>🏖️</span><b>Rio de Janeiro</b><small>Brazil</small></div><strong>26°C ⛅</strong><a href="../city/rio-de-janeiro.html">날씨 보기</a></article><article class="result-card" data-city="buenos aires argentina"><div><span>💃</span><b>Buenos Aires</b><small>Argentina</small></div><strong>20°C 🌧️</strong><a href="../city/buenos-aires.html">날씨 보기</a></article><article class="result-card" data-city="santiago chile"><div><span>🏔️</span><b>Santiago</b><small>Chile</small></div><strong>17°C ⛅</strong><a href="../city/santiago.html">날씨 보기</a></article><article class="result-card" data-city="lima peru"><div><span>🌊</span><b>Lima</b><small>Peru</small></div><strong>19°C ⛅</strong><a href="../city/lima.html">날씨 보기</a></article><article class="result-card" data-city="bogotá colombia"><div><span>⛰️</span><b>Bogotá</b><small>Colombia</small></div><strong>17°C 🌧️</strong><a href="../city/bogota.html">날씨 보기</a></article><article class="result-card" data-city="madrid spain"><div><span>🏰</span><b>Madrid</b><small>Spain</small></div><strong>25°C ⛅</strong><a href="../city/madrid.html">날씨 보기</a></article><article class="result-card" data-city="barcelona spain"><div><span>🎨</span><b>Barcelona</b><small>Spain</small></div><strong>24°C ☁️</strong><a href="../city/barcelona.html">날씨 보기</a></article><article class="result-card" data-city="rome italy"><div><span>🏟️</span><b>Rome</b><small>Italy</small></div><strong>27°C ☁️</strong><a href="../city/rome.html">날씨 보기</a></article><article class="result-card" data-city="milan italy"><div><span>🛍️</span><b>Milan</b><small>Italy</small></div><strong>24°C ☀️</strong><a href="../city/milan.html">날씨 보기</a></article><article class="result-card" data-city="berlin germany"><div><span>🧭</span><b>Berlin</b><small>Germany</small></div><strong>19°C ☁️</strong><a href="../city/berlin.html">날씨 보기</a></article><article class="result-card" data-city="munich germany"><div><span>⛪</span><b>Munich</b><small>Germany</small></div><strong>16°C 🌧️</strong><a href="../city/munich.html">날씨 보기</a></article><article class="result-card" data-city="amsterdam netherlands"><div><span>🚲</span><b>Amsterdam</b><small>Netherlands</small></div><strong>19°C ⛅</strong><a href="../city/amsterdam.html">날씨 보기</a></article><article class="result-card" data-city="brussels belgium"><div><span>🏛️</span><b>Brussels</b><small>Belgium</small></div><strong>20°C ⛅</strong><a href="../city/brussels.html">날씨 보기</a></article><article class="result-card" data-city="zurich switzerland"><div><span>🏔️</span><b>Zurich</b><small>Switzerland</small></div><strong>17°C ☀️</strong><a href="../city/zurich.html">날씨 보기</a></article><article class="result-card" data-city="vienna austria"><div><span>🎼</span><b>Vienna</b><small>Austria</small></div><strong>23°C ☀️</strong><a href="../city/vienna.html">날씨 보기</a></article><article class="result-card" data-city="prague czech republic"><div><span>🏰</span><b>Prague</b><small>Czech Republic</small></div><strong>22°C 🌤️</strong><a href="../city/prague.html">날씨 보기</a></article><article class="result-card" data-city="warsaw poland"><div><span>🏙️</span><b>Warsaw</b><small>Poland</small></div><strong>21°C 🌧️</strong><a href="../city/warsaw.html">날씨 보기</a></article><article class="result-card" data-city="stockholm sweden"><div><span>🌲</span><b>Stockholm</b><small>Sweden</small></div><strong>12°C ☀️</strong><a href="../city/stockholm.html">날씨 보기</a></article><article class="result-card" data-city="oslo norway"><div><span>⛵</span><b>Oslo</b><small>Norway</small></div><strong>11°C ☁️</strong><a href="../city/oslo.html">날씨 보기</a></article><article class="result-card" data-city="copenhagen denmark"><div><span>🚲</span><b>Copenhagen</b><small>Denmark</small></div><strong>17°C ☀️</strong><a href="../city/copenhagen.html">날씨 보기</a></article><article class="result-card" data-city="helsinki finland"><div><span>❄️</span><b>Helsinki</b><small>Finland</small></div><strong>14°C 🌧️</strong><a href="../city/helsinki.html">날씨 보기</a></article><article class="result-card" data-city="dublin ireland"><div><span>☘️</span><b>Dublin</b><small>Ireland</small></div><strong>15°C ☀️</strong><a href="../city/dublin.html">날씨 보기</a></article><article class="result-card" data-city="lisbon portugal"><div><span>🌉</span><b>Lisbon</b><small>Portugal</small></div><strong>26°C ⛅</strong><a href="../city/lisbon.html">날씨 보기</a></article><article class="result-card" data-city="athens greece"><div><span>🏛️</span><b>Athens</b><small>Greece</small></div><strong>29°C ☁️</strong><a href="../city/athens.html">날씨 보기</a></article><article class="result-card" data-city="istanbul turkey"><div><span>🕌</span><b>Istanbul</b><small>Turkey</small></div><strong>25°C ⛅</strong><a href="../city/istanbul.html">날씨 보기</a></article><article class="result-card" data-city="moscow russia"><div><span>🧅</span><b>Moscow</b><small>Russia</small></div><strong>16°C ⛅</strong><a href="../city/moscow.html">날씨 보기</a></article><article class="result-card" data-city="saint petersburg russia"><div><span>🎭</span><b>Saint Petersburg</b><small>Russia</small></div><strong>12°C ⛅</strong><a href="../city/saint-petersburg.html">날씨 보기</a></article><article class="result-card" data-city="cairo egypt"><div><span>🐪</span><b>Cairo</b><small>Egypt</small></div><strong>36°C 🌤️</strong><a href="../city/cairo.html">날씨 보기</a></article><article class="result-card" data-city="cape town south africa"><div><span>⛰️</span><b>Cape Town</b><small>South Africa</small></div><strong>19°C 🌤️</strong><a href="../city/cape-town.html">날씨 보기</a></article><article class="result-card" data-city="johannesburg south africa"><div><span>🌇</span><b>Johannesburg</b><small>South Africa</small></div><strong>19°C ☁️</strong><a href="../city/johannesburg.html">날씨 보기</a></article><article class="result-card" data-city="nairobi kenya"><div><span>🦒</span><b>Nairobi</b><small>Kenya</small></div><strong>21°C 🌤️</strong><a href="../city/nairobi.html">날씨 보기</a></article><article class="result-card" data-city="lagos nigeria"><div><span>🌊</span><b>Lagos</b><small>Nigeria</small></div><strong>28°C ⛅</strong><a href="../city/lagos.html">날씨 보기</a></article><article class="result-card" data-city="casablanca morocco"><div><span>🕌</span><b>Casablanca</b><small>Morocco</small></div><strong>23°C ⛅</strong><a href="../city/casablanca.html">날씨 보기</a></article><article class="result-card" data-city="riyadh saudi arabia"><div><span>🏜️</span><b>Riyadh</b><small>Saudi Arabia</small></div><strong>39°C ⛅</strong><a href="../city/riyadh.html">날씨 보기</a></article><article class="result-card" data-city="doha qatar"><div><span>🌇</span><b>Doha</b><small>Qatar</small></div><strong>41°C 🌤️</strong><a href="../city/doha.html">날씨 보기</a></article><article class="result-card" data-city="tel aviv israel"><div><span>🏖️</span><b>Tel Aviv</b><small>Israel</small></div><strong>29°C ☀️</strong><a href="../city/tel-aviv.html">날씨 보기</a></article><article class="result-card" data-city="mumbai india"><div><span>🚉</span><b>Mumbai</b><small>India</small></div><strong>31°C ☁️</strong><a href="../city/mumbai.html">날씨 보기</a></article><article class="result-card" data-city="delhi india"><div><span>🕌</span><b>Delhi</b><small>India</small></div><strong>36°C 🌧️</strong><a href="../city/delhi.html">날씨 보기</a></article><article class="result-card" data-city="bengaluru india"><div><span>🌳</span><b>Bengaluru</b><small>India</small></div><strong>27°C 🌤️</strong><a href="../city/bengaluru.html">날씨 보기</a></article><article class="result-card" data-city="kathmandu nepal"><div><span>🏔️</span><b>Kathmandu</b><small>Nepal</small></div><strong>19°C ☀️</strong><a href="../city/kathmandu.html">날씨 보기</a></article><article class="result-card" data-city="colombo sri lanka"><div><span>🌴</span><b>Colombo</b><small>Sri Lanka</small></div><strong>28°C ⛅</strong><a href="../city/colombo.html">날씨 보기</a></article><article class="result-card" data-city="karachi pakistan"><div><span>🌊</span><b>Karachi</b><small>Pakistan</small></div><strong>34°C 🌧️</strong><a href="../city/karachi.html">날씨 보기</a></article><article class="result-card" data-city="dhaka bangladesh"><div><span>🚲</span><b>Dhaka</b><small>Bangladesh</small></div><strong>33°C ⛅</strong><a href="../city/dhaka.html">날씨 보기</a></article><article class="result-card" data-city="jakarta indonesia"><div><span>🌴</span><b>Jakarta</b><small>Indonesia</small></div><strong>31°C 🌧️</strong><a href="../city/jakarta.html">날씨 보기</a></article><article class="result-card" data-city="bali indonesia"><div><span>🏝️</span><b>Bali</b><small>Indonesia</small></div><strong>31°C 🌧️</strong><a href="../city/bali.html">날씨 보기</a></article><article class="result-card" data-city="kuala lumpur malaysia"><div><span>🏙️</span><b>Kuala Lumpur</b><small>Malaysia</small></div><strong>33°C ☀️</strong><a href="../city/kuala-lumpur.html">날씨 보기</a></article><article class="result-card" data-city="manila philippines"><div><span>🌊</span><b>Manila</b><small>Philippines</small></div><strong>31°C ⛅</strong><a href="../city/manila.html">날씨 보기</a></article><article class="result-card" data-city="hanoi vietnam"><div><span>🌾</span><b>Hanoi</b><small>Vietnam</small></div><strong>31°C ⛅</strong><a href="../city/hanoi.html">날씨 보기</a></article><article class="result-card" data-city="ho chi minh city vietnam"><div><span>🛵</span><b>Ho Chi Minh City</b><small>Vietnam</small></div><strong>32°C ☀️</strong><a href="../city/ho-chi-minh-city.html">날씨 보기</a></article><article class="result-card" data-city="taipei taiwan"><div><span>🏙️</span><b>Taipei</b><small>Taiwan</small></div><strong>30°C ☁️</strong><a href="../city/taipei.html">날씨 보기</a></article><article class="result-card" data-city="osaka japan"><div><span>🏯</span><b>Osaka</b><small>Japan</small></div><strong>23°C ☁️</strong><a href="../city/osaka.html">날씨 보기</a></article><article class="result-card" data-city="kyoto japan"><div><span>⛩️</span><b>Kyoto</b><small>Japan</small></div><strong>22°C 🌤️</strong><a href="../city/kyoto.html">날씨 보기</a></article><article class="result-card" data-city="melbourne australia"><div><span>☕</span><b>Melbourne</b><small>Australia</small></div><strong>14°C ⛅</strong><a href="../city/melbourne.html">날씨 보기</a></article><article class="result-card" data-city="brisbane australia"><div><span>🌞</span><b>Brisbane</b><small>Australia</small></div><strong>23°C ⛅</strong><a href="../city/brisbane.html">날씨 보기</a></article><article class="result-card" data-city="auckland new zealand"><div><span>⛵</span><b>Auckland</b><small>New Zealand</small></div><strong>16°C ⛅</strong><a href="../city/auckland.html">날씨 보기</a></article><article class="result-card" data-city="honolulu usa"><div><span>🏝️</span><b>Honolulu</b><small>USA</small></div><strong>27°C 🌤️</strong><a href="../city/honolulu.html">날씨 보기</a></article><article class="result-card" data-city="anchorage usa"><div><span>🗻</span><b>Anchorage</b><small>USA</small></div><strong>9°C 🌧️</strong><a href="../city/anchorage.html">날씨 보기</a></article><article class="result-card" data-city="chicago usa"><div><span>🌬️</span><b>Chicago</b><small>USA</small></div><strong>22°C ☁️</strong><a href="../city/chicago.html">날씨 보기</a></article><article class="result-card" data-city="miami usa"><div><span>🏖️</span><b>Miami</b><small>USA</small></div><strong>28°C 🌧️</strong><a href="../city/miami.html">날씨 보기</a></article><article class="result-card" data-city="seattle usa"><div><span>☕</span><b>Seattle</b><small>USA</small></div><strong>16°C ☁️</strong><a href="../city/seattle.html">날씨 보기</a></article><article class="result-card" data-city="boston usa"><div><span>🎓</span><b>Boston</b><small>USA</small></div><strong>21°C ☁️</strong><a href="../city/boston.html">날씨 보기</a></article><article class="result-card" data-city="washington dc usa"><div><span>🏛️</span><b>Washington DC</b><small>USA</small></div><strong>22°C 🌧️</strong><a href="../city/washington-dc.html">날씨 보기</a></article><article class="result-card" data-city="las vegas usa"><div><span>🎰</span><b>Las Vegas</b><small>USA</small></div><strong>35°C ☀️</strong><a href="../city/las-vegas.html">날씨 보기</a></article><article class="result-card" data-city="denver usa"><div><span>🏔️</span><b>Denver</b><small>USA</small></div><strong>21°C ☁️</strong><a href="../city/denver.html">날씨 보기</a></article><article class="result-card" data-city="dallas usa"><div><span>🤠</span><b>Dallas</b><small>USA</small></div><strong>30°C ⛅</strong><a href="../city/dallas.html">날씨 보기</a></article><article class="result-card" data-city="houston usa"><div><span>🚀</span><b>Houston</b><small>USA</small></div><strong>34°C ☁️</strong><a href="../city/houston.html">날씨 보기</a></article><article class="result-card" data-city="phoenix usa"><div><span>🌵</span><b>Phoenix</b><small>USA</small></div><strong>37°C 🌤️</strong><a href="../city/phoenix.html">날씨 보기</a></article><article class="result-card" data-city="orlando usa"><div><span>🎢</span><b>Orlando</b><small>USA</small></div><strong>31°C 🌧️</strong><a href="../city/orlando.html">날씨 보기</a></article><article class="result-card" data-city="montreal canada"><div><span>🍁</span><b>Montreal</b><small>Canada</small></div><strong>20°C ☀️</strong><a href="../city/montreal.html">날씨 보기</a></article><article class="result-card" data-city="quebec city canada"><div><span>🏰</span><b>Quebec City</b><small>Canada</small></div><strong>14°C ⛅</strong><a href="../city/quebec-city.html">날씨 보기</a></article><article class="result-card" data-city="calgary canada"><div><span>🏔️</span><b>Calgary</b><small>Canada</small></div><strong>16°C ☀️</strong><a href="../city/calgary.html">날씨 보기</a></article><article class="result-card" data-city="reykjavik iceland"><div><span>🌋</span><b>Reykjavik</b><small>Iceland</small></div><strong>7°C ☁️</strong><a href="../city/reykjavik.html">날씨 보기</a></article><article class="result-card" data-city="edinburgh united kingdom"><div><span>🏰</span><b>Edinburgh</b><small>United Kingdom</small></div><strong>12°C ☀️</strong><a href="../city/edinburgh.html">날씨 보기</a></article><article class="result-card" data-city="manchester united kingdom"><div><span>⚽</span><b>Manchester</b><small>United Kingdom</small></div><strong>14°C 🌧️</strong><a href="../city/manchester.html">날씨 보기</a></article><article class="result-card" data-city="nice france"><div><span>🌊</span><b>Nice</b><small>France</small></div><strong>26°C 🌧️</strong><a href="../city/nice.html">날씨 보기</a></article><article class="result-card" data-city="lyon france"><div><span>🍽️</span><b>Lyon</b><small>France</small></div><strong>24°C ⛅</strong><a href="../city/lyon.html">날씨 보기</a></article><article class="result-card" data-city="venice italy"><div><span>🚤</span><b>Venice</b><small>Italy</small></div><strong>27°C 🌤️</strong><a href="../city/venice.html">날씨 보기</a></article><article class="result-card" data-city="florence italy"><div><span>🎨</span><b>Florence</b><small>Italy</small></div><strong>29°C 🌤️</strong><a href="../city/florence.html">날씨 보기</a></article><article class="result-card" data-city="budapest hungary"><div><span>♨️</span><b>Budapest</b><small>Hungary</small></div><strong>23°C 🌧️</strong><a href="../city/budapest.html">날씨 보기</a></article><article class="result-card" data-city="bucharest romania"><div><span>🏛️</span><b>Bucharest</b><small>Romania</small></div><strong>26°C 🌧️</strong><a href="../city/bucharest.html">날씨 보기</a></article><article class="result-card" data-city="belgrade serbia"><div><span>🌉</span><b>Belgrade</b><small>Serbia</small></div><strong>23°C ☀️</strong><a href="../city/belgrade.html">날씨 보기</a></article><article class="result-card" data-city="zagreb croatia"><div><span>🏰</span><b>Zagreb</b><small>Croatia</small></div><strong>21°C ☀️</strong><a href="../city/zagreb.html">날씨 보기</a></article><article class="result-card" data-city="sofia bulgaria"><div><span>⛰️</span><b>Sofia</b><small>Bulgaria</small></div><strong>23°C ☀️</strong><a href="../city/sofia.html">날씨 보기</a></article><article class="result-card" data-city="tallinn estonia"><div><span>🏰</span><b>Tallinn</b><small>Estonia</small></div><strong>11°C ☁️</strong><a href="../city/tallinn.html">날씨 보기</a></article><article class="result-card" data-city="vilnius lithuania"><div><span>⛪</span><b>Vilnius</b><small>Lithuania</small></div><strong>13°C ⛅</strong><a href="../city/vilnius.html">날씨 보기</a></article><article class="result-card" data-city="riga latvia"><div><span>🌲</span><b>Riga</b><small>Latvia</small></div><strong>15°C 🌤️</strong><a href="../city/riga.html">날씨 보기</a></article></div><p class="empty-state">도시를 찾을 수 없습니다.</p></section></main>
-  <footer class="footer">업데이트: 2026-06-14 13:04 UTC · 데이터: Open-Meteo 및 오프라인 예비 · GitHub Pages</footer>
-  <script src="../assets/js/app.js"></script>
+
+    <main class="flex-grow">
+
+<div class="max-w-7xl mx-auto px-4 py-8">
+    <section class="max-w-2xl mx-auto text-center mb-10">
+        <h1 class="text-3xl font-bold text-slate-800 mb-4">도시 검색</h1>
+        <input data-results-search type="search" placeholder="도시 검색..." class="w-full px-5 py-3 rounded-xl border border-slate-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition">
+        <p class="result-count text-sm text-slate-500 mt-3"></p>
+    </section>
+
+    <section class="results-list grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+
+        <a href="../kr/city/tokyo.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="tokyo japan">
+            <div class="text-2xl mb-2">🗼</div>
+            <h3 class="font-bold text-slate-800">Tokyo</h3>
+            <p class="text-xs text-slate-500">Japan</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">20°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/new-york.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="new york usa">
+            <div class="text-2xl mb-2">🗽</div>
+            <h3 class="font-bold text-slate-800">New York</h3>
+            <p class="text-xs text-slate-500">USA</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">30°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/paris.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="paris france">
+            <div class="text-2xl mb-2">🏛️</div>
+            <h3 class="font-bold text-slate-800">Paris</h3>
+            <p class="text-xs text-slate-500">France</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">25°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/beijing.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="beijing china">
+            <div class="text-2xl mb-2">🏯</div>
+            <h3 class="font-bold text-slate-800">Beijing</h3>
+            <p class="text-xs text-slate-500">China</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">24°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/london.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="london united kingdom">
+            <div class="text-2xl mb-2">🎡</div>
+            <h3 class="font-bold text-slate-800">London</h3>
+            <p class="text-xs text-slate-500">United Kingdom</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">21°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/shanghai.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="shanghai china">
+            <div class="text-2xl mb-2">🌆</div>
+            <h3 class="font-bold text-slate-800">Shanghai</h3>
+            <p class="text-xs text-slate-500">China</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">22°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/sydney.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="sydney australia">
+            <div class="text-2xl mb-2">🌉</div>
+            <h3 class="font-bold text-slate-800">Sydney</h3>
+            <p class="text-xs text-slate-500">Australia</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">16°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/dubai.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="dubai uae">
+            <div class="text-2xl mb-2">🏙️</div>
+            <h3 class="font-bold text-slate-800">Dubai</h3>
+            <p class="text-xs text-slate-500">UAE</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">34°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/singapore.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="singapore singapore">
+            <div class="text-2xl mb-2">🌿</div>
+            <h3 class="font-bold text-slate-800">Singapore</h3>
+            <p class="text-xs text-slate-500">Singapore</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">25°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/seoul.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="seoul south korea">
+            <div class="text-2xl mb-2">🏙️</div>
+            <h3 class="font-bold text-slate-800">Seoul</h3>
+            <p class="text-xs text-slate-500">South Korea</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">22°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/bangkok.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="bangkok thailand">
+            <div class="text-2xl mb-2">🛕</div>
+            <h3 class="font-bold text-slate-800">Bangkok</h3>
+            <p class="text-xs text-slate-500">Thailand</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">28°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/hong-kong.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="hong kong china">
+            <div class="text-2xl mb-2">🌃</div>
+            <h3 class="font-bold text-slate-800">Hong Kong</h3>
+            <p class="text-xs text-slate-500">China</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">27°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/los-angeles.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="los angeles usa">
+            <div class="text-2xl mb-2">🌴</div>
+            <h3 class="font-bold text-slate-800">Los Angeles</h3>
+            <p class="text-xs text-slate-500">USA</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">17°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/san-francisco.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="san francisco usa">
+            <div class="text-2xl mb-2">🌁</div>
+            <h3 class="font-bold text-slate-800">San Francisco</h3>
+            <p class="text-xs text-slate-500">USA</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">15°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/toronto.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="toronto canada">
+            <div class="text-2xl mb-2">🍁</div>
+            <h3 class="font-bold text-slate-800">Toronto</h3>
+            <p class="text-xs text-slate-500">Canada</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">18°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/vancouver.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="vancouver canada">
+            <div class="text-2xl mb-2">⛰️</div>
+            <h3 class="font-bold text-slate-800">Vancouver</h3>
+            <p class="text-xs text-slate-500">Canada</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">18°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/mexico-city.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="mexico city mexico">
+            <div class="text-2xl mb-2">🌵</div>
+            <h3 class="font-bold text-slate-800">Mexico City</h3>
+            <p class="text-xs text-slate-500">Mexico</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">14°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/sao-paulo.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="são paulo brazil">
+            <div class="text-2xl mb-2">🌇</div>
+            <h3 class="font-bold text-slate-800">São Paulo</h3>
+            <p class="text-xs text-slate-500">Brazil</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">21°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/rio-de-janeiro.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="rio de janeiro brazil">
+            <div class="text-2xl mb-2">🏖️</div>
+            <h3 class="font-bold text-slate-800">Rio de Janeiro</h3>
+            <p class="text-xs text-slate-500">Brazil</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">24°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/buenos-aires.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="buenos aires argentina">
+            <div class="text-2xl mb-2">💃</div>
+            <h3 class="font-bold text-slate-800">Buenos Aires</h3>
+            <p class="text-xs text-slate-500">Argentina</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">7°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/santiago.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="santiago chile">
+            <div class="text-2xl mb-2">🏔️</div>
+            <h3 class="font-bold text-slate-800">Santiago</h3>
+            <p class="text-xs text-slate-500">Chile</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">14°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/lima.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="lima peru">
+            <div class="text-2xl mb-2">🌊</div>
+            <h3 class="font-bold text-slate-800">Lima</h3>
+            <p class="text-xs text-slate-500">Peru</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">23°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/bogota.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="bogotá colombia">
+            <div class="text-2xl mb-2">⛰️</div>
+            <h3 class="font-bold text-slate-800">Bogotá</h3>
+            <p class="text-xs text-slate-500">Colombia</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">16°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/madrid.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="madrid spain">
+            <div class="text-2xl mb-2">🏰</div>
+            <h3 class="font-bold text-slate-800">Madrid</h3>
+            <p class="text-xs text-slate-500">Spain</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">33°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/barcelona.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="barcelona spain">
+            <div class="text-2xl mb-2">🎨</div>
+            <h3 class="font-bold text-slate-800">Barcelona</h3>
+            <p class="text-xs text-slate-500">Spain</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">28°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/rome.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="rome italy">
+            <div class="text-2xl mb-2">🏟️</div>
+            <h3 class="font-bold text-slate-800">Rome</h3>
+            <p class="text-xs text-slate-500">Italy</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">30°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/milan.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="milan italy">
+            <div class="text-2xl mb-2">🛍️</div>
+            <h3 class="font-bold text-slate-800">Milan</h3>
+            <p class="text-xs text-slate-500">Italy</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">31°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/berlin.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="berlin germany">
+            <div class="text-2xl mb-2">🧭</div>
+            <h3 class="font-bold text-slate-800">Berlin</h3>
+            <p class="text-xs text-slate-500">Germany</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">16°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/munich.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="munich germany">
+            <div class="text-2xl mb-2">⛪</div>
+            <h3 class="font-bold text-slate-800">Munich</h3>
+            <p class="text-xs text-slate-500">Germany</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">22°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/amsterdam.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="amsterdam netherlands">
+            <div class="text-2xl mb-2">🚲</div>
+            <h3 class="font-bold text-slate-800">Amsterdam</h3>
+            <p class="text-xs text-slate-500">Netherlands</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">17°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/brussels.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="brussels belgium">
+            <div class="text-2xl mb-2">🏛️</div>
+            <h3 class="font-bold text-slate-800">Brussels</h3>
+            <p class="text-xs text-slate-500">Belgium</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">19°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/zurich.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="zurich switzerland">
+            <div class="text-2xl mb-2">🏔️</div>
+            <h3 class="font-bold text-slate-800">Zurich</h3>
+            <p class="text-xs text-slate-500">Switzerland</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">27°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/vienna.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="vienna austria">
+            <div class="text-2xl mb-2">🎼</div>
+            <h3 class="font-bold text-slate-800">Vienna</h3>
+            <p class="text-xs text-slate-500">Austria</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">22°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/prague.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="prague czech republic">
+            <div class="text-2xl mb-2">🏰</div>
+            <h3 class="font-bold text-slate-800">Prague</h3>
+            <p class="text-xs text-slate-500">Czech Republic</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">22°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/warsaw.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="warsaw poland">
+            <div class="text-2xl mb-2">🏙️</div>
+            <h3 class="font-bold text-slate-800">Warsaw</h3>
+            <p class="text-xs text-slate-500">Poland</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">12°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/stockholm.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="stockholm sweden">
+            <div class="text-2xl mb-2">🌲</div>
+            <h3 class="font-bold text-slate-800">Stockholm</h3>
+            <p class="text-xs text-slate-500">Sweden</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">14°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/oslo.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="oslo norway">
+            <div class="text-2xl mb-2">⛵</div>
+            <h3 class="font-bold text-slate-800">Oslo</h3>
+            <p class="text-xs text-slate-500">Norway</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">21°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/copenhagen.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="copenhagen denmark">
+            <div class="text-2xl mb-2">🚲</div>
+            <h3 class="font-bold text-slate-800">Copenhagen</h3>
+            <p class="text-xs text-slate-500">Denmark</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">19°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/helsinki.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="helsinki finland">
+            <div class="text-2xl mb-2">❄️</div>
+            <h3 class="font-bold text-slate-800">Helsinki</h3>
+            <p class="text-xs text-slate-500">Finland</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">14°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/dublin.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="dublin ireland">
+            <div class="text-2xl mb-2">☘️</div>
+            <h3 class="font-bold text-slate-800">Dublin</h3>
+            <p class="text-xs text-slate-500">Ireland</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">16°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/lisbon.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="lisbon portugal">
+            <div class="text-2xl mb-2">🌉</div>
+            <h3 class="font-bold text-slate-800">Lisbon</h3>
+            <p class="text-xs text-slate-500">Portugal</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">26°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/athens.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="athens greece">
+            <div class="text-2xl mb-2">🏛️</div>
+            <h3 class="font-bold text-slate-800">Athens</h3>
+            <p class="text-xs text-slate-500">Greece</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">29°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/istanbul.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="istanbul turkey">
+            <div class="text-2xl mb-2">🕌</div>
+            <h3 class="font-bold text-slate-800">Istanbul</h3>
+            <p class="text-xs text-slate-500">Turkey</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">24°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/moscow.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="moscow russia">
+            <div class="text-2xl mb-2">🧅</div>
+            <h3 class="font-bold text-slate-800">Moscow</h3>
+            <p class="text-xs text-slate-500">Russia</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">18°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/saint-petersburg.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="saint petersburg russia">
+            <div class="text-2xl mb-2">🎭</div>
+            <h3 class="font-bold text-slate-800">Saint Petersburg</h3>
+            <p class="text-xs text-slate-500">Russia</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">22°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/cairo.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="cairo egypt">
+            <div class="text-2xl mb-2">🐪</div>
+            <h3 class="font-bold text-slate-800">Cairo</h3>
+            <p class="text-xs text-slate-500">Egypt</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">34°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/cape-town.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="cape town south africa">
+            <div class="text-2xl mb-2">⛰️</div>
+            <h3 class="font-bold text-slate-800">Cape Town</h3>
+            <p class="text-xs text-slate-500">South Africa</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">13°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/johannesburg.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="johannesburg south africa">
+            <div class="text-2xl mb-2">🌇</div>
+            <h3 class="font-bold text-slate-800">Johannesburg</h3>
+            <p class="text-xs text-slate-500">South Africa</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">16°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/nairobi.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="nairobi kenya">
+            <div class="text-2xl mb-2">🦒</div>
+            <h3 class="font-bold text-slate-800">Nairobi</h3>
+            <p class="text-xs text-slate-500">Kenya</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">22°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/lagos.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="lagos nigeria">
+            <div class="text-2xl mb-2">🌊</div>
+            <h3 class="font-bold text-slate-800">Lagos</h3>
+            <p class="text-xs text-slate-500">Nigeria</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">27°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/casablanca.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="casablanca morocco">
+            <div class="text-2xl mb-2">🕌</div>
+            <h3 class="font-bold text-slate-800">Casablanca</h3>
+            <p class="text-xs text-slate-500">Morocco</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">25°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/riyadh.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="riyadh saudi arabia">
+            <div class="text-2xl mb-2">🏜️</div>
+            <h3 class="font-bold text-slate-800">Riyadh</h3>
+            <p class="text-xs text-slate-500">Saudi Arabia</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">43°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/doha.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="doha qatar">
+            <div class="text-2xl mb-2">🌇</div>
+            <h3 class="font-bold text-slate-800">Doha</h3>
+            <p class="text-xs text-slate-500">Qatar</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">38°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/tel-aviv.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="tel aviv israel">
+            <div class="text-2xl mb-2">🏖️</div>
+            <h3 class="font-bold text-slate-800">Tel Aviv</h3>
+            <p class="text-xs text-slate-500">Israel</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">27°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/mumbai.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="mumbai india">
+            <div class="text-2xl mb-2">🚉</div>
+            <h3 class="font-bold text-slate-800">Mumbai</h3>
+            <p class="text-xs text-slate-500">India</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">30°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/delhi.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="delhi india">
+            <div class="text-2xl mb-2">🕌</div>
+            <h3 class="font-bold text-slate-800">Delhi</h3>
+            <p class="text-xs text-slate-500">India</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">34°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/bengaluru.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="bengaluru india">
+            <div class="text-2xl mb-2">🌳</div>
+            <h3 class="font-bold text-slate-800">Bengaluru</h3>
+            <p class="text-xs text-slate-500">India</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">25°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/kathmandu.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="kathmandu nepal">
+            <div class="text-2xl mb-2">🏔️</div>
+            <h3 class="font-bold text-slate-800">Kathmandu</h3>
+            <p class="text-xs text-slate-500">Nepal</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">21°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/colombo.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="colombo sri lanka">
+            <div class="text-2xl mb-2">🌴</div>
+            <h3 class="font-bold text-slate-800">Colombo</h3>
+            <p class="text-xs text-slate-500">Sri Lanka</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">28°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/karachi.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="karachi pakistan">
+            <div class="text-2xl mb-2">🌊</div>
+            <h3 class="font-bold text-slate-800">Karachi</h3>
+            <p class="text-xs text-slate-500">Pakistan</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">30°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/dhaka.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="dhaka bangladesh">
+            <div class="text-2xl mb-2">🚲</div>
+            <h3 class="font-bold text-slate-800">Dhaka</h3>
+            <p class="text-xs text-slate-500">Bangladesh</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">28°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/jakarta.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="jakarta indonesia">
+            <div class="text-2xl mb-2">🌴</div>
+            <h3 class="font-bold text-slate-800">Jakarta</h3>
+            <p class="text-xs text-slate-500">Indonesia</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">27°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/bali.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="bali indonesia">
+            <div class="text-2xl mb-2">🏝️</div>
+            <h3 class="font-bold text-slate-800">Bali</h3>
+            <p class="text-xs text-slate-500">Indonesia</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">13°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/kuala-lumpur.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="kuala lumpur malaysia">
+            <div class="text-2xl mb-2">🏙️</div>
+            <h3 class="font-bold text-slate-800">Kuala Lumpur</h3>
+            <p class="text-xs text-slate-500">Malaysia</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">26°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/manila.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="manila philippines">
+            <div class="text-2xl mb-2">🌊</div>
+            <h3 class="font-bold text-slate-800">Manila</h3>
+            <p class="text-xs text-slate-500">Philippines</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">29°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/hanoi.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="hanoi vietnam">
+            <div class="text-2xl mb-2">🌾</div>
+            <h3 class="font-bold text-slate-800">Hanoi</h3>
+            <p class="text-xs text-slate-500">Vietnam</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">31°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/ho-chi-minh-city.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="ho chi minh city vietnam">
+            <div class="text-2xl mb-2">🛵</div>
+            <h3 class="font-bold text-slate-800">Ho Chi Minh City</h3>
+            <p class="text-xs text-slate-500">Vietnam</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">27°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/taipei.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="taipei taiwan">
+            <div class="text-2xl mb-2">🏙️</div>
+            <h3 class="font-bold text-slate-800">Taipei</h3>
+            <p class="text-xs text-slate-500">Taiwan</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">25°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/osaka.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="osaka japan">
+            <div class="text-2xl mb-2">🏯</div>
+            <h3 class="font-bold text-slate-800">Osaka</h3>
+            <p class="text-xs text-slate-500">Japan</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">21°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/kyoto.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="kyoto japan">
+            <div class="text-2xl mb-2">⛩️</div>
+            <h3 class="font-bold text-slate-800">Kyoto</h3>
+            <p class="text-xs text-slate-500">Japan</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">21°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/melbourne.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="melbourne australia">
+            <div class="text-2xl mb-2">☕</div>
+            <h3 class="font-bold text-slate-800">Melbourne</h3>
+            <p class="text-xs text-slate-500">Australia</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">7°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/brisbane.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="brisbane australia">
+            <div class="text-2xl mb-2">🌞</div>
+            <h3 class="font-bold text-slate-800">Brisbane</h3>
+            <p class="text-xs text-slate-500">Australia</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">15°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/auckland.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="auckland new zealand">
+            <div class="text-2xl mb-2">⛵</div>
+            <h3 class="font-bold text-slate-800">Auckland</h3>
+            <p class="text-xs text-slate-500">New Zealand</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">11°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/honolulu.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="honolulu usa">
+            <div class="text-2xl mb-2">🏝️</div>
+            <h3 class="font-bold text-slate-800">Honolulu</h3>
+            <p class="text-xs text-slate-500">USA</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">22°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/anchorage.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="anchorage usa">
+            <div class="text-2xl mb-2">🗻</div>
+            <h3 class="font-bold text-slate-800">Anchorage</h3>
+            <p class="text-xs text-slate-500">USA</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">11°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/chicago.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="chicago usa">
+            <div class="text-2xl mb-2">🌬️</div>
+            <h3 class="font-bold text-slate-800">Chicago</h3>
+            <p class="text-xs text-slate-500">USA</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">16°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/miami.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="miami usa">
+            <div class="text-2xl mb-2">🏖️</div>
+            <h3 class="font-bold text-slate-800">Miami</h3>
+            <p class="text-xs text-slate-500">USA</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">31°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/seattle.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="seattle usa">
+            <div class="text-2xl mb-2">☕</div>
+            <h3 class="font-bold text-slate-800">Seattle</h3>
+            <p class="text-xs text-slate-500">USA</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">17°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/boston.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="boston usa">
+            <div class="text-2xl mb-2">🎓</div>
+            <h3 class="font-bold text-slate-800">Boston</h3>
+            <p class="text-xs text-slate-500">USA</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">30°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/washington-dc.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="washington dc usa">
+            <div class="text-2xl mb-2">🏛️</div>
+            <h3 class="font-bold text-slate-800">Washington DC</h3>
+            <p class="text-xs text-slate-500">USA</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">28°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/las-vegas.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="las vegas usa">
+            <div class="text-2xl mb-2">🎰</div>
+            <h3 class="font-bold text-slate-800">Las Vegas</h3>
+            <p class="text-xs text-slate-500">USA</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">33°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/denver.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="denver usa">
+            <div class="text-2xl mb-2">🏔️</div>
+            <h3 class="font-bold text-slate-800">Denver</h3>
+            <p class="text-xs text-slate-500">USA</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">13°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/dallas.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="dallas usa">
+            <div class="text-2xl mb-2">🤠</div>
+            <h3 class="font-bold text-slate-800">Dallas</h3>
+            <p class="text-xs text-slate-500">USA</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">28°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/houston.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="houston usa">
+            <div class="text-2xl mb-2">🚀</div>
+            <h3 class="font-bold text-slate-800">Houston</h3>
+            <p class="text-xs text-slate-500">USA</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">29°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/phoenix.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="phoenix usa">
+            <div class="text-2xl mb-2">🌵</div>
+            <h3 class="font-bold text-slate-800">Phoenix</h3>
+            <p class="text-xs text-slate-500">USA</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">34°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/orlando.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="orlando usa">
+            <div class="text-2xl mb-2">🎢</div>
+            <h3 class="font-bold text-slate-800">Orlando</h3>
+            <p class="text-xs text-slate-500">USA</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">28°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/montreal.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="montreal canada">
+            <div class="text-2xl mb-2">🍁</div>
+            <h3 class="font-bold text-slate-800">Montreal</h3>
+            <p class="text-xs text-slate-500">Canada</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">19°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/quebec-city.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="quebec city canada">
+            <div class="text-2xl mb-2">🏰</div>
+            <h3 class="font-bold text-slate-800">Quebec City</h3>
+            <p class="text-xs text-slate-500">Canada</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">19°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/calgary.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="calgary canada">
+            <div class="text-2xl mb-2">🏔️</div>
+            <h3 class="font-bold text-slate-800">Calgary</h3>
+            <p class="text-xs text-slate-500">Canada</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">13°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/reykjavik.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="reykjavik iceland">
+            <div class="text-2xl mb-2">🌋</div>
+            <h3 class="font-bold text-slate-800">Reykjavik</h3>
+            <p class="text-xs text-slate-500">Iceland</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">14°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/edinburgh.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="edinburgh united kingdom">
+            <div class="text-2xl mb-2">🏰</div>
+            <h3 class="font-bold text-slate-800">Edinburgh</h3>
+            <p class="text-xs text-slate-500">United Kingdom</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">16°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/manchester.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="manchester united kingdom">
+            <div class="text-2xl mb-2">⚽</div>
+            <h3 class="font-bold text-slate-800">Manchester</h3>
+            <p class="text-xs text-slate-500">United Kingdom</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">18°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/nice.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="nice france">
+            <div class="text-2xl mb-2">🌊</div>
+            <h3 class="font-bold text-slate-800">Nice</h3>
+            <p class="text-xs text-slate-500">France</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">24°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/lyon.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="lyon france">
+            <div class="text-2xl mb-2">🍽️</div>
+            <h3 class="font-bold text-slate-800">Lyon</h3>
+            <p class="text-xs text-slate-500">France</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">30°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/venice.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="venice italy">
+            <div class="text-2xl mb-2">🚤</div>
+            <h3 class="font-bold text-slate-800">Venice</h3>
+            <p class="text-xs text-slate-500">Italy</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">26°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/florence.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="florence italy">
+            <div class="text-2xl mb-2">🎨</div>
+            <h3 class="font-bold text-slate-800">Florence</h3>
+            <p class="text-xs text-slate-500">Italy</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">30°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/budapest.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="budapest hungary">
+            <div class="text-2xl mb-2">♨️</div>
+            <h3 class="font-bold text-slate-800">Budapest</h3>
+            <p class="text-xs text-slate-500">Hungary</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">21°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/bucharest.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="bucharest romania">
+            <div class="text-2xl mb-2">🏛️</div>
+            <h3 class="font-bold text-slate-800">Bucharest</h3>
+            <p class="text-xs text-slate-500">Romania</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">28°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/belgrade.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="belgrade serbia">
+            <div class="text-2xl mb-2">🌉</div>
+            <h3 class="font-bold text-slate-800">Belgrade</h3>
+            <p class="text-xs text-slate-500">Serbia</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">32°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/zagreb.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="zagreb croatia">
+            <div class="text-2xl mb-2">🏰</div>
+            <h3 class="font-bold text-slate-800">Zagreb</h3>
+            <p class="text-xs text-slate-500">Croatia</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">30°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/sofia.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="sofia bulgaria">
+            <div class="text-2xl mb-2">⛰️</div>
+            <h3 class="font-bold text-slate-800">Sofia</h3>
+            <p class="text-xs text-slate-500">Bulgaria</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">27°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/tallinn.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="tallinn estonia">
+            <div class="text-2xl mb-2">🏰</div>
+            <h3 class="font-bold text-slate-800">Tallinn</h3>
+            <p class="text-xs text-slate-500">Estonia</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">16°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/vilnius.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="vilnius lithuania">
+            <div class="text-2xl mb-2">⛪</div>
+            <h3 class="font-bold text-slate-800">Vilnius</h3>
+            <p class="text-xs text-slate-500">Lithuania</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">16°C <span class="text-base">🌤️</span></p>
+        </a>
+
+        <a href="../kr/city/riga.html" class="result-card bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition" data-city="riga latvia">
+            <div class="text-2xl mb-2">🌲</div>
+            <h3 class="font-bold text-slate-800">Riga</h3>
+            <p class="text-xs text-slate-500">Latvia</p>
+            <p class="mt-2 text-lg font-semibold text-blue-600">18°C <span class="text-base">🌤️</span></p>
+        </a>
+
+    </section>
+    <p class="empty-state text-center text-slate-500 mt-10 hidden">도시를 찾을 수 없습니다. 다른 검색어를 시도해 보세요.</p>
+</div>
+
+    </main>
+
+    <div class="w-full max-w-7xl mx-auto px-4 py-2 Ad_Wrapper">
+        <div class="ad-container rounded-lg overflow-hidden border border-dashed border-slate-200">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-8695398658548679"
+                 data-ad-slot="auto"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+    </div>
+
+    <footer class="bg-white border-t border-slate-100 py-6 mt-12 text-center text-sm text-slate-400">
+        <p>© 2026 GlobalWeather. Powered by Open-Meteo. Hosted on GitHub Pages.</p>
+    </footer>
+    <script src="../assets/js/app.js" defer></script>
 </body>
 </html>

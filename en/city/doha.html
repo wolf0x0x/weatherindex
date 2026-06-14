@@ -1,37 +1,301 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Doha Weather - GlobalWeather</title>
-  <meta name="description" content="Real-time forecasts for 100+ cities worldwide">
-  <link rel="stylesheet" href="../../assets/css/styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&family=Material+Symbols+Outlined:wght@300;400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="alternate" hreflang="x-default" href="https://weatherindex.xyz/city/doha.html" />
+
+    <link rel="alternate" hreflang="en" href="https://weatherindex.xyz/city/doha.html" />
+
+    <link rel="alternate" hreflang="zh" href="https://weatherindex.xyz/zh/city/doha.html" />
+
+    <link rel="alternate" hreflang="es" href="https://weatherindex.xyz/es/city/doha.html" />
+
+    <link rel="alternate" hreflang="fr" href="https://weatherindex.xyz/fr/city/doha.html" />
+
+    <link rel="alternate" hreflang="de" href="https://weatherindex.xyz/de/city/doha.html" />
+
+    <link rel="alternate" hreflang="ja" href="https://weatherindex.xyz/ja/city/doha.html" />
+
+    <link rel="alternate" hreflang="ru" href="https://weatherindex.xyz/ru/city/doha.html" />
+
+    <link rel="alternate" hreflang="kr" href="https://weatherindex.xyz/kr/city/doha.html" />
+
+    <link rel="alternate" hreflang="ar" href="https://weatherindex.xyz/ar/city/doha.html" />
+
+    <link rel="icon" type="image/svg+xml" href="../../assets/icons/favicon.svg">
+    <link rel="manifest" href="../../site.webmanifest">
+
+    <title>Doha Daily Life Index - Clear Sky | GlobalWeather</title>
+    <meta name="description" content="Doha Daily Life Index: 38°C, Humidity 37%. Daily Life Index, Travel Weather Comparison & Weather Wiki.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .ad-container { min-height: 90px; background: rgba(0,0,0,0.02); display: flex; justify-content: center; align-items: center; }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SQCD1J9Y0H"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-SQCD1J9Y0H');
+    </script>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8695398658548679" crossorigin="anonymous"></script>
 </head>
-<body>
-  <nav class="topbar">
-    <a class="brand" href="../../index.html"><span class="material-symbols-outlined">routine</span>GlobalWeather</a>
-    <div class="nav-search"><span class="material-symbols-outlined">search</span><input data-search-input placeholder="Search city..."></div>
-    <div class="nav-actions">
-      <a class="icon-link" href="../../lang.html" title="Language"><span class="material-symbols-outlined">language</span></a>
-      <button class="icon-link" data-locate title="Locate Me"><span class="material-symbols-outlined">my_location</span></button>
+<body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col">
+    <nav class="bg-white border-b border-slate-100 sticky top-0 z-50 h-16">
+        <div class="max-w-7xl mx-auto px-4 h-full flex items-center justify-between">
+            <a href="../../en/index.html" class="font-bold text-xl text-blue-600 flex items-center gap-2">🌍 GlobalWeather</a>
+            <div class="flex items-center gap-4">
+                <button data-lang-switch class="text-sm font-medium text-slate-600 hover:text-blue-600">🌐 Language</button>
+                <button data-locate class="text-sm font-medium text-slate-600 hover:text-blue-600">📍 Locate Me</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="w-full max-w-7xl mx-auto px-4 py-2 Ad_Wrapper">
+        <div class="ad-container rounded-lg overflow-hidden border border-dashed border-slate-200">
+            <ins class="adsbygoogle"
+                 style="display:block; text-align:center;"
+                 data-ad-layout="in-article"
+                 data-ad-format="fluid"
+                 data-ad-client="ca-pub-8695398658548679"
+                 data-ad-slot="auto"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
     </div>
-  </nav>
-  <main>
-<section class="city-hero sunny">
-  <div><p class="eyebrow">Asia/Qatar · offline-model</p><h1>Doha Weather</h1><div class="temp-line"><span>🌤️</span><strong>41°C</strong></div><p class="lead">Mainly Clear</p><div class="badges"><span>AQI: Excellent 🟢</span><span>UV: Medium 🟡</span><span>Rain: 8% 🔵</span></div></div>
-  <div class="metric-grid">
-    <article><small>Feels Like</small><b>43°C</b></article><article><small>Humidity</small><b>60%</b></article><article><small>Wind</small><b>16 km/h</b></article>
-    <article><small>Pressure</small><b>1002 hPa</b></article><article><small>Visibility</small><b>10 km</b></article><article><small>Clock</small><b data-clock>21:04</b></article>
-  </div>
-</section>
-<section class="section"><h2>24-Hour Forecast</h2><div class="hour-strip"><div class="hour current"><b>Now</b><span>☀️</span><strong>41°</strong></div><div class="hour "><b>01:00</b><span>🌧️</span><strong>41°</strong></div><div class="hour "><b>02:00</b><span>☁️</span><strong>42°</strong></div><div class="hour "><b>03:00</b><span>☁️</span><strong>43°</strong></div><div class="hour "><b>04:00</b><span>🌧️</span><strong>43°</strong></div><div class="hour "><b>05:00</b><span>☁️</span><strong>43°</strong></div><div class="hour "><b>06:00</b><span>☀️</span><strong>43°</strong></div><div class="hour "><b>07:00</b><span>☀️</span><strong>43°</strong></div><div class="hour "><b>08:00</b><span>⛅</span><strong>42°</strong></div><div class="hour "><b>09:00</b><span>🌤️</span><strong>41°</strong></div><div class="hour "><b>10:00</b><span>⛅</span><strong>41°</strong></div><div class="hour "><b>11:00</b><span>⛅</span><strong>40°</strong></div><div class="hour "><b>12:00</b><span>🌧️</span><strong>39°</strong></div><div class="hour "><b>13:00</b><span>☁️</span><strong>39°</strong></div><div class="hour "><b>14:00</b><span>☁️</span><strong>39°</strong></div><div class="hour "><b>15:00</b><span>🌧️</span><strong>39°</strong></div><div class="hour "><b>16:00</b><span>🌧️</span><strong>39°</strong></div><div class="hour "><b>17:00</b><span>☁️</span><strong>40°</strong></div><div class="hour "><b>18:00</b><span>🌤️</span><strong>41°</strong></div><div class="hour "><b>19:00</b><span>☀️</span><strong>41°</strong></div><div class="hour "><b>20:00</b><span>☀️</span><strong>42°</strong></div><div class="hour "><b>21:00</b><span>🌤️</span><strong>42°</strong></div><div class="hour "><b>22:00</b><span>🌤️</span><strong>43°</strong></div><div class="hour "><b>23:00</b><span>🌤️</span><strong>43°</strong></div></div></section>
-<section class="section two-col"><div><h2>7-Day Forecast</h2><div class="forecast-list"><details class="day-row"><summary><span>Today</span><b>☀️</b><strong>39° / 29°</strong><em>Clear Sky</em></summary><p>Wind 10 km/h · Humidity 60% · Rain 8% · Sunrise 06:12 · Sunset 18:47</p></details><details class="day-row"><summary><span>Mon</span><b>☁️</b><strong>38° / 33°</strong><em>Overcast</em></summary><p>Wind 11 km/h · Humidity 60% · Rain 39% · Sunrise 06:12 · Sunset 18:47</p></details><details class="day-row"><summary><span>Tue</span><b>🌤️</b><strong>37° / 30°</strong><em>Mainly Clear</em></summary><p>Wind 9 km/h · Humidity 60% · Rain 20% · Sunrise 06:12 · Sunset 18:47</p></details><details class="day-row"><summary><span>Wed</span><b>☀️</b><strong>39° / 30°</strong><em>Clear Sky</em></summary><p>Wind 26 km/h · Humidity 60% · Rain 22% · Sunrise 06:12 · Sunset 18:47</p></details><details class="day-row"><summary><span>Thu</span><b>☀️</b><strong>40° / 32°</strong><em>Clear Sky</em></summary><p>Wind 6 km/h · Humidity 60% · Rain 27% · Sunrise 06:12 · Sunset 18:47</p></details><details class="day-row"><summary><span>Fri</span><b>🌧️</b><strong>38° / 30°</strong><em>Rain</em></summary><p>Wind 17 km/h · Humidity 60% · Rain 21% · Sunrise 06:12 · Sunset 18:47</p></details><details class="day-row"><summary><span>Sat</span><b>🌧️</b><strong>41° / 34°</strong><em>Rain</em></summary><p>Wind 20 km/h · Humidity 60% · Rain 19% · Sunrise 06:12 · Sunset 18:47</p></details></div></div><aside class="alert-card"><h2>⚠️ Severe Weather Alert</h2><p>Typhoon Warning - Category 3. Strong winds and heavy rain may affect coastal travel.</p><a href="../../alert/tokyo-typhoon.html">View Details →</a></aside></section>
-<section class="section"><h2>Life Index</h2><div class="mini-grid"><article class="mini"><span>👕</span><b>Clothing</b><small>Light</small></article><article class="mini"><span>☀️</span><b>UV Index</b><small>Medium</small></article><article class="mini"><span>🚗</span><b>Car Wash</b><small>Good</small></article><article class="mini"><span>🏃</span><b>Sports</b><small>Ideal</small></article><article class="mini"><span>💊</span><b>Cold Risk</b><small>Low</small></article><article class="mini"><span>🧴</span><b>Skin Care</b><small>Hydrate</small></article></div></section>
-<section class="section two-col"><div class="table-card"><h2>Travel Weather</h2><table><tbody><tr><td>Dhaka</td><td>33°C</td><td>⛅ Partly Cloudy</td><td>Apr-Oct</td></tr><tr><td>Jakarta</td><td>31°C</td><td>🌧️ Rain</td><td>Apr-Oct</td></tr><tr><td>Bali</td><td>31°C</td><td>🌧️ Rain</td><td>Apr-Oct</td></tr><tr><td>Kuala Lumpur</td><td>33°C</td><td>☀️ Clear Sky</td><td>Apr-Oct</td></tr></tbody></table></div><div><h2>Weather Knowledge</h2><div class="knowledge-grid"><a class="wiki-card" href="../../wiki/typhoon-naming.html"><span>🌀</span><b>Typhoon Naming Rules</b><small>Read →</small></a><a class="wiki-card" href="../../wiki/el-nino.html"><span>🌡️</span><b>El Niño Phenomenon</b><small>Read →</small></a><a class="wiki-card" href="../../wiki/climate-change.html"><span>📈</span><b>Climate Change Data</b><small>Read →</small></a></div></div></section></main>
-  <footer class="footer">Last updated: 2026-06-14 13:04 UTC · Data: Open-Meteo with offline fallback · GitHub Pages</footer>
-  <script src="../../assets/js/app.js"></script>
+
+    <main class="flex-grow">
+
+<div class="max-w-7xl mx-auto px-4 py-8">
+
+
+    <div class="bg-gradient-to-br from-blue-500 to-blue-600 rounded-3xl p-6 md:p-8 text-white shadow-lg mb-8">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+            <div>
+                <h1 class="text-3xl md:text-4xl font-bold tracking-tight">Doha, <span class="opacity-75">Qatar</span></h1>
+                <p class="text-5xl md:text-6xl font-light tracking-tighter mt-4">38<span class="text-3xl font-normal">°C</span></p>
+                <p class="mt-2 inline-block px-3 py-1 bg-white/20 rounded-full text-sm backdrop-blur-sm font-medium">Clear Sky</p>
+            </div>
+            <div class="w-full md:w-auto grid grid-cols-3 gap-4 border-t border-white/10 pt-4 md:pt-0 md:border-0">
+                <div class="text-center md:text-right">
+                    <p class="text-xs opacity-70">Feels Like</p>
+                    <p class="text-lg font-semibold">39°C</p>
+                </div>
+                <div class="text-center md:text-right">
+                    <p class="text-xs opacity-70">Humidity</p>
+                    <p class="text-lg font-semibold">37%</p>
+                </div>
+                <div class="text-center md:text-right">
+                    <p class="text-xs opacity-70">Wind Speed</p>
+                    <p class="text-lg font-semibold">14 km/h</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="Ad_Wrapper my-6">
+        <div class="ad-container rounded-lg overflow-hidden border border-dashed border-slate-200">
+            <ins class="adsbygoogle"
+                 style="display:block; text-align:center;"
+                 data-ad-layout="in-article"
+                 data-ad-format="fluid"
+                 data-ad-client="ca-pub-8695398658548679"
+                 data-ad-slot="auto"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+    </div>
+
+    <div class="mb-10">
+        <h2 class="text-xl font-bold text-slate-800 mb-4 flex items-center gap-2">📊 Daily Life Index</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+            <div class="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 flex flex-col items-center text-center">
+                <span class="text-3xl mb-2">👕</span>
+                <p class="text-xs text-slate-400">Heavy</p>
+                <p class="font-semibold text-slate-700 text-sm mt-1">Light</p>
+            </div>
+            <div class="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 flex flex-col items-center text-center">
+                <span class="text-3xl mb-2">☀️</span>
+                <p class="text-xs text-slate-400">Low</p>
+                <p class="font-semibold text-slate-700 text-sm mt-1">Low</p>
+            </div>
+            <div class="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 flex flex-col items-center text-center">
+                <span class="text-3xl mb-2">🚗</span>
+                <p class="text-xs text-slate-400">Car Wash</p>
+                <p class="font-semibold text-slate-700 text-sm mt-1">Suitable</p>
+            </div>
+            <div class="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 flex flex-col items-center text-center">
+                <span class="text-3xl mb-2">🏃</span>
+                <p class="text-xs text-slate-400">Outdoor</p>
+                <p class="font-semibold text-slate-700 text-sm mt-1">Recommended</p>
+            </div>
+            <div class="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 flex flex-col items-center text-center">
+                <span class="text-3xl mb-2">🍃</span>
+                <p class="text-xs text-slate-400">Air Quality</p>
+                <p class="font-semibold text-emerald-600 text-sm mt-1">AQI 85 · PM2.5 25.9</p>
+            </div>
+            <div class="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 flex flex-col items-center text-center">
+                <span class="text-3xl mb-2">💊</span>
+                <p class="text-xs text-slate-400">Cold Risk</p>
+                <p class="font-semibold text-slate-700 text-sm mt-1">Low</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="mb-10">
+        <h2 class="text-xl font-bold text-slate-800 mb-4 flex items-center gap-2">✈️ Travel Weather Comparison</h2>
+        <div class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden">
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-slate-50 text-slate-400 text-xs font-semibold uppercase border-b border-slate-100">
+                            <th class="p-4">Destination</th>
+                            <th class="p-4">Temperature vs Current</th>
+                            <th class="p-4">Recommendation</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-sm divide-y divide-slate-100 text-slate-600">
+
+                        <tr>
+                            <td class="p-4 font-medium text-slate-800">🏔️ Zurich, Switzerland</td>
+                            <td class="p-4">27°C (-11°C cooler)</td>
+                            <td class="p-4 text-emerald-500 font-medium">Fair</td>
+                        </tr>
+
+                        <tr>
+                            <td class="p-4 font-medium text-slate-800">⛵ Auckland, New Zealand</td>
+                            <td class="p-4">11°C (-27°C cooler)</td>
+                            <td class="p-4 text-emerald-500 font-medium">Fair</td>
+                        </tr>
+
+                        <tr>
+                            <td class="p-4 font-medium text-slate-800">🌵 Phoenix, USA</td>
+                            <td class="p-4">34°C (-4°C cooler)</td>
+                            <td class="p-4 text-emerald-500 font-medium">Great</td>
+                        </tr>
+
+                        <tr>
+                            <td class="p-4 font-medium text-slate-800">🗽 New York, USA</td>
+                            <td class="p-4">30°C (-8°C cooler)</td>
+                            <td class="p-4 text-emerald-500 font-medium">Fair</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="mb-10">
+        <h2 class="text-xl font-bold text-slate-800 mb-4">📅 7-Day Forecast</h2>
+        <div class="bg-white rounded-2xl shadow-sm border border-slate-100 divide-y divide-slate-100">
+
+            <div class="p-4 flex items-center justify-between gap-4 hover:bg-slate-50/50 transition">
+                <p class="font-medium text-slate-600 text-sm w-24">2026-06-14</p>
+                <div class="flex items-center gap-2 flex-1">
+                    <span class="text-xl">🌤️</span>
+                    <p class="text-xs text-slate-400 max-w-[120px] truncate">Clear Sky</p>
+                </div>
+                <p class="font-semibold text-slate-800 text-sm">44° / <span class="text-slate-400 font-normal">32°</span></p>
+            </div>
+
+            <div class="p-4 flex items-center justify-between gap-4 hover:bg-slate-50/50 transition">
+                <p class="font-medium text-slate-600 text-sm w-24">2026-06-15</p>
+                <div class="flex items-center gap-2 flex-1">
+                    <span class="text-xl">🌤️</span>
+                    <p class="text-xs text-slate-400 max-w-[120px] truncate">Clear Sky</p>
+                </div>
+                <p class="font-semibold text-slate-800 text-sm">44° / <span class="text-slate-400 font-normal">31°</span></p>
+            </div>
+
+            <div class="p-4 flex items-center justify-between gap-4 hover:bg-slate-50/50 transition">
+                <p class="font-medium text-slate-600 text-sm w-24">2026-06-16</p>
+                <div class="flex items-center gap-2 flex-1">
+                    <span class="text-xl">🌤️</span>
+                    <p class="text-xs text-slate-400 max-w-[120px] truncate">Clear Sky</p>
+                </div>
+                <p class="font-semibold text-slate-800 text-sm">41° / <span class="text-slate-400 font-normal">32°</span></p>
+            </div>
+
+            <div class="p-4 flex items-center justify-between gap-4 hover:bg-slate-50/50 transition">
+                <p class="font-medium text-slate-600 text-sm w-24">2026-06-17</p>
+                <div class="flex items-center gap-2 flex-1">
+                    <span class="text-xl">🌤️</span>
+                    <p class="text-xs text-slate-400 max-w-[120px] truncate">Clear Sky</p>
+                </div>
+                <p class="font-semibold text-slate-800 text-sm">41° / <span class="text-slate-400 font-normal">32°</span></p>
+            </div>
+
+            <div class="p-4 flex items-center justify-between gap-4 hover:bg-slate-50/50 transition">
+                <p class="font-medium text-slate-600 text-sm w-24">2026-06-18</p>
+                <div class="flex items-center gap-2 flex-1">
+                    <span class="text-xl">🌤️</span>
+                    <p class="text-xs text-slate-400 max-w-[120px] truncate">Clear Sky</p>
+                </div>
+                <p class="font-semibold text-slate-800 text-sm">40° / <span class="text-slate-400 font-normal">29°</span></p>
+            </div>
+
+            <div class="p-4 flex items-center justify-between gap-4 hover:bg-slate-50/50 transition">
+                <p class="font-medium text-slate-600 text-sm w-24">2026-06-19</p>
+                <div class="flex items-center gap-2 flex-1">
+                    <span class="text-xl">🌤️</span>
+                    <p class="text-xs text-slate-400 max-w-[120px] truncate">Thunderstorm</p>
+                </div>
+                <p class="font-semibold text-slate-800 text-sm">35° / <span class="text-slate-400 font-normal">26°</span></p>
+            </div>
+
+            <div class="p-4 flex items-center justify-between gap-4 hover:bg-slate-50/50 transition">
+                <p class="font-medium text-slate-600 text-sm w-24">2026-06-20</p>
+                <div class="flex items-center gap-2 flex-1">
+                    <span class="text-xl">🌤️</span>
+                    <p class="text-xs text-slate-400 max-w-[120px] truncate">Thunderstorm</p>
+                </div>
+                <p class="font-semibold text-slate-800 text-sm">40° / <span class="text-slate-400 font-normal">26°</span></p>
+            </div>
+
+        </div>
+    </div>
+
+    <div>
+        <h2 class="text-xl font-bold text-slate-800 mb-4 flex items-center gap-2">🧠 Weather Wiki</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <a href="../../en/wiki/typhoon-naming.html" class="group bg-white p-5 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md hover:border-blue-200 transition">
+                <span class="text-3xl block mb-3">🌀</span>
+                <h3 class="font-bold text-slate-800 group-hover:text-blue-600 transition text-base">How are typhoons named?</h3>
+                <p class="text-xs text-slate-400 mt-2 line-clamp-2">Learn how tropical cyclones get their names from the WMO naming matrix.</p>
+            </a>
+            <a href="../../en/wiki/el-nino.html" class="group bg-white p-5 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md hover:border-blue-200 transition">
+                <span class="text-3xl block mb-3">🌡️</span>
+                <h3 class="font-bold text-slate-800 group-hover:text-blue-600 transition text-base">What is El Niño?</h3>
+                <p class="text-xs text-slate-400 mt-2 line-clamp-2">Why Pacific sea-surface temperature anomalies reshape global weather patterns.</p>
+            </a>
+            <a href="../../en/wiki/climate-change.html" class="group bg-white p-5 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md hover:border-blue-200 transition">
+                <span class="text-3xl block mb-3">📈</span>
+                <h3 class="font-bold text-slate-800 group-hover:text-blue-600 transition text-base">2026 Climate Outlook</h3>
+                <p class="text-xs text-slate-400 mt-2 line-clamp-2">A practical look at greenhouse effects on major cities worldwide.</p>
+            </a>
+        </div>
+    </div>
+</div>
+
+    </main>
+
+    <div class="w-full max-w-7xl mx-auto px-4 py-2 Ad_Wrapper">
+        <div class="ad-container rounded-lg overflow-hidden border border-dashed border-slate-200">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-8695398658548679"
+                 data-ad-slot="auto"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+    </div>
+
+    <footer class="bg-white border-t border-slate-100 py-6 mt-12 text-center text-sm text-slate-400">
+        <p>© 2026 GlobalWeather. Powered by Open-Meteo. Hosted on GitHub Pages.</p>
+    </footer>
+    <script src="../../assets/js/app.js" defer></script>
 </body>
 </html>

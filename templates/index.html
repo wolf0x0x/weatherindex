@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+
+{% block title %}{{ trans.ui.home_title[lang_code] }} | GlobalWeather{% endblock %}
+{% block description %}{{ trans.ui.home_title[lang_code] }} - {{ trans.ui.realtime_updates_desc[lang_code] }}{% endblock %}
+
+{% block content %}
+<div class="max-w-7xl mx-auto px-4 py-8">
+    <section class="bg-gradient-to-br from-blue-500 to-blue-600 rounded-3xl p-6 md:p-10 text-white shadow-lg mb-10">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="text-center md:text-left">
+                <h1 class="text-3xl md:text-5xl font-bold tracking-tight">🌍 GlobalWeather</h1>
+                <p class="mt-4 text-lg opacity-90">{{ trans.ui.home_title[lang_code] }}</p>
+                <div class="mt-6 flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
+                    <input data-search-input type="search" placeholder="{{ trans.ui.search_placeholder[lang_code] }}" class="px-4 py-2 rounded-lg text-slate-800 w-64">
+                    <button data-locate class="px-4 py-2 bg-white/20 hover:bg-white/30 rounded-lg font-medium transition">{{ trans.ui.locate_me[lang_code] }}</button>
+                </div>
+                <div class="mt-4 flex flex-wrap gap-2 justify-center md:justify-start">
+                    {% for l in languages %}
+                    <a href="{{ prefix }}/{{ l.code }}/index.html" class="px-2 py-1 text-xs bg-white/20 rounded hover:bg-white/30 transition">{{ l.flag }} {{ l.code.upper() }}</a>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="bg-white/10 rounded-2xl p-6 text-center backdrop-blur-sm">
+                <span class="text-5xl">🌤️</span>
+                <p class="text-4xl font-light mt-2">25°C</p>
+                <p class="text-sm opacity-75">Tokyo, Japan</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="mb-10">
+        <div class="flex justify-between items-center mb-4">
+            <h2 class="text-xl font-bold text-slate-800">{{ trans.ui.hot_cities[lang_code] }}</h2>
+            <a href="{{ prefix }}/search.html" class="text-sm text-blue-600 hover:underline">{{ trans.ui.search_all[lang_code] }}</a>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            {% for city in hot_cities %}
+            <a href="{{ prefix }}/{{ lang_code }}/city/{{ city.slug }}.html" class="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                <div class="text-2xl mb-2">{{ city.emoji }}</div>
+                <h3 class="font-bold text-slate-800">{{ city.name }}</h3>
+                <p class="text-xs text-slate-500">{{ city.country }}</p>
+                <p class="mt-2 text-lg font-semibold text-blue-600">{{ city.weather.temp }}°C <span class="text-base">{{ city.weather.emoji }}</span></p>
+                <p class="text-xs text-slate-400">{{ city.weather.text }}</p>
+            </a>
+            {% endfor %}
+        </div>
+    </section>
+
+    <section class="grid md:grid-cols-3 gap-6 mb-10">
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+            <div class="text-3xl mb-3">🌍</div>
+            <h3 class="font-bold text-slate-800">{{ trans.ui.global_coverage[lang_code] }}</h3>
+            <p class="text-sm text-slate-500 mt-2">{{ trans.ui.global_coverage_desc[lang_code] }}</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+            <div class="text-3xl mb-3">🔄</div>
+            <h3 class="font-bold text-slate-800">{{ trans.ui.realtime_updates[lang_code] }}</h3>
+            <p class="text-sm text-slate-500 mt-2">{{ trans.ui.realtime_updates_desc[lang_code] }}</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+            <div class="text-3xl mb-3">⚡</div>
+            <h3 class="font-bold text-slate-800">{{ trans.ui.static_fast[lang_code] }}</h3>
+            <p class="text-sm text-slate-500 mt-2">{{ trans.ui.static_fast_desc[lang_code] }}</p>
+        </div>
+    </section>
+</div>
+{% endblock %}

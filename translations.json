@@ -1,0 +1,159 @@
+{
+  "ui": {
+    "search_placeholder": {
+      "en": "Search city...", "zh": "搜索城市...", "es": "Buscar ciudad...", "fr": "Rechercher une ville...", "de": "Stadt suchen...", "ja": "都市を検索...", "ru": "Поиск города...", "kr": "도시 검색...", "ar": "ابحث عن مدينة..."
+    },
+    "locate_me": {
+      "en": "Locate Me", "zh": "自动定位", "es": "Ubicarme", "fr": "Me localiser", "de": "Ortung", "ja": "現在地", "ru": "Локация", "kr": "내 위치", "ar": "تحديد موقعي"
+    },
+    "feels_like": {
+      "en": "Feels Like", "zh": "体感温度", "es": "Sensación", "fr": "Ressenti", "de": "Gefühlt", "ja": "体感温度", "ru": "Ощущается", "kr": "체감 온도", "ar": "الحرارة المحسوسة"
+    },
+    "humidity": {
+      "en": "Humidity", "zh": "空气湿度", "es": "Humedad", "fr": "Humidité", "de": "Feuchtigkeit", "ja": "湿度", "ru": "Влажность", "kr": "습도", "ar": "الرطوبة"
+    },
+    "wind_speed": {
+      "en": "Wind Speed", "zh": "当前风速", "es": "Viento", "fr": "Vent", "de": "Wind", "ja": "風速", "ru": "Скорость ветра", "kr": "풍속", "ar": "سرعة الرياح"
+    },
+    "life_title": {
+      "en": "Daily Life Index", "zh": "生活指数指南", "es": "Índice de Vida", "fr": "Indice de Vie", "de": "Lebensqualitätsindex", "ja": "生活指数", "ru": "Жизненные индексы", "kr": "생활 지수", "ar": "مؤشر الحياة اليومية"
+    },
+    "travel_title": {
+      "en": "Travel Weather Comparison", "zh": "全球热门旅行天气对比", "es": "Clima de Viaje", "fr": "Météo de Voyage", "de": "Reisewetter", "ja": "旅行天気比較", "ru": "Погода для путешествий", "kr": "여행 날씨 비교", "ar": "مقارنة طقس السفر"
+    },
+    "wiki_title": {
+      "en": "Weather Wiki", "zh": "天气知识科普", "es": "Wiki del Clima", "fr": "Météo Wiki", "de": "Wetter-Wiki", "ja": "お天気ウィキ", "ru": "Погодная Вики", "kr": "날씨 위키", "ar": "موسوعة الطقس"
+    },
+    "home_title": {
+      "en": "Global Weather Forecast - 100+ Cities Real-time",
+      "zh": "全球天气预报 - 100+城市实时气温",
+      "es": "Pronóstico del Tiempo Mundial - 100+ Ciudades",
+      "fr": "Prévisions Météo Mondiales - 100+ Villes",
+      "de": "Weltwettervorhersage - 100+ Städte",
+      "ja": "世界の天気予報 - 100都市以上",
+      "ru": "Мировой Прогноз Погоды - 100+ Городов",
+      "kr": "세계 날씨 예보 - 100개 이상 도시",
+      "ar": "توقعات الطقس العالمية - 100+ مدينة"
+    },
+    "hot_cities": {
+      "en": "Hot Cities", "zh": "热门城市", "es": "Ciudades Populares", "fr": "Villes Populaires", "de": "Beliebte Städte", "ja": "人気都市", "ru": "Популярные Города", "kr": "인기 도시", "ar": "مدن رائجة"
+    },
+    "search_all": {
+      "en": "Search all", "zh": "搜索全部", "es": "Buscar todo", "fr": "Tout rechercher", "de": "Alle durchsuchen", "ja": "すべて検索", "ru": "Искать все", "kr": "모두 검색", "ar": "البحث في الكل"
+    },
+    "search_title": {
+      "en": "Search Cities", "zh": "搜索城市", "es": "Buscar Ciudades", "fr": "Rechercher des Villes", "de": "Städte Suchen", "ja": "都市を検索", "ru": "Поиск Городов", "kr": "도시 검색", "ar": "البحث في المدن"
+    },
+    "alerts_title": {
+      "en": "Severe Weather Alerts", "zh": "极端天气预警", "es": "Alertas Meteorológicas", "fr": "Alertes Météo", "de": "Unwetterwarnungen", "ja": "気象警報", "ru": "Предупреждения о Погоде", "kr": "기상 경보", "ar": "تنبيهات الطقس"
+    },
+    "alerts_desc": {
+      "en": "Real-time severe weather alerts from around the world.", "zh": "全球实时极端天气预警信息。", "es": "Alertas meteorológicas severas en tiempo real de todo el mundo.", "fr": "Alertes météo sévères en temps réel dans le monde entier.", "de": "Echtzeit-Unwetterwarnungen aus der ganzen Welt.", "ja": "世界中のリアルタイム気象警報。", "ru": "Оповещения о суровой погоде со всего мира в реальном времени.", "kr": "전 세계 실시간 기상 경보.", "ar": "تنبيهات طقس شديدة لحظية من جميع أنحاء العالم."
+    },
+    "no_alerts": {
+      "en": "No active severe weather alerts.", "zh": "当前没有活跃的极端天气预警。", "es": "No hay alertas meteorológicas activas.", "fr": "Aucune alerte météo active.", "de": "Keine aktiven Unwetterwarnungen.", "ja": "アクティブな気象警報はありません。", "ru": "Нет активных предупреждений о погоде.", "kr": "활성화된 기상 경보가 없습니다.", "ar": "لا توجد تنبيهات طقس نشطة."
+    },
+    "global_coverage": {
+      "en": "Global Coverage", "zh": "全球覆盖", "es": "Cobertura Global", "fr": "Couverture Mondiale", "de": "Globale Abdeckung", "ja": "世界対応", "ru": "Глобальный Охват", "kr": "전 세계 커버", "ar": "تغطية عالمية"
+    },
+    "realtime_updates": {
+      "en": "Real-time Updates", "zh": "实时更新", "es": "Actualizaciones en Tiempo Real", "fr": "Mises à Jour en Temps Réel", "de": "Echtzeit-Updates", "ja": "リアルタイム更新", "ru": "Обновления в Реальном Времени", "kr": "실시간 업데이트", "ar": "تحديثات فورية"
+    },
+    "static_fast": {
+      "en": "Static & Fast", "zh": "静态极速", "es": "Estático y Rápido", "fr": "Statique et Rapide", "de": "Statisch & Schnell", "ja": "静的・高速", "ru": "Статично и Быстро", "kr": "정적·고속", "ar": "ثابت وسريع"
+    },
+    "global_coverage_desc": {
+      "en": "Pre-rendered city pages across every region and major time zone.",
+      "zh": "覆盖全球各大区域和主要时区的预渲染城市页面。",
+      "es": "Páginas de ciudades pre-renderizadas en todas las regiones y zonas horarias principales.",
+      "fr": "Pages de villes pré-rendues dans chaque région et fuseau horaire majeur.",
+      "de": "Vorgerenderte Stadtseiten in jeder Region und jeder großen Zeitzone.",
+      "ja": "世界中の地域と主要タイムゾーンに対応した事前レンダリングされた都市ページ。",
+      "ru": "Предварительно отрендеренные страницы городов во всех регионах и основных часовых поясах.",
+      "kr": "모든 지역과 주요 시간대를 아우르는 사전 렌더링된 도시 페이지.",
+      "ar": "صفحات مدن معاد حسابها مسبقًا عبر كل منطقة ومنطقة زمنية رئيسية."
+    },
+    "realtime_updates_desc": {
+      "en": "GitHub Actions can refresh Open-Meteo data every three hours.",
+      "zh": "GitHub Actions 每三小时刷新一次 Open-Meteo 数据。",
+      "es": "GitHub Actions puede actualizar los datos de Open-Meteo cada tres horas.",
+      "fr": "GitHub Actions peut actualiser les données Open-Meteo toutes les trois heures.",
+      "de": "GitHub Actions kann Open-Meteo-Daten alle drei Stunden aktualisieren.",
+      "ja": "GitHub Actions で3時間ごとに Open-Meteo データを更新できます。",
+      "ru": "GitHub Actions может обновлять данные Open-Meteo каждые три часа.",
+      "kr": "GitHub Actions가 3시간마다 Open-Meteo 데이터를 새로고침할 수 있습니다.",
+      "ar": "يمكن لـ GitHub Actions تحديث بيانات Open-Meteo كل ثلاث ساعات."
+    },
+    "static_fast_desc": {
+      "en": "Static HTML keeps first paint fast and hosting cost at zero.",
+      "zh": "静态 HTML 让首屏极速呈现，并将托管成本降至为零。",
+      "es": "HTML estático mantiene la primera pintura rápida y el costo de alojamiento en cero.",
+      "fr": "Le HTML statique garde le premier affichage rapide et le coût d'hébergement à zéro.",
+      "de": "Statisches HTML sorgt für schnelles First Paint und keine Hostingkosten.",
+      "ja": "静的 HTML はファーストペイントを高速化し、ホスティングコストをゼロに抑えます。",
+      "ru": "Статический HTML обеспечивает быструю первую отрисовку и нулевую стоимость хостинга.",
+      "kr": "정적 HTML은 첫 화면을 빠르게 만들고 호스팅 비용을 제로로 유지합니다.",
+      "ar": "يحافظ HTML الثابت على سرعة أول رسم وتكلفة استضافة صفرية."
+    },
+    "select_language": {
+      "en": "Select Your Language", "zh": "选择您的语言", "es": "Selecciona tu Idioma", "fr": "Choisissez votre Langue", "de": "Sprache wählen", "ja": "言語を選択", "ru": "Выберите Язык", "kr": "언어 선택", "ar": "اختر لغتك"
+    },
+    "no_results": {
+      "en": "No cities found. Try another search.", "zh": "未找到城市，请尝试其他关键词。", "es": "No se encontraron ciudades. Intenta otra búsqueda.", "fr": "Aucune ville trouvée. Essayez une autre recherche.", "de": "Keine Städte gefunden. Versuchen Sie eine andere Suche.", "ja": "都市が見つかりませんでした。別のキーワードを試してください。", "ru": "Города не найдены. Попробуйте другой запрос.", "kr": "도시를 찾을 수 없습니다. 다른 검색어를 시도해 보세요.", "ar": "لم يتم العثور على مدن. جرب بحثًا آخر."
+    },
+    "updated": {
+      "en": "Last updated", "zh": "最后更新", "es": "Actualizado", "fr": "Mis à jour", "de": "Aktualisiert", "ja": "更新", "ru": "Обновлено", "kr": "업데이트", "ar": "آخر تحديث"
+    },
+    "data_source": {
+      "en": "Data: Open-Meteo with offline fallback",
+      "zh": "数据：Open-Meteo 离线兜底",
+      "es": "Datos: Open-Meteo con respaldo offline",
+      "fr": "Données: Open-Meteo avec secours offline",
+      "de": "Daten: Open-Meteo mit Offline-Fallback",
+      "ja": "データ: Open-Meteo / オフライン予備",
+      "ru": "Данные: Open-Meteo и офлайн-резерв",
+      "kr": "데이터: Open-Meteo 및 오프라인 예비",
+      "ar": "البيانات: Open-Meteo مع بديل دون اتصال"
+    }
+  },
+  "weather_codes": {
+    "0": {
+      "en": "Clear Sky", "zh": "晴朗天空", "es": "Cielo despejado", "fr": "Ciel dégagé", "de": "Klarer Himmel", "ja": "快晴", "ru": "Ясно", "kr": "맑음", "ar": "سماء صافية"
+    },
+    "1": {
+      "en": "Mainly Clear", "zh": "大部晴朗", "es": "Principalmente despejado", "fr": "Principalement dégagé", "de": "Überwiegend klar", "ja": "晴れ", "ru": "Преимущественно ясно", "kr": "대체로 맑음", "ar": "غالبا صافي"
+    },
+    "2": {
+      "en": "Partly Cloudy", "zh": "多云间晴", "es": "Parcialmente nublado", "fr": "Partiellement nuageux", "de": "Teils bewölkt", "ja": "一部曇り", "ru": "Переменная облачность", "kr": "구름조금", "ar": "غائم جزئيا"
+    },
+    "3": {
+      "en": "Overcast", "zh": "阴天覆盖", "es": "Nublado", "fr": "Couvert", "de": "Bedeckt", "ja": "昙り", "ru": "Пасмурно", "kr": "흐림", "ar": "غائم"
+    },
+    "45": {
+      "en": "Fog", "zh": "大雾弥漫", "es": "Niebla", "fr": "Brouillard", "de": "Nebel", "ja": "霧", "ru": "Туман", "kr": "안개", "ar": "ضباب"
+    },
+    "51": {
+      "en": "Drizzle", "zh": "毛毛雨", "es": "Llovizna", "fr": "Bruine", "de": "Nieselregen", "ja": "霧雨", "ru": "Морось", "kr": "이슬비", "ar": "رذاذ"
+    },
+    "61": {
+      "en": "Slight Rain", "zh": "微量小雨", "es": "Lluvia ligera", "fr": "Pluie légère", "de": "Leichter Regen", "ja": "小雨", "ru": "Небольшой дождь", "kr": "약한 비", "ar": "مطر خفيف"
+    },
+    "63": {
+      "en": "Rain", "zh": "中雨", "es": "Lluvia", "fr": "Pluie", "de": "Regen", "ja": "雨", "ru": "Дождь", "kr": "비", "ar": "مطر"
+    },
+    "80": {
+      "en": "Showers", "zh": "阵雨", "es": "Chubascos", "fr": "Averses", "de": "Schauer", "ja": "にわか雨", "ru": "Ливни", "kr": "소나기", "ar": "زخات مطر"
+    },
+    "95": {
+      "en": "Thunderstorm", "zh": "雷阵雨", "es": "Tormenta eléctrica", "fr": "Orage", "de": "Gewitter", "ja": "雷雨", "ru": "Гроза", "kr": "뇌우", "ar": "عاصفة رعدية"
+    }
+  },
+  "indices": {
+    "clothing": {
+      "en": ["Heavy", "Moderate", "Light"], "zh": ["防寒大衣", "适中夹克", "轻薄短袖"], "es": ["Abrigo", "Moderado", "Ligero"], "fr": ["Manteau", "Modéré", "Léger"], "de": ["Winterjacke", "Moderat", "T-Shirt"], "ja": ["厚手コート", "薄手長袖", "半袖半ズボン"], "ru": ["Пальто", "Умеренно", "Легко"], "kr": ["두꺼운 패딩", "가벼운 외투", "반팔 반바지"], "ar": ["ثقيل", "معتدل", "خفيف"]
+    },
+    "uv": {
+      "en": ["Low", "Moderate", "Very High"], "zh": ["弱-无需防护", "中等-涂抹防晒", "极强-减少外出"], "es": ["Bajo", "Moderado", "Muy Alto"], "fr": ["Faible", "Modéré", "Très Élevé"], "de": ["Niedrig", "Moderat", "Sehr Hoch"], "ja": ["弱い", "やや強い", "極めて強い"], "ru": ["Низкий", "Умеренный", "Очень высокий"], "kr": ["낮음", "보통", "매우 높음"], "ar": ["منخفض", "معتدل", "عالي جدا"]
+    }
+  }
+}

@@ -1,4 +1,10 @@
 #!/usr/bin/env python3
+"""WeatherIndex static site generator.
+
+Reads data/translations.json and templates/*.html, fetches Open-Meteo live data
+with an offline fallback model, and emits a multi-language static site ready for
+GitHub Pages.
+"""
 from __future__ import annotations
 
 import json
@@ -11,14 +17,21 @@ import unicodedata
 import urllib.error
 import urllib.parse
 import urllib.request
-from datetime import datetime, timezone
+from concurrent.futures import ThreadPoolExecutor, as_completed
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
+from jinja2 import Environment, FileSystemLoader, select_autoescape
+
+from api_clients import collect_weather
 
 ROOT = Path(__file__).resolve().parents[1]
+TEMPLATES_DIR = ROOT / "templates"
 OUT_DIRS = ["city", "wiki", "alert", "data"]
+
 LANGS = [
     {"code": "en", "flag": "🇺🇸", "name": "English", "native": "Weather", "dir": "ltr"},
+    {"code": "zh", "flag": "🇨🇳", "name": "中文", "native": "天气", "dir": "ltr"},
     {"code": "es", "flag": "🇪🇸", "name": "Español", "native": "Clima", "dir": "ltr"},
     {"code": "fr", "flag": "🇫🇷", "name": "Français", "native": "Météo", "dir": "ltr"},
     {"code": "de", "flag": "🇩🇪", "name": "Deutsch", "native": "Wetter", "dir": "ltr"},
@@ -27,37 +40,6 @@ LANGS = [
     {"code": "kr", "flag": "🇰🇷", "name": "한국어", "native": "날씨", "dir": "ltr"},
     {"code": "ar", "flag": "🇸🇦", "name": "العربية", "native": "الطقس", "dir": "rtl"},
 ]
-
-T = {
-    "en": {
-        "brand": "GlobalWeather", "tagline": "Real-time forecasts for 100+ cities worldwide",
-        "search": "Search city...", "locate": "Locate Me", "hot": "Hot Cities",
-        "features": "Built for global weather checks", "global": "Global Coverage",
-        "realtime": "Real-time Updates", "static": "Static & Fast",
-        "city_weather": "{city} Weather", "feels": "Feels Like", "humidity": "Humidity",
-        "wind": "Wind", "pressure": "Pressure", "visibility": "Visibility",
-        "hourly": "24-Hour Forecast", "daily": "7-Day Forecast", "life": "Life Index",
-        "travel": "Travel Weather", "knowledge": "Weather Knowledge",
-        "alert": "Severe Weather Alert", "view": "View Weather", "read": "Read",
-        "language": "Language", "select_language": "Select Your Language",
-        "results": "Search Results", "no_results": "No cities found. Try another search.",
-        "updated": "Last updated", "data": "Data: Open-Meteo with offline fallback",
-    },
-    "es": {"brand": "GlobalWeather", "tagline": "Pronósticos en tiempo real para 100+ ciudades", "search": "Buscar ciudad...", "locate": "Ubicarme", "hot": "Ciudades populares", "features": "Clima global al instante", "global": "Cobertura global", "realtime": "Actualizaciones reales", "static": "Estático y rápido", "city_weather": "Clima en {city}", "feels": "Sensación", "humidity": "Humedad", "wind": "Viento", "pressure": "Presión", "visibility": "Visibilidad", "hourly": "Pronóstico 24 horas", "daily": "Pronóstico 7 días", "life": "Índice de vida", "travel": "Clima de viaje", "knowledge": "Conocimiento meteorológico", "alert": "Alerta meteorológica", "view": "Ver clima", "read": "Leer", "language": "Idioma", "select_language": "Selecciona tu idioma", "results": "Resultados", "no_results": "No se encontraron ciudades.", "updated": "Actualizado", "data": "Datos: Open-Meteo con respaldo offline"},
-    "fr": {"brand": "GlobalWeather", "tagline": "Prévisions en temps réel pour plus de 100 villes", "search": "Rechercher une ville...", "locate": "Me localiser", "hot": "Villes populaires", "features": "Météo mondiale claire", "global": "Couverture mondiale", "realtime": "Mises à jour réelles", "static": "Statique et rapide", "city_weather": "Météo à {city}", "feels": "Ressenti", "humidity": "Humidité", "wind": "Vent", "pressure": "Pression", "visibility": "Visibilité", "hourly": "Prévision 24 h", "daily": "Prévision 7 jours", "life": "Indices de vie", "travel": "Météo voyage", "knowledge": "Culture météo", "alert": "Alerte météo", "view": "Voir", "read": "Lire", "language": "Langue", "select_language": "Choisissez votre langue", "results": "Résultats", "no_results": "Aucune ville trouvée.", "updated": "Mis à jour", "data": "Données: Open-Meteo avec secours offline"},
-    "de": {"brand": "GlobalWeather", "tagline": "Echtzeitprognosen für über 100 Städte", "search": "Stadt suchen...", "locate": "Standort", "hot": "Beliebte Städte", "features": "Wetter weltweit", "global": "Globale Abdeckung", "realtime": "Aktuelle Updates", "static": "Statisch & schnell", "city_weather": "Wetter in {city}", "feels": "Gefühlt", "humidity": "Feuchte", "wind": "Wind", "pressure": "Druck", "visibility": "Sicht", "hourly": "24-Stunden-Prognose", "daily": "7-Tage-Prognose", "life": "Lebensindex", "travel": "Reisewetter", "knowledge": "Wetterwissen", "alert": "Unwetterwarnung", "view": "Wetter ansehen", "read": "Lesen", "language": "Sprache", "select_language": "Sprache wählen", "results": "Suchergebnisse", "no_results": "Keine Städte gefunden.", "updated": "Aktualisiert", "data": "Daten: Open-Meteo mit Offline-Fallback"},
-    "ja": {"brand": "GlobalWeather", "tagline": "世界100都市以上のリアルタイム予報", "search": "都市を検索...", "locate": "現在地", "hot": "人気都市", "features": "世界の天気を高速表示", "global": "世界対応", "realtime": "リアルタイム更新", "static": "静的で高速", "city_weather": "{city}の天気", "feels": "体感", "humidity": "湿度", "wind": "風速", "pressure": "気圧", "visibility": "視程", "hourly": "24時間予報", "daily": "7日間予報", "life": "生活指数", "travel": "旅行天気", "knowledge": "天気知識", "alert": "気象警報", "view": "天気を見る", "read": "読む", "language": "言語", "select_language": "言語を選択", "results": "検索結果", "no_results": "都市が見つかりません。", "updated": "更新", "data": "データ: Open-Meteo / オフライン予備"},
-    "ru": {"brand": "GlobalWeather", "tagline": "Прогнозы в реальном времени для 100+ городов", "search": "Найти город...", "locate": "Моё место", "hot": "Популярные города", "features": "Погода по всему миру", "global": "Глобальный охват", "realtime": "Живые обновления", "static": "Статично и быстро", "city_weather": "Погода: {city}", "feels": "Ощущается", "humidity": "Влажность", "wind": "Ветер", "pressure": "Давление", "visibility": "Видимость", "hourly": "Прогноз на 24 часа", "daily": "Прогноз на 7 дней", "life": "Индексы", "travel": "Погода в поездке", "knowledge": "Знания о погоде", "alert": "Штормовое предупреждение", "view": "Смотреть", "read": "Читать", "language": "Язык", "select_language": "Выберите язык", "results": "Результаты поиска", "no_results": "Города не найдены.", "updated": "Обновлено", "data": "Данные: Open-Meteo и офлайн-резерв"},
-    "kr": {"brand": "GlobalWeather", "tagline": "전 세계 100개 이상 도시 실시간 예보", "search": "도시 검색...", "locate": "내 위치", "hot": "인기 도시", "features": "빠른 글로벌 날씨", "global": "전 세계 커버", "realtime": "실시간 업데이트", "static": "정적·고속", "city_weather": "{city} 날씨", "feels": "체감", "humidity": "습도", "wind": "바람", "pressure": "기압", "visibility": "가시거리", "hourly": "24시간 예보", "daily": "7일 예보", "life": "생활 지수", "travel": "여행 날씨", "knowledge": "날씨 지식", "alert": "기상 경보", "view": "날씨 보기", "read": "읽기", "language": "언어", "select_language": "언어 선택", "results": "검색 결과", "no_results": "도시를 찾을 수 없습니다.", "updated": "업데이트", "data": "데이터: Open-Meteo 및 오프라인 예비"},
-    "ar": {"brand": "GlobalWeather", "tagline": "توقعات فورية لأكثر من 100 مدينة حول العالم", "search": "ابحث عن مدينة...", "locate": "موقعي", "hot": "مدن رائجة", "features": "طقس عالمي سريع", "global": "تغطية عالمية", "realtime": "تحديثات فورية", "static": "ثابت وسريع", "city_weather": "طقس {city}", "feels": "المحسوسة", "humidity": "الرطوبة", "wind": "الرياح", "pressure": "الضغط", "visibility": "الرؤية", "hourly": "توقعات 24 ساعة", "daily": "توقعات 7 أيام", "life": "مؤشرات الحياة", "travel": "طقس السفر", "knowledge": "معرفة الطقس", "alert": "تنبيه طقس شديد", "view": "عرض الطقس", "read": "اقرأ", "language": "اللغة", "select_language": "اختر لغتك", "results": "نتائج البحث", "no_results": "لم يتم العثور على مدن.", "updated": "آخر تحديث", "data": "البيانات: Open-Meteo مع بديل دون اتصال"},
-}
-
-WEATHER = {
-    0: ("Clear Sky", "sunny", "☀️"), 1: ("Mainly Clear", "clear_day", "🌤️"), 2: ("Partly Cloudy", "partly_cloudy_day", "⛅"),
-    3: ("Overcast", "cloud", "☁️"), 45: ("Fog", "foggy", "🌫️"), 51: ("Drizzle", "rainy_light", "🌦️"),
-    61: ("Rain", "rainy", "🌧️"), 63: ("Rain", "rainy", "🌧️"), 80: ("Showers", "rainy", "🌧️"),
-    95: ("Thunderstorm", "thunderstorm", "⛈️"),
-}
 
 CITY_ROWS = """
 Tokyo|Japan|35.6762|139.6503|🗼|Asia/Tokyo|26
@@ -166,204 +148,266 @@ Vilnius|Lithuania|54.6872|25.2797|⛪|Europe/Vilnius|15
 Riga|Latvia|56.9496|24.1052|🌲|Europe/Riga|14
 """.strip()
 
+ADS_CLIENT = "ca-pub-8695398658548679"
+GA_ID = "G-SQCD1J9Y0H"
+BASE_URL = "https://weatherindex.xyz"
+
 
 def slug(name: str) -> str:
     ascii_name = unicodedata.normalize("NFKD", name).encode("ascii", "ignore").decode("ascii")
     return re.sub(r"[^a-z0-9]+", "-", ascii_name.lower()).strip("-")
 
 
+def load_translations() -> dict:
+    with open(ROOT / "translations.json", encoding="utf-8") as fh:
+        return json.load(fh)
+
+
 def cities() -> list[dict]:
     result = []
     for row in CITY_ROWS.splitlines():
         name, country, lat, lon, emoji, tz, base = row.split("|")
-        result.append({
-            "name": name, "country": country, "lat": float(lat), "lon": float(lon),
-            "emoji": emoji, "timezone": tz, "base_temp": int(base), "slug": slug(name),
-        })
+        result.append(
+            {
+                "name": name,
+                "country": country,
+                "lat": float(lat),
+                "lon": float(lon),
+                "emoji": emoji,
+                "timezone": tz,
+                "base_temp": int(base),
+                "slug": slug(name),
+            }
+        )
     return result
-
-
-def weather_for(city: dict) -> dict:
-    live = fetch_open_meteo(city)
-    if live:
-        return live
-    rnd = random.Random(city["slug"])
-    code = rnd.choice([0, 1, 2, 3, 61])
-    now = city["base_temp"] + rnd.randint(-2, 2)
-    hourly = [{"time": f"{h:02d}:00", "temp": now + int(math.sin(h / 3) * 3), "code": rnd.choice([0, 1, 2, 3, 61])} for h in range(24)]
-    daily = []
-    for i in range(7):
-        high = city["base_temp"] + rnd.randint(-3, 4)
-        daily.append({"day": ["Today", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"][i], "high": high, "low": high - rnd.randint(5, 10), "code": rnd.choice([0, 1, 2, 3, 61]), "rain": rnd.randint(0, 55), "wind": rnd.randint(6, 28)})
-    return {"temp": now, "apparent": now + 2, "humidity": rnd.randint(35, 82), "wind": rnd.randint(5, 32), "pressure": rnd.randint(1002, 1024), "visibility": rnd.randint(8, 18), "code": code, "hourly": hourly, "daily": daily, "source": "offline-model"}
 
 
 def fetch_open_meteo(city: dict) -> dict | None:
     if os.environ.get("OFFLINE_BUILD") == "1":
         return None
-    params = urllib.parse.urlencode({
-        "latitude": city["lat"], "longitude": city["lon"],
-        "current": "temperature_2m,relative_humidity_2m,apparent_temperature,weather_code,wind_speed_10m,pressure_msl,visibility",
-        "hourly": "temperature_2m,weather_code,precipitation_probability",
-        "daily": "weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max",
-        "timezone": "auto", "forecast_days": "7",
-    })
+    bundle = collect_weather(city)
+    raw = bundle.get("forecast")
+    if not raw or bundle.get("forecast_source") != "open-meteo":
+        return None
+
     try:
-        with urllib.request.urlopen(f"https://api.open-meteo.com/v1/forecast?{params}", timeout=12) as res:
-            raw = json.loads(res.read().decode("utf-8"))
         cur = raw["current"]
-        hourly = [{"time": t[-5:], "temp": round(temp), "code": int(code)} for t, temp, code in zip(raw["hourly"]["time"][:24], raw["hourly"]["temperature_2m"][:24], raw["hourly"]["weather_code"][:24])]
-        daily = [{"day": ["Today", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"][i], "high": round(hi), "low": round(lo), "code": int(code), "rain": int(rain or 0), "wind": 12 + i * 2} for i, (hi, lo, code, rain) in enumerate(zip(raw["daily"]["temperature_2m_max"], raw["daily"]["temperature_2m_min"], raw["daily"]["weather_code"], raw["daily"].get("precipitation_probability_max", [0] * 7)))]
-        return {"temp": round(cur["temperature_2m"]), "apparent": round(cur["apparent_temperature"]), "humidity": int(cur["relative_humidity_2m"]), "wind": round(cur["wind_speed_10m"]), "pressure": round(cur["pressure_msl"]), "visibility": round((cur.get("visibility") or 10000) / 1000), "code": int(cur["weather_code"]), "hourly": hourly, "daily": daily, "source": "open-meteo"}
-    except (urllib.error.URLError, TimeoutError, KeyError, ValueError):
+        daily = raw["daily"]
+        air_current = (bundle.get("air_quality") or {}).get("current") or {}
+        marine_current = (bundle.get("marine") or {}).get("current") or {}
+        return {
+            "current": {
+                "temperature_2m": round(cur["temperature_2m"]),
+                "relative_humidity_2m": int(cur["relative_humidity_2m"]),
+                "apparent_temperature": round(cur["apparent_temperature"]),
+                "weather_code": int(cur["weather_code"]),
+                "wind_speed_10m": round(cur["wind_speed_10m"]),
+                "pressure_msl": round(cur.get("pressure_msl", 1013)),
+                "visibility": round((cur.get("visibility") or 10000) / 1000),
+            },
+            "air_quality": {
+                "us_aqi": int(air_current.get("us_aqi") or 25),
+                "pm2_5": round(float(air_current.get("pm2_5") or 8), 1),
+                "pm10": round(float(air_current.get("pm10") or 16), 1),
+                "uv_index": round(float(air_current.get("uv_index") or 4), 1),
+            },
+            "marine": {
+                "wave_height": round(float(marine_current.get("wave_height") or 0), 1),
+                "wave_period": round(float(marine_current.get("wave_period") or 0), 1),
+            },
+            "daily": {
+                "time": [t for t in daily["time"]],
+                "temperature_2m_max": [round(x) for x in daily["temperature_2m_max"]],
+                "temperature_2m_min": [round(x) for x in daily["temperature_2m_min"]],
+                "weather_code": [int(x) for x in daily["weather_code"]],
+                "precipitation_probability_max": [
+                    int(x) for x in daily.get("precipitation_probability_max", [0] * len(daily["time"]))
+                ],
+            },
+            "source": "open-meteo",
+            "api_status": bundle.get("api_status", []),
+        }
+    except (KeyError, TypeError, ValueError):
         return None
 
 
-def wx(code: int) -> tuple[str, str, str]:
-    return WEATHER.get(code, WEATHER[2])
+def offline_weather(city: dict) -> dict:
+    rnd = random.Random(city["slug"] + datetime.now(timezone.utc).strftime("%Y%m%d%H"))
+    code = rnd.choice([0, 1, 2, 3, 61])
+    now = city["base_temp"] + rnd.randint(-2, 2)
+    days = []
+    for i in range(7):
+        high = city["base_temp"] + rnd.randint(-3, 4)
+        days.append(
+            {
+                "date": (datetime.now(timezone.utc) + timedelta(days=i)).strftime("%Y-%m-%d"),
+                "high": high,
+                "low": high - rnd.randint(5, 10),
+                "code": rnd.choice([0, 1, 2, 3, 61]),
+            }
+        )
+    return {
+        "current": {
+            "temperature_2m": now,
+            "relative_humidity_2m": rnd.randint(35, 82),
+            "apparent_temperature": now + 2,
+            "weather_code": code,
+            "wind_speed_10m": rnd.randint(5, 32),
+            "pressure_msl": rnd.randint(1002, 1024),
+            "visibility": rnd.randint(8, 18),
+        },
+        "air_quality": {
+            "us_aqi": rnd.randint(12, 58),
+            "pm2_5": round(rnd.uniform(4, 18), 1),
+            "pm10": round(rnd.uniform(10, 35), 1),
+            "uv_index": rnd.randint(2, 8),
+        },
+        "marine": {
+            "wave_height": 0,
+            "wave_period": 0,
+        },
+        "daily": {
+            "time": [d["date"] for d in days],
+            "temperature_2m_max": [d["high"] for d in days],
+            "temperature_2m_min": [d["low"] for d in days],
+            "weather_code": [d["code"] for d in days],
+            "precipitation_probability_max": [rnd.randint(0, 55) for _ in days],
+        },
+        "source": "offline-model",
+        "api_status": [{"source": "offline-model", "ok": "true", "error": ""}],
+    }
 
 
-def page(title: str, body: str, lang: dict, path_prefix: str = ".") -> str:
-    tr = T[lang["code"]]
-    return f"""<!doctype html>
-<html lang="{lang['code']}" dir="{lang['dir']}">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{title}</title>
-  <meta name="description" content="{tr['tagline']}">
-  <link rel="stylesheet" href="{path_prefix}/assets/css/styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&family=Material+Symbols+Outlined:wght@300;400;600&display=swap" rel="stylesheet">
-</head>
-<body>
-  <nav class="topbar">
-    <a class="brand" href="{path_prefix}/index.html"><span class="material-symbols-outlined">routine</span>{tr['brand']}</a>
-    <div class="nav-search"><span class="material-symbols-outlined">search</span><input data-search-input placeholder="{tr['search']}"></div>
-    <div class="nav-actions">
-      <a class="icon-link" href="{path_prefix}/lang.html" title="{tr['language']}"><span class="material-symbols-outlined">language</span></a>
-      <button class="icon-link" data-locate title="{tr['locate']}"><span class="material-symbols-outlined">my_location</span></button>
-    </div>
-  </nav>
-  <main>{body}</main>
-  <footer class="footer">{tr['updated']}: {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')} · {tr['data']} · GitHub Pages</footer>
-  <script src="{path_prefix}/assets/js/app.js"></script>
-</body>
-</html>"""
+def weather_for(city: dict) -> dict:
+    return fetch_open_meteo(city) or offline_weather(city)
 
 
-def home(lang: dict, city_data: list[dict], prefix: str = ".") -> str:
-    tr = T[lang["code"]]
-    hot = "".join(city_card(c, lang, prefix) for c in city_data[:12])
-    lang_links = "".join(f'<a class="lang-chip" href="{prefix}/{l["code"]}/index.html">{l["flag"]} {l["code"].upper()}</a>' for l in LANGS)
-    body = f"""
-<section class="hero">
-  <div>
-    <p class="eyebrow">Open-Meteo · Static SSG · 100+ Cities</p>
-    <h1>{tr['brand']}</h1>
-    <p class="lead">{tr['tagline']}</p>
-    <div class="hero-search"><span class="material-symbols-outlined">search</span><input data-search-input placeholder="{tr['search']}"><button data-locate><span class="material-symbols-outlined">my_location</span>{tr['locate']}</button></div>
-    <div class="language-row">{lang_links}</div>
-  </div>
-  <div class="hero-panel">
-    <span class="sky-icon">🌤️</span>
-    <strong>{city_data[0]['weather']['temp']}°C</strong>
-    <span>{city_data[0]['name']}, {city_data[0]['country']}</span>
-  </div>
-</section>
-<section class="section"><div class="section-head"><h2>{tr['hot']}</h2><a href="{prefix}/search.html">Search all</a></div><div class="city-grid">{hot}</div></section>
-<section class="feature-band">
-  <article><span>🌍</span><h3>{tr['global']}</h3><p>Pre-rendered city pages across every region and major time zone.</p></article>
-  <article><span>🔄</span><h3>{tr['realtime']}</h3><p>GitHub Actions can refresh Open-Meteo data every three hours.</p></article>
-  <article><span>⚡</span><h3>{tr['static']}</h3><p>Static HTML keeps first paint fast and hosting cost at zero.</p></article>
-</section>"""
-    return page(f"{tr['brand']} - Global Forecasts", body, lang, prefix)
+def weather_text(code: int, trans: dict, lang_code: str) -> str:
+    return trans["weather_codes"].get(str(code), {}).get(lang_code) or trans["weather_codes"].get(str(code), {}).get("en") or "Partly Cloudy"
 
 
-def city_card(c: dict, lang: dict, prefix: str) -> str:
-    label, icon, emoji = wx(c["weather"]["code"])
-    return f"""<a class="city-card {weather_class(c['weather']['code'])}" href="{prefix}/city/{c['slug']}.html">
-  <span class="city-emoji">{c['emoji']}</span><strong>{c['name']}</strong><small>{c['country']}</small>
-  <span class="city-temp">{c['weather']['temp']}°C {emoji}</span><em>{label}</em>
-</a>"""
+def clothing_index(temp: float, trans: dict, lang_code: str) -> str:
+    labels = trans["indices"]["clothing"].get(lang_code) or trans["indices"]["clothing"]["en"]
+    if temp < 10:
+        return labels[0]
+    if temp < 22:
+        return labels[1]
+    return labels[2]
 
 
-def city_page(lang: dict, c: dict, all_cities: list[dict], prefix: str = "..") -> str:
-    tr = T[lang["code"]]
-    w = c["weather"]
-    label, icon, emoji = wx(w["code"])
-    hourly = "".join(f'<div class="hour {"current" if i == 0 else ""}"><b>{ "Now" if i == 0 else h["time"]}</b><span>{wx(h["code"])[2]}</span><strong>{h["temp"]}°</strong></div>' for i, h in enumerate(w["hourly"]))
-    daily = "".join(f'<details class="day-row"><summary><span>{d["day"]}</span><b>{wx(d["code"])[2]}</b><strong>{d["high"]}° / {d["low"]}°</strong><em>{wx(d["code"])[0]}</em></summary><p>Wind {d["wind"]} km/h · Humidity {w["humidity"]}% · Rain {d["rain"]}% · Sunrise 06:12 · Sunset 18:47</p></details>' for d in w["daily"])
-    life = "".join(f'<article class="mini"><span>{a}</span><b>{b}</b><small>{v}</small></article>' for a, b, v in [("👕", "Clothing", "Light"), ("☀️", "UV Index", "Medium"), ("🚗", "Car Wash", "Good"), ("🏃", "Sports", "Ideal"), ("💊", "Cold Risk", "Low"), ("🧴", "Skin Care", "Hydrate")])
-    travel = "".join(f'<tr><td>{x["name"]}</td><td>{x["weather"]["temp"]}°C</td><td>{wx(x["weather"]["code"])[2]} {wx(x["weather"]["code"])[0]}</td><td>Apr-Oct</td></tr>' for x in all_cities[60:64])
-    body = f"""
-<section class="city-hero {weather_class(w['code'])}">
-  <div><p class="eyebrow">{c['timezone']} · {w['source']}</p><h1>{tr['city_weather'].format(city=c['name'])}</h1><div class="temp-line"><span>{emoji}</span><strong>{w['temp']}°C</strong></div><p class="lead">{label}</p><div class="badges"><span>AQI: Excellent 🟢</span><span>UV: Medium 🟡</span><span>Rain: {w['daily'][0]['rain']}% 🔵</span></div></div>
-  <div class="metric-grid">
-    <article><small>{tr['feels']}</small><b>{w['apparent']}°C</b></article><article><small>{tr['humidity']}</small><b>{w['humidity']}%</b></article><article><small>{tr['wind']}</small><b>{w['wind']} km/h</b></article>
-    <article><small>{tr['pressure']}</small><b>{w['pressure']} hPa</b></article><article><small>{tr['visibility']}</small><b>{w['visibility']} km</b></article><article><small>Clock</small><b data-clock>{datetime.now().strftime('%H:%M')}</b></article>
-  </div>
-</section>
-<section class="section"><h2>{tr['hourly']}</h2><div class="hour-strip">{hourly}</div></section>
-<section class="section two-col"><div><h2>{tr['daily']}</h2><div class="forecast-list">{daily}</div></div><aside class="alert-card"><h2>⚠️ {tr['alert']}</h2><p>Typhoon Warning - Category 3. Strong winds and heavy rain may affect coastal travel.</p><a href="{prefix}/alert/tokyo-typhoon.html">View Details →</a></aside></section>
-<section class="section"><h2>{tr['life']}</h2><div class="mini-grid">{life}</div></section>
-<section class="section two-col"><div class="table-card"><h2>{tr['travel']}</h2><table><tbody>{travel}</tbody></table></div><div><h2>{tr['knowledge']}</h2><div class="knowledge-grid">{wiki_cards(prefix, tr)}</div></div></section>"""
-    return page(f"{c['name']} Weather - GlobalWeather", body, lang, prefix)
-
-
-def weather_class(code: int) -> str:
+def uv_index(code: int, trans: dict, lang_code: str) -> str:
+    labels = trans["indices"]["uv"].get(lang_code) or trans["indices"]["uv"]["en"]
     if code in (0, 1):
-        return "sunny"
-    if code in (61, 63, 80, 95):
-        return "rainy"
-    return "cloudy"
+        return labels[0]
+    if code in (2, 3):
+        return labels[1]
+    return labels[2]
 
 
-def wiki_cards(prefix: str, tr: dict) -> str:
-    cards = [("🌀", "Typhoon Naming Rules", "typhoon-naming"), ("🌡️", "El Niño Phenomenon", "el-nino"), ("📈", "Climate Change Data", "climate-change")]
-    return "".join(f'<a class="wiki-card" href="{prefix}/wiki/{slug}.html"><span>{emoji}</span><b>{title}</b><small>{tr["read"]} →</small></a>' for emoji, title, slug in cards)
+def travel_destinations(city: dict, all_cities: list[dict]) -> list[dict]:
+    rnd = random.Random(city["slug"])
+    picks = rnd.sample([c for c in all_cities if c["slug"] != city["slug"]], min(4, len(all_cities) - 1))
+    result = []
+    for dest in picks:
+        dest_temp = dest["weather"]["current"]["temperature_2m"]
+        cur_temp = city["weather"]["current"]["temperature_2m"]
+        diff = dest_temp - cur_temp
+        if abs(diff) <= 3:
+            diff_text = "Similar"
+        elif diff > 0:
+            diff_text = f"+{diff}°C warmer"
+        else:
+            diff_text = f"{diff}°C cooler"
+        result.append(
+            {
+                "name": f"{dest['name']}, {dest['country']}",
+                "emoji": dest["emoji"],
+                "temp": dest_temp,
+                "diff": diff_text,
+                "rating": "Great" if abs(diff) <= 5 else "Fair",
+            }
+        )
+    return result
 
 
-def lang_page(lang: dict, prefix: str = ".") -> str:
-    tr = T[lang["code"]]
-    cards = "".join(f'<a class="language-card" href="{prefix}/{l["code"]}/index.html"><span>{l["flag"]}</span><b>{l["name"]}</b><small>{l["native"]}</small></a>' for l in LANGS)
-    return page(f"{tr['select_language']} - GlobalWeather", f'<section class="section narrow"><h1>{tr["select_language"]}</h1><p class="lead">Selecciona tu idioma · Choisissez votre langue · Sprache wählen · 言語を選択</p><div class="language-grid">{cards}</div></section>', lang, prefix)
+def alerts_data() -> list[dict]:
+    return [
+        {
+            "city": "Tokyo, Japan",
+            "time": "2026-06-11 08:00 UTC",
+            "text": "Typhoon Warning - Category 3. Strong winds and heavy rain may affect coastal travel.",
+            "icon": "🌀",
+            "border": "border-red-500",
+        },
+        {
+            "city": "Delhi, India",
+            "time": "2026-06-11 06:00 UTC",
+            "text": "Heat wave advisory: temperatures expected to exceed 42°C. Avoid outdoor activity during peak hours.",
+            "icon": "🌡️",
+            "border": "border-orange-500",
+        },
+    ]
 
 
-def search_page(lang: dict, all_cities: list[dict], prefix: str = ".") -> str:
-    tr = T[lang["code"]]
-    rows = "".join(f'<article class="result-card" data-city="{c["name"].lower()} {c["country"].lower()}"><div><span>{c["emoji"]}</span><b>{c["name"]}</b><small>{c["country"]}</small></div><strong>{c["weather"]["temp"]}°C {wx(c["weather"]["code"])[2]}</strong><a href="{prefix}/city/{c["slug"]}.html">{tr["view"]}</a></article>' for c in all_cities)
-    body = f'<section class="section narrow"><h1>{tr["results"]}</h1><div class="page-search"><span class="material-symbols-outlined">search</span><input data-results-search placeholder="{tr["search"]}"></div><p class="result-count"></p><div class="results-list">{rows}</div><p class="empty-state">{tr["no_results"]}</p></section>'
-    return page(f"{tr['results']} - GlobalWeather", body, lang, prefix)
-
-
-def wiki_page(lang: dict, topic: str, prefix: str = "..") -> str:
-    titles = {"typhoon-naming": ("🌀", "Typhoon Naming Rules", "How tropical cyclones get their names"), "el-nino": ("🌡️", "El Niño Phenomenon", "Why Pacific ocean temperatures reshape global weather"), "climate-change": ("📈", "Climate Change Data 2026", "Reading long-term signals without losing daily context")}
-    emoji, title, subtitle = titles[topic]
-    body = f"""<article class="article">
-<nav class="breadcrumb"><a href="{prefix}/index.html">Home</a> › <span>Weather Knowledge</span> › <b>{title}</b></nav>
-<span class="article-emoji">{emoji}</span><h1>{title}</h1><p class="lead">{subtitle}</p>
-<p>Weather is local at the moment you feel it, but global in the systems that create it. This guide explains the topic in practical language for travelers, planners, and curious readers.</p>
+def wiki_articles() -> list[dict]:
+    return [
+        {
+            "slug": "typhoon-naming",
+            "title": "How are typhoons named?",
+            "description": "Learn how tropical cyclones get their names from the WMO naming matrix.",
+            "emoji": "🌀",
+            "content": """
+<p>Weather is local at the moment you feel it, but global in the systems that create it. Tropical cyclone names are maintained by regional committees under the World Meteorological Organization so that warnings can be shared clearly across borders and languages.</p>
+<h2>Why names matter</h2>
+<ul><li>Short, familiar names reduce confusion when multiple storms exist at the same time.</li><li>Each basin uses its own rotating lists, with names retired after particularly deadly or costly events.</li><li>Static, pre-rendered pages keep emergency information fast even during traffic spikes.</li></ul>
 <blockquote>Reliable weather communication depends on clear naming, consistent data, and calm presentation during high-impact events.</blockquote>
-<h2>Key Points</h2><ul><li>Official agencies coordinate terminology so alerts can be shared across borders.</li><li>Forecast data should be refreshed frequently, but static pages keep access fast during traffic spikes.</li><li>Historical climate signals help explain trends; daily forecasts still require local observation.</li></ul>
-<h2>Related Reading</h2><div class="knowledge-grid">{wiki_cards(prefix, T[lang["code"]])}</div>
-</article>"""
-    return page(f"{title} - GlobalWeather", body, lang, prefix)
+<h2>Key takeaways</h2>
+<ul><li>Names are assigned alphabetically as storms form.</li><li>Forecast data should be refreshed frequently; static pages keep access fast.</li><li>Historical climate signals help explain trends, but daily forecasts still require local observation.</li></ul>
+""",
+        },
+        {
+            "slug": "el-nino",
+            "title": "What is El Niño?",
+            "description": "Why Pacific sea-surface temperature anomalies reshape global weather patterns.",
+            "emoji": "🌡️",
+            "content": """
+<p>El Niño is a warming of the central and eastern tropical Pacific Ocean. It shifts rainfall patterns, influences monsoons, and can raise global average temperatures for months at a time.</p>
+<h2>How it affects weather</h2>
+<ul><li>Wetter-than-average winters in the southern United States and drier conditions in Australia and Indonesia.</li><li>Weaker Indian monsoon rains in many El Niño years.</li><li>Warmer global mean temperatures due to heat release from the Pacific.</li></ul>
+<h2>What to watch</h2>
+<ul><li>Sea-surface temperature anomalies in the Niño 3.4 region.</li><li>Atmospheric response, including weaker trade winds and shifting jet streams.</li><li>Local forecasts, because global patterns do not determine every daily outcome.</li></ul>
+""",
+        },
+        {
+            "slug": "climate-change",
+            "title": "2026 Climate Outlook",
+            "description": "A practical look at greenhouse effects on major cities worldwide.",
+            "emoji": "📈",
+            "content": """
+<p>Long-term climate signals show warming, more intense rainfall in some regions, and deeper droughts in others. For travelers and planners, the key is to combine long-term awareness with daily local forecasts.</p>
+<h2>What the data shows</h2>
+<ul><li>Global average temperatures continue to rise relative to the 20th-century baseline.</li><li>Heat waves are becoming more frequent in many mid-latitude cities.</li><li>Extreme precipitation events are intensifying where moisture is available.</li></ul>
+<h2>Practical tips</h2>
+<ul><li>Check forecasts close to departure, not just seasonal averages.</li><li>Pack for temperature swings, especially in continental climates.</li><li>Follow official warnings during severe weather rather than relying on general trends.</li></ul>
+""",
+        },
+    ]
 
 
-def alert_page(lang: dict, prefix: str = "..") -> str:
-    body = f"""<section class="section narrow">
-<nav class="breadcrumb"><a href="{prefix}/index.html">Home</a> › Alerts › <b>Typhoon Warning</b></nav>
-<article class="alert-detail"><p class="eyebrow">⚠️ SEVERE WEATHER ALERT</p><h1>Typhoon Warning - Category 3</h1><h2>Tokyo, Japan</h2>
-<div class="timeline"><p><b>Effective Period</b><br>Jun 15, 2026 08:00 — Jun 16, 2026 20:00</p><p>Maximum wind speed: 150 km/h · Impact area: Kanto region · Advice: avoid unnecessary travel, secure loose objects, and monitor official instructions.</p></div>
-<div class="button-row"><button data-share>Share</button><a href="{prefix}/city/tokyo.html">Back to Tokyo Weather</a></div></article></section>"""
-    return page("Typhoon Warning - GlobalWeather", body, lang, prefix)
+def render(template_name: str, context: dict) -> str:
+    env = Environment(
+        loader=FileSystemLoader(TEMPLATES_DIR),
+        autoescape=select_autoescape(["html", "xml"]),
+    )
+    env.globals["weather_code_text"] = lambda code: weather_text(code, context["trans"], context["lang_code"])
+    template = env.get_template(template_name)
+    return template.render(**context)
 
 
 def write(path: Path, content: str) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(content, encoding="utf-8")
+    cleaned = "\n".join(line.rstrip() for line in content.splitlines()) + "\n"
+    path.write_text(cleaned, encoding="utf-8")
 
 
 def clean() -> None:
@@ -378,35 +422,183 @@ def clean() -> None:
 
 
 def build() -> None:
+    trans = load_translations()
     clean()
     all_cities = cities()
+    with ThreadPoolExecutor(max_workers=10) as executor:
+        future_to_city = {executor.submit(weather_for, c): c for c in all_cities}
+        for future in as_completed(future_to_city):
+            c = future_to_city[future]
+            c["weather"] = future.result()
+
+    # Shared data files
+    write(ROOT / "data" / "cities.json", json.dumps(all_cities, ensure_ascii=False, indent=2))
+    write(
+        ROOT / "data" / "api-status.json",
+        json.dumps(
+            {
+                "generated_at": datetime.now(timezone.utc).isoformat(),
+                "providers": [
+                    "Open-Meteo Forecast",
+                    "Open-Meteo Air Quality",
+                    "Open-Meteo Marine",
+                    "OpenWeatherMap (optional OPENWEATHER_KEY)",
+                    "Visual Crossing (optional VISUALCROSSING_KEY)",
+                    "7Timer",
+                    "wttr.in",
+                    "Weatherbit (optional WEATHERBIT_KEY)",
+                    "ipapi.co",
+                    "ipinfo.io",
+                    "IPWho.is",
+                    "IPLocate",
+                    "WorldTimeAPI",
+                    "Nominatim",
+                    "Buttondown (optional BUTTONDOWN_NEWSLETTER)",
+                ],
+                "cities": [{"city": c["name"], "status": c["weather"].get("api_status", [])} for c in all_cities],
+            },
+            ensure_ascii=False,
+            indent=2,
+        ),
+    )
+    write(
+        ROOT / "data" / "alerts.json",
+        json.dumps({"alerts": alerts_data()}, ensure_ascii=False, indent=2),
+    )
+
+    hot_cities = all_cities[:12]
+    updated = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    wiki_list = wiki_articles()
+
+    # Root (default English) pages
+    root_context = {
+        "lang_code": "en",
+        "lang": LANGS[0],
+        "languages": LANGS,
+        "trans": trans,
+        "prefix": ".",
+        "ga_id": GA_ID,
+        "ads_client": ADS_CLIENT,
+        "updated": updated,
+        "hot_cities": [{**c, "weather": {"temp": c["weather"]["current"]["temperature_2m"], "emoji": "🌤️", "text": weather_text(c["weather"]["current"]["weather_code"], trans, "en")}} for c in hot_cities],
+        "cities": all_cities,
+    }
+    write(ROOT / "index.html", render("index.html", {**root_context, "page_path": ""}))
+    write(ROOT / "lang.html", render("lang.html", {**root_context, "page_path": "lang.html"}))
+    write(ROOT / "search.html", render("search.html", {**root_context, "page_path": "search.html"}))
+
+    root_sub_context = {**root_context, "prefix": ".."}
+
+    for article in wiki_list:
+        related = [a for a in wiki_list if a["slug"] != article["slug"]]
+        ctx = {
+            **root_sub_context,
+            "page_path": f"wiki/{article['slug']}.html",
+            "title": article["title"],
+            "description": article["description"],
+            "content": article["content"],
+            "related": related,
+        }
+        write(ROOT / "wiki" / f"{article['slug']}.html", render("wiki.html", ctx))
+
+    write(
+        ROOT / "alert" / "tokyo-typhoon.html",
+        render("alert.html", {**root_sub_context, "page_path": "alert/tokyo-typhoon.html", "alerts": alerts_data()}),
+    )
+
     for c in all_cities:
-        c["weather"] = weather_for(c)
-    write(ROOT / "data/cities.json", json.dumps(all_cities, ensure_ascii=False, indent=2))
-    write(ROOT / "index.html", home(LANGS[0], all_cities, "."))
-    write(ROOT / "lang.html", lang_page(LANGS[0], "."))
-    write(ROOT / "search.html", search_page(LANGS[0], all_cities, "."))
-    for topic in ["typhoon-naming", "el-nino", "climate-change"]:
-        write(ROOT / "wiki" / f"{topic}.html", wiki_page(LANGS[0], topic, ".."))
-    write(ROOT / "alert" / "tokyo-typhoon.html", alert_page(LANGS[0], ".."))
-    for c in all_cities:
-        write(ROOT / "city" / f"{c['slug']}.html", city_page(LANGS[0], c, all_cities, ".."))
+        ctx = {
+            **root_sub_context,
+            "page_path": f"city/{c['slug']}.html",
+            "city": c,
+            "weather": c["weather"],
+            "current_weather_text": weather_text(c["weather"]["current"]["weather_code"], trans, "en"),
+            "life_indices": {
+                "clothing": clothing_index(c["weather"]["current"]["temperature_2m"], trans, "en"),
+                "uv": uv_index(c["weather"]["current"]["weather_code"], trans, "en"),
+            },
+            "travel_destinations": travel_destinations(c, all_cities),
+        }
+        write(ROOT / "city" / f"{c['slug']}.html", render("city.html", ctx))
+
+    # Per-language pages
     for lang in LANGS:
-        base = ROOT / lang["code"]
-        write(base / "index.html", home(lang, all_cities, ".."))
-        write(base / "lang.html", lang_page(lang, ".."))
-        write(base / "search.html", search_page(lang, all_cities, ".."))
-        write(base / "alert" / "tokyo-typhoon.html", alert_page(lang, "../.."))
-        for topic in ["typhoon-naming", "el-nino", "climate-change"]:
-            write(base / "wiki" / f"{topic}.html", wiki_page(lang, topic, "../.."))
+        code = lang["code"]
+        base_ctx = {
+            "lang_code": code,
+            "lang": lang,
+            "languages": LANGS,
+            "trans": trans,
+            "prefix": "..",
+            "ga_id": GA_ID,
+            "ads_client": ADS_CLIENT,
+            "updated": updated,
+            "hot_cities": [{**c, "weather": {"temp": c["weather"]["current"]["temperature_2m"], "emoji": "🌤️", "text": weather_text(c["weather"]["current"]["weather_code"], trans, code)}} for c in hot_cities],
+            "cities": all_cities,
+        }
+        base = ROOT / code
+        write(base / "index.html", render("index.html", {**base_ctx, "page_path": ""}))
+        write(base / "lang.html", render("lang.html", {**base_ctx, "page_path": "lang.html"}))
+        write(base / "search.html", render("search.html", {**base_ctx, "page_path": "search.html"}))
+
+        lang_sub_context = {**base_ctx, "prefix": "../.."}
+
+        for article in wiki_list:
+            related = [a for a in wiki_list if a["slug"] != article["slug"]]
+            ctx = {
+                **lang_sub_context,
+                "page_path": f"wiki/{article['slug']}.html",
+                "title": article["title"],
+                "description": article["description"],
+                "content": article["content"],
+                "related": related,
+            }
+            write(base / "wiki" / f"{article['slug']}.html", render("wiki.html", ctx))
+
+        write(
+            base / "alert" / "tokyo-typhoon.html",
+            render("alert.html", {**lang_sub_context, "page_path": "alert/tokyo-typhoon.html", "alerts": alerts_data()}),
+        )
+
         for c in all_cities:
-            write(base / "city" / f"{c['slug']}.html", city_page(lang, c, all_cities, "../.."))
-    urls = ["https://wolf0x0x.github.io/weatherindex/"]
-    urls += [f"https://wolf0x0x.github.io/weatherindex/city/{c['slug']}.html" for c in all_cities]
-    urls += [f"https://wolf0x0x.github.io/weatherindex/{l['code']}/city/{c['slug']}.html" for l in LANGS for c in all_cities]
-    sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join(f"  <url><loc>{u}</loc></url>\n" for u in urls) + "</urlset>\n"
+            ctx = {
+                **lang_sub_context,
+                "page_path": f"city/{c['slug']}.html",
+                "city": c,
+                "weather": c["weather"],
+                "current_weather_text": weather_text(c["weather"]["current"]["weather_code"], trans, code),
+                "life_indices": {
+                    "clothing": clothing_index(c["weather"]["current"]["temperature_2m"], trans, code),
+                    "uv": uv_index(c["weather"]["current"]["weather_code"], trans, code),
+                },
+                "travel_destinations": travel_destinations(c, all_cities),
+            }
+            write(base / "city" / f"{c['slug']}.html", render("city.html", ctx))
+
+    # Sitemap and robots
+    urls = [f"{BASE_URL}/", f"{BASE_URL}/lang.html", f"{BASE_URL}/search.html"]
+    urls += [f"{BASE_URL}/city/{c['slug']}.html" for c in all_cities]
+    urls += [f"{BASE_URL}/wiki/{a['slug']}.html" for a in wiki_list]
+    urls.append(f"{BASE_URL}/alert/tokyo-typhoon.html")
+    for lang in LANGS:
+        urls.append(f"{BASE_URL}/{lang['code']}/index.html")
+        urls.append(f"{BASE_URL}/{lang['code']}/lang.html")
+        urls.append(f"{BASE_URL}/{lang['code']}/search.html")
+        urls += [f"{BASE_URL}/{lang['code']}/city/{c['slug']}.html" for c in all_cities]
+        urls += [f"{BASE_URL}/{lang['code']}/wiki/{a['slug']}.html" for a in wiki_list]
+        urls.append(f"{BASE_URL}/{lang['code']}/alert/tokyo-typhoon.html")
+    sitemap = (
+        '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        + "".join(f"  <url><loc>{u}</loc></url>\n" for u in urls)
+        + "</urlset>\n"
+    )
     write(ROOT / "sitemap.xml", sitemap)
-    write(ROOT / "robots.txt", "User-agent: *\nAllow: /\nSitemap: https://wolf0x0x.github.io/weatherindex/sitemap.xml\n")
+    write(
+        ROOT / "robots.txt",
+        f"User-agent: *\nAllow: /\nSitemap: {BASE_URL}/sitemap.xml\n",
+    )
+    write(ROOT / "CNAME", "weatherindex.xyz\n")
+
     print(f"Generated {len(all_cities)} cities across {len(LANGS)} languages")
 
 

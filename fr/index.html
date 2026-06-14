@@ -1,82 +1,255 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr" dir="ltr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>GlobalWeather - Global Forecasts</title>
-  <meta name="description" content="Prévisions en temps réel pour plus de 100 villes">
-  <link rel="stylesheet" href="../assets/css/styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&family=Material+Symbols+Outlined:wght@300;400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="alternate" hreflang="x-default" href="https://weatherindex.xyz/" />
+
+    <link rel="alternate" hreflang="en" href="https://weatherindex.xyz/" />
+
+    <link rel="alternate" hreflang="zh" href="https://weatherindex.xyz/zh/" />
+
+    <link rel="alternate" hreflang="es" href="https://weatherindex.xyz/es/" />
+
+    <link rel="alternate" hreflang="fr" href="https://weatherindex.xyz/fr/" />
+
+    <link rel="alternate" hreflang="de" href="https://weatherindex.xyz/de/" />
+
+    <link rel="alternate" hreflang="ja" href="https://weatherindex.xyz/ja/" />
+
+    <link rel="alternate" hreflang="ru" href="https://weatherindex.xyz/ru/" />
+
+    <link rel="alternate" hreflang="kr" href="https://weatherindex.xyz/kr/" />
+
+    <link rel="alternate" hreflang="ar" href="https://weatherindex.xyz/ar/" />
+
+    <link rel="icon" type="image/svg+xml" href="../assets/icons/favicon.svg">
+    <link rel="manifest" href="../site.webmanifest">
+
+    <title>Prévisions Météo Mondiales - 100+ Villes | GlobalWeather</title>
+    <meta name="description" content="Prévisions Météo Mondiales - 100+ Villes - GitHub Actions peut actualiser les données Open-Meteo toutes les trois heures.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .ad-container { min-height: 90px; background: rgba(0,0,0,0.02); display: flex; justify-content: center; align-items: center; }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SQCD1J9Y0H"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-SQCD1J9Y0H');
+    </script>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8695398658548679" crossorigin="anonymous"></script>
 </head>
-<body>
-  <nav class="topbar">
-    <a class="brand" href="../index.html"><span class="material-symbols-outlined">routine</span>GlobalWeather</a>
-    <div class="nav-search"><span class="material-symbols-outlined">search</span><input data-search-input placeholder="Rechercher une ville..."></div>
-    <div class="nav-actions">
-      <a class="icon-link" href="../lang.html" title="Langue"><span class="material-symbols-outlined">language</span></a>
-      <button class="icon-link" data-locate title="Me localiser"><span class="material-symbols-outlined">my_location</span></button>
+<body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col">
+    <nav class="bg-white border-b border-slate-100 sticky top-0 z-50 h-16">
+        <div class="max-w-7xl mx-auto px-4 h-full flex items-center justify-between">
+            <a href="../fr/index.html" class="font-bold text-xl text-blue-600 flex items-center gap-2">🌍 GlobalWeather</a>
+            <div class="flex items-center gap-4">
+                <button data-lang-switch class="text-sm font-medium text-slate-600 hover:text-blue-600">🌐 Language</button>
+                <button data-locate class="text-sm font-medium text-slate-600 hover:text-blue-600">📍 Locate Me</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="w-full max-w-7xl mx-auto px-4 py-2 Ad_Wrapper">
+        <div class="ad-container rounded-lg overflow-hidden border border-dashed border-slate-200">
+            <ins class="adsbygoogle"
+                 style="display:block; text-align:center;"
+                 data-ad-layout="in-article"
+                 data-ad-format="fluid"
+                 data-ad-client="ca-pub-8695398658548679"
+                 data-ad-slot="auto"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
     </div>
-  </nav>
-  <main>
-<section class="hero">
-  <div>
-    <p class="eyebrow">Open-Meteo · Static SSG · 100+ Cities</p>
-    <h1>GlobalWeather</h1>
-    <p class="lead">Prévisions en temps réel pour plus de 100 villes</p>
-    <div class="hero-search"><span class="material-symbols-outlined">search</span><input data-search-input placeholder="Rechercher une ville..."><button data-locate><span class="material-symbols-outlined">my_location</span>Me localiser</button></div>
-    <div class="language-row"><a class="lang-chip" href="../en/index.html">🇺🇸 EN</a><a class="lang-chip" href="../es/index.html">🇪🇸 ES</a><a class="lang-chip" href="../fr/index.html">🇫🇷 FR</a><a class="lang-chip" href="../de/index.html">🇩🇪 DE</a><a class="lang-chip" href="../ja/index.html">🇯🇵 JA</a><a class="lang-chip" href="../ru/index.html">🇷🇺 RU</a><a class="lang-chip" href="../kr/index.html">🇰🇷 KR</a><a class="lang-chip" href="../ar/index.html">🇸🇦 AR</a></div>
-  </div>
-  <div class="hero-panel">
-    <span class="sky-icon">🌤️</span>
-    <strong>25°C</strong>
-    <span>Tokyo, Japan</span>
-  </div>
-</section>
-<section class="section"><div class="section-head"><h2>Villes populaires</h2><a href="../search.html">Search all</a></div><div class="city-grid"><a class="city-card rainy" href="../city/tokyo.html">
-  <span class="city-emoji">🗼</span><strong>Tokyo</strong><small>Japan</small>
-  <span class="city-temp">25°C 🌧️</span><em>Rain</em>
-</a><a class="city-card rainy" href="../city/new-york.html">
-  <span class="city-emoji">🗽</span><strong>New York</strong><small>USA</small>
-  <span class="city-temp">22°C 🌧️</span><em>Rain</em>
-</a><a class="city-card cloudy" href="../city/paris.html">
-  <span class="city-emoji">🏛️</span><strong>Paris</strong><small>France</small>
-  <span class="city-temp">21°C ☁️</span><em>Overcast</em>
-</a><a class="city-card sunny" href="../city/beijing.html">
-  <span class="city-emoji">🏯</span><strong>Beijing</strong><small>China</small>
-  <span class="city-temp">26°C 🌤️</span><em>Mainly Clear</em>
-</a><a class="city-card cloudy" href="../city/london.html">
-  <span class="city-emoji">🎡</span><strong>London</strong><small>United Kingdom</small>
-  <span class="city-temp">16°C ☁️</span><em>Overcast</em>
-</a><a class="city-card cloudy" href="../city/shanghai.html">
-  <span class="city-emoji">🌆</span><strong>Shanghai</strong><small>China</small>
-  <span class="city-temp">27°C ⛅</span><em>Partly Cloudy</em>
-</a><a class="city-card cloudy" href="../city/sydney.html">
-  <span class="city-emoji">🌉</span><strong>Sydney</strong><small>Australia</small>
-  <span class="city-temp">17°C ☁️</span><em>Overcast</em>
-</a><a class="city-card rainy" href="../city/dubai.html">
-  <span class="city-emoji">🏙️</span><strong>Dubai</strong><small>UAE</small>
-  <span class="city-temp">37°C 🌧️</span><em>Rain</em>
-</a><a class="city-card cloudy" href="../city/singapore.html">
-  <span class="city-emoji">🌿</span><strong>Singapore</strong><small>Singapore</small>
-  <span class="city-temp">33°C ⛅</span><em>Partly Cloudy</em>
-</a><a class="city-card rainy" href="../city/seoul.html">
-  <span class="city-emoji">🏙️</span><strong>Seoul</strong><small>South Korea</small>
-  <span class="city-temp">25°C 🌧️</span><em>Rain</em>
-</a><a class="city-card cloudy" href="../city/bangkok.html">
-  <span class="city-emoji">🛕</span><strong>Bangkok</strong><small>Thailand</small>
-  <span class="city-temp">34°C ⛅</span><em>Partly Cloudy</em>
-</a><a class="city-card rainy" href="../city/hong-kong.html">
-  <span class="city-emoji">🌃</span><strong>Hong Kong</strong><small>China</small>
-  <span class="city-temp">32°C 🌧️</span><em>Rain</em>
-</a></div></section>
-<section class="feature-band">
-  <article><span>🌍</span><h3>Couverture mondiale</h3><p>Pre-rendered city pages across every region and major time zone.</p></article>
-  <article><span>🔄</span><h3>Mises à jour réelles</h3><p>GitHub Actions can refresh Open-Meteo data every three hours.</p></article>
-  <article><span>⚡</span><h3>Statique et rapide</h3><p>Static HTML keeps first paint fast and hosting cost at zero.</p></article>
-</section></main>
-  <footer class="footer">Mis à jour: 2026-06-14 13:04 UTC · Données: Open-Meteo avec secours offline · GitHub Pages</footer>
-  <script src="../assets/js/app.js"></script>
+
+    <main class="flex-grow">
+
+<div class="max-w-7xl mx-auto px-4 py-8">
+    <section class="bg-gradient-to-br from-blue-500 to-blue-600 rounded-3xl p-6 md:p-10 text-white shadow-lg mb-10">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="text-center md:text-left">
+                <h1 class="text-3xl md:text-5xl font-bold tracking-tight">🌍 GlobalWeather</h1>
+                <p class="mt-4 text-lg opacity-90">Prévisions Météo Mondiales - 100+ Villes</p>
+                <div class="mt-6 flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
+                    <input data-search-input type="search" placeholder="Rechercher une ville..." class="px-4 py-2 rounded-lg text-slate-800 w-64">
+                    <button data-locate class="px-4 py-2 bg-white/20 hover:bg-white/30 rounded-lg font-medium transition">Me localiser</button>
+                </div>
+                <div class="mt-4 flex flex-wrap gap-2 justify-center md:justify-start">
+
+                    <a href="../en/index.html" class="px-2 py-1 text-xs bg-white/20 rounded hover:bg-white/30 transition">🇺🇸 EN</a>
+
+                    <a href="../zh/index.html" class="px-2 py-1 text-xs bg-white/20 rounded hover:bg-white/30 transition">🇨🇳 ZH</a>
+
+                    <a href="../es/index.html" class="px-2 py-1 text-xs bg-white/20 rounded hover:bg-white/30 transition">🇪🇸 ES</a>
+
+                    <a href="../fr/index.html" class="px-2 py-1 text-xs bg-white/20 rounded hover:bg-white/30 transition">🇫🇷 FR</a>
+
+                    <a href="../de/index.html" class="px-2 py-1 text-xs bg-white/20 rounded hover:bg-white/30 transition">🇩🇪 DE</a>
+
+                    <a href="../ja/index.html" class="px-2 py-1 text-xs bg-white/20 rounded hover:bg-white/30 transition">🇯🇵 JA</a>
+
+                    <a href="../ru/index.html" class="px-2 py-1 text-xs bg-white/20 rounded hover:bg-white/30 transition">🇷🇺 RU</a>
+
+                    <a href="../kr/index.html" class="px-2 py-1 text-xs bg-white/20 rounded hover:bg-white/30 transition">🇰🇷 KR</a>
+
+                    <a href="../ar/index.html" class="px-2 py-1 text-xs bg-white/20 rounded hover:bg-white/30 transition">🇸🇦 AR</a>
+
+                </div>
+            </div>
+            <div class="bg-white/10 rounded-2xl p-6 text-center backdrop-blur-sm">
+                <span class="text-5xl">🌤️</span>
+                <p class="text-4xl font-light mt-2">25°C</p>
+                <p class="text-sm opacity-75">Tokyo, Japan</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="mb-10">
+        <div class="flex justify-between items-center mb-4">
+            <h2 class="text-xl font-bold text-slate-800">Villes Populaires</h2>
+            <a href="../search.html" class="text-sm text-blue-600 hover:underline">Tout rechercher</a>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+
+            <a href="../fr/city/tokyo.html" class="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                <div class="text-2xl mb-2">🗼</div>
+                <h3 class="font-bold text-slate-800">Tokyo</h3>
+                <p class="text-xs text-slate-500">Japan</p>
+                <p class="mt-2 text-lg font-semibold text-blue-600">20°C <span class="text-base">🌤️</span></p>
+                <p class="text-xs text-slate-400">Bruine</p>
+            </a>
+
+            <a href="../fr/city/new-york.html" class="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                <div class="text-2xl mb-2">🗽</div>
+                <h3 class="font-bold text-slate-800">New York</h3>
+                <p class="text-xs text-slate-500">USA</p>
+                <p class="mt-2 text-lg font-semibold text-blue-600">30°C <span class="text-base">🌤️</span></p>
+                <p class="text-xs text-slate-400">Couvert</p>
+            </a>
+
+            <a href="../fr/city/paris.html" class="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                <div class="text-2xl mb-2">🏛️</div>
+                <h3 class="font-bold text-slate-800">Paris</h3>
+                <p class="text-xs text-slate-500">France</p>
+                <p class="mt-2 text-lg font-semibold text-blue-600">25°C <span class="text-base">🌤️</span></p>
+                <p class="text-xs text-slate-400">Couvert</p>
+            </a>
+
+            <a href="../fr/city/beijing.html" class="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                <div class="text-2xl mb-2">🏯</div>
+                <h3 class="font-bold text-slate-800">Beijing</h3>
+                <p class="text-xs text-slate-500">China</p>
+                <p class="mt-2 text-lg font-semibold text-blue-600">24°C <span class="text-base">🌤️</span></p>
+                <p class="text-xs text-slate-400">Principalement dégagé</p>
+            </a>
+
+            <a href="../fr/city/london.html" class="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                <div class="text-2xl mb-2">🎡</div>
+                <h3 class="font-bold text-slate-800">London</h3>
+                <p class="text-xs text-slate-500">United Kingdom</p>
+                <p class="mt-2 text-lg font-semibold text-blue-600">21°C <span class="text-base">🌤️</span></p>
+                <p class="text-xs text-slate-400">Couvert</p>
+            </a>
+
+            <a href="../fr/city/shanghai.html" class="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                <div class="text-2xl mb-2">🌆</div>
+                <h3 class="font-bold text-slate-800">Shanghai</h3>
+                <p class="text-xs text-slate-500">China</p>
+                <p class="mt-2 text-lg font-semibold text-blue-600">22°C <span class="text-base">🌤️</span></p>
+                <p class="text-xs text-slate-400">Couvert</p>
+            </a>
+
+            <a href="../fr/city/sydney.html" class="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                <div class="text-2xl mb-2">🌉</div>
+                <h3 class="font-bold text-slate-800">Sydney</h3>
+                <p class="text-xs text-slate-500">Australia</p>
+                <p class="mt-2 text-lg font-semibold text-blue-600">16°C <span class="text-base">🌤️</span></p>
+                <p class="text-xs text-slate-400">Bruine</p>
+            </a>
+
+            <a href="../fr/city/dubai.html" class="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                <div class="text-2xl mb-2">🏙️</div>
+                <h3 class="font-bold text-slate-800">Dubai</h3>
+                <p class="text-xs text-slate-500">UAE</p>
+                <p class="mt-2 text-lg font-semibold text-blue-600">34°C <span class="text-base">🌤️</span></p>
+                <p class="text-xs text-slate-400">Ciel dégagé</p>
+            </a>
+
+            <a href="../fr/city/singapore.html" class="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                <div class="text-2xl mb-2">🌿</div>
+                <h3 class="font-bold text-slate-800">Singapore</h3>
+                <p class="text-xs text-slate-500">Singapore</p>
+                <p class="mt-2 text-lg font-semibold text-blue-600">25°C <span class="text-base">🌤️</span></p>
+                <p class="text-xs text-slate-400">Couvert</p>
+            </a>
+
+            <a href="../fr/city/seoul.html" class="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                <div class="text-2xl mb-2">🏙️</div>
+                <h3 class="font-bold text-slate-800">Seoul</h3>
+                <p class="text-xs text-slate-500">South Korea</p>
+                <p class="mt-2 text-lg font-semibold text-blue-600">22°C <span class="text-base">🌤️</span></p>
+                <p class="text-xs text-slate-400">Ciel dégagé</p>
+            </a>
+
+            <a href="../fr/city/bangkok.html" class="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                <div class="text-2xl mb-2">🛕</div>
+                <h3 class="font-bold text-slate-800">Bangkok</h3>
+                <p class="text-xs text-slate-500">Thailand</p>
+                <p class="mt-2 text-lg font-semibold text-blue-600">28°C <span class="text-base">🌤️</span></p>
+                <p class="text-xs text-slate-400">Partiellement nuageux</p>
+            </a>
+
+            <a href="../fr/city/hong-kong.html" class="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                <div class="text-2xl mb-2">🌃</div>
+                <h3 class="font-bold text-slate-800">Hong Kong</h3>
+                <p class="text-xs text-slate-500">China</p>
+                <p class="mt-2 text-lg font-semibold text-blue-600">27°C <span class="text-base">🌤️</span></p>
+                <p class="text-xs text-slate-400">Orage</p>
+            </a>
+
+        </div>
+    </section>
+
+    <section class="grid md:grid-cols-3 gap-6 mb-10">
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+            <div class="text-3xl mb-3">🌍</div>
+            <h3 class="font-bold text-slate-800">Couverture Mondiale</h3>
+            <p class="text-sm text-slate-500 mt-2">Pages de villes pré-rendues dans chaque région et fuseau horaire majeur.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+            <div class="text-3xl mb-3">🔄</div>
+            <h3 class="font-bold text-slate-800">Mises à Jour en Temps Réel</h3>
+            <p class="text-sm text-slate-500 mt-2">GitHub Actions peut actualiser les données Open-Meteo toutes les trois heures.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+            <div class="text-3xl mb-3">⚡</div>
+            <h3 class="font-bold text-slate-800">Statique et Rapide</h3>
+            <p class="text-sm text-slate-500 mt-2">Le HTML statique garde le premier affichage rapide et le coût d&#39;hébergement à zéro.</p>
+        </div>
+    </section>
+</div>
+
+    </main>
+
+    <div class="w-full max-w-7xl mx-auto px-4 py-2 Ad_Wrapper">
+        <div class="ad-container rounded-lg overflow-hidden border border-dashed border-slate-200">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-8695398658548679"
+                 data-ad-slot="auto"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+    </div>
+
+    <footer class="bg-white border-t border-slate-100 py-6 mt-12 text-center text-sm text-slate-400">
+        <p>© 2026 GlobalWeather. Powered by Open-Meteo. Hosted on GitHub Pages.</p>
+    </footer>
+    <script src="../assets/js/app.js" defer></script>
 </body>
 </html>

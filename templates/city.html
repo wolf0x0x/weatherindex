@@ -1,0 +1,153 @@
+{% extends "base.html" %}
+
+{% block title %}{{ city.name }} {{ trans.ui.life_title[lang_code] }} - {{ current_weather_text }} | GlobalWeather{% endblock %}
+{% block description %}{{ city.name }} {{ trans.ui.life_title[lang_code] }}: {{ weather.current.temperature_2m }}°C, {{ trans.ui.humidity[lang_code] }} {{ weather.current.relative_humidity_2m }}%. {{ trans.ui.life_title[lang_code] }}, {{ trans.ui.travel_title[lang_code] }} & {{ trans.ui.wiki_title[lang_code] }}.{% endblock %}
+
+{% block content %}
+<div class="max-w-7xl mx-auto px-4 py-8">
+    {% if weather.current.wind_speed_10m > 30 or weather.current.temperature_2m > 38 or weather.current.temperature_2m < -10 %}
+    <div class="mb-6 p-4 bg-red-50 border-l-4 border-red-500 rounded-r-xl flex items-start gap-3">
+        <span class="text-2xl">⚠️</span>
+        <div>
+            <h3 class="font-bold text-red-800">Severe Weather Warning / 极端天气预警</h3>
+            <p class="text-sm text-red-700 mt-0.5">High winds or extreme temperatures detected locally. Please check localized official broadcast updates.</p>
+        </div>
+    </div>
+    {% endif %}
+
+    <div class="bg-gradient-to-br from-blue-500 to-blue-600 rounded-3xl p-6 md:p-8 text-white shadow-lg mb-8">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+            <div>
+                <h1 class="text-3xl md:text-4xl font-bold tracking-tight">{{ city.name }}, <span class="opacity-75">{{ city.country }}</span></h1>
+                <p class="text-5xl md:text-6xl font-light tracking-tighter mt-4">{{ weather.current.temperature_2m }}<span class="text-3xl font-normal">°C</span></p>
+                <p class="mt-2 inline-block px-3 py-1 bg-white/20 rounded-full text-sm backdrop-blur-sm font-medium">{{ current_weather_text }}</p>
+            </div>
+            <div class="w-full md:w-auto grid grid-cols-3 gap-4 border-t border-white/10 pt-4 md:pt-0 md:border-0">
+                <div class="text-center md:text-right">
+                    <p class="text-xs opacity-70">{{ trans.ui.feels_like[lang_code] }}</p>
+                    <p class="text-lg font-semibold">{{ weather.current.apparent_temperature }}°C</p>
+                </div>
+                <div class="text-center md:text-right">
+                    <p class="text-xs opacity-70">{{ trans.ui.humidity[lang_code] }}</p>
+                    <p class="text-lg font-semibold">{{ weather.current.relative_humidity_2m }}%</p>
+                </div>
+                <div class="text-center md:text-right">
+                    <p class="text-xs opacity-70">{{ trans.ui.wind_speed[lang_code] }}</p>
+                    <p class="text-lg font-semibold">{{ weather.current.wind_speed_10m }} km/h</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="Ad_Wrapper my-6">
+        <div class="ad-container rounded-lg overflow-hidden border border-dashed border-slate-200">
+            <ins class="adsbygoogle"
+                 style="display:block; text-align:center;"
+                 data-ad-layout="in-article"
+                 data-ad-format="fluid"
+                 data-ad-client="ca-pub-8695398658548679"
+                 data-ad-slot="auto"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+    </div>
+
+    <div class="mb-10">
+        <h2 class="text-xl font-bold text-slate-800 mb-4 flex items-center gap-2">📊 {{ trans.ui.life_title[lang_code] }}</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+            <div class="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 flex flex-col items-center text-center">
+                <span class="text-3xl mb-2">👕</span>
+                <p class="text-xs text-slate-400">{{ trans.indices.clothing[lang_code][0] }}</p>
+                <p class="font-semibold text-slate-700 text-sm mt-1">{{ life_indices.clothing }}</p>
+            </div>
+            <div class="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 flex flex-col items-center text-center">
+                <span class="text-3xl mb-2">☀️</span>
+                <p class="text-xs text-slate-400">{{ trans.indices.uv[lang_code][0] }}</p>
+                <p class="font-semibold text-slate-700 text-sm mt-1">{{ life_indices.uv }}</p>
+            </div>
+            <div class="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 flex flex-col items-center text-center">
+                <span class="text-3xl mb-2">🚗</span>
+                <p class="text-xs text-slate-400">Car Wash</p>
+                <p class="font-semibold text-slate-700 text-sm mt-1">{% if weather.current.weather_code in [0,1] %}Suitable{% else %}Not Suitable{% endif %}</p>
+            </div>
+            <div class="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 flex flex-col items-center text-center">
+                <span class="text-3xl mb-2">🏃</span>
+                <p class="text-xs text-slate-400">Outdoor</p>
+                <p class="font-semibold text-slate-700 text-sm mt-1">{% if weather.current.wind_speed_10m < 20 %}Recommended{% else %}Indoor{% endif %}</p>
+            </div>
+            <div class="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 flex flex-col items-center text-center">
+                <span class="text-3xl mb-2">🍃</span>
+                <p class="text-xs text-slate-400">Air Quality</p>
+                <p class="font-semibold text-emerald-600 text-sm mt-1">AQI {{ weather.air_quality.us_aqi }} · PM2.5 {{ weather.air_quality.pm2_5 }}</p>
+            </div>
+            <div class="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 flex flex-col items-center text-center">
+                <span class="text-3xl mb-2">💊</span>
+                <p class="text-xs text-slate-400">Cold Risk</p>
+                <p class="font-semibold text-slate-700 text-sm mt-1">{% if weather.current.temperature_2m < 10 %}High{% else %}Low{% endif %}</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="mb-10">
+        <h2 class="text-xl font-bold text-slate-800 mb-4 flex items-center gap-2">✈️ {{ trans.ui.travel_title[lang_code] }}</h2>
+        <div class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden">
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-slate-50 text-slate-400 text-xs font-semibold uppercase border-b border-slate-100">
+                            <th class="p-4">Destination</th>
+                            <th class="p-4">Temperature vs Current</th>
+                            <th class="p-4">Recommendation</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-sm divide-y divide-slate-100 text-slate-600">
+                        {% for dest in travel_destinations %}
+                        <tr>
+                            <td class="p-4 font-medium text-slate-800">{{ dest.emoji }} {{ dest.name }}</td>
+                            <td class="p-4">{{ dest.temp }}°C ({{ dest.diff }})</td>
+                            <td class="p-4 text-emerald-500 font-medium">{{ dest.rating }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="mb-10">
+        <h2 class="text-xl font-bold text-slate-800 mb-4">📅 7-Day Forecast</h2>
+        <div class="bg-white rounded-2xl shadow-sm border border-slate-100 divide-y divide-slate-100">
+            {% for i in range(7) %}
+            <div class="p-4 flex items-center justify-between gap-4 hover:bg-slate-50/50 transition">
+                <p class="font-medium text-slate-600 text-sm w-24">{{ weather.daily.time[i] }}</p>
+                <div class="flex items-center gap-2 flex-1">
+                    <span class="text-xl">🌤️</span>
+                    <p class="text-xs text-slate-400 max-w-[120px] truncate">{{ weather_code_text(weather.daily.weather_code[i]) }}</p>
+                </div>
+                <p class="font-semibold text-slate-800 text-sm">{{ weather.daily.temperature_2m_max[i] }}° / <span class="text-slate-400 font-normal">{{ weather.daily.temperature_2m_min[i] }}°</span></p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div>
+        <h2 class="text-xl font-bold text-slate-800 mb-4 flex items-center gap-2">🧠 {{ trans.ui.wiki_title[lang_code] }}</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <a href="{{ prefix }}/{{ lang_code }}/wiki/typhoon-naming.html" class="group bg-white p-5 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md hover:border-blue-200 transition">
+                <span class="text-3xl block mb-3">🌀</span>
+                <h3 class="font-bold text-slate-800 group-hover:text-blue-600 transition text-base">How are typhoons named?</h3>
+                <p class="text-xs text-slate-400 mt-2 line-clamp-2">Learn how tropical cyclones get their names from the WMO naming matrix.</p>
+            </a>
+            <a href="{{ prefix }}/{{ lang_code }}/wiki/el-nino.html" class="group bg-white p-5 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md hover:border-blue-200 transition">
+                <span class="text-3xl block mb-3">🌡️</span>
+                <h3 class="font-bold text-slate-800 group-hover:text-blue-600 transition text-base">What is El Niño?</h3>
+                <p class="text-xs text-slate-400 mt-2 line-clamp-2">Why Pacific sea-surface temperature anomalies reshape global weather patterns.</p>
+            </a>
+            <a href="{{ prefix }}/{{ lang_code }}/wiki/climate-change.html" class="group bg-white p-5 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md hover:border-blue-200 transition">
+                <span class="text-3xl block mb-3">📈</span>
+                <h3 class="font-bold text-slate-800 group-hover:text-blue-600 transition text-base">2026 Climate Outlook</h3>
+                <p class="text-xs text-slate-400 mt-2 line-clamp-2">A practical look at greenhouse effects on major cities worldwide.</p>
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}

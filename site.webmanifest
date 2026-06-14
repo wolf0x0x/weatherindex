@@ -1,0 +1,15 @@
+{
+  "name": "GlobalWeather",
+  "short_name": "Weather",
+  "icons": [
+    {
+      "src": "/assets/icons/favicon.svg",
+      "sizes": "64x64",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "theme_color": "#3B82F6",
+  "background_color": "#F8FAFC",
+  "display": "standalone"
+}

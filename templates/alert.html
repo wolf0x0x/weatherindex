@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block title %}{{ trans.ui.alerts_title[lang_code] }} | GlobalWeather{% endblock %}
+{% block description %}{{ trans.ui.alerts_title[lang_code] }} - {{ trans.ui.alerts_desc[lang_code] }}{% endblock %}
+
+{% block content %}
+<div class="max-w-4xl mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold text-slate-800 mb-6">{{ trans.ui.alerts_title[lang_code] }}</h1>
+
+    <div id="alerts-list" class="space-y-4">
+        {% for alert in alerts %}
+        <div class="bg-white p-5 rounded-2xl shadow-sm border-l-4 {{ alert.border }} border border-slate-100">
+            <div class="flex flex-col sm:flex-row justify-between sm:items-center gap-2 mb-2">
+                <h3 class="font-bold text-slate-800 flex items-center gap-2">{{ alert.icon }} {{ alert.city }}</h3>
+                <span class="text-xs text-slate-400">{{ alert.time }}</span>
+            </div>
+            <p class="text-slate-600 text-sm">{{ alert.text }}</p>
+        </div>
+        {% else %}
+        <div class="bg-white p-8 rounded-2xl border border-slate-100 text-center text-slate-500">
+            <span class="text-4xl block mb-3">✅</span>
+            <p>{{ trans.ui.no_alerts[lang_code] }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+<script>
+    // Optionally refresh alerts from data/alerts.json every 60s
+    async function refreshAlerts() {
+        try {
+            const res = await fetch('{{ prefix }}/data/alerts.json');
+            if (!res.ok) return;
+            const data = await res.json();
+            const list = document.getElementById('alerts-list');
+            if (!data.alerts?.length) return;
+            list.innerHTML = data.alerts.map(a => `
+                <div class="bg-white p-5 rounded-2xl shadow-sm border-l-4 ${a.border} border border-slate-100">
+                    <div class="flex flex-col sm:flex-row justify-between sm:items-center gap-2 mb-2">
+                        <h3 class="font-bold text-slate-800 flex items-center gap-2">${a.icon} ${a.city}</h3>
+                        <span class="text-xs text-slate-400">${a.time}</span>
+                    </div>
+                    <p class="text-slate-600 text-sm">${a.text}</p>
+                </div>
+            `).join('');
+        } catch (e) { console.error('alerts fetch failed', e); }
+    }
+    refreshAlerts();
+    setInterval(refreshAlerts, 60000);
+</script>
+{% endblock %}
