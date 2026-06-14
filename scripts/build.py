@@ -347,12 +347,24 @@ def alerts_data(all_cities: list[dict], trans: dict, lang_code: str = "en") -> l
 
 
 def wiki_articles(trans: dict, lang_code: str) -> list[dict]:
-    base = [
-        {"slug": "typhoon-naming", "emoji": "🌀", "title": {"en": "How are typhoons named?", "zh": "台风如何命名？"}, "description": {"en": "How tropical cyclones get names from WMO regional lists.", "zh": "了解热带气旋名称如何来自 WMO 区域清单。"}, "content": "<p>Weather communication depends on clear names, consistent data, and calm presentation during high-impact events.</p><h2>Key takeaways</h2><ul><li>Names reduce confusion when multiple storms exist.</li><li>Regional committees maintain rotating lists.</li><li>Official alerts should always be checked for emergency decisions.</li></ul>"},
-        {"slug": "el-nino", "emoji": "🌡️", "title": {"en": "What is El Niño?", "zh": "什么是厄尔尼诺？"}, "description": {"en": "Why Pacific sea-surface temperature anomalies reshape weather.", "zh": "太平洋海温异常如何影响全球天气。"}, "content": "<p>El Niño is a warming of the central and eastern tropical Pacific Ocean. It shifts rainfall patterns, monsoons, and seasonal temperature signals.</p><h2>What to watch</h2><ul><li>Niño 3.4 sea-surface anomalies.</li><li>Trade wind and jet stream changes.</li><li>Local forecasts for day-to-day decisions.</li></ul>"},
-        {"slug": "climate-change", "emoji": "📈", "title": {"en": "2026 Climate Outlook", "zh": "2026 气候展望"}, "description": {"en": "A practical look at major-city climate risks.", "zh": "面向全球主要城市的气候风险速览。"}, "content": "<p>Long-term climate signals show warming, more intense rainfall in some regions, and deeper droughts in others. Daily planning still needs local forecast data.</p><h2>Practical tips</h2><ul><li>Check forecasts close to departure.</li><li>Pack for temperature swings.</li><li>Follow official warnings during severe weather.</li></ul>"},
-    ]
-    return [{**a, "title": a["title"].get(lang_code, a["title"]["en"]), "description": a["description"].get(lang_code, a["description"]["en"])} for a in base]
+    config_path = ROOT / "config" / "wiki-articles.json"
+    if config_path.exists():
+        articles = load_json(config_path).get("articles", [])
+    else:
+        articles = [
+            {"slug": "typhoon-naming", "emoji": "🌀", "asset": "assets/wiki/typhoon-naming.svg", "asset_source": "Generated fallback", "last_reviewed": "", "title": {"en": "Typhoon Naming Rules", "zh": "台风命名规则"}, "description": {"en": "How tropical cyclones get names from regional lists.", "zh": "热带气旋如何来自区域命名清单。"}, "content": {"en": "<p>Typhoon names keep warning communication clear.</p>", "zh": "<p>台风命名让预警沟通更清晰。</p>"}},
+            {"slug": "el-nino", "emoji": "🌡️", "asset": "assets/wiki/el-nino.svg", "asset_source": "Generated fallback", "last_reviewed": "", "title": {"en": "El Niño Phenomenon", "zh": "厄尔尼诺现象"}, "description": {"en": "How Pacific warming shifts weather risks.", "zh": "太平洋偏暖如何改变天气风险。"}, "content": {"en": "<p>El Niño changes seasonal weather probabilities.</p>", "zh": "<p>厄尔尼诺会改变季节性天气概率。</p>"}},
+            {"slug": "climate-change", "emoji": "📈", "asset": "assets/wiki/climate-change.svg", "asset_source": "Generated fallback", "last_reviewed": "", "title": {"en": "Climate Change Data", "zh": "气候变化数据"}, "description": {"en": "Climate context for weather planning.", "zh": "用于天气规划的气候背景。"}, "content": {"en": "<p>Climate data helps interpret long-term risk.</p>", "zh": "<p>气候数据帮助理解长期风险。</p>"}},
+        ]
+    normalized = []
+    for article in articles:
+        normalized.append({
+            **article,
+            "title": article.get("title", {}).get(lang_code) or article.get("title", {}).get("en") or article.get("slug", ""),
+            "description": article.get("description", {}).get(lang_code) or article.get("description", {}).get("en") or "",
+            "content": article.get("content", {}).get(lang_code) or article.get("content", {}).get("en") or "",
+        })
+    return normalized
 
 
 def render(template_name: str, context: dict) -> str:
@@ -434,11 +446,11 @@ def build() -> None:
     write(ROOT / "index.html", render("index.html", {**root_ctx, "page_path": ""}))
     write(ROOT / "lang.html", render("lang.html", {**root_ctx, "page_path": "lang.html"}))
     write(ROOT / "search.html", render("search.html", {**root_ctx, "page_path": "search.html"}))
-    root_sub = {**root_ctx, "prefix": ".."}
+    root_sub = {**root_ctx, "prefix": "..", "home_href": "../index.html"}
     root_articles = wiki_articles(trans, "en")
     for article in root_articles:
         related = [a for a in root_articles if a["slug"] != article["slug"]]
-        write(ROOT / "wiki" / f"{article['slug']}.html", render("wiki.html", {**root_sub, "page_path": f"wiki/{article['slug']}.html", "title": article["title"], "description": article["description"], "content": article["content"], "related": related}))
+        write(ROOT / "wiki" / f"{article['slug']}.html", render("wiki.html", {**root_sub, "page_path": f"wiki/{article['slug']}.html", "title": article["title"], "description": article["description"], "content": article["content"], "image": article.get("asset"), "asset_source": article.get("asset_source"), "last_reviewed": article.get("last_reviewed"), "related": related}))
     write(ROOT / "alert" / "index.html", render("alert.html", {**root_sub, "page_path": "alert/index.html", "alerts": dynamic_alerts}))
     for c in all_cities:
         cur = c["weather"]["current"]
@@ -452,11 +464,11 @@ def build() -> None:
         write(base / "index.html", render("index.html", {**base_ctx, "page_path": ""}))
         write(base / "lang.html", render("lang.html", {**base_ctx, "page_path": "lang.html"}))
         write(base / "search.html", render("search.html", {**base_ctx, "page_path": "search.html"}))
-        lang_sub = {**base_ctx, "prefix": "../.."}
+        lang_sub = {**base_ctx, "prefix": "../..", "home_href": f"../../{code}/index.html"}
         articles = wiki_articles(trans, code)
         for article in articles:
             related = [a for a in articles if a["slug"] != article["slug"]]
-            write(base / "wiki" / f"{article['slug']}.html", render("wiki.html", {**lang_sub, "page_path": f"wiki/{article['slug']}.html", "title": article["title"], "description": article["description"], "content": article["content"], "related": related}))
+            write(base / "wiki" / f"{article['slug']}.html", render("wiki.html", {**lang_sub, "page_path": f"wiki/{article['slug']}.html", "title": article["title"], "description": article["description"], "content": article["content"], "image": article.get("asset"), "asset_source": article.get("asset_source"), "last_reviewed": article.get("last_reviewed"), "related": related}))
         write(base / "alert" / "index.html", render("alert.html", {**lang_sub, "page_path": "alert/index.html", "alerts": alerts_data(all_cities, trans, code)}))
         for c in all_cities:
             cur = c["weather"]["current"]

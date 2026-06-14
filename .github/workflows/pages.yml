@@ -5,6 +5,9 @@ on:
     branches: ["main"]
   workflow_dispatch:
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+
 permissions:
   contents: read
   pages: write
@@ -31,6 +34,7 @@ jobs:
         run: python3 scripts/build.py
         env:
           SITE_URL: https://weatherindex.xyz
+          WEATHER_FETCH_WORKERS: "4"
           GA_ID: ${{ vars.GA_ID }}
           ADS_CLIENT: ${{ vars.ADS_CLIENT }}
           ADS_TOP_SLOT: ${{ vars.ADS_TOP_SLOT }}

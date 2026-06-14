@@ -5,6 +5,9 @@ on:
     - cron: "0 */3 * * *"
   workflow_dispatch:
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+
 permissions:
   contents: write
 
@@ -22,6 +25,7 @@ jobs:
         run: python3 scripts/build.py
         env:
           SITE_URL: https://weatherindex.xyz
+          WEATHER_FETCH_WORKERS: "4"
           OPENWEATHER_API_KEY: ${{ secrets.OPENWEATHER_API_KEY }}
           VISUALCROSSING_KEY: ${{ secrets.VISUALCROSSING_KEY }}
           WEATHERBIT_API_KEY: ${{ secrets.WEATHERBIT_API_KEY }}

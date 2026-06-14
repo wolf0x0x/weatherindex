@@ -1,0 +1,57 @@
+name: Daily WeatherIndex Maintenance
+
+on:
+  schedule:
+    # 01:00 Beijing time = 17:00 UTC on the previous day.
+    - cron: "0 17 * * *"
+  workflow_dispatch:
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-weatherindex-maintenance
+  cancel-in-progress: false
+
+jobs:
+  maintain:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: pip install jinja2
+      - name: Prepare daily data, API checks, and wiki assets
+        run: python3 scripts/daily_maintenance.py --prepare
+        env:
+          SITE_URL: https://weatherindex.xyz
+          WEATHER_FETCH_WORKERS: "4"
+          OPENWEATHER_API_KEY: ${{ secrets.OPENWEATHER_API_KEY }}
+          VISUALCROSSING_KEY: ${{ secrets.VISUALCROSSING_KEY }}
+          WEATHERBIT_API_KEY: ${{ secrets.WEATHERBIT_API_KEY }}
+      - name: Build static site
+        run: python3 scripts/build.py
+        env:
+          SITE_URL: https://weatherindex.xyz
+          WEATHER_FETCH_WORKERS: "4"
+          GA_ID: ${{ vars.GA_ID }}
+          ADS_CLIENT: ${{ vars.ADS_CLIENT }}
+          ADS_TOP_SLOT: ${{ vars.ADS_TOP_SLOT }}
+          ADS_BOTTOM_SLOT: ${{ vars.ADS_BOTTOM_SLOT }}
+          OPENWEATHER_API_KEY: ${{ secrets.OPENWEATHER_API_KEY }}
+          VISUALCROSSING_KEY: ${{ secrets.VISUALCROSSING_KEY }}
+          WEATHERBIT_API_KEY: ${{ secrets.WEATHERBIT_API_KEY }}
+      - name: Audit generated data and refresh last-known cache
+        run: python3 scripts/daily_maintenance.py --audit
+      - name: Commit maintenance update
+        run: |
+          git config user.name "WeatherBot"
+          git config user.email "bot@weatherindex.xyz"
+          git add -A
+          git diff --quiet && git diff --staged --quiet || git commit -m "auto: daily maintenance $(date -u +%Y-%m-%d)"
+          git push

@@ -1,0 +1,65 @@
+{
+  "generated_at": "2026-06-14T15:11:39.652203+00:00",
+  "articles": [
+    {
+      "slug": "typhoon-naming",
+      "emoji": "🌀",
+      "asset": "assets/wiki/typhoon-naming.svg",
+      "asset_url": "https://upload.wikimedia.org/wikipedia/commons/4/49/Hurricane_warning_icon.svg",
+      "asset_source": "Wikimedia Commons hurricane symbol",
+      "title": {
+        "en": "Typhoon Naming Rules",
+        "zh": "台风命名规则"
+      },
+      "description": {
+        "en": "How tropical cyclones are named, retired, and communicated across regions.",
+        "zh": "了解热带气旋如何命名、退役以及跨区域传播预警信息。"
+      },
+      "content": {
+        "en": "<p>Typhoon names are maintained by regional meteorological committees so warnings stay clear across countries and languages.</p><h2>Core rules</h2><ul><li>Names come from rotating regional lists, not from a single country.</li><li>Names may be retired after storms cause severe loss or exceptional impact.</li><li>Forecast users should pair name-based alerts with local official warnings and live weather data.</li></ul><h2>Why it matters</h2><p>Consistent naming helps emergency managers, media, and travelers distinguish active storms quickly when multiple systems exist at the same time.</p>",
+        "zh": "<p>台风名称通常由区域气象委员会维护，目的是让跨国家、跨语言的预警沟通更清晰。</p><h2>核心规则</h2><ul><li>名称来自轮换区域清单，并非由单一国家决定。</li><li>造成重大损失或特殊影响的名称可能被退役。</li><li>用户应把台风名称信息与当地官方预警和实时天气数据结合使用。</li></ul><h2>为什么重要</h2><p>稳定的命名体系能帮助应急部门、媒体和旅行者在多个风暴同时存在时快速区分风险。</p>"
+      },
+      "last_reviewed": "2026-06-14"
+    },
+    {
+      "slug": "el-nino",
+      "emoji": "🌡️",
+      "asset": "assets/wiki/el-nino.png",
+      "asset_url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/El_Nino_regional_impacts.png",
+      "asset_source": "Wikimedia Commons El Niño schematic",
+      "title": {
+        "en": "El Niño Phenomenon",
+        "zh": "厄尔尼诺现象"
+      },
+      "description": {
+        "en": "How Pacific sea-surface warming changes rainfall, monsoon, and seasonal weather risks.",
+        "zh": "太平洋海温异常偏暖如何影响降雨、季风与季节性天气风险。"
+      },
+      "content": {
+        "en": "<p>El Niño is a recurring warming of the central and eastern tropical Pacific. It changes atmospheric circulation and can shift weather risks far beyond the Pacific basin.</p><h2>Signals to track</h2><ul><li>Sea-surface temperature anomalies in the Niño 3.4 region.</li><li>Trade wind weakening and convection moving eastward.</li><li>Regional rainfall and temperature departures from seasonal normals.</li></ul><h2>Planning note</h2><p>El Niño shapes seasonal probabilities; day-to-day decisions still require local forecasts.</p>",
+        "zh": "<p>厄尔尼诺是中东太平洋热带海域周期性偏暖现象，会改变大气环流，并把天气风险影响扩展到太平洋以外地区。</p><h2>重点观测信号</h2><ul><li>Niño 3.4 区域海表温度距平。</li><li>信风减弱以及对流区东移。</li><li>各地区降雨和气温相对季节常年的偏离。</li></ul><h2>使用提示</h2><p>厄尔尼诺影响的是季节概率，日常出行仍需查看本地实时预报。</p>"
+      },
+      "last_reviewed": "2026-06-14"
+    },
+    {
+      "slug": "climate-change",
+      "emoji": "📈",
+      "asset": "assets/wiki/climate-change.svg",
+      "asset_url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Global_Temperature_Anomaly.svg",
+      "asset_source": "Wikimedia Commons global temperature anomaly chart",
+      "title": {
+        "en": "Climate Change Data",
+        "zh": "气候变化数据"
+      },
+      "description": {
+        "en": "A practical weather-data lens on warming, heavy rainfall, drought, and urban risk.",
+        "zh": "从天气数据角度理解升温、强降雨、干旱与城市风险。"
+      },
+      "content": {
+        "en": "<p>Climate change data combines long-term observations with near-real-time weather monitoring. WeatherIndex treats climate context as background information, while city pages remain driven by live forecast APIs.</p><h2>Data points to watch</h2><ul><li>Temperature anomalies against a historical baseline.</li><li>Frequency and duration of heat waves in major cities.</li><li>Extreme rainfall intensity and drought persistence.</li></ul><h2>How to use it</h2><p>Use climate data for trend awareness and risk planning, then use local forecasts for daily decisions.</p>",
+        "zh": "<p>气候变化数据把长期观测与近实时天气监测结合起来。WeatherIndex 将气候内容作为背景知识，城市页面仍以实时预报 API 为核心。</p><h2>重点数据</h2><ul><li>相对历史基准的气温距平。</li><li>主要城市热浪的频率和持续时间。</li><li>极端降雨强度与干旱持续性。</li></ul><h2>如何使用</h2><p>气候数据适合趋势认知和风险规划，日常决策仍应查看本地预报。</p>"
+      },
+      "last_reviewed": "2026-06-14"
+    }
+  ]
+}
