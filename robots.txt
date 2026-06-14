@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://wolf0x0x.github.io/weatherindex/sitemap.xml

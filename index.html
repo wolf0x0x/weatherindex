@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GlobalWeather - Global Forecasts</title>
+  <meta name="description" content="Real-time forecasts for 100+ cities worldwide">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&family=Material+Symbols+Outlined:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="topbar">
+    <a class="brand" href="./index.html"><span class="material-symbols-outlined">routine</span>GlobalWeather</a>
+    <div class="nav-search"><span class="material-symbols-outlined">search</span><input data-search-input placeholder="Search city..."></div>
+    <div class="nav-actions">
+      <a class="icon-link" href="./lang.html" title="Language"><span class="material-symbols-outlined">language</span></a>
+      <button class="icon-link" data-locate title="Locate Me"><span class="material-symbols-outlined">my_location</span></button>
+    </div>
+  </nav>
+  <main>
+<section class="hero">
+  <div>
+    <p class="eyebrow">Open-Meteo · Static SSG · 100+ Cities</p>
+    <h1>GlobalWeather</h1>
+    <p class="lead">Real-time forecasts for 100+ cities worldwide</p>
+    <div class="hero-search"><span class="material-symbols-outlined">search</span><input data-search-input placeholder="Search city..."><button data-locate><span class="material-symbols-outlined">my_location</span>Locate Me</button></div>
+    <div class="language-row"><a class="lang-chip" href="./en/index.html">🇺🇸 EN</a><a class="lang-chip" href="./es/index.html">🇪🇸 ES</a><a class="lang-chip" href="./fr/index.html">🇫🇷 FR</a><a class="lang-chip" href="./de/index.html">🇩🇪 DE</a><a class="lang-chip" href="./ja/index.html">🇯🇵 JA</a><a class="lang-chip" href="./ru/index.html">🇷🇺 RU</a><a class="lang-chip" href="./kr/index.html">🇰🇷 KR</a><a class="lang-chip" href="./ar/index.html">🇸🇦 AR</a></div>
+  </div>
+  <div class="hero-panel">
+    <span class="sky-icon">🌤️</span>
+    <strong>25°C</strong>
+    <span>Tokyo, Japan</span>
+  </div>
+</section>
+<section class="section"><div class="section-head"><h2>Hot Cities</h2><a href="./search.html">Search all</a></div><div class="city-grid"><a class="city-card rainy" href="./city/tokyo.html">
+  <span class="city-emoji">🗼</span><strong>Tokyo</strong><small>Japan</small>
+  <span class="city-temp">25°C 🌧️</span><em>Rain</em>
+</a><a class="city-card rainy" href="./city/new-york.html">
+  <span class="city-emoji">🗽</span><strong>New York</strong><small>USA</small>
+  <span class="city-temp">22°C 🌧️</span><em>Rain</em>
+</a><a class="city-card cloudy" href="./city/paris.html">
+  <span class="city-emoji">🏛️</span><strong>Paris</strong><small>France</small>
+  <span class="city-temp">21°C ☁️</span><em>Overcast</em>
+</a><a class="city-card sunny" href="./city/beijing.html">
+  <span class="city-emoji">🏯</span><strong>Beijing</strong><small>China</small>
+  <span class="city-temp">26°C 🌤️</span><em>Mainly Clear</em>
+</a><a class="city-card cloudy" href="./city/london.html">
+  <span class="city-emoji">🎡</span><strong>London</strong><small>United Kingdom</small>
+  <span class="city-temp">16°C ☁️</span><em>Overcast</em>
+</a><a class="city-card cloudy" href="./city/shanghai.html">
+  <span class="city-emoji">🌆</span><strong>Shanghai</strong><small>China</small>
+  <span class="city-temp">27°C ⛅</span><em>Partly Cloudy</em>
+</a><a class="city-card cloudy" href="./city/sydney.html">
+  <span class="city-emoji">🌉</span><strong>Sydney</strong><small>Australia</small>
+  <span class="city-temp">17°C ☁️</span><em>Overcast</em>
+</a><a class="city-card rainy" href="./city/dubai.html">
+  <span class="city-emoji">🏙️</span><strong>Dubai</strong><small>UAE</small>
+  <span class="city-temp">37°C 🌧️</span><em>Rain</em>
+</a><a class="city-card cloudy" href="./city/singapore.html">
+  <span class="city-emoji">🌿</span><strong>Singapore</strong><small>Singapore</small>
+  <span class="city-temp">33°C ⛅</span><em>Partly Cloudy</em>
+</a><a class="city-card rainy" href="./city/seoul.html">
+  <span class="city-emoji">🏙️</span><strong>Seoul</strong><small>South Korea</small>
+  <span class="city-temp">25°C 🌧️</span><em>Rain</em>
+</a><a class="city-card cloudy" href="./city/bangkok.html">
+  <span class="city-emoji">🛕</span><strong>Bangkok</strong><small>Thailand</small>
+  <span class="city-temp">34°C ⛅</span><em>Partly Cloudy</em>
+</a><a class="city-card rainy" href="./city/hong-kong.html">
+  <span class="city-emoji">🌃</span><strong>Hong Kong</strong><small>China</small>
+  <span class="city-temp">32°C 🌧️</span><em>Rain</em>
+</a></div></section>
+<section class="feature-band">
+  <article><span>🌍</span><h3>Global Coverage</h3><p>Pre-rendered city pages across every region and major time zone.</p></article>
+  <article><span>🔄</span><h3>Real-time Updates</h3><p>GitHub Actions can refresh Open-Meteo data every three hours.</p></article>
+  <article><span>⚡</span><h3>Static & Fast</h3><p>Static HTML keeps first paint fast and hosting cost at zero.</p></article>
+</section></main>
+  <footer class="footer">Last updated: 2026-06-14 13:04 UTC · Data: Open-Meteo with offline fallback · GitHub Pages</footer>
+  <script src="./assets/js/app.js"></script>
+</body>
+</html>
