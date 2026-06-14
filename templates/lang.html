@@ -1,42 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ trans.ui.select_language[lang_code] }} - GlobalWeather</title>
-  <meta name="description" content="{{ trans.ui.home_title[lang_code] }}">
-  <link rel="icon" type="image/svg+xml" href="{{ prefix }}/assets/icons/favicon.svg">
-  <link rel="manifest" href="{{ prefix }}/site.webmanifest">
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col">
-  <nav class="bg-white border-b border-slate-100 sticky top-0 z-50 h-16">
-    <div class="max-w-7xl mx-auto px-4 h-full flex items-center justify-between">
-      <a href="{{ prefix }}/index.html" class="font-bold text-xl text-blue-600 flex items-center gap-2">🌍 GlobalWeather</a>
-    </div>
-  </nav>
-
-  <main class="flex-grow flex items-center justify-center p-4">
-    <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-8 max-w-2xl w-full">
-      <h1 class="text-2xl font-bold text-slate-800 mb-2">{{ trans.ui.select_language[lang_code] }}</h1>
-      <p class="text-slate-500 mb-6">Choose your preferred language / 选择语言 / Elige idioma</p>
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-        {% for l in languages %}
-        <a href="{{ prefix }}/{{ l.code }}/index.html" class="flex items-center gap-3 p-4 rounded-xl border border-slate-100 hover:border-blue-300 hover:shadow-sm transition">
-          <span class="text-2xl">{{ l.flag }}</span>
-          <div>
-            <p class="font-semibold text-slate-800">{{ l.name }}</p>
-            <p class="text-xs text-slate-400">{{ l.native }}</p>
-          </div>
-        </a>
-        {% endfor %}
-      </div>
-    </div>
-  </main>
-
-  <footer class="bg-white border-t border-slate-100 py-6 text-center text-sm text-slate-400">
-    <p>© 2026 GlobalWeather</p>
-  </footer>
-  <script src="{{ prefix }}/assets/js/app.js" defer></script>
-</body>
+<html lang="{{ lang_code }}" dir="{{ lang.dir }}">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>{{ trans.ui.select_language[lang_code] }} - WeatherIndex</title><meta name="description" content="{{ trans.ui.home_title[lang_code] }}"><link rel="icon" type="image/svg+xml" href="{{ prefix }}/assets/icons/favicon.svg"><link rel="manifest" href="{{ prefix }}/site.webmanifest"><script src="https://cdn.tailwindcss.com"></script></head>
+<body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col"><nav class="bg-white border-b border-slate-100 sticky top-0 z-50 h-16"><div class="max-w-7xl mx-auto px-4 h-full flex items-center justify-between"><a href="{{ home_href }}" class="font-bold text-xl text-blue-600 flex items-center gap-2">🌍 WeatherIndex</a></div></nav><main class="flex-grow flex items-center justify-center p-4"><div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-8 max-w-2xl w-full"><h1 class="text-2xl font-bold text-slate-800 mb-2">{{ trans.ui.select_language[lang_code] }}</h1><p class="text-slate-500 mb-6">{{ trans.ui.language[lang_code] }}</p><div class="grid grid-cols-2 md:grid-cols-3 gap-4">{% for l in languages %}<a href="{{ prefix }}/{{ l.code }}/index.html" class="flex items-center gap-3 p-4 rounded-xl border border-slate-100 hover:border-blue-300 hover:shadow-sm transition"><span class="text-2xl">{{ l.flag }}</span><div><p class="font-semibold text-slate-800">{{ l.name }}</p><p class="text-xs text-slate-400">{{ l.native }}</p></div></a>{% endfor %}</div></div></main><footer class="bg-white border-t border-slate-100 py-6 text-center text-sm text-slate-400"><p>© 2026 WeatherIndex</p></footer><script src="{{ prefix }}/assets/js/app.js" defer></script></body>
 </html>

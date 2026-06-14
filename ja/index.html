@@ -25,54 +25,33 @@
 
     <link rel="icon" type="image/svg+xml" href="../assets/icons/favicon.svg">
     <link rel="manifest" href="../site.webmanifest">
-
-    <title>世界の天気予報 - 100都市以上 | GlobalWeather</title>
+    <title>世界の天気予報 - 100都市以上 | WeatherIndex</title>
     <meta name="description" content="世界の天気予報 - 100都市以上 - GitHub Actions で3時間ごとに Open-Meteo データを更新できます。">
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        .ad-container { min-height: 90px; background: rgba(0,0,0,0.02); display: flex; justify-content: center; align-items: center; }
-    </style>
+    <style>.ad-container{min-height:90px;display:flex;justify-content:center;align-items:center}</style>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-SQCD1J9Y0H"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-SQCD1J9Y0H');
-    </script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-SQCD1J9Y0H');</script>
 
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8695398658548679" crossorigin="anonymous"></script>
+
 </head>
 <body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col">
     <nav class="bg-white border-b border-slate-100 sticky top-0 z-50 h-16">
         <div class="max-w-7xl mx-auto px-4 h-full flex items-center justify-between">
-            <a href="../ja/index.html" class="font-bold text-xl text-blue-600 flex items-center gap-2">🌍 GlobalWeather</a>
+            <a href="../ja/index.html" class="font-bold text-xl text-blue-600 flex items-center gap-2">🌍 WeatherIndex</a>
             <div class="flex items-center gap-4">
-                <button data-lang-switch class="text-sm font-medium text-slate-600 hover:text-blue-600">🌐 Language</button>
-                <button data-locate class="text-sm font-medium text-slate-600 hover:text-blue-600">📍 Locate Me</button>
+                <button data-lang-switch data-lang-title="言語を選択" class="text-sm font-medium text-slate-600 hover:text-blue-600">🌐 言語</button>
+                <button data-locate class="text-sm font-medium text-slate-600 hover:text-blue-600">📍 現在地</button>
             </div>
         </div>
     </nav>
 
-    <div class="w-full max-w-7xl mx-auto px-4 py-2 Ad_Wrapper">
-        <div class="ad-container rounded-lg overflow-hidden border border-dashed border-slate-200">
-            <ins class="adsbygoogle"
-                 style="display:block; text-align:center;"
-                 data-ad-layout="in-article"
-                 data-ad-format="fluid"
-                 data-ad-client="ca-pub-8695398658548679"
-                 data-ad-slot="auto"></ins>
-            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-        </div>
-    </div>
-
     <main class="flex-grow">
-
 <div class="max-w-7xl mx-auto px-4 py-8">
     <section class="bg-gradient-to-br from-blue-500 to-blue-600 rounded-3xl p-6 md:p-10 text-white shadow-lg mb-10">
         <div class="flex flex-col md:flex-row justify-between items-center gap-8">
             <div class="text-center md:text-left">
-                <h1 class="text-3xl md:text-5xl font-bold tracking-tight">🌍 GlobalWeather</h1>
+                <h1 class="text-3xl md:text-5xl font-bold tracking-tight">🌍 WeatherIndex</h1>
                 <p class="mt-4 text-lg opacity-90">世界の天気予報 - 100都市以上</p>
                 <div class="mt-6 flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
                     <input data-search-input type="search" placeholder="都市を検索..." class="px-4 py-2 rounded-lg text-slate-800 w-64">
@@ -102,7 +81,7 @@
             </div>
             <div class="bg-white/10 rounded-2xl p-6 text-center backdrop-blur-sm">
                 <span class="text-5xl">🌤️</span>
-                <p class="text-4xl font-light mt-2">25°C</p>
+                <p class="text-4xl font-light mt-2">20°C</p>
                 <p class="text-sm opacity-75">Tokyo, Japan</p>
             </div>
         </div>
@@ -119,7 +98,7 @@
                 <div class="text-2xl mb-2">🗼</div>
                 <h3 class="font-bold text-slate-800">Tokyo</h3>
                 <p class="text-xs text-slate-500">Japan</p>
-                <p class="mt-2 text-lg font-semibold text-blue-600">20°C <span class="text-base">🌤️</span></p>
+                <p class="mt-2 text-lg font-semibold text-blue-600">20°C <span class="text-base">🌦️</span></p>
                 <p class="text-xs text-slate-400">霧雨</p>
             </a>
 
@@ -127,31 +106,31 @@
                 <div class="text-2xl mb-2">🗽</div>
                 <h3 class="font-bold text-slate-800">New York</h3>
                 <p class="text-xs text-slate-500">USA</p>
-                <p class="mt-2 text-lg font-semibold text-blue-600">30°C <span class="text-base">🌤️</span></p>
-                <p class="text-xs text-slate-400">昙り</p>
+                <p class="mt-2 text-lg font-semibold text-blue-600">30°C <span class="text-base">⛅</span></p>
+                <p class="text-xs text-slate-400">一部曇り</p>
             </a>
 
             <a href="../ja/city/paris.html" class="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
                 <div class="text-2xl mb-2">🏛️</div>
                 <h3 class="font-bold text-slate-800">Paris</h3>
                 <p class="text-xs text-slate-500">France</p>
-                <p class="mt-2 text-lg font-semibold text-blue-600">25°C <span class="text-base">🌤️</span></p>
-                <p class="text-xs text-slate-400">昙り</p>
+                <p class="mt-2 text-lg font-semibold text-blue-600">26°C <span class="text-base">⛅</span></p>
+                <p class="text-xs text-slate-400">一部曇り</p>
             </a>
 
             <a href="../ja/city/beijing.html" class="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
                 <div class="text-2xl mb-2">🏯</div>
                 <h3 class="font-bold text-slate-800">Beijing</h3>
                 <p class="text-xs text-slate-500">China</p>
-                <p class="mt-2 text-lg font-semibold text-blue-600">24°C <span class="text-base">🌤️</span></p>
-                <p class="text-xs text-slate-400">晴れ</p>
+                <p class="mt-2 text-lg font-semibold text-blue-600">24°C <span class="text-base">☀️</span></p>
+                <p class="text-xs text-slate-400">快晴</p>
             </a>
 
             <a href="../ja/city/london.html" class="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
                 <div class="text-2xl mb-2">🎡</div>
                 <h3 class="font-bold text-slate-800">London</h3>
                 <p class="text-xs text-slate-500">United Kingdom</p>
-                <p class="mt-2 text-lg font-semibold text-blue-600">21°C <span class="text-base">🌤️</span></p>
+                <p class="mt-2 text-lg font-semibold text-blue-600">21°C <span class="text-base">☁️</span></p>
                 <p class="text-xs text-slate-400">昙り</p>
             </a>
 
@@ -159,7 +138,7 @@
                 <div class="text-2xl mb-2">🌆</div>
                 <h3 class="font-bold text-slate-800">Shanghai</h3>
                 <p class="text-xs text-slate-500">China</p>
-                <p class="mt-2 text-lg font-semibold text-blue-600">22°C <span class="text-base">🌤️</span></p>
+                <p class="mt-2 text-lg font-semibold text-blue-600">22°C <span class="text-base">☁️</span></p>
                 <p class="text-xs text-slate-400">昙り</p>
             </a>
 
@@ -167,7 +146,7 @@
                 <div class="text-2xl mb-2">🌉</div>
                 <h3 class="font-bold text-slate-800">Sydney</h3>
                 <p class="text-xs text-slate-500">Australia</p>
-                <p class="mt-2 text-lg font-semibold text-blue-600">16°C <span class="text-base">🌤️</span></p>
+                <p class="mt-2 text-lg font-semibold text-blue-600">16°C <span class="text-base">🌦️</span></p>
                 <p class="text-xs text-slate-400">霧雨</p>
             </a>
 
@@ -175,7 +154,7 @@
                 <div class="text-2xl mb-2">🏙️</div>
                 <h3 class="font-bold text-slate-800">Dubai</h3>
                 <p class="text-xs text-slate-500">UAE</p>
-                <p class="mt-2 text-lg font-semibold text-blue-600">34°C <span class="text-base">🌤️</span></p>
+                <p class="mt-2 text-lg font-semibold text-blue-600">34°C <span class="text-base">☀️</span></p>
                 <p class="text-xs text-slate-400">快晴</p>
             </a>
 
@@ -183,7 +162,7 @@
                 <div class="text-2xl mb-2">🌿</div>
                 <h3 class="font-bold text-slate-800">Singapore</h3>
                 <p class="text-xs text-slate-500">Singapore</p>
-                <p class="mt-2 text-lg font-semibold text-blue-600">25°C <span class="text-base">🌤️</span></p>
+                <p class="mt-2 text-lg font-semibold text-blue-600">25°C <span class="text-base">☁️</span></p>
                 <p class="text-xs text-slate-400">昙り</p>
             </a>
 
@@ -191,7 +170,7 @@
                 <div class="text-2xl mb-2">🏙️</div>
                 <h3 class="font-bold text-slate-800">Seoul</h3>
                 <p class="text-xs text-slate-500">South Korea</p>
-                <p class="mt-2 text-lg font-semibold text-blue-600">22°C <span class="text-base">🌤️</span></p>
+                <p class="mt-2 text-lg font-semibold text-blue-600">21°C <span class="text-base">☀️</span></p>
                 <p class="text-xs text-slate-400">快晴</p>
             </a>
 
@@ -199,7 +178,7 @@
                 <div class="text-2xl mb-2">🛕</div>
                 <h3 class="font-bold text-slate-800">Bangkok</h3>
                 <p class="text-xs text-slate-500">Thailand</p>
-                <p class="mt-2 text-lg font-semibold text-blue-600">28°C <span class="text-base">🌤️</span></p>
+                <p class="mt-2 text-lg font-semibold text-blue-600">28°C <span class="text-base">⛅</span></p>
                 <p class="text-xs text-slate-400">一部曇り</p>
             </a>
 
@@ -207,7 +186,7 @@
                 <div class="text-2xl mb-2">🌃</div>
                 <h3 class="font-bold text-slate-800">Hong Kong</h3>
                 <p class="text-xs text-slate-500">China</p>
-                <p class="mt-2 text-lg font-semibold text-blue-600">27°C <span class="text-base">🌤️</span></p>
+                <p class="mt-2 text-lg font-semibold text-blue-600">27°C <span class="text-base">⛈️</span></p>
                 <p class="text-xs text-slate-400">雷雨</p>
             </a>
 
@@ -232,24 +211,9 @@
         </div>
     </section>
 </div>
+</main>
 
-    </main>
-
-    <div class="w-full max-w-7xl mx-auto px-4 py-2 Ad_Wrapper">
-        <div class="ad-container rounded-lg overflow-hidden border border-dashed border-slate-200">
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="ca-pub-8695398658548679"
-                 data-ad-slot="auto"
-                 data-ad-format="auto"
-                 data-full-width-responsive="true"></ins>
-            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-        </div>
-    </div>
-
-    <footer class="bg-white border-t border-slate-100 py-6 mt-12 text-center text-sm text-slate-400">
-        <p>© 2026 GlobalWeather. Powered by Open-Meteo. Hosted on GitHub Pages.</p>
-    </footer>
+    <footer class="bg-white border-t border-slate-100 py-6 mt-12 text-center text-sm text-slate-400"><p>© 2026 WeatherIndex. データ: 無料ライブ天気API.</p></footer>
     <script src="../assets/js/app.js" defer></script>
 </body>
 </html>

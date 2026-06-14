@@ -1,40 +1,4 @@
 {% extends "base.html" %}
-
-{% block title %}{{ title }} | GlobalWeather{% endblock %}
+{% block title %}{{ title }} | WeatherIndex{% endblock %}
 {% block description %}{{ description }}{% endblock %}
-
-{% block content %}
-<div class="max-w-3xl mx-auto px-4 py-8">
-    <nav class="text-sm text-slate-400 mb-6">
-        <a href="{{ prefix }}/{{ lang_code }}/index.html" class="hover:text-blue-600">Home</a> /
-        <span class="text-slate-600">{{ trans.ui.wiki_title[lang_code] }}</span>
-    </nav>
-    <article class="bg-white p-6 md:p-10 rounded-3xl shadow-sm border border-slate-100">
-        <h1 class="text-3xl font-bold text-slate-800 mb-6">{{ title }}</h1>
-        <div class="prose prose-slate max-w-none">
-            {{ content | safe }}
-        </div>
-    </article>
-
-    <div class="Ad_Wrapper my-8">
-        <div class="ad-container rounded-lg overflow-hidden border border-dashed border-slate-200">
-            <ins class="adsbygoogle"
-                 style="display:block; text-align:center;"
-                 data-ad-layout="in-article"
-                 data-ad-format="fluid"
-                 data-ad-client="ca-pub-8695398658548679"
-                 data-ad-slot="auto"></ins>
-            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-        </div>
-    </div>
-
-    <div class="grid md:grid-cols-2 gap-4 mt-8">
-        {% for article in related %}
-        <a href="{{ prefix }}/{{ lang_code }}/wiki/{{ article.slug }}.html" class="bg-white p-4 rounded-2xl border border-slate-100 hover:border-blue-200 transition">
-            <h3 class="font-bold text-slate-800">{{ article.title }}</h3>
-            <p class="text-xs text-slate-500 mt-1">{{ article.description }}</p>
-        </a>
-        {% endfor %}
-    </div>
-</div>
-{% endblock %}
+{% block content %}<div class="max-w-3xl mx-auto px-4 py-8"><nav class="text-sm text-slate-400 mb-6"><a href="{{ home_href }}" class="hover:text-blue-600">WeatherIndex</a> / <span class="text-slate-600">{{ trans.ui.wiki_title[lang_code] }}</span></nav><article class="bg-white p-6 md:p-10 rounded-3xl shadow-sm border border-slate-100"><h1 class="text-3xl font-bold text-slate-800 mb-6">{{ title }}</h1><div class="prose prose-slate max-w-none">{{ content | safe }}</div></article><div class="grid md:grid-cols-2 gap-4 mt-8">{% for article in related %}<a href="{{ prefix }}/{{ lang_code }}/wiki/{{ article.slug }}.html" class="bg-white p-4 rounded-2xl border border-slate-100 hover:border-blue-200 transition"><h3 class="font-bold text-slate-800">{{ article.emoji }} {{ article.title }}</h3><p class="text-xs text-slate-500 mt-1">{{ article.description }}</p></a>{% endfor %}</div></div>{% endblock %}

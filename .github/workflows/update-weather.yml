@@ -20,10 +20,15 @@ jobs:
         run: pip install jinja2
       - name: Build static weather pages
         run: python3 scripts/build.py
+        env:
+          SITE_URL: https://weatherindex.xyz
+          OPENWEATHER_API_KEY: ${{ secrets.OPENWEATHER_API_KEY }}
+          VISUALCROSSING_KEY: ${{ secrets.VISUALCROSSING_KEY }}
+          WEATHERBIT_API_KEY: ${{ secrets.WEATHERBIT_API_KEY }}
       - name: Commit generated update
         run: |
           git config user.name "WeatherBot"
-          git config user.email "bot@globalweather.io"
+          git config user.email "bot@weatherindex.xyz"
           git add -A
           git diff --quiet && git diff --staged --quiet || git commit -m "auto: weather update $(date -u +%Y-%m-%d-%H%M)"
           git push

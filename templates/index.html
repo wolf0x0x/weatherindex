@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}{{ trans.ui.home_title[lang_code] }} | GlobalWeather{% endblock %}
+{% block title %}{{ trans.ui.home_title[lang_code] }} | WeatherIndex{% endblock %}
 {% block description %}{{ trans.ui.home_title[lang_code] }} - {{ trans.ui.realtime_updates_desc[lang_code] }}{% endblock %}
 
 {% block content %}
@@ -8,7 +8,7 @@
     <section class="bg-gradient-to-br from-blue-500 to-blue-600 rounded-3xl p-6 md:p-10 text-white shadow-lg mb-10">
         <div class="flex flex-col md:flex-row justify-between items-center gap-8">
             <div class="text-center md:text-left">
-                <h1 class="text-3xl md:text-5xl font-bold tracking-tight">🌍 GlobalWeather</h1>
+                <h1 class="text-3xl md:text-5xl font-bold tracking-tight">🌍 WeatherIndex</h1>
                 <p class="mt-4 text-lg opacity-90">{{ trans.ui.home_title[lang_code] }}</p>
                 <div class="mt-6 flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
                     <input data-search-input type="search" placeholder="{{ trans.ui.search_placeholder[lang_code] }}" class="px-4 py-2 rounded-lg text-slate-800 w-64">
@@ -22,8 +22,8 @@
             </div>
             <div class="bg-white/10 rounded-2xl p-6 text-center backdrop-blur-sm">
                 <span class="text-5xl">🌤️</span>
-                <p class="text-4xl font-light mt-2">25°C</p>
-                <p class="text-sm opacity-75">Tokyo, Japan</p>
+                <p class="text-4xl font-light mt-2">{{ hero_live.temp }}°C</p>
+                <p class="text-sm opacity-75">{{ hero_live.name }}, {{ hero_live.country }}</p>
             </div>
         </div>
     </section>

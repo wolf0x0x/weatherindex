@@ -3,6 +3,7 @@
   <url><loc>https://weatherindex.xyz/</loc></url>
   <url><loc>https://weatherindex.xyz/lang.html</loc></url>
   <url><loc>https://weatherindex.xyz/search.html</loc></url>
+  <url><loc>https://weatherindex.xyz/alert/index.html</loc></url>
   <url><loc>https://weatherindex.xyz/city/tokyo.html</loc></url>
   <url><loc>https://weatherindex.xyz/city/new-york.html</loc></url>
   <url><loc>https://weatherindex.xyz/city/paris.html</loc></url>
@@ -110,10 +111,10 @@
   <url><loc>https://weatherindex.xyz/wiki/typhoon-naming.html</loc></url>
   <url><loc>https://weatherindex.xyz/wiki/el-nino.html</loc></url>
   <url><loc>https://weatherindex.xyz/wiki/climate-change.html</loc></url>
-  <url><loc>https://weatherindex.xyz/alert/tokyo-typhoon.html</loc></url>
   <url><loc>https://weatherindex.xyz/en/index.html</loc></url>
   <url><loc>https://weatherindex.xyz/en/lang.html</loc></url>
   <url><loc>https://weatherindex.xyz/en/search.html</loc></url>
+  <url><loc>https://weatherindex.xyz/en/alert/index.html</loc></url>
   <url><loc>https://weatherindex.xyz/en/city/tokyo.html</loc></url>
   <url><loc>https://weatherindex.xyz/en/city/new-york.html</loc></url>
   <url><loc>https://weatherindex.xyz/en/city/paris.html</loc></url>
@@ -221,10 +222,10 @@
   <url><loc>https://weatherindex.xyz/en/wiki/typhoon-naming.html</loc></url>
   <url><loc>https://weatherindex.xyz/en/wiki/el-nino.html</loc></url>
   <url><loc>https://weatherindex.xyz/en/wiki/climate-change.html</loc></url>
-  <url><loc>https://weatherindex.xyz/en/alert/tokyo-typhoon.html</loc></url>
   <url><loc>https://weatherindex.xyz/zh/index.html</loc></url>
   <url><loc>https://weatherindex.xyz/zh/lang.html</loc></url>
   <url><loc>https://weatherindex.xyz/zh/search.html</loc></url>
+  <url><loc>https://weatherindex.xyz/zh/alert/index.html</loc></url>
   <url><loc>https://weatherindex.xyz/zh/city/tokyo.html</loc></url>
   <url><loc>https://weatherindex.xyz/zh/city/new-york.html</loc></url>
   <url><loc>https://weatherindex.xyz/zh/city/paris.html</loc></url>
@@ -332,10 +333,10 @@
   <url><loc>https://weatherindex.xyz/zh/wiki/typhoon-naming.html</loc></url>
   <url><loc>https://weatherindex.xyz/zh/wiki/el-nino.html</loc></url>
   <url><loc>https://weatherindex.xyz/zh/wiki/climate-change.html</loc></url>
-  <url><loc>https://weatherindex.xyz/zh/alert/tokyo-typhoon.html</loc></url>
   <url><loc>https://weatherindex.xyz/es/index.html</loc></url>
   <url><loc>https://weatherindex.xyz/es/lang.html</loc></url>
   <url><loc>https://weatherindex.xyz/es/search.html</loc></url>
+  <url><loc>https://weatherindex.xyz/es/alert/index.html</loc></url>
   <url><loc>https://weatherindex.xyz/es/city/tokyo.html</loc></url>
   <url><loc>https://weatherindex.xyz/es/city/new-york.html</loc></url>
   <url><loc>https://weatherindex.xyz/es/city/paris.html</loc></url>
@@ -443,10 +444,10 @@
   <url><loc>https://weatherindex.xyz/es/wiki/typhoon-naming.html</loc></url>
   <url><loc>https://weatherindex.xyz/es/wiki/el-nino.html</loc></url>
   <url><loc>https://weatherindex.xyz/es/wiki/climate-change.html</loc></url>
-  <url><loc>https://weatherindex.xyz/es/alert/tokyo-typhoon.html</loc></url>
   <url><loc>https://weatherindex.xyz/fr/index.html</loc></url>
   <url><loc>https://weatherindex.xyz/fr/lang.html</loc></url>
   <url><loc>https://weatherindex.xyz/fr/search.html</loc></url>
+  <url><loc>https://weatherindex.xyz/fr/alert/index.html</loc></url>
   <url><loc>https://weatherindex.xyz/fr/city/tokyo.html</loc></url>
   <url><loc>https://weatherindex.xyz/fr/city/new-york.html</loc></url>
   <url><loc>https://weatherindex.xyz/fr/city/paris.html</loc></url>
@@ -554,10 +555,10 @@
   <url><loc>https://weatherindex.xyz/fr/wiki/typhoon-naming.html</loc></url>
   <url><loc>https://weatherindex.xyz/fr/wiki/el-nino.html</loc></url>
   <url><loc>https://weatherindex.xyz/fr/wiki/climate-change.html</loc></url>
-  <url><loc>https://weatherindex.xyz/fr/alert/tokyo-typhoon.html</loc></url>
   <url><loc>https://weatherindex.xyz/de/index.html</loc></url>
   <url><loc>https://weatherindex.xyz/de/lang.html</loc></url>
   <url><loc>https://weatherindex.xyz/de/search.html</loc></url>
+  <url><loc>https://weatherindex.xyz/de/alert/index.html</loc></url>
   <url><loc>https://weatherindex.xyz/de/city/tokyo.html</loc></url>
   <url><loc>https://weatherindex.xyz/de/city/new-york.html</loc></url>
   <url><loc>https://weatherindex.xyz/de/city/paris.html</loc></url>
@@ -665,10 +666,10 @@
   <url><loc>https://weatherindex.xyz/de/wiki/typhoon-naming.html</loc></url>
   <url><loc>https://weatherindex.xyz/de/wiki/el-nino.html</loc></url>
   <url><loc>https://weatherindex.xyz/de/wiki/climate-change.html</loc></url>
-  <url><loc>https://weatherindex.xyz/de/alert/tokyo-typhoon.html</loc></url>
   <url><loc>https://weatherindex.xyz/ja/index.html</loc></url>
   <url><loc>https://weatherindex.xyz/ja/lang.html</loc></url>
   <url><loc>https://weatherindex.xyz/ja/search.html</loc></url>
+  <url><loc>https://weatherindex.xyz/ja/alert/index.html</loc></url>
   <url><loc>https://weatherindex.xyz/ja/city/tokyo.html</loc></url>
   <url><loc>https://weatherindex.xyz/ja/city/new-york.html</loc></url>
   <url><loc>https://weatherindex.xyz/ja/city/paris.html</loc></url>
@@ -776,10 +777,10 @@
   <url><loc>https://weatherindex.xyz/ja/wiki/typhoon-naming.html</loc></url>
   <url><loc>https://weatherindex.xyz/ja/wiki/el-nino.html</loc></url>
   <url><loc>https://weatherindex.xyz/ja/wiki/climate-change.html</loc></url>
-  <url><loc>https://weatherindex.xyz/ja/alert/tokyo-typhoon.html</loc></url>
   <url><loc>https://weatherindex.xyz/ru/index.html</loc></url>
   <url><loc>https://weatherindex.xyz/ru/lang.html</loc></url>
   <url><loc>https://weatherindex.xyz/ru/search.html</loc></url>
+  <url><loc>https://weatherindex.xyz/ru/alert/index.html</loc></url>
   <url><loc>https://weatherindex.xyz/ru/city/tokyo.html</loc></url>
   <url><loc>https://weatherindex.xyz/ru/city/new-york.html</loc></url>
   <url><loc>https://weatherindex.xyz/ru/city/paris.html</loc></url>
@@ -887,10 +888,10 @@
   <url><loc>https://weatherindex.xyz/ru/wiki/typhoon-naming.html</loc></url>
   <url><loc>https://weatherindex.xyz/ru/wiki/el-nino.html</loc></url>
   <url><loc>https://weatherindex.xyz/ru/wiki/climate-change.html</loc></url>
-  <url><loc>https://weatherindex.xyz/ru/alert/tokyo-typhoon.html</loc></url>
   <url><loc>https://weatherindex.xyz/kr/index.html</loc></url>
   <url><loc>https://weatherindex.xyz/kr/lang.html</loc></url>
   <url><loc>https://weatherindex.xyz/kr/search.html</loc></url>
+  <url><loc>https://weatherindex.xyz/kr/alert/index.html</loc></url>
   <url><loc>https://weatherindex.xyz/kr/city/tokyo.html</loc></url>
   <url><loc>https://weatherindex.xyz/kr/city/new-york.html</loc></url>
   <url><loc>https://weatherindex.xyz/kr/city/paris.html</loc></url>
@@ -998,10 +999,10 @@
   <url><loc>https://weatherindex.xyz/kr/wiki/typhoon-naming.html</loc></url>
   <url><loc>https://weatherindex.xyz/kr/wiki/el-nino.html</loc></url>
   <url><loc>https://weatherindex.xyz/kr/wiki/climate-change.html</loc></url>
-  <url><loc>https://weatherindex.xyz/kr/alert/tokyo-typhoon.html</loc></url>
   <url><loc>https://weatherindex.xyz/ar/index.html</loc></url>
   <url><loc>https://weatherindex.xyz/ar/lang.html</loc></url>
   <url><loc>https://weatherindex.xyz/ar/search.html</loc></url>
+  <url><loc>https://weatherindex.xyz/ar/alert/index.html</loc></url>
   <url><loc>https://weatherindex.xyz/ar/city/tokyo.html</loc></url>
   <url><loc>https://weatherindex.xyz/ar/city/new-york.html</loc></url>
   <url><loc>https://weatherindex.xyz/ar/city/paris.html</loc></url>
@@ -1109,5 +1110,4 @@
   <url><loc>https://weatherindex.xyz/ar/wiki/typhoon-naming.html</loc></url>
   <url><loc>https://weatherindex.xyz/ar/wiki/el-nino.html</loc></url>
   <url><loc>https://weatherindex.xyz/ar/wiki/climate-change.html</loc></url>
-  <url><loc>https://weatherindex.xyz/ar/alert/tokyo-typhoon.html</loc></url>
 </urlset>

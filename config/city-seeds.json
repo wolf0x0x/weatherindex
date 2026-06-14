@@ -1,0 +1,1042 @@
+[
+  {
+    "name": "Tokyo",
+    "country": "Japan",
+    "lat": 35.6762,
+    "lon": 139.6503,
+    "emoji": "🗼",
+    "timezone": "Asia/Tokyo",
+    "base_temp": 26,
+    "slug": "tokyo"
+  },
+  {
+    "name": "New York",
+    "country": "USA",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "emoji": "🗽",
+    "timezone": "America/New_York",
+    "base_temp": 22,
+    "slug": "new-york"
+  },
+  {
+    "name": "Paris",
+    "country": "France",
+    "lat": 48.8566,
+    "lon": 2.3522,
+    "emoji": "🏛️",
+    "timezone": "Europe/Paris",
+    "base_temp": 20,
+    "slug": "paris"
+  },
+  {
+    "name": "Beijing",
+    "country": "China",
+    "lat": 39.9042,
+    "lon": 116.4074,
+    "emoji": "🏯",
+    "timezone": "Asia/Shanghai",
+    "base_temp": 28,
+    "slug": "beijing"
+  },
+  {
+    "name": "London",
+    "country": "United Kingdom",
+    "lat": 51.5074,
+    "lon": -0.1278,
+    "emoji": "🎡",
+    "timezone": "Europe/London",
+    "base_temp": 18,
+    "slug": "london"
+  },
+  {
+    "name": "Shanghai",
+    "country": "China",
+    "lat": 31.2304,
+    "lon": 121.4737,
+    "emoji": "🌆",
+    "timezone": "Asia/Shanghai",
+    "base_temp": 29,
+    "slug": "shanghai"
+  },
+  {
+    "name": "Sydney",
+    "country": "Australia",
+    "lat": -33.8688,
+    "lon": 151.2093,
+    "emoji": "🌉",
+    "timezone": "Australia/Sydney",
+    "base_temp": 19,
+    "slug": "sydney"
+  },
+  {
+    "name": "Dubai",
+    "country": "UAE",
+    "lat": 25.2048,
+    "lon": 55.2708,
+    "emoji": "🏙️",
+    "timezone": "Asia/Dubai",
+    "base_temp": 38,
+    "slug": "dubai"
+  },
+  {
+    "name": "Singapore",
+    "country": "Singapore",
+    "lat": 1.3521,
+    "lon": 103.8198,
+    "emoji": "🌿",
+    "timezone": "Asia/Singapore",
+    "base_temp": 31,
+    "slug": "singapore"
+  },
+  {
+    "name": "Seoul",
+    "country": "South Korea",
+    "lat": 37.5665,
+    "lon": 126.978,
+    "emoji": "🏙️",
+    "timezone": "Asia/Seoul",
+    "base_temp": 25,
+    "slug": "seoul"
+  },
+  {
+    "name": "Bangkok",
+    "country": "Thailand",
+    "lat": 13.7563,
+    "lon": 100.5018,
+    "emoji": "🛕",
+    "timezone": "Asia/Bangkok",
+    "base_temp": 34,
+    "slug": "bangkok"
+  },
+  {
+    "name": "Hong Kong",
+    "country": "China",
+    "lat": 22.3193,
+    "lon": 114.1694,
+    "emoji": "🌃",
+    "timezone": "Asia/Hong_Kong",
+    "base_temp": 30,
+    "slug": "hong-kong"
+  },
+  {
+    "name": "Los Angeles",
+    "country": "USA",
+    "lat": 34.0522,
+    "lon": -118.2437,
+    "emoji": "🌴",
+    "timezone": "America/Los_Angeles",
+    "base_temp": 24,
+    "slug": "los-angeles"
+  },
+  {
+    "name": "San Francisco",
+    "country": "USA",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "emoji": "🌁",
+    "timezone": "America/Los_Angeles",
+    "base_temp": 17,
+    "slug": "san-francisco"
+  },
+  {
+    "name": "Toronto",
+    "country": "Canada",
+    "lat": 43.6532,
+    "lon": -79.3832,
+    "emoji": "🍁",
+    "timezone": "America/Toronto",
+    "base_temp": 21,
+    "slug": "toronto"
+  },
+  {
+    "name": "Vancouver",
+    "country": "Canada",
+    "lat": 49.2827,
+    "lon": -123.1207,
+    "emoji": "⛰️",
+    "timezone": "America/Vancouver",
+    "base_temp": 16,
+    "slug": "vancouver"
+  },
+  {
+    "name": "Mexico City",
+    "country": "Mexico",
+    "lat": 19.4326,
+    "lon": -99.1332,
+    "emoji": "🌵",
+    "timezone": "America/Mexico_City",
+    "base_temp": 23,
+    "slug": "mexico-city"
+  },
+  {
+    "name": "São Paulo",
+    "country": "Brazil",
+    "lat": -23.5558,
+    "lon": -46.6396,
+    "emoji": "🌇",
+    "timezone": "America/Sao_Paulo",
+    "base_temp": 22,
+    "slug": "sao-paulo"
+  },
+  {
+    "name": "Rio de Janeiro",
+    "country": "Brazil",
+    "lat": -22.9068,
+    "lon": -43.1729,
+    "emoji": "🏖️",
+    "timezone": "America/Sao_Paulo",
+    "base_temp": 27,
+    "slug": "rio-de-janeiro"
+  },
+  {
+    "name": "Buenos Aires",
+    "country": "Argentina",
+    "lat": -34.6037,
+    "lon": -58.3816,
+    "emoji": "💃",
+    "timezone": "America/Argentina/Buenos_Aires",
+    "base_temp": 18,
+    "slug": "buenos-aires"
+  },
+  {
+    "name": "Santiago",
+    "country": "Chile",
+    "lat": -33.4489,
+    "lon": -70.6693,
+    "emoji": "🏔️",
+    "timezone": "America/Santiago",
+    "base_temp": 17,
+    "slug": "santiago"
+  },
+  {
+    "name": "Lima",
+    "country": "Peru",
+    "lat": -12.0464,
+    "lon": -77.0428,
+    "emoji": "🌊",
+    "timezone": "America/Lima",
+    "base_temp": 20,
+    "slug": "lima"
+  },
+  {
+    "name": "Bogotá",
+    "country": "Colombia",
+    "lat": 4.711,
+    "lon": -74.0721,
+    "emoji": "⛰️",
+    "timezone": "America/Bogota",
+    "base_temp": 15,
+    "slug": "bogota"
+  },
+  {
+    "name": "Madrid",
+    "country": "Spain",
+    "lat": 40.4168,
+    "lon": -3.7038,
+    "emoji": "🏰",
+    "timezone": "Europe/Madrid",
+    "base_temp": 27,
+    "slug": "madrid"
+  },
+  {
+    "name": "Barcelona",
+    "country": "Spain",
+    "lat": 41.3851,
+    "lon": 2.1734,
+    "emoji": "🎨",
+    "timezone": "Europe/Madrid",
+    "base_temp": 26,
+    "slug": "barcelona"
+  },
+  {
+    "name": "Rome",
+    "country": "Italy",
+    "lat": 41.9028,
+    "lon": 12.4964,
+    "emoji": "🏟️",
+    "timezone": "Europe/Rome",
+    "base_temp": 28,
+    "slug": "rome"
+  },
+  {
+    "name": "Milan",
+    "country": "Italy",
+    "lat": 45.4642,
+    "lon": 9.19,
+    "emoji": "🛍️",
+    "timezone": "Europe/Rome",
+    "base_temp": 25,
+    "slug": "milan"
+  },
+  {
+    "name": "Berlin",
+    "country": "Germany",
+    "lat": 52.52,
+    "lon": 13.405,
+    "emoji": "🧭",
+    "timezone": "Europe/Berlin",
+    "base_temp": 19,
+    "slug": "berlin"
+  },
+  {
+    "name": "Munich",
+    "country": "Germany",
+    "lat": 48.1351,
+    "lon": 11.582,
+    "emoji": "⛪",
+    "timezone": "Europe/Berlin",
+    "base_temp": 18,
+    "slug": "munich"
+  },
+  {
+    "name": "Amsterdam",
+    "country": "Netherlands",
+    "lat": 52.3676,
+    "lon": 4.9041,
+    "emoji": "🚲",
+    "timezone": "Europe/Amsterdam",
+    "base_temp": 17,
+    "slug": "amsterdam"
+  },
+  {
+    "name": "Brussels",
+    "country": "Belgium",
+    "lat": 50.8503,
+    "lon": 4.3517,
+    "emoji": "🏛️",
+    "timezone": "Europe/Brussels",
+    "base_temp": 18,
+    "slug": "brussels"
+  },
+  {
+    "name": "Zurich",
+    "country": "Switzerland",
+    "lat": 47.3769,
+    "lon": 8.5417,
+    "emoji": "🏔️",
+    "timezone": "Europe/Zurich",
+    "base_temp": 16,
+    "slug": "zurich"
+  },
+  {
+    "name": "Vienna",
+    "country": "Austria",
+    "lat": 48.2082,
+    "lon": 16.3738,
+    "emoji": "🎼",
+    "timezone": "Europe/Vienna",
+    "base_temp": 21,
+    "slug": "vienna"
+  },
+  {
+    "name": "Prague",
+    "country": "Czech Republic",
+    "lat": 50.0755,
+    "lon": 14.4378,
+    "emoji": "🏰",
+    "timezone": "Europe/Prague",
+    "base_temp": 20,
+    "slug": "prague"
+  },
+  {
+    "name": "Warsaw",
+    "country": "Poland",
+    "lat": 52.2297,
+    "lon": 21.0122,
+    "emoji": "🏙️",
+    "timezone": "Europe/Warsaw",
+    "base_temp": 19,
+    "slug": "warsaw"
+  },
+  {
+    "name": "Stockholm",
+    "country": "Sweden",
+    "lat": 59.3293,
+    "lon": 18.0686,
+    "emoji": "🌲",
+    "timezone": "Europe/Stockholm",
+    "base_temp": 14,
+    "slug": "stockholm"
+  },
+  {
+    "name": "Oslo",
+    "country": "Norway",
+    "lat": 59.9139,
+    "lon": 10.7522,
+    "emoji": "⛵",
+    "timezone": "Europe/Oslo",
+    "base_temp": 13,
+    "slug": "oslo"
+  },
+  {
+    "name": "Copenhagen",
+    "country": "Denmark",
+    "lat": 55.6761,
+    "lon": 12.5683,
+    "emoji": "🚲",
+    "timezone": "Europe/Copenhagen",
+    "base_temp": 16,
+    "slug": "copenhagen"
+  },
+  {
+    "name": "Helsinki",
+    "country": "Finland",
+    "lat": 60.1699,
+    "lon": 24.9384,
+    "emoji": "❄️",
+    "timezone": "Europe/Helsinki",
+    "base_temp": 12,
+    "slug": "helsinki"
+  },
+  {
+    "name": "Dublin",
+    "country": "Ireland",
+    "lat": 53.3498,
+    "lon": -6.2603,
+    "emoji": "☘️",
+    "timezone": "Europe/Dublin",
+    "base_temp": 15,
+    "slug": "dublin"
+  },
+  {
+    "name": "Lisbon",
+    "country": "Portugal",
+    "lat": 38.7223,
+    "lon": -9.1393,
+    "emoji": "🌉",
+    "timezone": "Europe/Lisbon",
+    "base_temp": 24,
+    "slug": "lisbon"
+  },
+  {
+    "name": "Athens",
+    "country": "Greece",
+    "lat": 37.9838,
+    "lon": 23.7275,
+    "emoji": "🏛️",
+    "timezone": "Europe/Athens",
+    "base_temp": 31,
+    "slug": "athens"
+  },
+  {
+    "name": "Istanbul",
+    "country": "Turkey",
+    "lat": 41.0082,
+    "lon": 28.9784,
+    "emoji": "🕌",
+    "timezone": "Europe/Istanbul",
+    "base_temp": 26,
+    "slug": "istanbul"
+  },
+  {
+    "name": "Moscow",
+    "country": "Russia",
+    "lat": 55.7558,
+    "lon": 37.6173,
+    "emoji": "🧅",
+    "timezone": "Europe/Moscow",
+    "base_temp": 16,
+    "slug": "moscow"
+  },
+  {
+    "name": "Saint Petersburg",
+    "country": "Russia",
+    "lat": 59.9311,
+    "lon": 30.3609,
+    "emoji": "🎭",
+    "timezone": "Europe/Moscow",
+    "base_temp": 14,
+    "slug": "saint-petersburg"
+  },
+  {
+    "name": "Cairo",
+    "country": "Egypt",
+    "lat": 30.0444,
+    "lon": 31.2357,
+    "emoji": "🐪",
+    "timezone": "Africa/Cairo",
+    "base_temp": 35,
+    "slug": "cairo"
+  },
+  {
+    "name": "Cape Town",
+    "country": "South Africa",
+    "lat": -33.9249,
+    "lon": 18.4241,
+    "emoji": "⛰️",
+    "timezone": "Africa/Johannesburg",
+    "base_temp": 18,
+    "slug": "cape-town"
+  },
+  {
+    "name": "Johannesburg",
+    "country": "South Africa",
+    "lat": -26.2041,
+    "lon": 28.0473,
+    "emoji": "🌇",
+    "timezone": "Africa/Johannesburg",
+    "base_temp": 20,
+    "slug": "johannesburg"
+  },
+  {
+    "name": "Nairobi",
+    "country": "Kenya",
+    "lat": -1.2921,
+    "lon": 36.8219,
+    "emoji": "🦒",
+    "timezone": "Africa/Nairobi",
+    "base_temp": 22,
+    "slug": "nairobi"
+  },
+  {
+    "name": "Lagos",
+    "country": "Nigeria",
+    "lat": 6.5244,
+    "lon": 3.3792,
+    "emoji": "🌊",
+    "timezone": "Africa/Lagos",
+    "base_temp": 29,
+    "slug": "lagos"
+  },
+  {
+    "name": "Casablanca",
+    "country": "Morocco",
+    "lat": 33.5731,
+    "lon": -7.5898,
+    "emoji": "🕌",
+    "timezone": "Africa/Casablanca",
+    "base_temp": 24,
+    "slug": "casablanca"
+  },
+  {
+    "name": "Riyadh",
+    "country": "Saudi Arabia",
+    "lat": 24.7136,
+    "lon": 46.6753,
+    "emoji": "🏜️",
+    "timezone": "Asia/Riyadh",
+    "base_temp": 40,
+    "slug": "riyadh"
+  },
+  {
+    "name": "Doha",
+    "country": "Qatar",
+    "lat": 25.2854,
+    "lon": 51.531,
+    "emoji": "🌇",
+    "timezone": "Asia/Qatar",
+    "base_temp": 39,
+    "slug": "doha"
+  },
+  {
+    "name": "Tel Aviv",
+    "country": "Israel",
+    "lat": 32.0853,
+    "lon": 34.7818,
+    "emoji": "🏖️",
+    "timezone": "Asia/Jerusalem",
+    "base_temp": 29,
+    "slug": "tel-aviv"
+  },
+  {
+    "name": "Mumbai",
+    "country": "India",
+    "lat": 19.076,
+    "lon": 72.8777,
+    "emoji": "🚉",
+    "timezone": "Asia/Kolkata",
+    "base_temp": 32,
+    "slug": "mumbai"
+  },
+  {
+    "name": "Delhi",
+    "country": "India",
+    "lat": 28.7041,
+    "lon": 77.1025,
+    "emoji": "🕌",
+    "timezone": "Asia/Kolkata",
+    "base_temp": 36,
+    "slug": "delhi"
+  },
+  {
+    "name": "Bengaluru",
+    "country": "India",
+    "lat": 12.9716,
+    "lon": 77.5946,
+    "emoji": "🌳",
+    "timezone": "Asia/Kolkata",
+    "base_temp": 27,
+    "slug": "bengaluru"
+  },
+  {
+    "name": "Kathmandu",
+    "country": "Nepal",
+    "lat": 27.7172,
+    "lon": 85.324,
+    "emoji": "🏔️",
+    "timezone": "Asia/Kathmandu",
+    "base_temp": 21,
+    "slug": "kathmandu"
+  },
+  {
+    "name": "Colombo",
+    "country": "Sri Lanka",
+    "lat": 6.9271,
+    "lon": 79.8612,
+    "emoji": "🌴",
+    "timezone": "Asia/Colombo",
+    "base_temp": 30,
+    "slug": "colombo"
+  },
+  {
+    "name": "Karachi",
+    "country": "Pakistan",
+    "lat": 24.8607,
+    "lon": 67.0011,
+    "emoji": "🌊",
+    "timezone": "Asia/Karachi",
+    "base_temp": 34,
+    "slug": "karachi"
+  },
+  {
+    "name": "Dhaka",
+    "country": "Bangladesh",
+    "lat": 23.8103,
+    "lon": 90.4125,
+    "emoji": "🚲",
+    "timezone": "Asia/Dhaka",
+    "base_temp": 31,
+    "slug": "dhaka"
+  },
+  {
+    "name": "Jakarta",
+    "country": "Indonesia",
+    "lat": -6.2088,
+    "lon": 106.8456,
+    "emoji": "🌴",
+    "timezone": "Asia/Jakarta",
+    "base_temp": 31,
+    "slug": "jakarta"
+  },
+  {
+    "name": "Bali",
+    "country": "Indonesia",
+    "lat": -8.3405,
+    "lon": 115.092,
+    "emoji": "🏝️",
+    "timezone": "Asia/Makassar",
+    "base_temp": 29,
+    "slug": "bali"
+  },
+  {
+    "name": "Kuala Lumpur",
+    "country": "Malaysia",
+    "lat": 3.139,
+    "lon": 101.6869,
+    "emoji": "🏙️",
+    "timezone": "Asia/Kuala_Lumpur",
+    "base_temp": 31,
+    "slug": "kuala-lumpur"
+  },
+  {
+    "name": "Manila",
+    "country": "Philippines",
+    "lat": 14.5995,
+    "lon": 120.9842,
+    "emoji": "🌊",
+    "timezone": "Asia/Manila",
+    "base_temp": 32,
+    "slug": "manila"
+  },
+  {
+    "name": "Hanoi",
+    "country": "Vietnam",
+    "lat": 21.0278,
+    "lon": 105.8342,
+    "emoji": "🌾",
+    "timezone": "Asia/Bangkok",
+    "base_temp": 30,
+    "slug": "hanoi"
+  },
+  {
+    "name": "Ho Chi Minh City",
+    "country": "Vietnam",
+    "lat": 10.8231,
+    "lon": 106.6297,
+    "emoji": "🛵",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "base_temp": 33,
+    "slug": "ho-chi-minh-city"
+  },
+  {
+    "name": "Taipei",
+    "country": "Taiwan",
+    "lat": 25.033,
+    "lon": 121.5654,
+    "emoji": "🏙️",
+    "timezone": "Asia/Taipei",
+    "base_temp": 29,
+    "slug": "taipei"
+  },
+  {
+    "name": "Osaka",
+    "country": "Japan",
+    "lat": 34.6937,
+    "lon": 135.5023,
+    "emoji": "🏯",
+    "timezone": "Asia/Tokyo",
+    "base_temp": 25,
+    "slug": "osaka"
+  },
+  {
+    "name": "Kyoto",
+    "country": "Japan",
+    "lat": 35.0116,
+    "lon": 135.7681,
+    "emoji": "⛩️",
+    "timezone": "Asia/Tokyo",
+    "base_temp": 24,
+    "slug": "kyoto"
+  },
+  {
+    "name": "Melbourne",
+    "country": "Australia",
+    "lat": -37.8136,
+    "lon": 144.9631,
+    "emoji": "☕",
+    "timezone": "Australia/Melbourne",
+    "base_temp": 16,
+    "slug": "melbourne"
+  },
+  {
+    "name": "Brisbane",
+    "country": "Australia",
+    "lat": -27.4698,
+    "lon": 153.0251,
+    "emoji": "🌞",
+    "timezone": "Australia/Brisbane",
+    "base_temp": 23,
+    "slug": "brisbane"
+  },
+  {
+    "name": "Auckland",
+    "country": "New Zealand",
+    "lat": -36.8485,
+    "lon": 174.7633,
+    "emoji": "⛵",
+    "timezone": "Pacific/Auckland",
+    "base_temp": 15,
+    "slug": "auckland"
+  },
+  {
+    "name": "Honolulu",
+    "country": "USA",
+    "lat": 21.3069,
+    "lon": -157.8583,
+    "emoji": "🏝️",
+    "timezone": "Pacific/Honolulu",
+    "base_temp": 28,
+    "slug": "honolulu"
+  },
+  {
+    "name": "Anchorage",
+    "country": "USA",
+    "lat": 61.2181,
+    "lon": -149.9003,
+    "emoji": "🗻",
+    "timezone": "America/Anchorage",
+    "base_temp": 9,
+    "slug": "anchorage"
+  },
+  {
+    "name": "Chicago",
+    "country": "USA",
+    "lat": 41.8781,
+    "lon": -87.6298,
+    "emoji": "🌬️",
+    "timezone": "America/Chicago",
+    "base_temp": 21,
+    "slug": "chicago"
+  },
+  {
+    "name": "Miami",
+    "country": "USA",
+    "lat": 25.7617,
+    "lon": -80.1918,
+    "emoji": "🏖️",
+    "timezone": "America/New_York",
+    "base_temp": 30,
+    "slug": "miami"
+  },
+  {
+    "name": "Seattle",
+    "country": "USA",
+    "lat": 47.6062,
+    "lon": -122.3321,
+    "emoji": "☕",
+    "timezone": "America/Los_Angeles",
+    "base_temp": 16,
+    "slug": "seattle"
+  },
+  {
+    "name": "Boston",
+    "country": "USA",
+    "lat": 42.3601,
+    "lon": -71.0589,
+    "emoji": "🎓",
+    "timezone": "America/New_York",
+    "base_temp": 19,
+    "slug": "boston"
+  },
+  {
+    "name": "Washington DC",
+    "country": "USA",
+    "lat": 38.9072,
+    "lon": -77.0369,
+    "emoji": "🏛️",
+    "timezone": "America/New_York",
+    "base_temp": 24,
+    "slug": "washington-dc"
+  },
+  {
+    "name": "Las Vegas",
+    "country": "USA",
+    "lat": 36.1699,
+    "lon": -115.1398,
+    "emoji": "🎰",
+    "timezone": "America/Los_Angeles",
+    "base_temp": 35,
+    "slug": "las-vegas"
+  },
+  {
+    "name": "Denver",
+    "country": "USA",
+    "lat": 39.7392,
+    "lon": -104.9903,
+    "emoji": "🏔️",
+    "timezone": "America/Denver",
+    "base_temp": 23,
+    "slug": "denver"
+  },
+  {
+    "name": "Dallas",
+    "country": "USA",
+    "lat": 32.7767,
+    "lon": -96.797,
+    "emoji": "🤠",
+    "timezone": "America/Chicago",
+    "base_temp": 32,
+    "slug": "dallas"
+  },
+  {
+    "name": "Houston",
+    "country": "USA",
+    "lat": 29.7604,
+    "lon": -95.3698,
+    "emoji": "🚀",
+    "timezone": "America/Chicago",
+    "base_temp": 33,
+    "slug": "houston"
+  },
+  {
+    "name": "Phoenix",
+    "country": "USA",
+    "lat": 33.4484,
+    "lon": -112.074,
+    "emoji": "🌵",
+    "timezone": "America/Phoenix",
+    "base_temp": 38,
+    "slug": "phoenix"
+  },
+  {
+    "name": "Orlando",
+    "country": "USA",
+    "lat": 28.5383,
+    "lon": -81.3792,
+    "emoji": "🎢",
+    "timezone": "America/New_York",
+    "base_temp": 31,
+    "slug": "orlando"
+  },
+  {
+    "name": "Montreal",
+    "country": "Canada",
+    "lat": 45.5017,
+    "lon": -73.5673,
+    "emoji": "🍁",
+    "timezone": "America/Toronto",
+    "base_temp": 18,
+    "slug": "montreal"
+  },
+  {
+    "name": "Quebec City",
+    "country": "Canada",
+    "lat": 46.8139,
+    "lon": -71.208,
+    "emoji": "🏰",
+    "timezone": "America/Toronto",
+    "base_temp": 16,
+    "slug": "quebec-city"
+  },
+  {
+    "name": "Calgary",
+    "country": "Canada",
+    "lat": 51.0447,
+    "lon": -114.0719,
+    "emoji": "🏔️",
+    "timezone": "America/Edmonton",
+    "base_temp": 14,
+    "slug": "calgary"
+  },
+  {
+    "name": "Reykjavik",
+    "country": "Iceland",
+    "lat": 64.1466,
+    "lon": -21.9426,
+    "emoji": "🌋",
+    "timezone": "Atlantic/Reykjavik",
+    "base_temp": 8,
+    "slug": "reykjavik"
+  },
+  {
+    "name": "Edinburgh",
+    "country": "United Kingdom",
+    "lat": 55.9533,
+    "lon": -3.1883,
+    "emoji": "🏰",
+    "timezone": "Europe/London",
+    "base_temp": 13,
+    "slug": "edinburgh"
+  },
+  {
+    "name": "Manchester",
+    "country": "United Kingdom",
+    "lat": 53.4808,
+    "lon": -2.2426,
+    "emoji": "⚽",
+    "timezone": "Europe/London",
+    "base_temp": 15,
+    "slug": "manchester"
+  },
+  {
+    "name": "Nice",
+    "country": "France",
+    "lat": 43.7102,
+    "lon": 7.262,
+    "emoji": "🌊",
+    "timezone": "Europe/Paris",
+    "base_temp": 25,
+    "slug": "nice"
+  },
+  {
+    "name": "Lyon",
+    "country": "France",
+    "lat": 45.764,
+    "lon": 4.8357,
+    "emoji": "🍽️",
+    "timezone": "Europe/Paris",
+    "base_temp": 24,
+    "slug": "lyon"
+  },
+  {
+    "name": "Venice",
+    "country": "Italy",
+    "lat": 45.4408,
+    "lon": 12.3155,
+    "emoji": "🚤",
+    "timezone": "Europe/Rome",
+    "base_temp": 26,
+    "slug": "venice"
+  },
+  {
+    "name": "Florence",
+    "country": "Italy",
+    "lat": 43.7696,
+    "lon": 11.2558,
+    "emoji": "🎨",
+    "timezone": "Europe/Rome",
+    "base_temp": 27,
+    "slug": "florence"
+  },
+  {
+    "name": "Budapest",
+    "country": "Hungary",
+    "lat": 47.4979,
+    "lon": 19.0402,
+    "emoji": "♨️",
+    "timezone": "Europe/Budapest",
+    "base_temp": 22,
+    "slug": "budapest"
+  },
+  {
+    "name": "Bucharest",
+    "country": "Romania",
+    "lat": 44.4268,
+    "lon": 26.1025,
+    "emoji": "🏛️",
+    "timezone": "Europe/Bucharest",
+    "base_temp": 24,
+    "slug": "bucharest"
+  },
+  {
+    "name": "Belgrade",
+    "country": "Serbia",
+    "lat": 44.7866,
+    "lon": 20.4489,
+    "emoji": "🌉",
+    "timezone": "Europe/Belgrade",
+    "base_temp": 25,
+    "slug": "belgrade"
+  },
+  {
+    "name": "Zagreb",
+    "country": "Croatia",
+    "lat": 45.815,
+    "lon": 15.9819,
+    "emoji": "🏰",
+    "timezone": "Europe/Zagreb",
+    "base_temp": 22,
+    "slug": "zagreb"
+  },
+  {
+    "name": "Sofia",
+    "country": "Bulgaria",
+    "lat": 42.6977,
+    "lon": 23.3219,
+    "emoji": "⛰️",
+    "timezone": "Europe/Sofia",
+    "base_temp": 23,
+    "slug": "sofia"
+  },
+  {
+    "name": "Tallinn",
+    "country": "Estonia",
+    "lat": 59.437,
+    "lon": 24.7536,
+    "emoji": "🏰",
+    "timezone": "Europe/Tallinn",
+    "base_temp": 13,
+    "slug": "tallinn"
+  },
+  {
+    "name": "Vilnius",
+    "country": "Lithuania",
+    "lat": 54.6872,
+    "lon": 25.2797,
+    "emoji": "⛪",
+    "timezone": "Europe/Vilnius",
+    "base_temp": 15,
+    "slug": "vilnius"
+  },
+  {
+    "name": "Riga",
+    "country": "Latvia",
+    "lat": 56.9496,
+    "lon": 24.1052,
+    "emoji": "🌲",
+    "timezone": "Europe/Riga",
+    "base_temp": 14,
+    "slug": "riga"
+  }
+]

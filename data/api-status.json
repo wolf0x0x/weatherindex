@@ -1,25 +1,26 @@
 {
-  "generated_at": "2026-06-14T14:21:39.116943+00:00",
+  "generated_at": "2026-06-14T14:54:56.010184+00:00",
   "providers": [
     "Open-Meteo Forecast",
     "Open-Meteo Air Quality",
     "Open-Meteo Marine",
-    "OpenWeatherMap (optional OPENWEATHER_KEY)",
     "Visual Crossing (optional VISUALCROSSING_KEY)",
     "7Timer",
     "wttr.in",
-    "Weatherbit (optional WEATHERBIT_KEY)",
+    "OpenWeatherMap current (optional OPENWEATHER_KEY)",
+    "Weatherbit current (optional WEATHERBIT_KEY)",
+    "Nominatim browser search",
     "ipapi.co",
     "ipinfo.io",
     "IPWho.is",
     "IPLocate",
     "WorldTimeAPI",
-    "Nominatim",
     "Buttondown (optional BUTTONDOWN_NEWSLETTER)"
   ],
   "cities": [
     {
       "city": "Tokyo",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -40,6 +41,7 @@
     },
     {
       "city": "New York",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -60,6 +62,7 @@
     },
     {
       "city": "Paris",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -80,6 +83,7 @@
     },
     {
       "city": "Beijing",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -100,6 +104,7 @@
     },
     {
       "city": "London",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -120,6 +125,7 @@
     },
     {
       "city": "Shanghai",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -140,6 +146,7 @@
     },
     {
       "city": "Sydney",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -160,6 +167,7 @@
     },
     {
       "city": "Dubai",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -180,6 +188,7 @@
     },
     {
       "city": "Singapore",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -200,6 +209,7 @@
     },
     {
       "city": "Seoul",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -220,6 +230,7 @@
     },
     {
       "city": "Bangkok",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -240,6 +251,7 @@
     },
     {
       "city": "Hong Kong",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -260,6 +272,7 @@
     },
     {
       "city": "Los Angeles",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -280,6 +293,7 @@
     },
     {
       "city": "San Francisco",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -300,6 +314,7 @@
     },
     {
       "city": "Toronto",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -320,6 +335,7 @@
     },
     {
       "city": "Vancouver",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -340,6 +356,7 @@
     },
     {
       "city": "Mexico City",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -360,6 +377,7 @@
     },
     {
       "city": "São Paulo",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -380,6 +398,7 @@
     },
     {
       "city": "Rio de Janeiro",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -400,6 +419,7 @@
     },
     {
       "city": "Buenos Aires",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -420,6 +440,7 @@
     },
     {
       "city": "Santiago",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -440,6 +461,7 @@
     },
     {
       "city": "Lima",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -460,6 +482,7 @@
     },
     {
       "city": "Bogotá",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -480,6 +503,7 @@
     },
     {
       "city": "Madrid",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -500,6 +524,7 @@
     },
     {
       "city": "Barcelona",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -520,6 +545,7 @@
     },
     {
       "city": "Rome",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -540,6 +566,7 @@
     },
     {
       "city": "Milan",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -560,6 +587,7 @@
     },
     {
       "city": "Berlin",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -580,6 +608,7 @@
     },
     {
       "city": "Munich",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -600,6 +629,7 @@
     },
     {
       "city": "Amsterdam",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -620,6 +650,7 @@
     },
     {
       "city": "Brussels",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -640,6 +671,7 @@
     },
     {
       "city": "Zurich",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -660,6 +692,7 @@
     },
     {
       "city": "Vienna",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -680,9 +713,20 @@
     },
     {
       "city": "Prague",
+      "source": "open-meteo",
       "status": [
         {
-          "source": "offline-model",
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
           "ok": "true",
           "error": ""
         }
@@ -690,6 +734,7 @@
     },
     {
       "city": "Warsaw",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -710,6 +755,7 @@
     },
     {
       "city": "Stockholm",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -730,6 +776,7 @@
     },
     {
       "city": "Oslo",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -750,6 +797,7 @@
     },
     {
       "city": "Copenhagen",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -770,6 +818,7 @@
     },
     {
       "city": "Helsinki",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -790,6 +839,7 @@
     },
     {
       "city": "Dublin",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -810,6 +860,7 @@
     },
     {
       "city": "Lisbon",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -830,6 +881,7 @@
     },
     {
       "city": "Athens",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -850,6 +902,7 @@
     },
     {
       "city": "Istanbul",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -870,6 +923,7 @@
     },
     {
       "city": "Moscow",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -890,6 +944,7 @@
     },
     {
       "city": "Saint Petersburg",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -910,6 +965,7 @@
     },
     {
       "city": "Cairo",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -930,6 +986,7 @@
     },
     {
       "city": "Cape Town",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -950,6 +1007,7 @@
     },
     {
       "city": "Johannesburg",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -970,6 +1028,7 @@
     },
     {
       "city": "Nairobi",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -990,6 +1049,7 @@
     },
     {
       "city": "Lagos",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -1010,6 +1070,7 @@
     },
     {
       "city": "Casablanca",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -1030,6 +1091,7 @@
     },
     {
       "city": "Riyadh",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -1050,6 +1112,7 @@
     },
     {
       "city": "Doha",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -1070,6 +1133,7 @@
     },
     {
       "city": "Tel Aviv",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -1090,6 +1154,7 @@
     },
     {
       "city": "Mumbai",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -1110,6 +1175,7 @@
     },
     {
       "city": "Delhi",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -1130,6 +1196,7 @@
     },
     {
       "city": "Bengaluru",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -1150,6 +1217,7 @@
     },
     {
       "city": "Kathmandu",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -1170,6 +1238,7 @@
     },
     {
       "city": "Colombo",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -1190,6 +1259,7 @@
     },
     {
       "city": "Karachi",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -1210,6 +1280,7 @@
     },
     {
       "city": "Dhaka",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -1230,6 +1301,7 @@
     },
     {
       "city": "Jakarta",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -1250,6 +1322,7 @@
     },
     {
       "city": "Bali",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -1270,6 +1343,7 @@
     },
     {
       "city": "Kuala Lumpur",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -1290,6 +1364,7 @@
     },
     {
       "city": "Manila",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -1310,6 +1385,7 @@
     },
     {
       "city": "Hanoi",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -1330,6 +1406,7 @@
     },
     {
       "city": "Ho Chi Minh City",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -1350,6 +1427,7 @@
     },
     {
       "city": "Taipei",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -1370,6 +1448,7 @@
     },
     {
       "city": "Osaka",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -1390,6 +1469,7 @@
     },
     {
       "city": "Kyoto",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -1410,6 +1490,7 @@
     },
     {
       "city": "Melbourne",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -1430,6 +1511,7 @@
     },
     {
       "city": "Brisbane",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -1450,6 +1532,7 @@
     },
     {
       "city": "Auckland",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -1470,6 +1553,7 @@
     },
     {
       "city": "Honolulu",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -1490,6 +1574,7 @@
     },
     {
       "city": "Anchorage",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -1510,6 +1595,7 @@
     },
     {
       "city": "Chicago",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -1530,6 +1616,7 @@
     },
     {
       "city": "Miami",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -1550,6 +1637,7 @@
     },
     {
       "city": "Seattle",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -1570,6 +1658,7 @@
     },
     {
       "city": "Boston",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -1590,6 +1679,7 @@
     },
     {
       "city": "Washington DC",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -1610,6 +1700,7 @@
     },
     {
       "city": "Las Vegas",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -1630,6 +1721,7 @@
     },
     {
       "city": "Denver",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -1650,6 +1742,7 @@
     },
     {
       "city": "Dallas",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -1670,6 +1763,7 @@
     },
     {
       "city": "Houston",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -1690,6 +1784,7 @@
     },
     {
       "city": "Phoenix",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -1710,6 +1805,7 @@
     },
     {
       "city": "Orlando",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -1730,6 +1826,7 @@
     },
     {
       "city": "Montreal",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -1750,6 +1847,7 @@
     },
     {
       "city": "Quebec City",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -1770,6 +1868,7 @@
     },
     {
       "city": "Calgary",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -1790,6 +1889,7 @@
     },
     {
       "city": "Reykjavik",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -1810,6 +1910,7 @@
     },
     {
       "city": "Edinburgh",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -1830,6 +1931,7 @@
     },
     {
       "city": "Manchester",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -1850,6 +1952,7 @@
     },
     {
       "city": "Nice",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -1870,6 +1973,7 @@
     },
     {
       "city": "Lyon",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -1890,6 +1994,7 @@
     },
     {
       "city": "Venice",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -1910,6 +2015,7 @@
     },
     {
       "city": "Florence",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -1930,6 +2036,7 @@
     },
     {
       "city": "Budapest",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -1950,6 +2057,7 @@
     },
     {
       "city": "Bucharest",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -1970,6 +2078,7 @@
     },
     {
       "city": "Belgrade",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -1990,6 +2099,7 @@
     },
     {
       "city": "Zagreb",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -2010,6 +2120,7 @@
     },
     {
       "city": "Sofia",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -2030,6 +2141,7 @@
     },
     {
       "city": "Tallinn",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -2050,6 +2162,7 @@
     },
     {
       "city": "Vilnius",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
@@ -2070,6 +2183,7 @@
     },
     {
       "city": "Riga",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",

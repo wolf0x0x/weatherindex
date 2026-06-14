@@ -1,28 +1,92 @@
 {
   "ui": {
     "search_placeholder": {
-      "en": "Search city...", "zh": "搜索城市...", "es": "Buscar ciudad...", "fr": "Rechercher une ville...", "de": "Stadt suchen...", "ja": "都市を検索...", "ru": "Поиск города...", "kr": "도시 검색...", "ar": "ابحث عن مدينة..."
+      "en": "Search city...",
+      "zh": "搜索城市...",
+      "es": "Buscar ciudad...",
+      "fr": "Rechercher une ville...",
+      "de": "Stadt suchen...",
+      "ja": "都市を検索...",
+      "ru": "Поиск города...",
+      "kr": "도시 검색...",
+      "ar": "ابحث عن مدينة..."
     },
     "locate_me": {
-      "en": "Locate Me", "zh": "自动定位", "es": "Ubicarme", "fr": "Me localiser", "de": "Ortung", "ja": "現在地", "ru": "Локация", "kr": "내 위치", "ar": "تحديد موقعي"
+      "en": "Locate Me",
+      "zh": "自动定位",
+      "es": "Ubicarme",
+      "fr": "Me localiser",
+      "de": "Ortung",
+      "ja": "現在地",
+      "ru": "Локация",
+      "kr": "내 위치",
+      "ar": "تحديد موقعي"
     },
     "feels_like": {
-      "en": "Feels Like", "zh": "体感温度", "es": "Sensación", "fr": "Ressenti", "de": "Gefühlt", "ja": "体感温度", "ru": "Ощущается", "kr": "체감 온도", "ar": "الحرارة المحسوسة"
+      "en": "Feels Like",
+      "zh": "体感温度",
+      "es": "Sensación",
+      "fr": "Ressenti",
+      "de": "Gefühlt",
+      "ja": "体感温度",
+      "ru": "Ощущается",
+      "kr": "체감 온도",
+      "ar": "الحرارة المحسوسة"
     },
     "humidity": {
-      "en": "Humidity", "zh": "空气湿度", "es": "Humedad", "fr": "Humidité", "de": "Feuchtigkeit", "ja": "湿度", "ru": "Влажность", "kr": "습도", "ar": "الرطوبة"
+      "en": "Humidity",
+      "zh": "空气湿度",
+      "es": "Humedad",
+      "fr": "Humidité",
+      "de": "Feuchtigkeit",
+      "ja": "湿度",
+      "ru": "Влажность",
+      "kr": "습도",
+      "ar": "الرطوبة"
     },
     "wind_speed": {
-      "en": "Wind Speed", "zh": "当前风速", "es": "Viento", "fr": "Vent", "de": "Wind", "ja": "風速", "ru": "Скорость ветра", "kr": "풍속", "ar": "سرعة الرياح"
+      "en": "Wind Speed",
+      "zh": "当前风速",
+      "es": "Viento",
+      "fr": "Vent",
+      "de": "Wind",
+      "ja": "風速",
+      "ru": "Скорость ветра",
+      "kr": "풍속",
+      "ar": "سرعة الرياح"
     },
     "life_title": {
-      "en": "Daily Life Index", "zh": "生活指数指南", "es": "Índice de Vida", "fr": "Indice de Vie", "de": "Lebensqualitätsindex", "ja": "生活指数", "ru": "Жизненные индексы", "kr": "생활 지수", "ar": "مؤشر الحياة اليومية"
+      "en": "Daily Life Index",
+      "zh": "生活指数指南",
+      "es": "Índice de Vida",
+      "fr": "Indice de Vie",
+      "de": "Lebensqualitätsindex",
+      "ja": "生活指数",
+      "ru": "Жизненные индексы",
+      "kr": "생활 지수",
+      "ar": "مؤشر الحياة اليومية"
     },
     "travel_title": {
-      "en": "Travel Weather Comparison", "zh": "全球热门旅行天气对比", "es": "Clima de Viaje", "fr": "Météo de Voyage", "de": "Reisewetter", "ja": "旅行天気比較", "ru": "Погода для путешествий", "kr": "여행 날씨 비교", "ar": "مقارنة طقس السفر"
+      "en": "Travel Weather Comparison",
+      "zh": "全球热门旅行天气对比",
+      "es": "Clima de Viaje",
+      "fr": "Météo de Voyage",
+      "de": "Reisewetter",
+      "ja": "旅行天気比較",
+      "ru": "Погода для путешествий",
+      "kr": "여행 날씨 비교",
+      "ar": "مقارنة طقس السفر"
     },
     "wiki_title": {
-      "en": "Weather Wiki", "zh": "天气知识科普", "es": "Wiki del Clima", "fr": "Météo Wiki", "de": "Wetter-Wiki", "ja": "お天気ウィキ", "ru": "Погодная Вики", "kr": "날씨 위키", "ar": "موسوعة الطقس"
+      "en": "Weather Wiki",
+      "zh": "天气知识科普",
+      "es": "Wiki del Clima",
+      "fr": "Météo Wiki",
+      "de": "Wetter-Wiki",
+      "ja": "お天気ウィキ",
+      "ru": "Погодная Вики",
+      "kr": "날씨 위키",
+      "ar": "موسوعة الطقس"
     },
     "home_title": {
       "en": "Global Weather Forecast - 100+ Cities Real-time",
@@ -36,31 +100,103 @@
       "ar": "توقعات الطقس العالمية - 100+ مدينة"
     },
     "hot_cities": {
-      "en": "Hot Cities", "zh": "热门城市", "es": "Ciudades Populares", "fr": "Villes Populaires", "de": "Beliebte Städte", "ja": "人気都市", "ru": "Популярные Города", "kr": "인기 도시", "ar": "مدن رائجة"
+      "en": "Hot Cities",
+      "zh": "热门城市",
+      "es": "Ciudades Populares",
+      "fr": "Villes Populaires",
+      "de": "Beliebte Städte",
+      "ja": "人気都市",
+      "ru": "Популярные Города",
+      "kr": "인기 도시",
+      "ar": "مدن رائجة"
     },
     "search_all": {
-      "en": "Search all", "zh": "搜索全部", "es": "Buscar todo", "fr": "Tout rechercher", "de": "Alle durchsuchen", "ja": "すべて検索", "ru": "Искать все", "kr": "모두 검색", "ar": "البحث في الكل"
+      "en": "Search all",
+      "zh": "搜索全部",
+      "es": "Buscar todo",
+      "fr": "Tout rechercher",
+      "de": "Alle durchsuchen",
+      "ja": "すべて検索",
+      "ru": "Искать все",
+      "kr": "모두 검색",
+      "ar": "البحث في الكل"
     },
     "search_title": {
-      "en": "Search Cities", "zh": "搜索城市", "es": "Buscar Ciudades", "fr": "Rechercher des Villes", "de": "Städte Suchen", "ja": "都市を検索", "ru": "Поиск Городов", "kr": "도시 검색", "ar": "البحث في المدن"
+      "en": "Search Cities",
+      "zh": "搜索城市",
+      "es": "Buscar Ciudades",
+      "fr": "Rechercher des Villes",
+      "de": "Städte Suchen",
+      "ja": "都市を検索",
+      "ru": "Поиск Городов",
+      "kr": "도시 검색",
+      "ar": "البحث في المدن"
     },
     "alerts_title": {
-      "en": "Severe Weather Alerts", "zh": "极端天气预警", "es": "Alertas Meteorológicas", "fr": "Alertes Météo", "de": "Unwetterwarnungen", "ja": "気象警報", "ru": "Предупреждения о Погоде", "kr": "기상 경보", "ar": "تنبيهات الطقس"
+      "en": "Severe Weather Alerts",
+      "zh": "极端天气预警",
+      "es": "Alertas Meteorológicas",
+      "fr": "Alertes Météo",
+      "de": "Unwetterwarnungen",
+      "ja": "気象警報",
+      "ru": "Предупреждения о Погоде",
+      "kr": "기상 경보",
+      "ar": "تنبيهات الطقس"
     },
     "alerts_desc": {
-      "en": "Real-time severe weather alerts from around the world.", "zh": "全球实时极端天气预警信息。", "es": "Alertas meteorológicas severas en tiempo real de todo el mundo.", "fr": "Alertes météo sévères en temps réel dans le monde entier.", "de": "Echtzeit-Unwetterwarnungen aus der ganzen Welt.", "ja": "世界中のリアルタイム気象警報。", "ru": "Оповещения о суровой погоде со всего мира в реальном времени.", "kr": "전 세계 실시간 기상 경보.", "ar": "تنبيهات طقس شديدة لحظية من جميع أنحاء العالم."
+      "en": "Real-time severe weather alerts from around the world.",
+      "zh": "全球实时极端天气预警信息。",
+      "es": "Alertas meteorológicas severas en tiempo real de todo el mundo.",
+      "fr": "Alertes météo sévères en temps réel dans le monde entier.",
+      "de": "Echtzeit-Unwetterwarnungen aus der ganzen Welt.",
+      "ja": "世界中のリアルタイム気象警報。",
+      "ru": "Оповещения о суровой погоде со всего мира в реальном времени.",
+      "kr": "전 세계 실시간 기상 경보.",
+      "ar": "تنبيهات طقس شديدة لحظية من جميع أنحاء العالم."
     },
     "no_alerts": {
-      "en": "No active severe weather alerts.", "zh": "当前没有活跃的极端天气预警。", "es": "No hay alertas meteorológicas activas.", "fr": "Aucune alerte météo active.", "de": "Keine aktiven Unwetterwarnungen.", "ja": "アクティブな気象警報はありません。", "ru": "Нет активных предупреждений о погоде.", "kr": "활성화된 기상 경보가 없습니다.", "ar": "لا توجد تنبيهات طقس نشطة."
+      "en": "No active severe weather alerts.",
+      "zh": "当前没有活跃的极端天气预警。",
+      "es": "No hay alertas meteorológicas activas.",
+      "fr": "Aucune alerte météo active.",
+      "de": "Keine aktiven Unwetterwarnungen.",
+      "ja": "アクティブな気象警報はありません。",
+      "ru": "Нет активных предупреждений о погоде.",
+      "kr": "활성화된 기상 경보가 없습니다.",
+      "ar": "لا توجد تنبيهات طقس نشطة."
     },
     "global_coverage": {
-      "en": "Global Coverage", "zh": "全球覆盖", "es": "Cobertura Global", "fr": "Couverture Mondiale", "de": "Globale Abdeckung", "ja": "世界対応", "ru": "Глобальный Охват", "kr": "전 세계 커버", "ar": "تغطية عالمية"
+      "en": "Global Coverage",
+      "zh": "全球覆盖",
+      "es": "Cobertura Global",
+      "fr": "Couverture Mondiale",
+      "de": "Globale Abdeckung",
+      "ja": "世界対応",
+      "ru": "Глобальный Охват",
+      "kr": "전 세계 커버",
+      "ar": "تغطية عالمية"
     },
     "realtime_updates": {
-      "en": "Real-time Updates", "zh": "实时更新", "es": "Actualizaciones en Tiempo Real", "fr": "Mises à Jour en Temps Réel", "de": "Echtzeit-Updates", "ja": "リアルタイム更新", "ru": "Обновления в Реальном Времени", "kr": "실시간 업데이트", "ar": "تحديثات فورية"
+      "en": "Real-time Updates",
+      "zh": "实时更新",
+      "es": "Actualizaciones en Tiempo Real",
+      "fr": "Mises à Jour en Temps Réel",
+      "de": "Echtzeit-Updates",
+      "ja": "リアルタイム更新",
+      "ru": "Обновления в Реальном Времени",
+      "kr": "실시간 업데이트",
+      "ar": "تحديثات فورية"
     },
     "static_fast": {
-      "en": "Static & Fast", "zh": "静态极速", "es": "Estático y Rápido", "fr": "Statique et Rapide", "de": "Statisch & Schnell", "ja": "静的・高速", "ru": "Статично и Быстро", "kr": "정적·고속", "ar": "ثابت وسريع"
+      "en": "Static & Fast",
+      "zh": "静态极速",
+      "es": "Estático y Rápido",
+      "fr": "Statique et Rapide",
+      "de": "Statisch & Schnell",
+      "ja": "静的・高速",
+      "ru": "Статично и Быстро",
+      "kr": "정적·고속",
+      "ar": "ثابت وسريع"
     },
     "global_coverage_desc": {
       "en": "Pre-rendered city pages across every region and major time zone.",
@@ -96,64 +232,597 @@
       "ar": "يحافظ HTML الثابت على سرعة أول رسم وتكلفة استضافة صفرية."
     },
     "select_language": {
-      "en": "Select Your Language", "zh": "选择您的语言", "es": "Selecciona tu Idioma", "fr": "Choisissez votre Langue", "de": "Sprache wählen", "ja": "言語を選択", "ru": "Выберите Язык", "kr": "언어 선택", "ar": "اختر لغتك"
+      "en": "Select Your Language",
+      "zh": "选择您的语言",
+      "es": "Selecciona tu Idioma",
+      "fr": "Choisissez votre Langue",
+      "de": "Sprache wählen",
+      "ja": "言語を選択",
+      "ru": "Выберите Язык",
+      "kr": "언어 선택",
+      "ar": "اختر لغتك"
     },
     "no_results": {
-      "en": "No cities found. Try another search.", "zh": "未找到城市，请尝试其他关键词。", "es": "No se encontraron ciudades. Intenta otra búsqueda.", "fr": "Aucune ville trouvée. Essayez une autre recherche.", "de": "Keine Städte gefunden. Versuchen Sie eine andere Suche.", "ja": "都市が見つかりませんでした。別のキーワードを試してください。", "ru": "Города не найдены. Попробуйте другой запрос.", "kr": "도시를 찾을 수 없습니다. 다른 검색어를 시도해 보세요.", "ar": "لم يتم العثور على مدن. جرب بحثًا آخر."
+      "en": "No cities found. Try another search.",
+      "zh": "未找到城市，请尝试其他关键词。",
+      "es": "No se encontraron ciudades. Intenta otra búsqueda.",
+      "fr": "Aucune ville trouvée. Essayez une autre recherche.",
+      "de": "Keine Städte gefunden. Versuchen Sie eine andere Suche.",
+      "ja": "都市が見つかりませんでした。別のキーワードを試してください。",
+      "ru": "Города не найдены. Попробуйте другой запрос.",
+      "kr": "도시를 찾을 수 없습니다. 다른 검색어를 시도해 보세요.",
+      "ar": "لم يتم العثور على مدن. جرب بحثًا آخر."
     },
     "updated": {
-      "en": "Last updated", "zh": "最后更新", "es": "Actualizado", "fr": "Mis à jour", "de": "Aktualisiert", "ja": "更新", "ru": "Обновлено", "kr": "업데이트", "ar": "آخر تحديث"
+      "en": "Last updated",
+      "zh": "最后更新",
+      "es": "Actualizado",
+      "fr": "Mis à jour",
+      "de": "Aktualisiert",
+      "ja": "更新",
+      "ru": "Обновлено",
+      "kr": "업데이트",
+      "ar": "آخر تحديث"
     },
     "data_source": {
-      "en": "Data: Open-Meteo with offline fallback",
-      "zh": "数据：Open-Meteo 离线兜底",
-      "es": "Datos: Open-Meteo con respaldo offline",
-      "fr": "Données: Open-Meteo avec secours offline",
-      "de": "Daten: Open-Meteo mit Offline-Fallback",
-      "ja": "データ: Open-Meteo / オフライン予備",
-      "ru": "Данные: Open-Meteo и офлайн-резерв",
-      "kr": "데이터: Open-Meteo 및 오프라인 예비",
-      "ar": "البيانات: Open-Meteo مع بديل دون اتصال"
+      "en": "Data: live free weather APIs",
+      "zh": "数据：免费实时天气 API",
+      "es": "Datos: APIs meteorológicas gratuitas en vivo",
+      "fr": "Données : APIs météo gratuites en direct",
+      "de": "Daten: kostenlose Live-Wetter-APIs",
+      "ja": "データ: 無料ライブ天気API",
+      "ru": "Данные: бесплатные погодные API",
+      "kr": "데이터: 무료 실시간 날씨 API",
+      "ar": "البيانات: واجهات طقس مجانية مباشرة"
+    },
+    "language": {
+      "en": "Language",
+      "zh": "语言",
+      "es": "Idioma",
+      "fr": "Langue",
+      "de": "Sprache",
+      "ja": "言語",
+      "ru": "Язык",
+      "kr": "언어",
+      "ar": "اللغة"
+    },
+    "hourly_forecast": {
+      "en": "24-Hour Forecast",
+      "zh": "24小时预报",
+      "es": "Pronóstico 24 horas",
+      "fr": "Prévision 24 h",
+      "de": "24-Stunden-Prognose",
+      "ja": "24時間予報",
+      "ru": "Прогноз на 24 часа",
+      "kr": "24시간 예보",
+      "ar": "توقعات 24 ساعة"
+    },
+    "now": {
+      "en": "Now",
+      "zh": "现在",
+      "es": "Ahora",
+      "fr": "Maintenant",
+      "de": "Jetzt",
+      "ja": "現在",
+      "ru": "Сейчас",
+      "kr": "지금",
+      "ar": "الآن"
+    },
+    "car_wash": {
+      "en": "Car Wash",
+      "zh": "洗车",
+      "es": "Lavado de coche",
+      "fr": "Lavage auto",
+      "de": "Autowäsche",
+      "ja": "洗車",
+      "ru": "Автомойка",
+      "kr": "세차",
+      "ar": "غسل السيارة"
+    },
+    "outdoor": {
+      "en": "Outdoor",
+      "zh": "户外",
+      "es": "Exterior",
+      "fr": "Extérieur",
+      "de": "Draußen",
+      "ja": "屋外",
+      "ru": "На улице",
+      "kr": "야외",
+      "ar": "الخارج"
+    },
+    "air_quality": {
+      "en": "Air Quality",
+      "zh": "空气质量",
+      "es": "Calidad del aire",
+      "fr": "Qualité de l’air",
+      "de": "Luftqualität",
+      "ja": "空気質",
+      "ru": "Качество воздуха",
+      "kr": "대기질",
+      "ar": "جودة الهواء"
+    },
+    "cold_risk": {
+      "en": "Cold Risk",
+      "zh": "感冒风险",
+      "es": "Riesgo de resfriado",
+      "fr": "Risque de froid",
+      "de": "Erkältungsrisiko",
+      "ja": "寒さリスク",
+      "ru": "Риск простуды",
+      "kr": "감기 위험",
+      "ar": "خطر البرد"
+    },
+    "suitable": {
+      "en": "Suitable",
+      "zh": "适宜",
+      "es": "Apto",
+      "fr": "Adapté",
+      "de": "Geeignet",
+      "ja": "適しています",
+      "ru": "Подходит",
+      "kr": "적합",
+      "ar": "مناسب"
+    },
+    "not_suitable": {
+      "en": "Not Suitable",
+      "zh": "不适宜",
+      "es": "No apto",
+      "fr": "Peu adapté",
+      "de": "Nicht geeignet",
+      "ja": "不向き",
+      "ru": "Не подходит",
+      "kr": "부적합",
+      "ar": "غير مناسب"
+    },
+    "recommended": {
+      "en": "Recommended",
+      "zh": "推荐",
+      "es": "Recomendado",
+      "fr": "Recommandé",
+      "de": "Empfohlen",
+      "ja": "おすすめ",
+      "ru": "Рекомендуется",
+      "kr": "추천",
+      "ar": "موصى به"
+    },
+    "caution": {
+      "en": "Caution",
+      "zh": "谨慎",
+      "es": "Precaución",
+      "fr": "Prudence",
+      "de": "Vorsicht",
+      "ja": "注意",
+      "ru": "Осторожно",
+      "kr": "주의",
+      "ar": "حذر"
+    },
+    "high": {
+      "en": "High",
+      "zh": "高",
+      "es": "Alto",
+      "fr": "Élevé",
+      "de": "Hoch",
+      "ja": "高い",
+      "ru": "Высокий",
+      "kr": "높음",
+      "ar": "مرتفع"
+    },
+    "elevated": {
+      "en": "Elevated",
+      "zh": "偏高",
+      "es": "Elevado",
+      "fr": "Élevé",
+      "de": "Erhöht",
+      "ja": "やや高い",
+      "ru": "Повышенный",
+      "kr": "상승",
+      "ar": "مرتفع"
+    },
+    "moderate": {
+      "en": "Moderate",
+      "zh": "中等",
+      "es": "Moderado",
+      "fr": "Modéré",
+      "de": "Moderat",
+      "ja": "中程度",
+      "ru": "Умеренный",
+      "kr": "보통",
+      "ar": "متوسط"
+    },
+    "low": {
+      "en": "Low",
+      "zh": "低",
+      "es": "Bajo",
+      "fr": "Faible",
+      "de": "Niedrig",
+      "ja": "低い",
+      "ru": "Низкий",
+      "kr": "낮음",
+      "ar": "منخفض"
+    },
+    "destination": {
+      "en": "Destination",
+      "zh": "目的地",
+      "es": "Destino",
+      "fr": "Destination",
+      "de": "Ziel",
+      "ja": "目的地",
+      "ru": "Направление",
+      "kr": "목적지",
+      "ar": "الوجهة"
+    },
+    "temperature_vs_current": {
+      "en": "Temperature vs Current",
+      "zh": "与当前温差",
+      "es": "Temperatura vs actual",
+      "fr": "Température vs actuelle",
+      "de": "Temperatur vs aktuell",
+      "ja": "現在地との気温差",
+      "ru": "Температура к текущей",
+      "kr": "현재 대비 기온",
+      "ar": "الحرارة مقارنة بالحالية"
+    },
+    "recommendation": {
+      "en": "Recommendation",
+      "zh": "推荐",
+      "es": "Recomendación",
+      "fr": "Recommandation",
+      "de": "Empfehlung",
+      "ja": "おすすめ",
+      "ru": "Рекомендация",
+      "kr": "추천",
+      "ar": "التوصية"
+    },
+    "seven_day_forecast": {
+      "en": "7-Day Forecast",
+      "zh": "7日预报",
+      "es": "Pronóstico 7 días",
+      "fr": "Prévision 7 jours",
+      "de": "7-Tage-Prognose",
+      "ja": "7日間予報",
+      "ru": "Прогноз на 7 дней",
+      "kr": "7일 예보",
+      "ar": "توقعات 7 أيام"
+    },
+    "severe_warning": {
+      "en": "Severe Weather Signal",
+      "zh": "极端天气信号",
+      "es": "Señal de tiempo severo",
+      "fr": "Signal météo sévère",
+      "de": "Unwettersignal",
+      "ja": "気象警戒シグナル",
+      "ru": "Сигнал опасной погоды",
+      "kr": "악천후 신호",
+      "ar": "إشارة طقس شديد"
+    },
+    "derived_warning_desc": {
+      "en": "Derived from live forecast thresholds. Verify official local warnings before travel or outdoor work.",
+      "zh": "根据实时预报阈值自动识别。出行或户外作业前请核对当地官方预警。",
+      "es": "Derivado de umbrales de previsión en vivo. Verifica avisos oficiales locales antes de viajar o salir.",
+      "fr": "Déduit de seuils de prévision en direct. Vérifiez les alertes officielles locales avant tout déplacement.",
+      "de": "Aus Live-Prognoseschwellen abgeleitet. Prüfen Sie lokale amtliche Warnungen vor Reisen.",
+      "ja": "ライブ予報の閾値から判定しています。外出前に公式警報を確認してください。",
+      "ru": "Сформировано по порогам прогноза. Перед поездкой проверьте официальные предупреждения.",
+      "kr": "실시간 예보 임계값으로 산출됩니다. 이동 전 공식 경보를 확인하세요.",
+      "ar": "مشتق من حدود التوقعات الحية. تحقق من التنبيهات الرسمية المحلية قبل السفر."
+    },
+    "data_unavailable": {
+      "en": "Unavailable",
+      "zh": "暂无数据",
+      "es": "No disponible",
+      "fr": "Indisponible",
+      "de": "Nicht verfügbar",
+      "ja": "利用不可",
+      "ru": "Недоступно",
+      "kr": "사용 불가",
+      "ar": "غير متاح"
+    },
+    "similar": {
+      "en": "Similar",
+      "zh": "接近",
+      "es": "Similar",
+      "fr": "Similaire",
+      "de": "Ähnlich",
+      "ja": "近い",
+      "ru": "Похоже",
+      "kr": "비슷함",
+      "ar": "مشابه"
+    },
+    "warmer": {
+      "en": "warmer",
+      "zh": "更暖",
+      "es": "más cálido",
+      "fr": "plus chaud",
+      "de": "wärmer",
+      "ja": "暖かい",
+      "ru": "теплее",
+      "kr": "더 따뜻함",
+      "ar": "أدفأ"
+    },
+    "cooler": {
+      "en": "cooler",
+      "zh": "更凉",
+      "es": "más fresco",
+      "fr": "plus frais",
+      "de": "kühler",
+      "ja": "涼しい",
+      "ru": "прохладнее",
+      "kr": "더 시원함",
+      "ar": "أبرد"
+    },
+    "great": {
+      "en": "Great",
+      "zh": "很适合",
+      "es": "Excelente",
+      "fr": "Excellent",
+      "de": "Sehr gut",
+      "ja": "良好",
+      "ru": "Отлично",
+      "kr": "좋음",
+      "ar": "رائع"
+    },
+    "fair": {
+      "en": "Fair",
+      "zh": "可考虑",
+      "es": "Aceptable",
+      "fr": "Correct",
+      "de": "Ordentlich",
+      "ja": "普通",
+      "ru": "Нормально",
+      "kr": "보통",
+      "ar": "مقبول"
+    },
+    "live_global_lookup": {
+      "en": "Live global lookup",
+      "zh": "全球实时查询",
+      "es": "Búsqueda global en vivo",
+      "fr": "Recherche mondiale en direct",
+      "de": "Live-Weltsuche",
+      "ja": "世界ライブ検索",
+      "ru": "Глобальный поиск",
+      "kr": "전 세계 실시간 검색",
+      "ar": "بحث عالمي مباشر"
+    },
+    "live_lookup_hint": {
+      "en": "If a city is not in the static index, WeatherIndex queries Nominatim and Open-Meteo directly in your browser.",
+      "zh": "若静态索引未收录，WeatherIndex 会在浏览器中直接查询 Nominatim 与 Open-Meteo。",
+      "es": "Si la ciudad no está en el índice estático, se consulta Nominatim y Open-Meteo en el navegador.",
+      "fr": "Si la ville manque dans l’index statique, le navigateur interroge Nominatim et Open-Meteo.",
+      "de": "Fehlt eine Stadt im statischen Index, fragt der Browser Nominatim und Open-Meteo ab.",
+      "ja": "静的索引にない都市はブラウザで Nominatim と Open-Meteo に照会します。",
+      "ru": "Если города нет в индексе, браузер обращается к Nominatim и Open-Meteo.",
+      "kr": "정적 색인에 없는 도시는 브라우저에서 Nominatim과 Open-Meteo를 조회합니다.",
+      "ar": "إذا لم تكن المدينة في الفهرس، يستعلم المتصفح من Nominatim وOpen-Meteo."
+    },
+    "official_alert_note": {
+      "en": "Forecast-derived signal, not an official government alert.",
+      "zh": "此为预报阈值信号，不等同于政府官方预警。",
+      "es": "Señal derivada del pronóstico, no alerta oficial gubernamental.",
+      "fr": "Signal dérivé des prévisions, pas une alerte officielle.",
+      "de": "Aus Prognosen abgeleitet, keine amtliche Warnung.",
+      "ja": "予報由来のシグナルで、政府公式警報ではありません。",
+      "ru": "Сигнал прогноза, не официальное предупреждение.",
+      "kr": "예보 기반 신호이며 정부 공식 경보가 아닙니다.",
+      "ar": "إشارة مشتقة من التوقعات وليست تنبيهًا حكوميًا رسميًا."
+    },
+    "source_label": {
+      "en": "Source",
+      "zh": "来源",
+      "es": "Fuente",
+      "fr": "Source",
+      "de": "Quelle",
+      "ja": "出典",
+      "ru": "Источник",
+      "kr": "출처",
+      "ar": "المصدر"
     }
   },
   "weather_codes": {
     "0": {
-      "en": "Clear Sky", "zh": "晴朗天空", "es": "Cielo despejado", "fr": "Ciel dégagé", "de": "Klarer Himmel", "ja": "快晴", "ru": "Ясно", "kr": "맑음", "ar": "سماء صافية"
+      "en": "Clear Sky",
+      "zh": "晴朗天空",
+      "es": "Cielo despejado",
+      "fr": "Ciel dégagé",
+      "de": "Klarer Himmel",
+      "ja": "快晴",
+      "ru": "Ясно",
+      "kr": "맑음",
+      "ar": "سماء صافية"
     },
     "1": {
-      "en": "Mainly Clear", "zh": "大部晴朗", "es": "Principalmente despejado", "fr": "Principalement dégagé", "de": "Überwiegend klar", "ja": "晴れ", "ru": "Преимущественно ясно", "kr": "대체로 맑음", "ar": "غالبا صافي"
+      "en": "Mainly Clear",
+      "zh": "大部晴朗",
+      "es": "Principalmente despejado",
+      "fr": "Principalement dégagé",
+      "de": "Überwiegend klar",
+      "ja": "晴れ",
+      "ru": "Преимущественно ясно",
+      "kr": "대체로 맑음",
+      "ar": "غالبا صافي"
     },
     "2": {
-      "en": "Partly Cloudy", "zh": "多云间晴", "es": "Parcialmente nublado", "fr": "Partiellement nuageux", "de": "Teils bewölkt", "ja": "一部曇り", "ru": "Переменная облачность", "kr": "구름조금", "ar": "غائم جزئيا"
+      "en": "Partly Cloudy",
+      "zh": "多云间晴",
+      "es": "Parcialmente nublado",
+      "fr": "Partiellement nuageux",
+      "de": "Teils bewölkt",
+      "ja": "一部曇り",
+      "ru": "Переменная облачность",
+      "kr": "구름조금",
+      "ar": "غائم جزئيا"
     },
     "3": {
-      "en": "Overcast", "zh": "阴天覆盖", "es": "Nublado", "fr": "Couvert", "de": "Bedeckt", "ja": "昙り", "ru": "Пасмурно", "kr": "흐림", "ar": "غائم"
+      "en": "Overcast",
+      "zh": "阴天覆盖",
+      "es": "Nublado",
+      "fr": "Couvert",
+      "de": "Bedeckt",
+      "ja": "昙り",
+      "ru": "Пасмурно",
+      "kr": "흐림",
+      "ar": "غائم"
     },
     "45": {
-      "en": "Fog", "zh": "大雾弥漫", "es": "Niebla", "fr": "Brouillard", "de": "Nebel", "ja": "霧", "ru": "Туман", "kr": "안개", "ar": "ضباب"
+      "en": "Fog",
+      "zh": "大雾弥漫",
+      "es": "Niebla",
+      "fr": "Brouillard",
+      "de": "Nebel",
+      "ja": "霧",
+      "ru": "Туман",
+      "kr": "안개",
+      "ar": "ضباب"
     },
     "51": {
-      "en": "Drizzle", "zh": "毛毛雨", "es": "Llovizna", "fr": "Bruine", "de": "Nieselregen", "ja": "霧雨", "ru": "Морось", "kr": "이슬비", "ar": "رذاذ"
+      "en": "Drizzle",
+      "zh": "毛毛雨",
+      "es": "Llovizna",
+      "fr": "Bruine",
+      "de": "Nieselregen",
+      "ja": "霧雨",
+      "ru": "Морось",
+      "kr": "이슬비",
+      "ar": "رذاذ"
     },
     "61": {
-      "en": "Slight Rain", "zh": "微量小雨", "es": "Lluvia ligera", "fr": "Pluie légère", "de": "Leichter Regen", "ja": "小雨", "ru": "Небольшой дождь", "kr": "약한 비", "ar": "مطر خفيف"
+      "en": "Slight Rain",
+      "zh": "微量小雨",
+      "es": "Lluvia ligera",
+      "fr": "Pluie légère",
+      "de": "Leichter Regen",
+      "ja": "小雨",
+      "ru": "Небольшой дождь",
+      "kr": "약한 비",
+      "ar": "مطر خفيف"
     },
     "63": {
-      "en": "Rain", "zh": "中雨", "es": "Lluvia", "fr": "Pluie", "de": "Regen", "ja": "雨", "ru": "Дождь", "kr": "비", "ar": "مطر"
+      "en": "Rain",
+      "zh": "中雨",
+      "es": "Lluvia",
+      "fr": "Pluie",
+      "de": "Regen",
+      "ja": "雨",
+      "ru": "Дождь",
+      "kr": "비",
+      "ar": "مطر"
     },
     "80": {
-      "en": "Showers", "zh": "阵雨", "es": "Chubascos", "fr": "Averses", "de": "Schauer", "ja": "にわか雨", "ru": "Ливни", "kr": "소나기", "ar": "زخات مطر"
+      "en": "Showers",
+      "zh": "阵雨",
+      "es": "Chubascos",
+      "fr": "Averses",
+      "de": "Schauer",
+      "ja": "にわか雨",
+      "ru": "Ливни",
+      "kr": "소나기",
+      "ar": "زخات مطر"
     },
     "95": {
-      "en": "Thunderstorm", "zh": "雷阵雨", "es": "Tormenta eléctrica", "fr": "Orage", "de": "Gewitter", "ja": "雷雨", "ru": "Гроза", "kr": "뇌우", "ar": "عاصفة رعدية"
+      "en": "Thunderstorm",
+      "zh": "雷阵雨",
+      "es": "Tormenta eléctrica",
+      "fr": "Orage",
+      "de": "Gewitter",
+      "ja": "雷雨",
+      "ru": "Гроза",
+      "kr": "뇌우",
+      "ar": "عاصفة رعدية"
     }
   },
   "indices": {
     "clothing": {
-      "en": ["Heavy", "Moderate", "Light"], "zh": ["防寒大衣", "适中夹克", "轻薄短袖"], "es": ["Abrigo", "Moderado", "Ligero"], "fr": ["Manteau", "Modéré", "Léger"], "de": ["Winterjacke", "Moderat", "T-Shirt"], "ja": ["厚手コート", "薄手長袖", "半袖半ズボン"], "ru": ["Пальто", "Умеренно", "Легко"], "kr": ["두꺼운 패딩", "가벼운 외투", "반팔 반바지"], "ar": ["ثقيل", "معتدل", "خفيف"]
+      "en": [
+        "Heavy",
+        "Moderate",
+        "Light"
+      ],
+      "zh": [
+        "防寒大衣",
+        "适中夹克",
+        "轻薄短袖"
+      ],
+      "es": [
+        "Abrigo",
+        "Moderado",
+        "Ligero"
+      ],
+      "fr": [
+        "Manteau",
+        "Modéré",
+        "Léger"
+      ],
+      "de": [
+        "Winterjacke",
+        "Moderat",
+        "T-Shirt"
+      ],
+      "ja": [
+        "厚手コート",
+        "薄手長袖",
+        "半袖半ズボン"
+      ],
+      "ru": [
+        "Пальто",
+        "Умеренно",
+        "Легко"
+      ],
+      "kr": [
+        "두꺼운 패딩",
+        "가벼운 외투",
+        "반팔 반바지"
+      ],
+      "ar": [
+        "ثقيل",
+        "معتدل",
+        "خفيف"
+      ]
     },
     "uv": {
-      "en": ["Low", "Moderate", "Very High"], "zh": ["弱-无需防护", "中等-涂抹防晒", "极强-减少外出"], "es": ["Bajo", "Moderado", "Muy Alto"], "fr": ["Faible", "Modéré", "Très Élevé"], "de": ["Niedrig", "Moderat", "Sehr Hoch"], "ja": ["弱い", "やや強い", "極めて強い"], "ru": ["Низкий", "Умеренный", "Очень высокий"], "kr": ["낮음", "보통", "매우 높음"], "ar": ["منخفض", "معتدل", "عالي جدا"]
+      "en": [
+        "Low",
+        "Moderate",
+        "Very High"
+      ],
+      "zh": [
+        "弱-无需防护",
+        "中等-涂抹防晒",
+        "极强-减少外出"
+      ],
+      "es": [
+        "Bajo",
+        "Moderado",
+        "Muy Alto"
+      ],
+      "fr": [
+        "Faible",
+        "Modéré",
+        "Très Élevé"
+      ],
+      "de": [
+        "Niedrig",
+        "Moderat",
+        "Sehr Hoch"
+      ],
+      "ja": [
+        "弱い",
+        "やや強い",
+        "極めて強い"
+      ],
+      "ru": [
+        "Низкий",
+        "Умеренный",
+        "Очень высокий"
+      ],
+      "kr": [
+        "낮음",
+        "보통",
+        "매우 높음"
+      ],
+      "ar": [
+        "منخفض",
+        "معتدل",
+        "عالي جدا"
+      ]
     }
   }
 }

@@ -1,25 +1,16 @@
 #!/usr/bin/env python3
-"""WeatherIndex static site generator.
-
-Reads data/translations.json and templates/*.html, fetches Open-Meteo live data
-with an offline fallback model, and emits a multi-language static site ready for
-GitHub Pages.
-"""
+"""WeatherIndex static site generator."""
 from __future__ import annotations
 
 import json
-import math
 import os
-import random
 import re
 import shutil
 import unicodedata
-import urllib.error
-import urllib.parse
-import urllib.request
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
+from typing import Any
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
@@ -27,7 +18,9 @@ from api_clients import collect_weather
 
 ROOT = Path(__file__).resolve().parents[1]
 TEMPLATES_DIR = ROOT / "templates"
-OUT_DIRS = ["city", "wiki", "alert", "data"]
+DIST_DIR = ROOT / "dist"
+GENERATED_DIRS = ["city", "wiki", "alert", "data"]
+GENERATED_ROOT_FILES = ["index.html", "lang.html", "search.html", "sitemap.xml", "robots.txt"]
 
 LANGS = [
     {"code": "en", "flag": "🇺🇸", "name": "English", "native": "Weather", "dir": "ltr"},
@@ -41,116 +34,21 @@ LANGS = [
     {"code": "ar", "flag": "🇸🇦", "name": "العربية", "native": "الطقس", "dir": "rtl"},
 ]
 
-CITY_ROWS = """
-Tokyo|Japan|35.6762|139.6503|🗼|Asia/Tokyo|26
-New York|USA|40.7128|-74.0060|🗽|America/New_York|22
-Paris|France|48.8566|2.3522|🏛️|Europe/Paris|20
-Beijing|China|39.9042|116.4074|🏯|Asia/Shanghai|28
-London|United Kingdom|51.5074|-0.1278|🎡|Europe/London|18
-Shanghai|China|31.2304|121.4737|🌆|Asia/Shanghai|29
-Sydney|Australia|-33.8688|151.2093|🌉|Australia/Sydney|19
-Dubai|UAE|25.2048|55.2708|🏙️|Asia/Dubai|38
-Singapore|Singapore|1.3521|103.8198|🌿|Asia/Singapore|31
-Seoul|South Korea|37.5665|126.9780|🏙️|Asia/Seoul|25
-Bangkok|Thailand|13.7563|100.5018|🛕|Asia/Bangkok|34
-Hong Kong|China|22.3193|114.1694|🌃|Asia/Hong_Kong|30
-Los Angeles|USA|34.0522|-118.2437|🌴|America/Los_Angeles|24
-San Francisco|USA|37.7749|-122.4194|🌁|America/Los_Angeles|17
-Toronto|Canada|43.6532|-79.3832|🍁|America/Toronto|21
-Vancouver|Canada|49.2827|-123.1207|⛰️|America/Vancouver|16
-Mexico City|Mexico|19.4326|-99.1332|🌵|America/Mexico_City|23
-São Paulo|Brazil|-23.5558|-46.6396|🌇|America/Sao_Paulo|22
-Rio de Janeiro|Brazil|-22.9068|-43.1729|🏖️|America/Sao_Paulo|27
-Buenos Aires|Argentina|-34.6037|-58.3816|💃|America/Argentina/Buenos_Aires|18
-Santiago|Chile|-33.4489|-70.6693|🏔️|America/Santiago|17
-Lima|Peru|-12.0464|-77.0428|🌊|America/Lima|20
-Bogotá|Colombia|4.7110|-74.0721|⛰️|America/Bogota|15
-Madrid|Spain|40.4168|-3.7038|🏰|Europe/Madrid|27
-Barcelona|Spain|41.3851|2.1734|🎨|Europe/Madrid|26
-Rome|Italy|41.9028|12.4964|🏟️|Europe/Rome|28
-Milan|Italy|45.4642|9.1900|🛍️|Europe/Rome|25
-Berlin|Germany|52.5200|13.4050|🧭|Europe/Berlin|19
-Munich|Germany|48.1351|11.5820|⛪|Europe/Berlin|18
-Amsterdam|Netherlands|52.3676|4.9041|🚲|Europe/Amsterdam|17
-Brussels|Belgium|50.8503|4.3517|🏛️|Europe/Brussels|18
-Zurich|Switzerland|47.3769|8.5417|🏔️|Europe/Zurich|16
-Vienna|Austria|48.2082|16.3738|🎼|Europe/Vienna|21
-Prague|Czech Republic|50.0755|14.4378|🏰|Europe/Prague|20
-Warsaw|Poland|52.2297|21.0122|🏙️|Europe/Warsaw|19
-Stockholm|Sweden|59.3293|18.0686|🌲|Europe/Stockholm|14
-Oslo|Norway|59.9139|10.7522|⛵|Europe/Oslo|13
-Copenhagen|Denmark|55.6761|12.5683|🚲|Europe/Copenhagen|16
-Helsinki|Finland|60.1699|24.9384|❄️|Europe/Helsinki|12
-Dublin|Ireland|53.3498|-6.2603|☘️|Europe/Dublin|15
-Lisbon|Portugal|38.7223|-9.1393|🌉|Europe/Lisbon|24
-Athens|Greece|37.9838|23.7275|🏛️|Europe/Athens|31
-Istanbul|Turkey|41.0082|28.9784|🕌|Europe/Istanbul|26
-Moscow|Russia|55.7558|37.6173|🧅|Europe/Moscow|16
-Saint Petersburg|Russia|59.9311|30.3609|🎭|Europe/Moscow|14
-Cairo|Egypt|30.0444|31.2357|🐪|Africa/Cairo|35
-Cape Town|South Africa|-33.9249|18.4241|⛰️|Africa/Johannesburg|18
-Johannesburg|South Africa|-26.2041|28.0473|🌇|Africa/Johannesburg|20
-Nairobi|Kenya|-1.2921|36.8219|🦒|Africa/Nairobi|22
-Lagos|Nigeria|6.5244|3.3792|🌊|Africa/Lagos|29
-Casablanca|Morocco|33.5731|-7.5898|🕌|Africa/Casablanca|24
-Riyadh|Saudi Arabia|24.7136|46.6753|🏜️|Asia/Riyadh|40
-Doha|Qatar|25.2854|51.5310|🌇|Asia/Qatar|39
-Tel Aviv|Israel|32.0853|34.7818|🏖️|Asia/Jerusalem|29
-Mumbai|India|19.0760|72.8777|🚉|Asia/Kolkata|32
-Delhi|India|28.7041|77.1025|🕌|Asia/Kolkata|36
-Bengaluru|India|12.9716|77.5946|🌳|Asia/Kolkata|27
-Kathmandu|Nepal|27.7172|85.3240|🏔️|Asia/Kathmandu|21
-Colombo|Sri Lanka|6.9271|79.8612|🌴|Asia/Colombo|30
-Karachi|Pakistan|24.8607|67.0011|🌊|Asia/Karachi|34
-Dhaka|Bangladesh|23.8103|90.4125|🚲|Asia/Dhaka|31
-Jakarta|Indonesia|-6.2088|106.8456|🌴|Asia/Jakarta|31
-Bali|Indonesia|-8.3405|115.0920|🏝️|Asia/Makassar|29
-Kuala Lumpur|Malaysia|3.1390|101.6869|🏙️|Asia/Kuala_Lumpur|31
-Manila|Philippines|14.5995|120.9842|🌊|Asia/Manila|32
-Hanoi|Vietnam|21.0278|105.8342|🌾|Asia/Bangkok|30
-Ho Chi Minh City|Vietnam|10.8231|106.6297|🛵|Asia/Ho_Chi_Minh|33
-Taipei|Taiwan|25.0330|121.5654|🏙️|Asia/Taipei|29
-Osaka|Japan|34.6937|135.5023|🏯|Asia/Tokyo|25
-Kyoto|Japan|35.0116|135.7681|⛩️|Asia/Tokyo|24
-Melbourne|Australia|-37.8136|144.9631|☕|Australia/Melbourne|16
-Brisbane|Australia|-27.4698|153.0251|🌞|Australia/Brisbane|23
-Auckland|New Zealand|-36.8485|174.7633|⛵|Pacific/Auckland|15
-Honolulu|USA|21.3069|-157.8583|🏝️|Pacific/Honolulu|28
-Anchorage|USA|61.2181|-149.9003|🗻|America/Anchorage|9
-Chicago|USA|41.8781|-87.6298|🌬️|America/Chicago|21
-Miami|USA|25.7617|-80.1918|🏖️|America/New_York|30
-Seattle|USA|47.6062|-122.3321|☕|America/Los_Angeles|16
-Boston|USA|42.3601|-71.0589|🎓|America/New_York|19
-Washington DC|USA|38.9072|-77.0369|🏛️|America/New_York|24
-Las Vegas|USA|36.1699|-115.1398|🎰|America/Los_Angeles|35
-Denver|USA|39.7392|-104.9903|🏔️|America/Denver|23
-Dallas|USA|32.7767|-96.7970|🤠|America/Chicago|32
-Houston|USA|29.7604|-95.3698|🚀|America/Chicago|33
-Phoenix|USA|33.4484|-112.0740|🌵|America/Phoenix|38
-Orlando|USA|28.5383|-81.3792|🎢|America/New_York|31
-Montreal|Canada|45.5017|-73.5673|🍁|America/Toronto|18
-Quebec City|Canada|46.8139|-71.2080|🏰|America/Toronto|16
-Calgary|Canada|51.0447|-114.0719|🏔️|America/Edmonton|14
-Reykjavik|Iceland|64.1466|-21.9426|🌋|Atlantic/Reykjavik|8
-Edinburgh|United Kingdom|55.9533|-3.1883|🏰|Europe/London|13
-Manchester|United Kingdom|53.4808|-2.2426|⚽|Europe/London|15
-Nice|France|43.7102|7.2620|🌊|Europe/Paris|25
-Lyon|France|45.7640|4.8357|🍽️|Europe/Paris|24
-Venice|Italy|45.4408|12.3155|🚤|Europe/Rome|26
-Florence|Italy|43.7696|11.2558|🎨|Europe/Rome|27
-Budapest|Hungary|47.4979|19.0402|♨️|Europe/Budapest|22
-Bucharest|Romania|44.4268|26.1025|🏛️|Europe/Bucharest|24
-Belgrade|Serbia|44.7866|20.4489|🌉|Europe/Belgrade|25
-Zagreb|Croatia|45.8150|15.9819|🏰|Europe/Zagreb|22
-Sofia|Bulgaria|42.6977|23.3219|⛰️|Europe/Sofia|23
-Tallinn|Estonia|59.4370|24.7536|🏰|Europe/Tallinn|13
-Vilnius|Lithuania|54.6872|25.2797|⛪|Europe/Vilnius|15
-Riga|Latvia|56.9496|24.1052|🌲|Europe/Riga|14
-""".strip()
+CONFIG = {
+    "site_url": os.environ.get("SITE_URL", "https://weatherindex.xyz").rstrip("/"),
+    "ads_client": os.environ.get("ADS_CLIENT", os.environ.get("GOOGLE_ADSENSE_CLIENT", "ca-pub-8695398658548679")),
+    "ads_top_slot": os.environ.get("ADS_TOP_SLOT", ""),
+    "ads_bottom_slot": os.environ.get("ADS_BOTTOM_SLOT", ""),
+    "ga_id": os.environ.get("GA_ID", os.environ.get("GOOGLE_ANALYTICS_ID", "G-SQCD1J9Y0H")),
+}
 
-ADS_CLIENT = "ca-pub-8695398658548679"
-GA_ID = "G-SQCD1J9Y0H"
-BASE_URL = "https://weatherindex.xyz"
+WMO_ICONS = {
+    0: "☀️", 1: "🌤️", 2: "⛅", 3: "☁️", 45: "🌫️", 48: "🌫️",
+    51: "🌦️", 53: "🌦️", 55: "🌧️", 61: "🌦️", 63: "🌧️", 65: "🌧️",
+    71: "🌨️", 73: "🌨️", 75: "❄️", 80: "🌦️", 81: "🌧️", 82: "⛈️", 95: "⛈️",
+}
+ICON_CODE = {"clear-day": 0, "clear-night": 0, "partly-cloudy-day": 2, "partly-cloudy-night": 2, "cloudy": 3, "rain": 63, "snow": 73, "fog": 45, "wind": 3, "thunder-rain": 95, "thunder-showers-day": 95}
+SEVEN_CODE = {"clear": 0, "pcloudy": 2, "mcloudy": 2, "cloudy": 3, "humid": 3, "lightrain": 61, "oshower": 80, "ishower": 80, "lightsnow": 71, "rain": 63, "snow": 73, "rainsnow": 73, "tsrain": 95, "ts": 95, "fog": 45}
 
 
 def slug(name: str) -> str:
@@ -158,38 +56,85 @@ def slug(name: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", ascii_name.lower()).strip("-")
 
 
-def load_translations() -> dict:
-    with open(ROOT / "translations.json", encoding="utf-8") as fh:
+def load_json(path: Path) -> Any:
+    with open(path, encoding="utf-8") as fh:
         return json.load(fh)
 
 
+def load_translations() -> dict:
+    return load_json(ROOT / "translations.json")
+
+
 def cities() -> list[dict]:
+    rows = load_json(ROOT / "config" / "city-seeds.json")
     result = []
-    for row in CITY_ROWS.splitlines():
-        name, country, lat, lon, emoji, tz, base = row.split("|")
-        result.append(
-            {
-                "name": name,
-                "country": country,
-                "lat": float(lat),
-                "lon": float(lon),
-                "emoji": emoji,
-                "timezone": tz,
-                "base_temp": int(base),
-                "slug": slug(name),
-            }
-        )
+    for row in rows:
+        item = dict(row)
+        item["slug"] = item.get("slug") or slug(item["name"])
+        result.append(item)
     return result
 
 
-def fetch_open_meteo(city: dict) -> dict | None:
-    if os.environ.get("OFFLINE_BUILD") == "1":
-        return None
-    bundle = collect_weather(city)
-    raw = bundle.get("forecast")
-    if not raw or bundle.get("forecast_source") != "open-meteo":
-        return None
+def load_last_known_weather() -> dict[str, dict]:
+    for path in (ROOT / "data" / "cities.json", ROOT / "config" / "last-known-cities.json"):
+        if not path.exists():
+            continue
+        try:
+            rows = load_json(path)
+        except (OSError, json.JSONDecodeError):
+            continue
+        return {row.get("slug"): row.get("weather") for row in rows if row.get("slug") and row.get("weather")}
+    return {}
 
+
+def stale_weather(city: dict, previous: dict, error: Exception) -> dict:
+    cached = json.loads(json.dumps(previous))
+    cached["source"] = f"stale-{cached.get('source', 'live-cache')}"
+    cached.setdefault("api_status", [])
+    cached["api_status"] = cached["api_status"] + [{"source": "last-known-cache", "ok": "false", "error": str(error)}]
+    return cached
+
+
+def num(value: Any, default: float | None = None) -> float | None:
+    try:
+        if value in (None, ""):
+            return default
+        return float(value)
+    except (TypeError, ValueError):
+        return default
+
+
+def rounded(value: Any, default: int | None = None) -> int | None:
+    parsed = num(value)
+    return default if parsed is None else round(parsed)
+
+
+def weather_icon(code: Any) -> str:
+    return WMO_ICONS.get(int(code or 0), "🌤️")
+
+
+def weather_text(code: int, trans: dict, lang_code: str) -> str:
+    return trans["weather_codes"].get(str(code), {}).get(lang_code) or trans["weather_codes"].get(str(code), {}).get("en") or "Partly Cloudy"
+
+
+def hourly_from_open_meteo(raw: dict) -> list[dict]:
+    hourly = raw.get("hourly") or {}
+    times = hourly.get("time") or []
+    temps = hourly.get("temperature_2m") or []
+    codes = hourly.get("weather_code") or [0] * len(times)
+    start_idx = 0
+    now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:00")
+    for idx, value in enumerate(times):
+        if value >= now:
+            start_idx = idx
+            break
+    return [
+        {"time": times[i].split("T")[-1][:5], "temperature": rounded(temps[i], 0), "weather_code": int(codes[i] or 0), "is_current": i == start_idx}
+        for i in range(start_idx, min(start_idx + 24, len(times), len(temps)))
+    ]
+
+
+def normalize_open_meteo(raw: dict, bundle: dict) -> dict | None:
     try:
         cur = raw["current"]
         daily = raw["daily"]
@@ -197,93 +142,142 @@ def fetch_open_meteo(city: dict) -> dict | None:
         marine_current = (bundle.get("marine") or {}).get("current") or {}
         return {
             "current": {
-                "temperature_2m": round(cur["temperature_2m"]),
-                "relative_humidity_2m": int(cur["relative_humidity_2m"]),
-                "apparent_temperature": round(cur["apparent_temperature"]),
-                "weather_code": int(cur["weather_code"]),
-                "wind_speed_10m": round(cur["wind_speed_10m"]),
-                "pressure_msl": round(cur.get("pressure_msl", 1013)),
-                "visibility": round((cur.get("visibility") or 10000) / 1000),
+                "temperature_2m": rounded(cur["temperature_2m"]),
+                "relative_humidity_2m": rounded(cur.get("relative_humidity_2m")),
+                "apparent_temperature": rounded(cur.get("apparent_temperature", cur["temperature_2m"])),
+                "weather_code": int(cur.get("weather_code") or 0),
+                "wind_speed_10m": rounded(cur.get("wind_speed_10m"), 0),
+                "pressure_msl": rounded(cur.get("pressure_msl")),
+                "visibility": rounded((num(cur.get("visibility"), 0) or 0) / 1000),
             },
-            "air_quality": {
-                "us_aqi": int(air_current.get("us_aqi") or 25),
-                "pm2_5": round(float(air_current.get("pm2_5") or 8), 1),
-                "pm10": round(float(air_current.get("pm10") or 16), 1),
-                "uv_index": round(float(air_current.get("uv_index") or 4), 1),
-            },
-            "marine": {
-                "wave_height": round(float(marine_current.get("wave_height") or 0), 1),
-                "wave_period": round(float(marine_current.get("wave_period") or 0), 1),
-            },
+            "air_quality": normalize_air(air_current),
+            "marine": normalize_marine(marine_current),
+            "hourly": hourly_from_open_meteo(raw),
             "daily": {
-                "time": [t for t in daily["time"]],
-                "temperature_2m_max": [round(x) for x in daily["temperature_2m_max"]],
-                "temperature_2m_min": [round(x) for x in daily["temperature_2m_min"]],
-                "weather_code": [int(x) for x in daily["weather_code"]],
-                "precipitation_probability_max": [
-                    int(x) for x in daily.get("precipitation_probability_max", [0] * len(daily["time"]))
-                ],
+                "time": daily["time"][:7],
+                "temperature_2m_max": [rounded(x) for x in daily["temperature_2m_max"][:7]],
+                "temperature_2m_min": [rounded(x) for x in daily["temperature_2m_min"][:7]],
+                "weather_code": [int(x or 0) for x in daily["weather_code"][:7]],
+                "precipitation_probability_max": [int(x or 0) for x in daily.get("precipitation_probability_max", [0] * len(daily["time"]))[:7]],
             },
             "source": "open-meteo",
-            "api_status": bundle.get("api_status", []),
         }
     except (KeyError, TypeError, ValueError):
         return None
 
 
-def offline_weather(city: dict) -> dict:
-    rnd = random.Random(city["slug"] + datetime.now(timezone.utc).strftime("%Y%m%d%H"))
-    code = rnd.choice([0, 1, 2, 3, 61])
-    now = city["base_temp"] + rnd.randint(-2, 2)
-    days = []
-    for i in range(7):
-        high = city["base_temp"] + rnd.randint(-3, 4)
-        days.append(
-            {
-                "date": (datetime.now(timezone.utc) + timedelta(days=i)).strftime("%Y-%m-%d"),
-                "high": high,
-                "low": high - rnd.randint(5, 10),
-                "code": rnd.choice([0, 1, 2, 3, 61]),
-            }
-        )
-    return {
-        "current": {
-            "temperature_2m": now,
-            "relative_humidity_2m": rnd.randint(35, 82),
-            "apparent_temperature": now + 2,
-            "weather_code": code,
-            "wind_speed_10m": rnd.randint(5, 32),
-            "pressure_msl": rnd.randint(1002, 1024),
-            "visibility": rnd.randint(8, 18),
-        },
-        "air_quality": {
-            "us_aqi": rnd.randint(12, 58),
-            "pm2_5": round(rnd.uniform(4, 18), 1),
-            "pm10": round(rnd.uniform(10, 35), 1),
-            "uv_index": rnd.randint(2, 8),
-        },
-        "marine": {
-            "wave_height": 0,
-            "wave_period": 0,
-        },
-        "daily": {
-            "time": [d["date"] for d in days],
-            "temperature_2m_max": [d["high"] for d in days],
-            "temperature_2m_min": [d["low"] for d in days],
-            "weather_code": [d["code"] for d in days],
-            "precipitation_probability_max": [rnd.randint(0, 55) for _ in days],
-        },
-        "source": "offline-model",
-        "api_status": [{"source": "offline-model", "ok": "true", "error": ""}],
-    }
+def normalize_visual_crossing(raw: dict, bundle: dict) -> dict | None:
+    try:
+        cur = raw["currentConditions"]
+        days = raw["days"][:7]
+        code = ICON_CODE.get(str(cur.get("icon", "")).lower(), 2)
+        hourly = []
+        for day in days:
+            for hour in day.get("hours", []):
+                if len(hourly) >= 24:
+                    break
+                hourly.append({"time": str(hour.get("datetime", ""))[:5], "temperature": rounded(hour.get("temp")), "weather_code": ICON_CODE.get(str(hour.get("icon", "")).lower(), code), "is_current": not hourly})
+        return {
+            "current": {"temperature_2m": rounded(cur["temp"]), "relative_humidity_2m": rounded(cur.get("humidity")), "apparent_temperature": rounded(cur.get("feelslike", cur["temp"])), "weather_code": code, "wind_speed_10m": rounded(cur.get("windspeed"), 0), "pressure_msl": rounded(cur.get("pressure")), "visibility": rounded(cur.get("visibility"))},
+            "air_quality": normalize_air((bundle.get("air_quality") or {}).get("current") or {}),
+            "marine": normalize_marine((bundle.get("marine") or {}).get("current") or {}),
+            "hourly": hourly,
+            "daily": {"time": [d["datetime"] for d in days], "temperature_2m_max": [rounded(d.get("tempmax")) for d in days], "temperature_2m_min": [rounded(d.get("tempmin")) for d in days], "weather_code": [ICON_CODE.get(str(d.get("icon", "")).lower(), 2) for d in days], "precipitation_probability_max": [rounded(d.get("precipprob"), 0) for d in days]},
+            "source": "visual-crossing",
+        }
+    except (KeyError, TypeError, ValueError):
+        return None
+
+
+def normalize_wttr(raw: dict, bundle: dict) -> dict | None:
+    try:
+        cur = raw["current_condition"][0]
+        days = raw["weather"][:7]
+        code = int(cur.get("weatherCode") or 2)
+        hourly = []
+        for day in days:
+            for hour in day.get("hourly", []):
+                if len(hourly) >= 24:
+                    break
+                t = int(hour.get("time") or 0)
+                hourly.append({"time": f"{t // 100:02d}:00", "temperature": rounded(hour.get("tempC")), "weather_code": int(hour.get("weatherCode") or code), "is_current": not hourly})
+        return {
+            "current": {"temperature_2m": rounded(cur["temp_C"]), "relative_humidity_2m": rounded(cur.get("humidity")), "apparent_temperature": rounded(cur.get("FeelsLikeC", cur["temp_C"])), "weather_code": code, "wind_speed_10m": rounded(cur.get("windspeedKmph"), 0), "pressure_msl": rounded(cur.get("pressure")), "visibility": rounded(cur.get("visibility"))},
+            "air_quality": normalize_air((bundle.get("air_quality") or {}).get("current") or {}),
+            "marine": normalize_marine((bundle.get("marine") or {}).get("current") or {}),
+            "hourly": hourly,
+            "daily": {"time": [d["date"] for d in days], "temperature_2m_max": [rounded(d.get("maxtempC")) for d in days], "temperature_2m_min": [rounded(d.get("mintempC")) for d in days], "weather_code": [int((d.get("hourly") or [{}])[0].get("weatherCode") or code) for d in days], "precipitation_probability_max": [rounded(max(num(h.get("chanceofrain"), 0) or 0 for h in d.get("hourly", [{}])), 0) for d in days]},
+            "source": "wttr.in",
+        }
+    except (KeyError, TypeError, ValueError, IndexError):
+        return None
+
+
+def normalize_7timer(raw: dict, bundle: dict) -> dict | None:
+    try:
+        series = raw["dataseries"]
+        if not series:
+            return None
+        first = series[0]
+        now = datetime.now(timezone.utc)
+        hourly = []
+        daily_groups: dict[str, list[dict]] = {}
+        for item in series:
+            hours = int(item.get("timepoint") or 0)
+            when = now + timedelta(hours=hours)
+            code = SEVEN_CODE.get(str(item.get("weather", "")).lower(), 2)
+            temp = rounded(item.get("temp2m"))
+            hourly.append({"time": when.strftime("%H:00"), "temperature": temp, "weather_code": code, "is_current": not hourly})
+            daily_groups.setdefault(when.strftime("%Y-%m-%d"), []).append({"temp": temp, "code": code})
+            if len(hourly) >= 24:
+                break
+        days = list(daily_groups.items())[:7]
+        return {
+            "current": {"temperature_2m": rounded(first["temp2m"]), "relative_humidity_2m": None, "apparent_temperature": rounded(first["temp2m"]), "weather_code": SEVEN_CODE.get(str(first.get("weather", "")).lower(), 2), "wind_speed_10m": None, "pressure_msl": None, "visibility": None},
+            "air_quality": normalize_air((bundle.get("air_quality") or {}).get("current") or {}),
+            "marine": normalize_marine((bundle.get("marine") or {}).get("current") or {}),
+            "hourly": hourly,
+            "daily": {"time": [d for d, _ in days], "temperature_2m_max": [max(x["temp"] for x in vals) for _, vals in days], "temperature_2m_min": [min(x["temp"] for x in vals) for _, vals in days], "weather_code": [vals[0]["code"] for _, vals in days], "precipitation_probability_max": [0 for _ in days]},
+            "source": "7timer",
+        }
+    except (KeyError, TypeError, ValueError):
+        return None
+
+
+def normalize_air(raw: dict) -> dict:
+    return {"available": bool(raw), "us_aqi": rounded(raw.get("us_aqi")) if raw else None, "pm2_5": num(raw.get("pm2_5")) if raw else None, "pm10": num(raw.get("pm10")) if raw else None, "uv_index": num(raw.get("uv_index")) if raw else None}
+
+
+def normalize_marine(raw: dict) -> dict:
+    return {"available": bool(raw), "wave_height": num(raw.get("wave_height"), 0) if raw else None, "wave_period": num(raw.get("wave_period"), 0) if raw else None}
+
+
+def synthetic_weather(city: dict, reason: str) -> dict:
+    if os.environ.get("ALLOW_SYNTHETIC_WEATHER") != "1":
+        raise RuntimeError(f"No live weather provider produced usable data for {city['name']}: {reason}")
+    temp = int(city.get("base_temp", 20))
+    today = datetime.now(timezone.utc)
+    return {"current": {"temperature_2m": temp, "relative_humidity_2m": None, "apparent_temperature": temp, "weather_code": 2, "wind_speed_10m": None, "pressure_msl": None, "visibility": None}, "air_quality": {"available": False, "us_aqi": None, "pm2_5": None, "pm10": None, "uv_index": None}, "marine": {"available": False, "wave_height": None, "wave_period": None}, "hourly": [], "daily": {"time": [(today + timedelta(days=i)).strftime("%Y-%m-%d") for i in range(7)], "temperature_2m_max": [temp] * 7, "temperature_2m_min": [temp] * 7, "weather_code": [2] * 7, "precipitation_probability_max": [0] * 7}, "source": "synthetic-build-fallback", "api_status": [{"source": "synthetic-build-fallback", "ok": "false", "error": reason}]}
 
 
 def weather_for(city: dict) -> dict:
-    return fetch_open_meteo(city) or offline_weather(city)
-
-
-def weather_text(code: int, trans: dict, lang_code: str) -> str:
-    return trans["weather_codes"].get(str(code), {}).get(lang_code) or trans["weather_codes"].get(str(code), {}).get("en") or "Partly Cloudy"
+    if os.environ.get("OFFLINE_BUILD") == "1":
+        return synthetic_weather(city, "OFFLINE_BUILD requested")
+    bundle = collect_weather(city)
+    normalizers = {"open-meteo": normalize_open_meteo, "visual-crossing": normalize_visual_crossing, "wttr.in": normalize_wttr, "7timer": normalize_7timer}
+    errors = []
+    for candidate in bundle.get("forecast_candidates", []):
+        source = candidate.get("source")
+        normalizer = normalizers.get(source)
+        if not normalizer:
+            errors.append(f"{source}: current-only provider cannot render forecast page")
+            continue
+        normalized = normalizer(candidate.get("data") or {}, bundle)
+        if normalized and len(normalized["daily"].get("time", [])) >= 1:
+            normalized["api_status"] = bundle.get("api_status", [])
+            return normalized
+        errors.append(f"{source}: schema normalization failed")
+    return synthetic_weather(city, "; ".join(errors) or "all providers failed")
 
 
 def clothing_index(temp: float, trans: dict, lang_code: str) -> str:
@@ -304,302 +298,183 @@ def uv_index(code: int, trans: dict, lang_code: str) -> str:
     return labels[2]
 
 
-def travel_destinations(city: dict, all_cities: list[dict]) -> list[dict]:
-    rnd = random.Random(city["slug"])
-    picks = rnd.sample([c for c in all_cities if c["slug"] != city["slug"]], min(4, len(all_cities) - 1))
+def t(trans: dict, lang: str, key: str) -> str:
+    return trans["ui"].get(key, {}).get(lang) or trans["ui"].get(key, {}).get("en") or key
+
+
+def travel_destinations(city: dict, all_cities: list[dict], trans: dict, lang_code: str) -> list[dict]:
+    cur = city["weather"]["current"]
+    def score(dest: dict) -> tuple[float, str]:
+        w = dest["weather"]["current"]
+        temp = w["temperature_2m"] or 0
+        comfort = abs(temp - 23)
+        wind = w.get("wind_speed_10m") or 12
+        aqi = dest["weather"].get("air_quality", {}).get("us_aqi") or 50
+        return (comfort + wind / 12 + aqi / 75, dest["name"])
+    picks = sorted([c for c in all_cities if c["slug"] != city["slug"]], key=score)[:4]
     result = []
     for dest in picks:
         dest_temp = dest["weather"]["current"]["temperature_2m"]
-        cur_temp = city["weather"]["current"]["temperature_2m"]
+        cur_temp = cur["temperature_2m"]
         diff = dest_temp - cur_temp
         if abs(diff) <= 3:
-            diff_text = "Similar"
+            diff_text = t(trans, lang_code, "similar")
         elif diff > 0:
-            diff_text = f"+{diff}°C warmer"
+            diff_text = f"+{diff}°C {t(trans, lang_code, 'warmer')}"
         else:
-            diff_text = f"{diff}°C cooler"
-        result.append(
-            {
-                "name": f"{dest['name']}, {dest['country']}",
-                "emoji": dest["emoji"],
-                "temp": dest_temp,
-                "diff": diff_text,
-                "rating": "Great" if abs(diff) <= 5 else "Fair",
-            }
-        )
+            diff_text = f"{diff}°C {t(trans, lang_code, 'cooler')}"
+        result.append({"name": f"{dest['name']}, {dest['country']}", "emoji": weather_icon(dest["weather"]["current"].get("weather_code")), "temp": dest_temp, "diff": diff_text, "rating": t(trans, lang_code, "great") if score(dest)[0] <= 7 else t(trans, lang_code, "fair")})
     return result
 
 
-def alerts_data() -> list[dict]:
-    return [
-        {
-            "city": "Tokyo, Japan",
-            "time": "2026-06-11 08:00 UTC",
-            "text": "Typhoon Warning - Category 3. Strong winds and heavy rain may affect coastal travel.",
-            "icon": "🌀",
-            "border": "border-red-500",
-        },
-        {
-            "city": "Delhi, India",
-            "time": "2026-06-11 06:00 UTC",
-            "text": "Heat wave advisory: temperatures expected to exceed 42°C. Avoid outdoor activity during peak hours.",
-            "icon": "🌡️",
-            "border": "border-orange-500",
-        },
-    ]
+def alerts_data(all_cities: list[dict], trans: dict, lang_code: str = "en") -> list[dict]:
+    now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    alerts: list[dict] = []
+    for c in all_cities:
+        cur = c["weather"]["current"]
+        wind = cur.get("wind_speed_10m")
+        temp = cur.get("temperature_2m")
+        if wind is not None and wind > 30:
+            text = f"High Wind Signal: sustained forecast wind speeds reached {wind} km/h. {t(trans, lang_code, 'official_alert_note')}"
+            alerts.append({"city": f"{c['name']}, {c['country']}", "slug": c["slug"], "time": now, "text": text, "icon": "💨", "border": "border-red-500", "source": c["weather"].get("source", "")})
+        elif temp is not None and temp > 38:
+            text = f"Extreme Heat Signal: forecast temperature reached {temp}°C. {t(trans, lang_code, 'official_alert_note')}"
+            alerts.append({"city": f"{c['name']}, {c['country']}", "slug": c["slug"], "time": now, "text": text, "icon": "🌡️", "border": "border-orange-500", "source": c["weather"].get("source", "")})
+        elif temp is not None and temp < -10:
+            text = f"Severe Cold Signal: forecast temperature dropped to {temp}°C. {t(trans, lang_code, 'official_alert_note')}"
+            alerts.append({"city": f"{c['name']}, {c['country']}", "slug": c["slug"], "time": now, "text": text, "icon": "❄️", "border": "border-blue-500", "source": c["weather"].get("source", "")})
+    return alerts
 
 
-def wiki_articles() -> list[dict]:
-    return [
-        {
-            "slug": "typhoon-naming",
-            "title": "How are typhoons named?",
-            "description": "Learn how tropical cyclones get their names from the WMO naming matrix.",
-            "emoji": "🌀",
-            "content": """
-<p>Weather is local at the moment you feel it, but global in the systems that create it. Tropical cyclone names are maintained by regional committees under the World Meteorological Organization so that warnings can be shared clearly across borders and languages.</p>
-<h2>Why names matter</h2>
-<ul><li>Short, familiar names reduce confusion when multiple storms exist at the same time.</li><li>Each basin uses its own rotating lists, with names retired after particularly deadly or costly events.</li><li>Static, pre-rendered pages keep emergency information fast even during traffic spikes.</li></ul>
-<blockquote>Reliable weather communication depends on clear naming, consistent data, and calm presentation during high-impact events.</blockquote>
-<h2>Key takeaways</h2>
-<ul><li>Names are assigned alphabetically as storms form.</li><li>Forecast data should be refreshed frequently; static pages keep access fast.</li><li>Historical climate signals help explain trends, but daily forecasts still require local observation.</li></ul>
-""",
-        },
-        {
-            "slug": "el-nino",
-            "title": "What is El Niño?",
-            "description": "Why Pacific sea-surface temperature anomalies reshape global weather patterns.",
-            "emoji": "🌡️",
-            "content": """
-<p>El Niño is a warming of the central and eastern tropical Pacific Ocean. It shifts rainfall patterns, influences monsoons, and can raise global average temperatures for months at a time.</p>
-<h2>How it affects weather</h2>
-<ul><li>Wetter-than-average winters in the southern United States and drier conditions in Australia and Indonesia.</li><li>Weaker Indian monsoon rains in many El Niño years.</li><li>Warmer global mean temperatures due to heat release from the Pacific.</li></ul>
-<h2>What to watch</h2>
-<ul><li>Sea-surface temperature anomalies in the Niño 3.4 region.</li><li>Atmospheric response, including weaker trade winds and shifting jet streams.</li><li>Local forecasts, because global patterns do not determine every daily outcome.</li></ul>
-""",
-        },
-        {
-            "slug": "climate-change",
-            "title": "2026 Climate Outlook",
-            "description": "A practical look at greenhouse effects on major cities worldwide.",
-            "emoji": "📈",
-            "content": """
-<p>Long-term climate signals show warming, more intense rainfall in some regions, and deeper droughts in others. For travelers and planners, the key is to combine long-term awareness with daily local forecasts.</p>
-<h2>What the data shows</h2>
-<ul><li>Global average temperatures continue to rise relative to the 20th-century baseline.</li><li>Heat waves are becoming more frequent in many mid-latitude cities.</li><li>Extreme precipitation events are intensifying where moisture is available.</li></ul>
-<h2>Practical tips</h2>
-<ul><li>Check forecasts close to departure, not just seasonal averages.</li><li>Pack for temperature swings, especially in continental climates.</li><li>Follow official warnings during severe weather rather than relying on general trends.</li></ul>
-""",
-        },
+def wiki_articles(trans: dict, lang_code: str) -> list[dict]:
+    base = [
+        {"slug": "typhoon-naming", "emoji": "🌀", "title": {"en": "How are typhoons named?", "zh": "台风如何命名？"}, "description": {"en": "How tropical cyclones get names from WMO regional lists.", "zh": "了解热带气旋名称如何来自 WMO 区域清单。"}, "content": "<p>Weather communication depends on clear names, consistent data, and calm presentation during high-impact events.</p><h2>Key takeaways</h2><ul><li>Names reduce confusion when multiple storms exist.</li><li>Regional committees maintain rotating lists.</li><li>Official alerts should always be checked for emergency decisions.</li></ul>"},
+        {"slug": "el-nino", "emoji": "🌡️", "title": {"en": "What is El Niño?", "zh": "什么是厄尔尼诺？"}, "description": {"en": "Why Pacific sea-surface temperature anomalies reshape weather.", "zh": "太平洋海温异常如何影响全球天气。"}, "content": "<p>El Niño is a warming of the central and eastern tropical Pacific Ocean. It shifts rainfall patterns, monsoons, and seasonal temperature signals.</p><h2>What to watch</h2><ul><li>Niño 3.4 sea-surface anomalies.</li><li>Trade wind and jet stream changes.</li><li>Local forecasts for day-to-day decisions.</li></ul>"},
+        {"slug": "climate-change", "emoji": "📈", "title": {"en": "2026 Climate Outlook", "zh": "2026 气候展望"}, "description": {"en": "A practical look at major-city climate risks.", "zh": "面向全球主要城市的气候风险速览。"}, "content": "<p>Long-term climate signals show warming, more intense rainfall in some regions, and deeper droughts in others. Daily planning still needs local forecast data.</p><h2>Practical tips</h2><ul><li>Check forecasts close to departure.</li><li>Pack for temperature swings.</li><li>Follow official warnings during severe weather.</li></ul>"},
     ]
+    return [{**a, "title": a["title"].get(lang_code, a["title"]["en"]), "description": a["description"].get(lang_code, a["description"]["en"])} for a in base]
 
 
 def render(template_name: str, context: dict) -> str:
-    env = Environment(
-        loader=FileSystemLoader(TEMPLATES_DIR),
-        autoescape=select_autoescape(["html", "xml"]),
-    )
+    env = Environment(loader=FileSystemLoader(TEMPLATES_DIR), autoescape=select_autoescape(["html", "xml"]))
     env.globals["weather_code_text"] = lambda code: weather_text(code, context["trans"], context["lang_code"])
+    env.globals["weather_icon"] = weather_icon
     template = env.get_template(template_name)
     return template.render(**context)
 
 
 def write(path: Path, content: str) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    cleaned = "\n".join(line.rstrip() for line in content.splitlines()) + "\n"
-    path.write_text(cleaned, encoding="utf-8")
+    path.write_text("\n".join(line.rstrip() for line in content.splitlines()) + "\n", encoding="utf-8")
 
 
 def clean() -> None:
-    for item in OUT_DIRS + [l["code"] for l in LANGS]:
+    for item in GENERATED_DIRS + [l["code"] for l in LANGS]:
         target = ROOT / item
         if target.exists():
             shutil.rmtree(target)
-    for f in ["index.html", "lang.html", "search.html", "sitemap.xml", "robots.txt"]:
+    for f in GENERATED_ROOT_FILES:
         p = ROOT / f
         if p.exists():
             p.unlink()
 
 
+def sync_dist() -> None:
+    if DIST_DIR.exists():
+        shutil.rmtree(DIST_DIR)
+    DIST_DIR.mkdir(parents=True)
+    for item in ["assets", "city", "wiki", "alert", "data"] + [l["code"] for l in LANGS]:
+        src = ROOT / item
+        if src.exists():
+            shutil.copytree(src, DIST_DIR / item, ignore=shutil.ignore_patterns(".DS_Store", "__pycache__"))
+    for f in ["index.html", "lang.html", "search.html", "sitemap.xml", "robots.txt", "CNAME", "ads.txt", "site.webmanifest"]:
+        src = ROOT / f
+        if src.exists():
+            shutil.copy2(src, DIST_DIR / f)
+
+
+def common_context(trans: dict, lang: dict, prefix: str, updated: str, page_path: str = "") -> dict:
+    code = lang["code"]
+    home_href = f"{prefix}/index.html" if code == "en" else f"{prefix}/{code}/index.html"
+    return {"lang_code": code, "lang": lang, "languages": LANGS, "trans": trans, "prefix": prefix, "base_url": CONFIG["site_url"], "ga_id": CONFIG["ga_id"], "ads_client": CONFIG["ads_client"], "ads_top_slot": CONFIG["ads_top_slot"], "ads_bottom_slot": CONFIG["ads_bottom_slot"], "updated": updated, "page_path": page_path, "home_href": home_href}
+
+
+def city_public(c: dict, trans: dict, lang: str) -> dict:
+    cur = c["weather"]["current"]
+    return {**c, "weather": {"temp": cur["temperature_2m"], "emoji": weather_icon(cur.get("weather_code")), "text": weather_text(cur.get("weather_code") or 0, trans, lang)}}
+
+
 def build() -> None:
     trans = load_translations()
+    previous_weather = load_last_known_weather()
     clean()
     all_cities = cities()
-    with ThreadPoolExecutor(max_workers=10) as executor:
+    with ThreadPoolExecutor(max_workers=int(os.environ.get("WEATHER_FETCH_WORKERS", "8"))) as executor:
         future_to_city = {executor.submit(weather_for, c): c for c in all_cities}
         for future in as_completed(future_to_city):
             c = future_to_city[future]
-            c["weather"] = future.result()
+            try:
+                c["weather"] = future.result()
+            except RuntimeError as exc:
+                cached = previous_weather.get(c["slug"])
+                if not cached:
+                    raise
+                c["weather"] = stale_weather(c, cached, exc)
 
-    # Shared data files
-    write(ROOT / "data" / "cities.json", json.dumps(all_cities, ensure_ascii=False, indent=2))
-    write(
-        ROOT / "data" / "api-status.json",
-        json.dumps(
-            {
-                "generated_at": datetime.now(timezone.utc).isoformat(),
-                "providers": [
-                    "Open-Meteo Forecast",
-                    "Open-Meteo Air Quality",
-                    "Open-Meteo Marine",
-                    "OpenWeatherMap (optional OPENWEATHER_KEY)",
-                    "Visual Crossing (optional VISUALCROSSING_KEY)",
-                    "7Timer",
-                    "wttr.in",
-                    "Weatherbit (optional WEATHERBIT_KEY)",
-                    "ipapi.co",
-                    "ipinfo.io",
-                    "IPWho.is",
-                    "IPLocate",
-                    "WorldTimeAPI",
-                    "Nominatim",
-                    "Buttondown (optional BUTTONDOWN_NEWSLETTER)",
-                ],
-                "cities": [{"city": c["name"], "status": c["weather"].get("api_status", [])} for c in all_cities],
-            },
-            ensure_ascii=False,
-            indent=2,
-        ),
-    )
-    write(
-        ROOT / "data" / "alerts.json",
-        json.dumps({"alerts": alerts_data()}, ensure_ascii=False, indent=2),
-    )
-
-    hot_cities = all_cities[:12]
     updated = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
-    wiki_list = wiki_articles()
+    dynamic_alerts = alerts_data(all_cities, trans, "en")
+    hero = city_public(all_cities[0], trans, "en")
+    hot = all_cities[:12]
 
-    # Root (default English) pages
-    root_context = {
-        "lang_code": "en",
-        "lang": LANGS[0],
-        "languages": LANGS,
-        "trans": trans,
-        "prefix": ".",
-        "ga_id": GA_ID,
-        "ads_client": ADS_CLIENT,
-        "updated": updated,
-        "hot_cities": [{**c, "weather": {"temp": c["weather"]["current"]["temperature_2m"], "emoji": "🌤️", "text": weather_text(c["weather"]["current"]["weather_code"], trans, "en")}} for c in hot_cities],
-        "cities": all_cities,
-    }
-    write(ROOT / "index.html", render("index.html", {**root_context, "page_path": ""}))
-    write(ROOT / "lang.html", render("lang.html", {**root_context, "page_path": "lang.html"}))
-    write(ROOT / "search.html", render("search.html", {**root_context, "page_path": "search.html"}))
+    write(ROOT / "data" / "cities.json", json.dumps(all_cities, ensure_ascii=False, indent=2))
+    write(ROOT / "data" / "api-status.json", json.dumps({"generated_at": datetime.now(timezone.utc).isoformat(), "providers": ["Open-Meteo Forecast", "Open-Meteo Air Quality", "Open-Meteo Marine", "Visual Crossing (optional VISUALCROSSING_KEY)", "7Timer", "wttr.in", "OpenWeatherMap current (optional OPENWEATHER_KEY)", "Weatherbit current (optional WEATHERBIT_KEY)", "Nominatim browser search", "ipapi.co", "ipinfo.io", "IPWho.is", "IPLocate", "WorldTimeAPI", "Buttondown (optional BUTTONDOWN_NEWSLETTER)"], "cities": [{"city": c["name"], "source": c["weather"].get("source"), "status": c["weather"].get("api_status", [])} for c in all_cities]}, ensure_ascii=False, indent=2))
+    write(ROOT / "data" / "alerts.json", json.dumps({"alerts": dynamic_alerts, "notice": "Forecast-derived signals only; not official government alerts."}, ensure_ascii=False, indent=2))
 
-    root_sub_context = {**root_context, "prefix": ".."}
-
-    for article in wiki_list:
-        related = [a for a in wiki_list if a["slug"] != article["slug"]]
-        ctx = {
-            **root_sub_context,
-            "page_path": f"wiki/{article['slug']}.html",
-            "title": article["title"],
-            "description": article["description"],
-            "content": article["content"],
-            "related": related,
-        }
-        write(ROOT / "wiki" / f"{article['slug']}.html", render("wiki.html", ctx))
-
-    write(
-        ROOT / "alert" / "tokyo-typhoon.html",
-        render("alert.html", {**root_sub_context, "page_path": "alert/tokyo-typhoon.html", "alerts": alerts_data()}),
-    )
-
+    root_ctx = {**common_context(trans, LANGS[0], ".", updated), "hero_live": {"temp": hero["weather"]["temp"], "name": hero["name"], "country": hero["country"], "emoji": hero["weather"]["emoji"]}, "hot_cities": [city_public(c, trans, "en") for c in hot], "cities": all_cities}
+    write(ROOT / "index.html", render("index.html", {**root_ctx, "page_path": ""}))
+    write(ROOT / "lang.html", render("lang.html", {**root_ctx, "page_path": "lang.html"}))
+    write(ROOT / "search.html", render("search.html", {**root_ctx, "page_path": "search.html"}))
+    root_sub = {**root_ctx, "prefix": ".."}
+    root_articles = wiki_articles(trans, "en")
+    for article in root_articles:
+        related = [a for a in root_articles if a["slug"] != article["slug"]]
+        write(ROOT / "wiki" / f"{article['slug']}.html", render("wiki.html", {**root_sub, "page_path": f"wiki/{article['slug']}.html", "title": article["title"], "description": article["description"], "content": article["content"], "related": related}))
+    write(ROOT / "alert" / "index.html", render("alert.html", {**root_sub, "page_path": "alert/index.html", "alerts": dynamic_alerts}))
     for c in all_cities:
-        ctx = {
-            **root_sub_context,
-            "page_path": f"city/{c['slug']}.html",
-            "city": c,
-            "weather": c["weather"],
-            "current_weather_text": weather_text(c["weather"]["current"]["weather_code"], trans, "en"),
-            "life_indices": {
-                "clothing": clothing_index(c["weather"]["current"]["temperature_2m"], trans, "en"),
-                "uv": uv_index(c["weather"]["current"]["weather_code"], trans, "en"),
-            },
-            "travel_destinations": travel_destinations(c, all_cities),
-        }
+        cur = c["weather"]["current"]
+        ctx = {**root_sub, "page_path": f"city/{c['slug']}.html", "city": c, "weather": c["weather"], "current_weather_text": weather_text(cur.get("weather_code") or 0, trans, "en"), "life_indices": {"clothing": clothing_index(cur["temperature_2m"], trans, "en"), "uv": uv_index(cur.get("weather_code") or 0, trans, "en")}, "travel_destinations": travel_destinations(c, all_cities, trans, "en"), "wiki_articles": root_articles}
         write(ROOT / "city" / f"{c['slug']}.html", render("city.html", ctx))
 
-    # Per-language pages
     for lang in LANGS:
         code = lang["code"]
-        base_ctx = {
-            "lang_code": code,
-            "lang": lang,
-            "languages": LANGS,
-            "trans": trans,
-            "prefix": "..",
-            "ga_id": GA_ID,
-            "ads_client": ADS_CLIENT,
-            "updated": updated,
-            "hot_cities": [{**c, "weather": {"temp": c["weather"]["current"]["temperature_2m"], "emoji": "🌤️", "text": weather_text(c["weather"]["current"]["weather_code"], trans, code)}} for c in hot_cities],
-            "cities": all_cities,
-        }
         base = ROOT / code
+        base_ctx = {**common_context(trans, lang, "..", updated), "hero_live": {"temp": hero["weather"]["temp"], "name": hero["name"], "country": hero["country"], "emoji": hero["weather"]["emoji"]}, "hot_cities": [city_public(c, trans, code) for c in hot], "cities": all_cities}
         write(base / "index.html", render("index.html", {**base_ctx, "page_path": ""}))
         write(base / "lang.html", render("lang.html", {**base_ctx, "page_path": "lang.html"}))
         write(base / "search.html", render("search.html", {**base_ctx, "page_path": "search.html"}))
-
-        lang_sub_context = {**base_ctx, "prefix": "../.."}
-
-        for article in wiki_list:
-            related = [a for a in wiki_list if a["slug"] != article["slug"]]
-            ctx = {
-                **lang_sub_context,
-                "page_path": f"wiki/{article['slug']}.html",
-                "title": article["title"],
-                "description": article["description"],
-                "content": article["content"],
-                "related": related,
-            }
-            write(base / "wiki" / f"{article['slug']}.html", render("wiki.html", ctx))
-
-        write(
-            base / "alert" / "tokyo-typhoon.html",
-            render("alert.html", {**lang_sub_context, "page_path": "alert/tokyo-typhoon.html", "alerts": alerts_data()}),
-        )
-
+        lang_sub = {**base_ctx, "prefix": "../.."}
+        articles = wiki_articles(trans, code)
+        for article in articles:
+            related = [a for a in articles if a["slug"] != article["slug"]]
+            write(base / "wiki" / f"{article['slug']}.html", render("wiki.html", {**lang_sub, "page_path": f"wiki/{article['slug']}.html", "title": article["title"], "description": article["description"], "content": article["content"], "related": related}))
+        write(base / "alert" / "index.html", render("alert.html", {**lang_sub, "page_path": "alert/index.html", "alerts": alerts_data(all_cities, trans, code)}))
         for c in all_cities:
-            ctx = {
-                **lang_sub_context,
-                "page_path": f"city/{c['slug']}.html",
-                "city": c,
-                "weather": c["weather"],
-                "current_weather_text": weather_text(c["weather"]["current"]["weather_code"], trans, code),
-                "life_indices": {
-                    "clothing": clothing_index(c["weather"]["current"]["temperature_2m"], trans, code),
-                    "uv": uv_index(c["weather"]["current"]["weather_code"], trans, code),
-                },
-                "travel_destinations": travel_destinations(c, all_cities),
-            }
+            cur = c["weather"]["current"]
+            ctx = {**lang_sub, "page_path": f"city/{c['slug']}.html", "city": c, "weather": c["weather"], "current_weather_text": weather_text(cur.get("weather_code") or 0, trans, code), "life_indices": {"clothing": clothing_index(cur["temperature_2m"], trans, code), "uv": uv_index(cur.get("weather_code") or 0, trans, code)}, "travel_destinations": travel_destinations(c, all_cities, trans, code), "wiki_articles": articles}
             write(base / "city" / f"{c['slug']}.html", render("city.html", ctx))
 
-    # Sitemap and robots
-    urls = [f"{BASE_URL}/", f"{BASE_URL}/lang.html", f"{BASE_URL}/search.html"]
-    urls += [f"{BASE_URL}/city/{c['slug']}.html" for c in all_cities]
-    urls += [f"{BASE_URL}/wiki/{a['slug']}.html" for a in wiki_list]
-    urls.append(f"{BASE_URL}/alert/tokyo-typhoon.html")
+    urls = [f"{CONFIG['site_url']}/", f"{CONFIG['site_url']}/lang.html", f"{CONFIG['site_url']}/search.html", f"{CONFIG['site_url']}/alert/index.html"]
+    urls += [f"{CONFIG['site_url']}/city/{c['slug']}.html" for c in all_cities]
+    urls += [f"{CONFIG['site_url']}/wiki/{a['slug']}.html" for a in root_articles]
     for lang in LANGS:
-        urls.append(f"{BASE_URL}/{lang['code']}/index.html")
-        urls.append(f"{BASE_URL}/{lang['code']}/lang.html")
-        urls.append(f"{BASE_URL}/{lang['code']}/search.html")
-        urls += [f"{BASE_URL}/{lang['code']}/city/{c['slug']}.html" for c in all_cities]
-        urls += [f"{BASE_URL}/{lang['code']}/wiki/{a['slug']}.html" for a in wiki_list]
-        urls.append(f"{BASE_URL}/{lang['code']}/alert/tokyo-typhoon.html")
-    sitemap = (
-        '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-        + "".join(f"  <url><loc>{u}</loc></url>\n" for u in urls)
-        + "</urlset>\n"
-    )
-    write(ROOT / "sitemap.xml", sitemap)
-    write(
-        ROOT / "robots.txt",
-        f"User-agent: *\nAllow: /\nSitemap: {BASE_URL}/sitemap.xml\n",
-    )
+        urls += [f"{CONFIG['site_url']}/{lang['code']}/index.html", f"{CONFIG['site_url']}/{lang['code']}/lang.html", f"{CONFIG['site_url']}/{lang['code']}/search.html", f"{CONFIG['site_url']}/{lang['code']}/alert/index.html"]
+        urls += [f"{CONFIG['site_url']}/{lang['code']}/city/{c['slug']}.html" for c in all_cities]
+        urls += [f"{CONFIG['site_url']}/{lang['code']}/wiki/{a['slug']}.html" for a in root_articles]
+    write(ROOT / "sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + ''.join(f"  <url><loc>{u}</loc></url>\n" for u in urls) + "</urlset>\n")
+    write(ROOT / "robots.txt", f"User-agent: *\nAllow: /\nSitemap: {CONFIG['site_url']}/sitemap.xml\n")
     write(ROOT / "CNAME", "weatherindex.xyz\n")
-
-    print(f"Generated {len(all_cities)} cities across {len(LANGS)} languages")
+    sync_dist()
+    print(f"Generated {len(all_cities)} cities across {len(LANGS)} languages into root and dist")
 
 
 if __name__ == "__main__":

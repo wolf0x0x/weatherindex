@@ -1,18 +1,14 @@
 {
   "alerts": [
     {
-      "city": "Tokyo, Japan",
-      "time": "2026-06-11 08:00 UTC",
-      "text": "Typhoon Warning - Category 3. Strong winds and heavy rain may affect coastal travel.",
-      "icon": "🌀",
-      "border": "border-red-500"
-    },
-    {
-      "city": "Delhi, India",
-      "time": "2026-06-11 06:00 UTC",
-      "text": "Heat wave advisory: temperatures expected to exceed 42°C. Avoid outdoor activity during peak hours.",
+      "city": "Riyadh, Saudi Arabia",
+      "slug": "riyadh",
+      "time": "2026-06-14 14:54 UTC",
+      "text": "Extreme Heat Signal: forecast temperature reached 43°C. Forecast-derived signal, not an official government alert.",
       "icon": "🌡️",
-      "border": "border-orange-500"
+      "border": "border-orange-500",
+      "source": "open-meteo"
     }
-  ]
+  ],
+  "notice": "Forecast-derived signals only; not official government alerts."
 }

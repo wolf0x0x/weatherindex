@@ -22,9 +22,25 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: pip install jinja2
+      - name: Build static site
+        run: python3 scripts/build.py
+        env:
+          SITE_URL: https://weatherindex.xyz
+          GA_ID: ${{ vars.GA_ID }}
+          ADS_CLIENT: ${{ vars.ADS_CLIENT }}
+          ADS_TOP_SLOT: ${{ vars.ADS_TOP_SLOT }}
+          ADS_BOTTOM_SLOT: ${{ vars.ADS_BOTTOM_SLOT }}
+          OPENWEATHER_API_KEY: ${{ secrets.OPENWEATHER_API_KEY }}
+          VISUALCROSSING_KEY: ${{ secrets.VISUALCROSSING_KEY }}
+          WEATHERBIT_API_KEY: ${{ secrets.WEATHERBIT_API_KEY }}
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: "."
+          path: "dist"
       - id: deployment
         uses: actions/deploy-pages@v4

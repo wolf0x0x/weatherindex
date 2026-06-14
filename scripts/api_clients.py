@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Free API integrations for WeatherIndex.
 
-No-key APIs are used directly. Free-tier APIs that require keys are enabled
-only when their environment variables are present, so local and GitHub Actions
-builds remain reliable without secrets.
+No-key APIs are used directly. Optional free-tier providers are enabled when
+matching environment variables are present. All provider responses stay raw here;
+the static generator decides which schemas can safely power production pages.
 """
 from __future__ import annotations
 
@@ -14,10 +14,10 @@ import urllib.error
 import urllib.parse
 import urllib.request
 from dataclasses import dataclass
-from typing import Any
+from typing import Any, Callable
 
-
-USER_AGENT = "WeatherIndex/1.0 (https://weatherindex.xyz)"
+SITE_URL = os.environ.get("SITE_URL", "https://weatherindex.xyz").rstrip("/")
+USER_AGENT = os.environ.get("WEATHERINDEX_USER_AGENT", f"WeatherIndex/1.0 ({SITE_URL})")
 
 
 @dataclass
@@ -97,7 +97,7 @@ def visual_crossing_timeline(city_name: str) -> ApiResult:
     if not key:
         return ApiResult("visual-crossing", None, False, "VISUALCROSSING_KEY not configured")
     location = urllib.parse.quote(city_name)
-    params = urllib.parse.urlencode({"unitGroup": "metric", "include": "days,current", "key": key, "contentType": "json"})
+    params = urllib.parse.urlencode({"unitGroup": "metric", "include": "days,current,hours", "key": key, "contentType": "json"})
     result = _get_json(f"https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/{location}?{params}")
     result.source = "visual-crossing"
     return result
@@ -121,7 +121,7 @@ def weatherbit_current(lat: float, lon: float) -> ApiResult:
     key = os.environ.get("WEATHERBIT_KEY") or os.environ.get("WEATHERBIT_API_KEY")
     if not key:
         return ApiResult("weatherbit", None, False, "WEATHERBIT_KEY not configured")
-    params = urllib.parse.urlencode({"lat": lat, "lon": lon, "key": key, "include": "minutely"})
+    params = urllib.parse.urlencode({"lat": lat, "lon": lon, "key": key})
     result = _get_json(f"https://api.weatherbit.io/v2.0/current?{params}")
     result.source = "weatherbit"
     return result
@@ -150,8 +150,6 @@ def world_time(timezone: str) -> ApiResult:
 
 def nominatim_search(query: str) -> ApiResult:
     params = urllib.parse.urlencode({"q": query, "format": "json", "limit": 5})
-    # Nominatim asks clients to keep requests modest. This helper is not used in
-    # bulk generation; it exists for diagnostics and one-off enrichment.
     time.sleep(1)
     result = _get_json(f"https://nominatim.openstreetmap.org/search?{params}", headers={"Accept-Language": "en"})
     result.source = "nominatim"
@@ -167,36 +165,42 @@ def buttondown_subscribe_endpoint() -> dict[str, str]:
     }
 
 
+def _record(api_status: list[dict[str, str]], result: ApiResult) -> None:
+    api_status.append({"source": result.source, "ok": str(result.ok).lower(), "error": result.error})
+
+
 def collect_weather(city: dict[str, Any]) -> dict[str, Any]:
-    """Collect weather data with multi-provider fallback metadata."""
+    """Collect weather data with complete provider status and safe fallback metadata."""
     lat = float(city["lat"])
     lon = float(city["lon"])
     api_status: list[dict[str, str]] = []
+    forecast_candidates: list[dict[str, Any]] = []
 
-    forecast = open_meteo_forecast(lat, lon)
-    api_status.append({"source": forecast.source, "ok": str(forecast.ok).lower(), "error": forecast.error})
-    if not forecast.ok:
-        for fallback in (
-            openweather_current(lat, lon),
-            visual_crossing_timeline(city["name"]),
-            seven_timer_forecast(lat, lon),
-            wttr_current(city["name"]),
-            weatherbit_current(lat, lon),
-        ):
-            api_status.append({"source": fallback.source, "ok": str(fallback.ok).lower(), "error": fallback.error})
-            if fallback.ok:
-                forecast = fallback
+    providers: list[Callable[[], ApiResult]] = [
+        lambda: open_meteo_forecast(lat, lon),
+        lambda: visual_crossing_timeline(city["name"]),
+        lambda: seven_timer_forecast(lat, lon),
+        lambda: wttr_current(city["name"]),
+        lambda: openweather_current(lat, lon),
+        lambda: weatherbit_current(lat, lon),
+    ]
+    full_forecast_sources = {"open-meteo", "visual-crossing", "7timer", "wttr.in"}
+    for provider in providers:
+        result = provider()
+        _record(api_status, result)
+        if result.ok and isinstance(result.data, dict):
+            forecast_candidates.append({"source": result.source, "data": result.data})
+            if result.source in full_forecast_sources:
                 break
 
     air = open_meteo_air_quality(lat, lon)
-    api_status.append({"source": air.source, "ok": str(air.ok).lower(), "error": air.error})
+    _record(api_status, air)
 
     marine = open_meteo_marine(lat, lon)
-    api_status.append({"source": marine.source, "ok": str(marine.ok).lower(), "error": marine.error})
+    _record(api_status, marine)
 
     return {
-        "forecast": forecast.data if forecast.ok else None,
-        "forecast_source": forecast.source if forecast.ok else "",
+        "forecast_candidates": forecast_candidates,
         "air_quality": air.data if air.ok else None,
         "marine": marine.data if marine.ok else None,
         "api_status": api_status,

@@ -1,0 +1,9976 @@
+[
+  {
+    "name": "Tokyo",
+    "country": "Japan",
+    "lat": 35.6762,
+    "lon": 139.6503,
+    "emoji": "🗼",
+    "timezone": "Asia/Tokyo",
+    "base_temp": 26,
+    "slug": "tokyo",
+    "weather": {
+      "current": {
+        "temperature_2m": 20,
+        "relative_humidity_2m": 90,
+        "apparent_temperature": 23,
+        "weather_code": 51,
+        "wind_speed_10m": 5,
+        "pressure_msl": 1017,
+        "visibility": 5
+      },
+      "air_quality": {
+        "us_aqi": 93,
+        "pm2_5": 17.9,
+        "pm10": 23.1,
+        "uv_index": 4.0
+      },
+      "marine": {
+        "wave_height": 0.0,
+        "wave_period": 0.0
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          27,
+          20,
+          28,
+          28,
+          26,
+          28,
+          25
+        ],
+        "temperature_2m_min": [
+          18,
+          17,
+          16,
+          17,
+          18,
+          20,
+          20
+        ],
+        "weather_code": [
+          51,
+          63,
+          2,
+          63,
+          3,
+          51,
+          53
+        ],
+        "precipitation_probability_max": [
+          42,
+          100,
+          1,
+          39,
+          45,
+          35,
+          53
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "New York",
+    "country": "USA",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "emoji": "🗽",
+    "timezone": "America/New_York",
+    "base_temp": 22,
+    "slug": "new-york",
+    "weather": {
+      "current": {
+        "temperature_2m": 30,
+        "relative_humidity_2m": 35,
+        "apparent_temperature": 30,
+        "weather_code": 3,
+        "wind_speed_10m": 10,
+        "pressure_msl": 1011,
+        "visibility": 55
+      },
+      "air_quality": {
+        "us_aqi": 39,
+        "pm2_5": 10.5,
+        "pm10": 10.5,
+        "uv_index": 5.2
+      },
+      "marine": {
+        "wave_height": 0.1,
+        "wave_period": 6.0
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          33,
+          27,
+          25,
+          24,
+          30,
+          24,
+          26
+        ],
+        "temperature_2m_min": [
+          21,
+          19,
+          14,
+          19,
+          21,
+          19,
+          17
+        ],
+        "weather_code": [
+          3,
+          80,
+          3,
+          80,
+          53,
+          55,
+          1
+        ],
+        "precipitation_probability_max": [
+          23,
+          56,
+          5,
+          24,
+          36,
+          36,
+          7
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Paris",
+    "country": "France",
+    "lat": 48.8566,
+    "lon": 2.3522,
+    "emoji": "🏛️",
+    "timezone": "Europe/Paris",
+    "base_temp": 20,
+    "slug": "paris",
+    "weather": {
+      "current": {
+        "temperature_2m": 25,
+        "relative_humidity_2m": 37,
+        "apparent_temperature": 25,
+        "weather_code": 3,
+        "wind_speed_10m": 8,
+        "pressure_msl": 1018,
+        "visibility": 43
+      },
+      "air_quality": {
+        "us_aqi": 33,
+        "pm2_5": 5.1,
+        "pm10": 8.6,
+        "uv_index": 5.2
+      },
+      "marine": {
+        "wave_height": 0.0,
+        "wave_period": 0.0
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          26,
+          29,
+          28,
+          33,
+          31,
+          34,
+          30
+        ],
+        "temperature_2m_min": [
+          14,
+          16,
+          19,
+          18,
+          19,
+          22,
+          20
+        ],
+        "weather_code": [
+          3,
+          80,
+          95,
+          3,
+          3,
+          96,
+          80
+        ],
+        "precipitation_probability_max": [
+          0,
+          8,
+          8,
+          0,
+          8,
+          7,
+          30
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Beijing",
+    "country": "China",
+    "lat": 39.9042,
+    "lon": 116.4074,
+    "emoji": "🏯",
+    "timezone": "Asia/Shanghai",
+    "base_temp": 28,
+    "slug": "beijing",
+    "weather": {
+      "current": {
+        "temperature_2m": 24,
+        "relative_humidity_2m": 70,
+        "apparent_temperature": 26,
+        "weather_code": 1,
+        "wind_speed_10m": 8,
+        "pressure_msl": 1009,
+        "visibility": 10
+      },
+      "air_quality": {
+        "us_aqi": 143,
+        "pm2_5": 42.3,
+        "pm10": 50.1,
+        "uv_index": 4.0
+      },
+      "marine": {
+        "wave_height": 0.0,
+        "wave_period": 0.0
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          28,
+          32,
+          31,
+          31,
+          35,
+          33,
+          23
+        ],
+        "temperature_2m_min": [
+          18,
+          20,
+          22,
+          21,
+          23,
+          23,
+          19
+        ],
+        "weather_code": [
+          3,
+          53,
+          81,
+          53,
+          3,
+          95,
+          80
+        ],
+        "precipitation_probability_max": [
+          0,
+          37,
+          80,
+          56,
+          22,
+          62,
+          63
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "London",
+    "country": "United Kingdom",
+    "lat": 51.5074,
+    "lon": -0.1278,
+    "emoji": "🎡",
+    "timezone": "Europe/London",
+    "base_temp": 18,
+    "slug": "london",
+    "weather": {
+      "current": {
+        "temperature_2m": 21,
+        "relative_humidity_2m": 42,
+        "apparent_temperature": 19,
+        "weather_code": 3,
+        "wind_speed_10m": 10,
+        "pressure_msl": 1019,
+        "visibility": 23
+      },
+      "air_quality": {
+        "us_aqi": 29,
+        "pm2_5": 3.8,
+        "pm10": 7.0,
+        "uv_index": 4.8
+      },
+      "marine": {
+        "wave_height": 0.0,
+        "wave_period": 0.0
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          21,
+          24,
+          25,
+          24,
+          27,
+          30,
+          30
+        ],
+        "temperature_2m_min": [
+          13,
+          14,
+          16,
+          17,
+          16,
+          19,
+          21
+        ],
+        "weather_code": [
+          3,
+          51,
+          3,
+          51,
+          3,
+          51,
+          51
+        ],
+        "precipitation_probability_max": [
+          0,
+          17,
+          8,
+          24,
+          2,
+          19,
+          16
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Shanghai",
+    "country": "China",
+    "lat": 31.2304,
+    "lon": 121.4737,
+    "emoji": "🌆",
+    "timezone": "Asia/Shanghai",
+    "base_temp": 29,
+    "slug": "shanghai",
+    "weather": {
+      "current": {
+        "temperature_2m": 22,
+        "relative_humidity_2m": 93,
+        "apparent_temperature": 25,
+        "weather_code": 3,
+        "wind_speed_10m": 11,
+        "pressure_msl": 1008,
+        "visibility": 7
+      },
+      "air_quality": {
+        "us_aqi": 57,
+        "pm2_5": 18.9,
+        "pm10": 22.5,
+        "uv_index": 4.0
+      },
+      "marine": {
+        "wave_height": 0.0,
+        "wave_period": 0.0
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          24,
+          26,
+          27,
+          29,
+          29,
+          26,
+          29
+        ],
+        "temperature_2m_min": [
+          20,
+          22,
+          22,
+          23,
+          23,
+          23,
+          22
+        ],
+        "weather_code": [
+          53,
+          53,
+          51,
+          51,
+          51,
+          81,
+          81
+        ],
+        "precipitation_probability_max": [
+          100,
+          80,
+          58,
+          59,
+          56,
+          84,
+          69
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Sydney",
+    "country": "Australia",
+    "lat": -33.8688,
+    "lon": 151.2093,
+    "emoji": "🌉",
+    "timezone": "Australia/Sydney",
+    "base_temp": 19,
+    "slug": "sydney",
+    "weather": {
+      "current": {
+        "temperature_2m": 16,
+        "relative_humidity_2m": 82,
+        "apparent_temperature": 15,
+        "weather_code": 51,
+        "wind_speed_10m": 9,
+        "pressure_msl": 1032,
+        "visibility": 8
+      },
+      "air_quality": {
+        "us_aqi": 39,
+        "pm2_5": 10.3,
+        "pm10": 15.4,
+        "uv_index": 4.0
+      },
+      "marine": {
+        "wave_height": 1.0,
+        "wave_period": 5.8
+      },
+      "daily": {
+        "time": [
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20",
+          "2026-06-21"
+        ],
+        "temperature_2m_max": [
+          18,
+          20,
+          21,
+          21,
+          20,
+          18,
+          17
+        ],
+        "temperature_2m_min": [
+          13,
+          11,
+          11,
+          12,
+          15,
+          12,
+          10
+        ],
+        "weather_code": [
+          53,
+          3,
+          3,
+          3,
+          55,
+          51,
+          3
+        ],
+        "precipitation_probability_max": [
+          90,
+          0,
+          0,
+          2,
+          18,
+          27,
+          17
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Dubai",
+    "country": "UAE",
+    "lat": 25.2048,
+    "lon": 55.2708,
+    "emoji": "🏙️",
+    "timezone": "Asia/Dubai",
+    "base_temp": 38,
+    "slug": "dubai",
+    "weather": {
+      "current": {
+        "temperature_2m": 34,
+        "relative_humidity_2m": 55,
+        "apparent_temperature": 39,
+        "weather_code": 0,
+        "wind_speed_10m": 9,
+        "pressure_msl": 1000,
+        "visibility": 18
+      },
+      "air_quality": {
+        "us_aqi": 193,
+        "pm2_5": 31.1,
+        "pm10": 44.5,
+        "uv_index": 0.3
+      },
+      "marine": {
+        "wave_height": 0.4,
+        "wave_period": 4.1
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          38,
+          37,
+          37,
+          38,
+          37,
+          39,
+          38
+        ],
+        "temperature_2m_min": [
+          29,
+          28,
+          28,
+          26,
+          27,
+          28,
+          28
+        ],
+        "weather_code": [
+          95,
+          95,
+          0,
+          0,
+          95,
+          95,
+          0
+        ],
+        "precipitation_probability_max": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Singapore",
+    "country": "Singapore",
+    "lat": 1.3521,
+    "lon": 103.8198,
+    "emoji": "🌿",
+    "timezone": "Asia/Singapore",
+    "base_temp": 31,
+    "slug": "singapore",
+    "weather": {
+      "current": {
+        "temperature_2m": 25,
+        "relative_humidity_2m": 96,
+        "apparent_temperature": 31,
+        "weather_code": 3,
+        "wind_speed_10m": 6,
+        "pressure_msl": 1013,
+        "visibility": 5
+      },
+      "air_quality": {
+        "us_aqi": 57,
+        "pm2_5": 13.2,
+        "pm10": 16.7,
+        "uv_index": 4.0
+      },
+      "marine": {
+        "wave_height": 0.1,
+        "wave_period": 2.5
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          31,
+          30,
+          30,
+          30,
+          30,
+          29,
+          28
+        ],
+        "temperature_2m_min": [
+          25,
+          23,
+          24,
+          24,
+          23,
+          23,
+          22
+        ],
+        "weather_code": [
+          53,
+          81,
+          95,
+          81,
+          81,
+          80,
+          81
+        ],
+        "precipitation_probability_max": [
+          88,
+          95,
+          87,
+          86,
+          92,
+          98,
+          95
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Seoul",
+    "country": "South Korea",
+    "lat": 37.5665,
+    "lon": 126.978,
+    "emoji": "🏙️",
+    "timezone": "Asia/Seoul",
+    "base_temp": 25,
+    "slug": "seoul",
+    "weather": {
+      "current": {
+        "temperature_2m": 22,
+        "relative_humidity_2m": 86,
+        "apparent_temperature": 25,
+        "weather_code": 0,
+        "wind_speed_10m": 1,
+        "pressure_msl": 1012,
+        "visibility": 18
+      },
+      "air_quality": {
+        "us_aqi": 88,
+        "pm2_5": 33.2,
+        "pm10": 42.0,
+        "uv_index": 4.0
+      },
+      "marine": {
+        "wave_height": 0.0,
+        "wave_period": 0.0
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          28,
+          31,
+          31,
+          31,
+          30,
+          35,
+          38
+        ],
+        "temperature_2m_min": [
+          18,
+          19,
+          20,
+          20,
+          21,
+          21,
+          25
+        ],
+        "weather_code": [
+          2,
+          2,
+          2,
+          61,
+          3,
+          3,
+          3
+        ],
+        "precipitation_probability_max": [
+          61,
+          41,
+          28,
+          8,
+          4,
+          4,
+          29
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Bangkok",
+    "country": "Thailand",
+    "lat": 13.7563,
+    "lon": 100.5018,
+    "emoji": "🛕",
+    "timezone": "Asia/Bangkok",
+    "base_temp": 34,
+    "slug": "bangkok",
+    "weather": {
+      "current": {
+        "temperature_2m": 28,
+        "relative_humidity_2m": 85,
+        "apparent_temperature": 34,
+        "weather_code": 2,
+        "wind_speed_10m": 9,
+        "pressure_msl": 1010,
+        "visibility": 28
+      },
+      "air_quality": {
+        "us_aqi": 40,
+        "pm2_5": 7.3,
+        "pm10": 8.4,
+        "uv_index": 4.0
+      },
+      "marine": {
+        "wave_height": 0.0,
+        "wave_period": 0.0
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          33,
+          33,
+          33,
+          33,
+          31,
+          30,
+          31
+        ],
+        "temperature_2m_min": [
+          27,
+          26,
+          26,
+          26,
+          25,
+          26,
+          26
+        ],
+        "weather_code": [
+          95,
+          95,
+          95,
+          95,
+          95,
+          80,
+          51
+        ],
+        "precipitation_probability_max": [
+          94,
+          69,
+          88,
+          91,
+          87,
+          82,
+          80
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Hong Kong",
+    "country": "China",
+    "lat": 22.3193,
+    "lon": 114.1694,
+    "emoji": "🌃",
+    "timezone": "Asia/Hong_Kong",
+    "base_temp": 30,
+    "slug": "hong-kong",
+    "weather": {
+      "current": {
+        "temperature_2m": 27,
+        "relative_humidity_2m": 96,
+        "apparent_temperature": 32,
+        "weather_code": 95,
+        "wind_speed_10m": 16,
+        "pressure_msl": 1006,
+        "visibility": 8
+      },
+      "air_quality": {
+        "us_aqi": 53,
+        "pm2_5": 15.3,
+        "pm10": 17.3,
+        "uv_index": 4.0
+      },
+      "marine": {
+        "wave_height": 0.6,
+        "wave_period": 4.5
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          27,
+          28,
+          26,
+          27,
+          27,
+          30,
+          30
+        ],
+        "temperature_2m_min": [
+          24,
+          24,
+          24,
+          25,
+          25,
+          26,
+          27
+        ],
+        "weather_code": [
+          95,
+          81,
+          81,
+          81,
+          80,
+          95,
+          53
+        ],
+        "precipitation_probability_max": [
+          100,
+          100,
+          100,
+          100,
+          100,
+          98,
+          94
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Los Angeles",
+    "country": "USA",
+    "lat": 34.0522,
+    "lon": -118.2437,
+    "emoji": "🌴",
+    "timezone": "America/Los_Angeles",
+    "base_temp": 24,
+    "slug": "los-angeles",
+    "weather": {
+      "current": {
+        "temperature_2m": 17,
+        "relative_humidity_2m": 86,
+        "apparent_temperature": 18,
+        "weather_code": 0,
+        "wind_speed_10m": 2,
+        "pressure_msl": 1012,
+        "visibility": 15
+      },
+      "air_quality": {
+        "us_aqi": 58,
+        "pm2_5": 17.3,
+        "pm10": 20.0,
+        "uv_index": 0.5
+      },
+      "marine": {
+        "wave_height": 0.8,
+        "wave_period": 12.2
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          26,
+          26,
+          28,
+          30,
+          28,
+          24,
+          27
+        ],
+        "temperature_2m_min": [
+          16,
+          16,
+          16,
+          20,
+          19,
+          18,
+          18
+        ],
+        "weather_code": [
+          3,
+          45,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precipitation_probability_max": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "San Francisco",
+    "country": "USA",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "emoji": "🌁",
+    "timezone": "America/Los_Angeles",
+    "base_temp": 17,
+    "slug": "san-francisco",
+    "weather": {
+      "current": {
+        "temperature_2m": 15,
+        "relative_humidity_2m": 94,
+        "apparent_temperature": 14,
+        "weather_code": 3,
+        "wind_speed_10m": 10,
+        "pressure_msl": 1013,
+        "visibility": 13
+      },
+      "air_quality": {
+        "us_aqi": 53,
+        "pm2_5": 12.5,
+        "pm10": 18.7,
+        "uv_index": 0.3
+      },
+      "marine": {
+        "wave_height": 0.9,
+        "wave_period": 12.6
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          20,
+          18,
+          26,
+          22,
+          20,
+          19,
+          18
+        ],
+        "temperature_2m_min": [
+          14,
+          12,
+          11,
+          15,
+          14,
+          14,
+          13
+        ],
+        "weather_code": [
+          45,
+          45,
+          45,
+          0,
+          3,
+          2,
+          3
+        ],
+        "precipitation_probability_max": [
+          3,
+          1,
+          2,
+          1,
+          3,
+          5,
+          4
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Toronto",
+    "country": "Canada",
+    "lat": 43.6532,
+    "lon": -79.3832,
+    "emoji": "🍁",
+    "timezone": "America/Toronto",
+    "base_temp": 21,
+    "slug": "toronto",
+    "weather": {
+      "current": {
+        "temperature_2m": 18,
+        "relative_humidity_2m": 85,
+        "apparent_temperature": 18,
+        "weather_code": 3,
+        "wind_speed_10m": 8,
+        "pressure_msl": 1007,
+        "visibility": 17
+      },
+      "air_quality": {
+        "us_aqi": 34,
+        "pm2_5": 12.1,
+        "pm10": 13.2,
+        "uv_index": 2.0
+      },
+      "marine": {
+        "wave_height": 0.2,
+        "wave_period": 2.7
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          18,
+          16,
+          21,
+          22,
+          22,
+          21,
+          21
+        ],
+        "temperature_2m_min": [
+          13,
+          11,
+          10,
+          14,
+          14,
+          13,
+          12
+        ],
+        "weather_code": [
+          63,
+          3,
+          3,
+          80,
+          81,
+          51,
+          51
+        ],
+        "precipitation_probability_max": [
+          75,
+          0,
+          21,
+          63,
+          79,
+          14,
+          18
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Vancouver",
+    "country": "Canada",
+    "lat": 49.2827,
+    "lon": -123.1207,
+    "emoji": "⛰️",
+    "timezone": "America/Vancouver",
+    "base_temp": 16,
+    "slug": "vancouver",
+    "weather": {
+      "current": {
+        "temperature_2m": 18,
+        "relative_humidity_2m": 64,
+        "apparent_temperature": 18,
+        "weather_code": 3,
+        "wind_speed_10m": 3,
+        "pressure_msl": 1021,
+        "visibility": 25
+      },
+      "air_quality": {
+        "us_aqi": 56,
+        "pm2_5": 16.5,
+        "pm10": 20.9,
+        "uv_index": 0.5
+      },
+      "marine": {
+        "wave_height": 0.2,
+        "wave_period": 2.6
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          28,
+          29,
+          20,
+          20,
+          22,
+          22,
+          20
+        ],
+        "temperature_2m_min": [
+          14,
+          17,
+          15,
+          12,
+          13,
+          14,
+          14
+        ],
+        "weather_code": [
+          3,
+          3,
+          2,
+          2,
+          3,
+          3,
+          3
+        ],
+        "precipitation_probability_max": [
+          1,
+          2,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Mexico City",
+    "country": "Mexico",
+    "lat": 19.4326,
+    "lon": -99.1332,
+    "emoji": "🌵",
+    "timezone": "America/Mexico_City",
+    "base_temp": 23,
+    "slug": "mexico-city",
+    "weather": {
+      "current": {
+        "temperature_2m": 14,
+        "relative_humidity_2m": 90,
+        "apparent_temperature": 15,
+        "weather_code": 3,
+        "wind_speed_10m": 2,
+        "pressure_msl": 1020,
+        "visibility": 1
+      },
+      "air_quality": {
+        "us_aqi": 63,
+        "pm2_5": 15.4,
+        "pm10": 15.6,
+        "uv_index": 1.7
+      },
+      "marine": {
+        "wave_height": 0.0,
+        "wave_period": 0.0
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          24,
+          24,
+          24,
+          23,
+          23,
+          22,
+          22
+        ],
+        "temperature_2m_min": [
+          12,
+          13,
+          13,
+          13,
+          14,
+          13,
+          13
+        ],
+        "weather_code": [
+          51,
+          53,
+          61,
+          80,
+          80,
+          80,
+          53
+        ],
+        "precipitation_probability_max": [
+          55,
+          80,
+          74,
+          82,
+          99,
+          90,
+          79
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "São Paulo",
+    "country": "Brazil",
+    "lat": -23.5558,
+    "lon": -46.6396,
+    "emoji": "🌇",
+    "timezone": "America/Sao_Paulo",
+    "base_temp": 22,
+    "slug": "sao-paulo",
+    "weather": {
+      "current": {
+        "temperature_2m": 21,
+        "relative_humidity_2m": 69,
+        "apparent_temperature": 22,
+        "weather_code": 2,
+        "wind_speed_10m": 10,
+        "pressure_msl": 1019,
+        "visibility": 21
+      },
+      "air_quality": {
+        "us_aqi": 35,
+        "pm2_5": 9.7,
+        "pm10": 9.9,
+        "uv_index": 2.4
+      },
+      "marine": {
+        "wave_height": 0.0,
+        "wave_period": 0.0
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          22,
+          17,
+          20,
+          19,
+          19,
+          24,
+          22
+        ],
+        "temperature_2m_min": [
+          16,
+          14,
+          14,
+          13,
+          13,
+          13,
+          16
+        ],
+        "weather_code": [
+          51,
+          61,
+          51,
+          3,
+          3,
+          53,
+          51
+        ],
+        "precipitation_probability_max": [
+          52,
+          88,
+          19,
+          6,
+          0,
+          29,
+          53
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Rio de Janeiro",
+    "country": "Brazil",
+    "lat": -22.9068,
+    "lon": -43.1729,
+    "emoji": "🏖️",
+    "timezone": "America/Sao_Paulo",
+    "base_temp": 27,
+    "slug": "rio-de-janeiro",
+    "weather": {
+      "current": {
+        "temperature_2m": 24,
+        "relative_humidity_2m": 71,
+        "apparent_temperature": 27,
+        "weather_code": 3,
+        "wind_speed_10m": 0,
+        "pressure_msl": 1019,
+        "visibility": 17
+      },
+      "air_quality": {
+        "us_aqi": 59,
+        "pm2_5": 14.1,
+        "pm10": 17.2,
+        "uv_index": 3.2
+      },
+      "marine": {
+        "wave_height": 0.9,
+        "wave_period": 9.3
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          24,
+          22,
+          20,
+          22,
+          22,
+          25,
+          24
+        ],
+        "temperature_2m_min": [
+          20,
+          19,
+          19,
+          19,
+          18,
+          18,
+          20
+        ],
+        "weather_code": [
+          63,
+          61,
+          61,
+          53,
+          51,
+          51,
+          3
+        ],
+        "precipitation_probability_max": [
+          51,
+          96,
+          90,
+          53,
+          31,
+          0,
+          9
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Buenos Aires",
+    "country": "Argentina",
+    "lat": -34.6037,
+    "lon": -58.3816,
+    "emoji": "💃",
+    "timezone": "America/Argentina/Buenos_Aires",
+    "base_temp": 18,
+    "slug": "buenos-aires",
+    "weather": {
+      "current": {
+        "temperature_2m": 7,
+        "relative_humidity_2m": 69,
+        "apparent_temperature": 4,
+        "weather_code": 0,
+        "wind_speed_10m": 7,
+        "pressure_msl": 1026,
+        "visibility": 50
+      },
+      "air_quality": {
+        "us_aqi": 19,
+        "pm2_5": 5.8,
+        "pm10": 6.5,
+        "uv_index": 1.6
+      },
+      "marine": {
+        "wave_height": 0.2,
+        "wave_period": 3.0
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          10,
+          12,
+          16,
+          13,
+          12,
+          15,
+          13
+        ],
+        "temperature_2m_min": [
+          3,
+          3,
+          6,
+          7,
+          11,
+          8,
+          9
+        ],
+        "weather_code": [
+          51,
+          3,
+          0,
+          3,
+          53,
+          3,
+          53
+        ],
+        "precipitation_probability_max": [
+          100,
+          0,
+          0,
+          0,
+          67,
+          59,
+          12
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Santiago",
+    "country": "Chile",
+    "lat": -33.4489,
+    "lon": -70.6693,
+    "emoji": "🏔️",
+    "timezone": "America/Santiago",
+    "base_temp": 17,
+    "slug": "santiago",
+    "weather": {
+      "current": {
+        "temperature_2m": 14,
+        "relative_humidity_2m": 33,
+        "apparent_temperature": 11,
+        "weather_code": 3,
+        "wind_speed_10m": 2,
+        "pressure_msl": 1017,
+        "visibility": 45
+      },
+      "air_quality": {
+        "us_aqi": 169,
+        "pm2_5": 83.4,
+        "pm10": 84.3,
+        "uv_index": 1.0
+      },
+      "marine": {
+        "wave_height": 0.0,
+        "wave_period": 0.0
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          20,
+          19,
+          18,
+          13,
+          16,
+          15,
+          11
+        ],
+        "temperature_2m_min": [
+          9,
+          8,
+          10,
+          8,
+          8,
+          9,
+          7
+        ],
+        "weather_code": [
+          3,
+          3,
+          3,
+          51,
+          3,
+          3,
+          51
+        ],
+        "precipitation_probability_max": [
+          0,
+          0,
+          2,
+          8,
+          36,
+          14,
+          33
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Lima",
+    "country": "Peru",
+    "lat": -12.0464,
+    "lon": -77.0428,
+    "emoji": "🌊",
+    "timezone": "America/Lima",
+    "base_temp": 20,
+    "slug": "lima",
+    "weather": {
+      "current": {
+        "temperature_2m": 23,
+        "relative_humidity_2m": 72,
+        "apparent_temperature": 24,
+        "weather_code": 2,
+        "wind_speed_10m": 7,
+        "pressure_msl": 1017,
+        "visibility": 28
+      },
+      "air_quality": {
+        "us_aqi": 52,
+        "pm2_5": 12.9,
+        "pm10": 20.3,
+        "uv_index": 3.0
+      },
+      "marine": {
+        "wave_height": 1.5,
+        "wave_period": 11.8
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          24,
+          24,
+          24,
+          24,
+          23,
+          23,
+          24
+        ],
+        "temperature_2m_min": [
+          19,
+          20,
+          19,
+          20,
+          20,
+          20,
+          18
+        ],
+        "weather_code": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "precipitation_probability_max": [
+          13,
+          16,
+          0,
+          2,
+          1,
+          2,
+          0
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Bogotá",
+    "country": "Colombia",
+    "lat": 4.711,
+    "lon": -74.0721,
+    "emoji": "⛰️",
+    "timezone": "America/Bogota",
+    "base_temp": 15,
+    "slug": "bogota",
+    "weather": {
+      "current": {
+        "temperature_2m": 16,
+        "relative_humidity_2m": 69,
+        "apparent_temperature": 16,
+        "weather_code": 51,
+        "wind_speed_10m": 2,
+        "pressure_msl": 1020,
+        "visibility": 9
+      },
+      "air_quality": {
+        "us_aqi": 54,
+        "pm2_5": 7.5,
+        "pm10": 8.8,
+        "uv_index": 5.0
+      },
+      "marine": {
+        "wave_height": 0.0,
+        "wave_period": 0.0
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          19,
+          18,
+          18,
+          18,
+          18,
+          20,
+          19
+        ],
+        "temperature_2m_min": [
+          10,
+          9,
+          11,
+          10,
+          9,
+          10,
+          10
+        ],
+        "weather_code": [
+          53,
+          55,
+          51,
+          51,
+          51,
+          51,
+          51
+        ],
+        "precipitation_probability_max": [
+          98,
+          92,
+          98,
+          100,
+          99,
+          100,
+          100
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Madrid",
+    "country": "Spain",
+    "lat": 40.4168,
+    "lon": -3.7038,
+    "emoji": "🏰",
+    "timezone": "Europe/Madrid",
+    "base_temp": 27,
+    "slug": "madrid",
+    "weather": {
+      "current": {
+        "temperature_2m": 33,
+        "relative_humidity_2m": 18,
+        "apparent_temperature": 33,
+        "weather_code": 1,
+        "wind_speed_10m": 3,
+        "pressure_msl": 1012,
+        "visibility": 55
+      },
+      "air_quality": {
+        "us_aqi": 33,
+        "pm2_5": 6.7,
+        "pm10": 17.9,
+        "uv_index": 6.8
+      },
+      "marine": {
+        "wave_height": 0.0,
+        "wave_period": 0.0
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          33,
+          32,
+          32,
+          34,
+          34,
+          33,
+          34
+        ],
+        "temperature_2m_min": [
+          21,
+          20,
+          19,
+          21,
+          21,
+          21,
+          23
+        ],
+        "weather_code": [
+          3,
+          80,
+          3,
+          1,
+          2,
+          3,
+          3
+        ],
+        "precipitation_probability_max": [
+          40,
+          45,
+          5,
+          0,
+          5,
+          11,
+          13
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Barcelona",
+    "country": "Spain",
+    "lat": 41.3851,
+    "lon": 2.1734,
+    "emoji": "🎨",
+    "timezone": "Europe/Madrid",
+    "base_temp": 26,
+    "slug": "barcelona",
+    "weather": {
+      "current": {
+        "temperature_2m": 28,
+        "relative_humidity_2m": 37,
+        "apparent_temperature": 28,
+        "weather_code": 1,
+        "wind_speed_10m": 11,
+        "pressure_msl": 1015,
+        "visibility": 43
+      },
+      "air_quality": {
+        "us_aqi": 39,
+        "pm2_5": 12.0,
+        "pm10": 15.6,
+        "uv_index": 6.0
+      },
+      "marine": {
+        "wave_height": 0.1,
+        "wave_period": 3.1
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          29,
+          28,
+          30,
+          26,
+          28,
+          30,
+          29
+        ],
+        "temperature_2m_min": [
+          21,
+          22,
+          21,
+          21,
+          19,
+          22,
+          21
+        ],
+        "weather_code": [
+          3,
+          3,
+          3,
+          1,
+          45,
+          3,
+          2
+        ],
+        "precipitation_probability_max": [
+          0,
+          8,
+          0,
+          0,
+          6,
+          8,
+          3
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Rome",
+    "country": "Italy",
+    "lat": 41.9028,
+    "lon": 12.4964,
+    "emoji": "🏟️",
+    "timezone": "Europe/Rome",
+    "base_temp": 28,
+    "slug": "rome",
+    "weather": {
+      "current": {
+        "temperature_2m": 30,
+        "relative_humidity_2m": 29,
+        "apparent_temperature": 29,
+        "weather_code": 2,
+        "wind_speed_10m": 13,
+        "pressure_msl": 1014,
+        "visibility": 46
+      },
+      "air_quality": {
+        "us_aqi": 43,
+        "pm2_5": 4.3,
+        "pm10": 6.4,
+        "uv_index": 4.8
+      },
+      "marine": {
+        "wave_height": 0.1,
+        "wave_period": 3.6
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          30,
+          29,
+          30,
+          34,
+          35,
+          36,
+          36
+        ],
+        "temperature_2m_min": [
+          17,
+          16,
+          19,
+          20,
+          21,
+          22,
+          19
+        ],
+        "weather_code": [
+          3,
+          3,
+          80,
+          3,
+          3,
+          1,
+          1
+        ],
+        "precipitation_probability_max": [
+          0,
+          0,
+          25,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Milan",
+    "country": "Italy",
+    "lat": 45.4642,
+    "lon": 9.19,
+    "emoji": "🛍️",
+    "timezone": "Europe/Rome",
+    "base_temp": 25,
+    "slug": "milan",
+    "weather": {
+      "current": {
+        "temperature_2m": 31,
+        "relative_humidity_2m": 37,
+        "apparent_temperature": 31,
+        "weather_code": 3,
+        "wind_speed_10m": 15,
+        "pressure_msl": 1010,
+        "visibility": 44
+      },
+      "air_quality": {
+        "us_aqi": 40,
+        "pm2_5": 6.9,
+        "pm10": 11.4,
+        "uv_index": 4.3
+      },
+      "marine": {
+        "wave_height": 0.0,
+        "wave_period": 0.0
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          31,
+          32,
+          31,
+          34,
+          36,
+          35,
+          36
+        ],
+        "temperature_2m_min": [
+          18,
+          18,
+          19,
+          21,
+          23,
+          24,
+          21
+        ],
+        "weather_code": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "precipitation_probability_max": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          3,
+          0
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Berlin",
+    "country": "Germany",
+    "lat": 52.52,
+    "lon": 13.405,
+    "emoji": "🧭",
+    "timezone": "Europe/Berlin",
+    "base_temp": 19,
+    "slug": "berlin",
+    "weather": {
+      "current": {
+        "temperature_2m": 16,
+        "relative_humidity_2m": 58,
+        "apparent_temperature": 12,
+        "weather_code": 80,
+        "wind_speed_10m": 21,
+        "pressure_msl": 1009,
+        "visibility": 40
+      },
+      "air_quality": {
+        "us_aqi": 30,
+        "pm2_5": 2.3,
+        "pm10": 5.3,
+        "uv_index": 1.1
+      },
+      "marine": {
+        "wave_height": 0.0,
+        "wave_period": 0.0
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          16,
+          20,
+          22,
+          22,
+          30,
+          32,
+          34
+        ],
+        "temperature_2m_min": [
+          12,
+          12,
+          9,
+          14,
+          16,
+          21,
+          23
+        ],
+        "weather_code": [
+          80,
+          3,
+          3,
+          61,
+          2,
+          3,
+          80
+        ],
+        "precipitation_probability_max": [
+          93,
+          3,
+          0,
+          11,
+          5,
+          11,
+          17
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Munich",
+    "country": "Germany",
+    "lat": 48.1351,
+    "lon": 11.582,
+    "emoji": "⛪",
+    "timezone": "Europe/Berlin",
+    "base_temp": 18,
+    "slug": "munich",
+    "weather": {
+      "current": {
+        "temperature_2m": 22,
+        "relative_humidity_2m": 33,
+        "apparent_temperature": 20,
+        "weather_code": 0,
+        "wind_speed_10m": 16,
+        "pressure_msl": 1013,
+        "visibility": 45
+      },
+      "air_quality": {
+        "us_aqi": 32,
+        "pm2_5": 3.9,
+        "pm10": 6.8,
+        "uv_index": 4.1
+      },
+      "marine": {
+        "wave_height": 0.0,
+        "wave_period": 0.0
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          22,
+          22,
+          21,
+          29,
+          32,
+          33,
+          30
+        ],
+        "temperature_2m_min": [
+          16,
+          13,
+          12,
+          17,
+          18,
+          19,
+          18
+        ],
+        "weather_code": [
+          3,
+          3,
+          61,
+          3,
+          3,
+          3,
+          3
+        ],
+        "precipitation_probability_max": [
+          18,
+          0,
+          24,
+          9,
+          0,
+          13,
+          15
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Amsterdam",
+    "country": "Netherlands",
+    "lat": 52.3676,
+    "lon": 4.9041,
+    "emoji": "🚲",
+    "timezone": "Europe/Amsterdam",
+    "base_temp": 17,
+    "slug": "amsterdam",
+    "weather": {
+      "current": {
+        "temperature_2m": 17,
+        "relative_humidity_2m": 59,
+        "apparent_temperature": 14,
+        "weather_code": 3,
+        "wind_speed_10m": 20,
+        "pressure_msl": 1018,
+        "visibility": 25
+      },
+      "air_quality": {
+        "us_aqi": 28,
+        "pm2_5": 3.9,
+        "pm10": 11.0,
+        "uv_index": 3.8
+      },
+      "marine": {
+        "wave_height": 0.0,
+        "wave_period": 0.0
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          17,
+          19,
+          23,
+          23,
+          24,
+          30,
+          25
+        ],
+        "temperature_2m_min": [
+          14,
+          14,
+          14,
+          13,
+          16,
+          19,
+          19
+        ],
+        "weather_code": [
+          61,
+          3,
+          3,
+          53,
+          3,
+          63,
+          3
+        ],
+        "precipitation_probability_max": [
+          67,
+          2,
+          14,
+          19,
+          4,
+          39,
+          31
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Brussels",
+    "country": "Belgium",
+    "lat": 50.8503,
+    "lon": 4.3517,
+    "emoji": "🏛️",
+    "timezone": "Europe/Brussels",
+    "base_temp": 18,
+    "slug": "brussels",
+    "weather": {
+      "current": {
+        "temperature_2m": 19,
+        "relative_humidity_2m": 45,
+        "apparent_temperature": 17,
+        "weather_code": 3,
+        "wind_speed_10m": 12,
+        "pressure_msl": 1019,
+        "visibility": 33
+      },
+      "air_quality": {
+        "us_aqi": 30,
+        "pm2_5": 4.8,
+        "pm10": 9.2,
+        "uv_index": 2.6
+      },
+      "marine": {
+        "wave_height": 0.0,
+        "wave_period": 0.0
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          19,
+          23,
+          26,
+          26,
+          31,
+          34,
+          28
+        ],
+        "temperature_2m_min": [
+          13,
+          13,
+          19,
+          15,
+          18,
+          22,
+          20
+        ],
+        "weather_code": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          55,
+          53
+        ],
+        "precipitation_probability_max": [
+          6,
+          8,
+          38,
+          4,
+          9,
+          64,
+          49
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Zurich",
+    "country": "Switzerland",
+    "lat": 47.3769,
+    "lon": 8.5417,
+    "emoji": "🏔️",
+    "timezone": "Europe/Zurich",
+    "base_temp": 16,
+    "slug": "zurich",
+    "weather": {
+      "current": {
+        "temperature_2m": 27,
+        "relative_humidity_2m": 20,
+        "apparent_temperature": 23,
+        "weather_code": 2,
+        "wind_speed_10m": 21,
+        "pressure_msl": 1014,
+        "visibility": 54
+      },
+      "air_quality": {
+        "us_aqi": 30,
+        "pm2_5": 3.3,
+        "pm10": 5.9,
+        "uv_index": 4.8
+      },
+      "marine": {
+        "wave_height": 0.0,
+        "wave_period": 0.0
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          27,
+          25,
+          26,
+          32,
+          34,
+          33,
+          32
+        ],
+        "temperature_2m_min": [
+          18,
+          14,
+          16,
+          17,
+          19,
+          20,
+          21
+        ],
+        "weather_code": [
+          3,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "precipitation_probability_max": [
+          0,
+          3,
+          10,
+          2,
+          0,
+          0,
+          4
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Vienna",
+    "country": "Austria",
+    "lat": 48.2082,
+    "lon": 16.3738,
+    "emoji": "🎼",
+    "timezone": "Europe/Vienna",
+    "base_temp": 21,
+    "slug": "vienna",
+    "weather": {
+      "current": {
+        "temperature_2m": 22,
+        "relative_humidity_2m": 30,
+        "apparent_temperature": 18,
+        "weather_code": 2,
+        "wind_speed_10m": 20,
+        "pressure_msl": 1012,
+        "visibility": 46
+      },
+      "air_quality": {
+        "us_aqi": 33,
+        "pm2_5": 4.0,
+        "pm10": 7.1,
+        "uv_index": 3.5
+      },
+      "marine": {
+        "wave_height": 0.0,
+        "wave_period": 0.0
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          22,
+          24,
+          25,
+          29,
+          31,
+          34,
+          34
+        ],
+        "temperature_2m_min": [
+          18,
+          15,
+          15,
+          18,
+          18,
+          21,
+          22
+        ],
+        "weather_code": [
+          3,
+          3,
+          3,
+          61,
+          3,
+          3,
+          80
+        ],
+        "precipitation_probability_max": [
+          45,
+          8,
+          3,
+          5,
+          2,
+          2,
+          8
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Prague",
+    "country": "Czech Republic",
+    "lat": 50.0755,
+    "lon": 14.4378,
+    "emoji": "🏰",
+    "timezone": "Europe/Prague",
+    "base_temp": 20,
+    "slug": "prague",
+    "weather": {
+      "current": {
+        "temperature_2m": 22,
+        "relative_humidity_2m": 71,
+        "apparent_temperature": 24,
+        "weather_code": 0,
+        "wind_speed_10m": 26,
+        "pressure_msl": 1003,
+        "visibility": 9
+      },
+      "air_quality": {
+        "us_aqi": 28,
+        "pm2_5": 13.3,
+        "pm10": 21.7,
+        "uv_index": 8
+      },
+      "marine": {
+        "wave_height": 0,
+        "wave_period": 0
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          19,
+          19,
+          17,
+          18,
+          23,
+          23,
+          21
+        ],
+        "temperature_2m_min": [
+          14,
+          12,
+          8,
+          10,
+          14,
+          15,
+          15
+        ],
+        "weather_code": [
+          3,
+          61,
+          3,
+          3,
+          3,
+          2,
+          61
+        ],
+        "precipitation_probability_max": [
+          31,
+          21,
+          37,
+          40,
+          4,
+          46,
+          18
+        ]
+      },
+      "source": "offline-model",
+      "api_status": [
+        {
+          "source": "offline-model",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Warsaw",
+    "country": "Poland",
+    "lat": 52.2297,
+    "lon": 21.0122,
+    "emoji": "🏙️",
+    "timezone": "Europe/Warsaw",
+    "base_temp": 19,
+    "slug": "warsaw",
+    "weather": {
+      "current": {
+        "temperature_2m": 12,
+        "relative_humidity_2m": 80,
+        "apparent_temperature": 9,
+        "weather_code": 61,
+        "wind_speed_10m": 17,
+        "pressure_msl": 1006,
+        "visibility": 11
+      },
+      "air_quality": {
+        "us_aqi": 29,
+        "pm2_5": 3.4,
+        "pm10": 5.2,
+        "uv_index": 2.4
+      },
+      "marine": {
+        "wave_height": 0.0,
+        "wave_period": 0.0
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          16,
+          17,
+          20,
+          20,
+          24,
+          27,
+          31
+        ],
+        "temperature_2m_min": [
+          12,
+          12,
+          12,
+          10,
+          11,
+          16,
+          17
+        ],
+        "weather_code": [
+          65,
+          55,
+          51,
+          3,
+          3,
+          51,
+          2
+        ],
+        "precipitation_probability_max": [
+          100,
+          98,
+          71,
+          2,
+          18,
+          29,
+          0
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Stockholm",
+    "country": "Sweden",
+    "lat": 59.3293,
+    "lon": 18.0686,
+    "emoji": "🌲",
+    "timezone": "Europe/Stockholm",
+    "base_temp": 14,
+    "slug": "stockholm",
+    "weather": {
+      "current": {
+        "temperature_2m": 14,
+        "relative_humidity_2m": 72,
+        "apparent_temperature": 12,
+        "weather_code": 3,
+        "wind_speed_10m": 13,
+        "pressure_msl": 996,
+        "visibility": 6
+      },
+      "air_quality": {
+        "us_aqi": 33,
+        "pm2_5": 1.7,
+        "pm10": 2.9,
+        "uv_index": 1.8
+      },
+      "marine": {
+        "wave_height": 0.2,
+        "wave_period": 3.4
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          15,
+          16,
+          15,
+          21,
+          21,
+          24,
+          25
+        ],
+        "temperature_2m_min": [
+          12,
+          12,
+          12,
+          12,
+          13,
+          14,
+          15
+        ],
+        "weather_code": [
+          55,
+          63,
+          61,
+          3,
+          51,
+          2,
+          3
+        ],
+        "precipitation_probability_max": [
+          100,
+          100,
+          80,
+          6,
+          19,
+          19,
+          9
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Oslo",
+    "country": "Norway",
+    "lat": 59.9139,
+    "lon": 10.7522,
+    "emoji": "⛵",
+    "timezone": "Europe/Oslo",
+    "base_temp": 13,
+    "slug": "oslo",
+    "weather": {
+      "current": {
+        "temperature_2m": 21,
+        "relative_humidity_2m": 50,
+        "apparent_temperature": 18,
+        "weather_code": 3,
+        "wind_speed_10m": 22,
+        "pressure_msl": 1003,
+        "visibility": 36
+      },
+      "air_quality": {
+        "us_aqi": 28,
+        "pm2_5": 3.1,
+        "pm10": 3.9,
+        "uv_index": 1.9
+      },
+      "marine": {
+        "wave_height": 0.0,
+        "wave_period": 0.0
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          21,
+          20,
+          23,
+          19,
+          22,
+          22,
+          21
+        ],
+        "temperature_2m_min": [
+          14,
+          13,
+          12,
+          11,
+          13,
+          12,
+          15
+        ],
+        "weather_code": [
+          51,
+          3,
+          3,
+          51,
+          3,
+          3,
+          51
+        ],
+        "precipitation_probability_max": [
+          100,
+          53,
+          43,
+          12,
+          32,
+          10,
+          55
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Copenhagen",
+    "country": "Denmark",
+    "lat": 55.6761,
+    "lon": 12.5683,
+    "emoji": "🚲",
+    "timezone": "Europe/Copenhagen",
+    "base_temp": 16,
+    "slug": "copenhagen",
+    "weather": {
+      "current": {
+        "temperature_2m": 19,
+        "relative_humidity_2m": 66,
+        "apparent_temperature": 17,
+        "weather_code": 3,
+        "wind_speed_10m": 19,
+        "pressure_msl": 1003,
+        "visibility": 15
+      },
+      "air_quality": {
+        "us_aqi": 33,
+        "pm2_5": 4.2,
+        "pm10": 6.4,
+        "uv_index": 3.3
+      },
+      "marine": {
+        "wave_height": 0.4,
+        "wave_period": 2.5
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          20,
+          19,
+          22,
+          20,
+          22,
+          21,
+          23
+        ],
+        "temperature_2m_min": [
+          11,
+          14,
+          12,
+          11,
+          16,
+          15,
+          18
+        ],
+        "weather_code": [
+          61,
+          51,
+          1,
+          3,
+          51,
+          51,
+          63
+        ],
+        "precipitation_probability_max": [
+          100,
+          83,
+          0,
+          16,
+          58,
+          6,
+          17
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Helsinki",
+    "country": "Finland",
+    "lat": 60.1699,
+    "lon": 24.9384,
+    "emoji": "❄️",
+    "timezone": "Europe/Helsinki",
+    "base_temp": 12,
+    "slug": "helsinki",
+    "weather": {
+      "current": {
+        "temperature_2m": 14,
+        "relative_humidity_2m": 92,
+        "apparent_temperature": 13,
+        "weather_code": 3,
+        "wind_speed_10m": 17,
+        "pressure_msl": 1000,
+        "visibility": 5
+      },
+      "air_quality": {
+        "us_aqi": 36,
+        "pm2_5": 3.0,
+        "pm10": 3.5,
+        "uv_index": 1.6
+      },
+      "marine": {
+        "wave_height": 0.3,
+        "wave_period": 2.5
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          16,
+          16,
+          17,
+          18,
+          21,
+          18,
+          18
+        ],
+        "temperature_2m_min": [
+          11,
+          13,
+          13,
+          12,
+          12,
+          11,
+          14
+        ],
+        "weather_code": [
+          63,
+          61,
+          63,
+          63,
+          3,
+          0,
+          3
+        ],
+        "precipitation_probability_max": [
+          100,
+          97,
+          53,
+          57,
+          15,
+          11,
+          6
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Dublin",
+    "country": "Ireland",
+    "lat": 53.3498,
+    "lon": -6.2603,
+    "emoji": "☘️",
+    "timezone": "Europe/Dublin",
+    "base_temp": 15,
+    "slug": "dublin",
+    "weather": {
+      "current": {
+        "temperature_2m": 16,
+        "relative_humidity_2m": 60,
+        "apparent_temperature": 14,
+        "weather_code": 3,
+        "wind_speed_10m": 15,
+        "pressure_msl": 1021,
+        "visibility": 33
+      },
+      "air_quality": {
+        "us_aqi": 23,
+        "pm2_5": 4.4,
+        "pm10": 9.3,
+        "uv_index": 4.7
+      },
+      "marine": {
+        "wave_height": 0.0,
+        "wave_period": 0.0
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          16,
+          19,
+          21,
+          20,
+          20,
+          18,
+          20
+        ],
+        "temperature_2m_min": [
+          12,
+          13,
+          16,
+          15,
+          14,
+          16,
+          15
+        ],
+        "weather_code": [
+          3,
+          3,
+          51,
+          51,
+          55,
+          55,
+          55
+        ],
+        "precipitation_probability_max": [
+          0,
+          24,
+          62,
+          54,
+          57,
+          65,
+          59
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Lisbon",
+    "country": "Portugal",
+    "lat": 38.7223,
+    "lon": -9.1393,
+    "emoji": "🌉",
+    "timezone": "Europe/Lisbon",
+    "base_temp": 24,
+    "slug": "lisbon",
+    "weather": {
+      "current": {
+        "temperature_2m": 26,
+        "relative_humidity_2m": 44,
+        "apparent_temperature": 27,
+        "weather_code": 1,
+        "wind_speed_10m": 16,
+        "pressure_msl": 1015,
+        "visibility": 42
+      },
+      "air_quality": {
+        "us_aqi": 53,
+        "pm2_5": 10.4,
+        "pm10": 18.9,
+        "uv_index": 7.2
+      },
+      "marine": {
+        "wave_height": 0.5,
+        "wave_period": 8.6
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          27,
+          26,
+          28,
+          28,
+          28,
+          28,
+          25
+        ],
+        "temperature_2m_min": [
+          19,
+          18,
+          17,
+          17,
+          18,
+          17,
+          17
+        ],
+        "weather_code": [
+          3,
+          2,
+          2,
+          3,
+          3,
+          2,
+          2
+        ],
+        "precipitation_probability_max": [
+          0,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Athens",
+    "country": "Greece",
+    "lat": 37.9838,
+    "lon": 23.7275,
+    "emoji": "🏛️",
+    "timezone": "Europe/Athens",
+    "base_temp": 31,
+    "slug": "athens",
+    "weather": {
+      "current": {
+        "temperature_2m": 29,
+        "relative_humidity_2m": 33,
+        "apparent_temperature": 28,
+        "weather_code": 0,
+        "wind_speed_10m": 8,
+        "pressure_msl": 1014,
+        "visibility": 44
+      },
+      "air_quality": {
+        "us_aqi": 44,
+        "pm2_5": 7.6,
+        "pm10": 9.8,
+        "uv_index": 3.4
+      },
+      "marine": {
+        "wave_height": 0.3,
+        "wave_period": 2.0
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          29,
+          32,
+          32,
+          33,
+          30,
+          31,
+          33
+        ],
+        "temperature_2m_min": [
+          17,
+          18,
+          21,
+          22,
+          22,
+          21,
+          21
+        ],
+        "weather_code": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          0,
+          0
+        ],
+        "precipitation_probability_max": [
+          0,
+          0,
+          0,
+          46,
+          23,
+          1,
+          0
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Istanbul",
+    "country": "Turkey",
+    "lat": 41.0082,
+    "lon": 28.9784,
+    "emoji": "🕌",
+    "timezone": "Europe/Istanbul",
+    "base_temp": 26,
+    "slug": "istanbul",
+    "weather": {
+      "current": {
+        "temperature_2m": 24,
+        "relative_humidity_2m": 54,
+        "apparent_temperature": 24,
+        "weather_code": 0,
+        "wind_speed_10m": 10,
+        "pressure_msl": 1013,
+        "visibility": 40
+      },
+      "air_quality": {
+        "us_aqi": 43,
+        "pm2_5": 20.1,
+        "pm10": 25.9,
+        "uv_index": 2.6
+      },
+      "marine": {
+        "wave_height": 0.1,
+        "wave_period": 1.8
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          24,
+          27,
+          30,
+          27,
+          26,
+          26,
+          29
+        ],
+        "temperature_2m_min": [
+          16,
+          18,
+          20,
+          21,
+          20,
+          20,
+          19
+        ],
+        "weather_code": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          1
+        ],
+        "precipitation_probability_max": [
+          0,
+          0,
+          0,
+          3,
+          1,
+          13,
+          5
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Moscow",
+    "country": "Russia",
+    "lat": 55.7558,
+    "lon": 37.6173,
+    "emoji": "🧅",
+    "timezone": "Europe/Moscow",
+    "base_temp": 16,
+    "slug": "moscow",
+    "weather": {
+      "current": {
+        "temperature_2m": 18,
+        "relative_humidity_2m": 65,
+        "apparent_temperature": 18,
+        "weather_code": 3,
+        "wind_speed_10m": 5,
+        "pressure_msl": 1004,
+        "visibility": 38
+      },
+      "air_quality": {
+        "us_aqi": 76,
+        "pm2_5": 17.4,
+        "pm10": 21.0,
+        "uv_index": 1.6
+      },
+      "marine": {
+        "wave_height": 0.0,
+        "wave_period": 0.0
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          18,
+          22,
+          18,
+          18,
+          16,
+          21,
+          24
+        ],
+        "temperature_2m_min": [
+          14,
+          11,
+          12,
+          11,
+          13,
+          14,
+          14
+        ],
+        "weather_code": [
+          61,
+          80,
+          95,
+          80,
+          61,
+          3,
+          2
+        ],
+        "precipitation_probability_max": [
+          83,
+          75,
+          55,
+          64,
+          55,
+          31,
+          18
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Saint Petersburg",
+    "country": "Russia",
+    "lat": 59.9311,
+    "lon": 30.3609,
+    "emoji": "🎭",
+    "timezone": "Europe/Moscow",
+    "base_temp": 14,
+    "slug": "saint-petersburg",
+    "weather": {
+      "current": {
+        "temperature_2m": 22,
+        "relative_humidity_2m": 43,
+        "apparent_temperature": 20,
+        "weather_code": 3,
+        "wind_speed_10m": 12,
+        "pressure_msl": 1002,
+        "visibility": 50
+      },
+      "air_quality": {
+        "us_aqi": 31,
+        "pm2_5": 7.0,
+        "pm10": 9.6,
+        "uv_index": 1.6
+      },
+      "marine": {
+        "wave_height": 0.0,
+        "wave_period": 2.9
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          22,
+          21,
+          16,
+          18,
+          15,
+          17,
+          20
+        ],
+        "temperature_2m_min": [
+          13,
+          16,
+          14,
+          13,
+          14,
+          12,
+          14
+        ],
+        "weather_code": [
+          51,
+          61,
+          63,
+          61,
+          55,
+          3,
+          2
+        ],
+        "precipitation_probability_max": [
+          88,
+          100,
+          57,
+          76,
+          59,
+          18,
+          10
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Cairo",
+    "country": "Egypt",
+    "lat": 30.0444,
+    "lon": 31.2357,
+    "emoji": "🐪",
+    "timezone": "Africa/Cairo",
+    "base_temp": 35,
+    "slug": "cairo",
+    "weather": {
+      "current": {
+        "temperature_2m": 34,
+        "relative_humidity_2m": 30,
+        "apparent_temperature": 34,
+        "weather_code": 2,
+        "wind_speed_10m": 12,
+        "pressure_msl": 1009,
+        "visibility": 46
+      },
+      "air_quality": {
+        "us_aqi": 59,
+        "pm2_5": 12.7,
+        "pm10": 20.5,
+        "uv_index": 2.6
+      },
+      "marine": {
+        "wave_height": 0.0,
+        "wave_period": 0.0
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          35,
+          34,
+          35,
+          36,
+          36,
+          36,
+          35
+        ],
+        "temperature_2m_min": [
+          22,
+          22,
+          21,
+          22,
+          22,
+          22,
+          22
+        ],
+        "weather_code": [
+          2,
+          2,
+          1,
+          2,
+          2,
+          0,
+          2
+        ],
+        "precipitation_probability_max": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Cape Town",
+    "country": "South Africa",
+    "lat": -33.9249,
+    "lon": 18.4241,
+    "emoji": "⛰️",
+    "timezone": "Africa/Johannesburg",
+    "base_temp": 18,
+    "slug": "cape-town",
+    "weather": {
+      "current": {
+        "temperature_2m": 13,
+        "relative_humidity_2m": 86,
+        "apparent_temperature": 11,
+        "weather_code": 51,
+        "wind_speed_10m": 15,
+        "pressure_msl": 1022,
+        "visibility": 18
+      },
+      "air_quality": {
+        "us_aqi": 86,
+        "pm2_5": 6.1,
+        "pm10": 9.6,
+        "uv_index": 0.4
+      },
+      "marine": {
+        "wave_height": 2.3,
+        "wave_period": 9.8
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          14,
+          16,
+          17,
+          19,
+          17,
+          21,
+          24
+        ],
+        "temperature_2m_min": [
+          7,
+          7,
+          12,
+          12,
+          14,
+          13,
+          14
+        ],
+        "weather_code": [
+          63,
+          53,
+          0,
+          0,
+          2,
+          0,
+          0
+        ],
+        "precipitation_probability_max": [
+          100,
+          68,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Johannesburg",
+    "country": "South Africa",
+    "lat": -26.2041,
+    "lon": 28.0473,
+    "emoji": "🌇",
+    "timezone": "Africa/Johannesburg",
+    "base_temp": 20,
+    "slug": "johannesburg",
+    "weather": {
+      "current": {
+        "temperature_2m": 16,
+        "relative_humidity_2m": 51,
+        "apparent_temperature": 13,
+        "weather_code": 0,
+        "wind_speed_10m": 14,
+        "pressure_msl": 1024,
+        "visibility": 41
+      },
+      "air_quality": {
+        "us_aqi": 89,
+        "pm2_5": 21.2,
+        "pm10": 21.9,
+        "uv_index": 0.5
+      },
+      "marine": {
+        "wave_height": 0.0,
+        "wave_period": 0.0
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          18,
+          19,
+          16,
+          16,
+          16,
+          17,
+          14
+        ],
+        "temperature_2m_min": [
+          8,
+          8,
+          7,
+          7,
+          7,
+          7,
+          9
+        ],
+        "weather_code": [
+          3,
+          0,
+          3,
+          3,
+          2,
+          2,
+          51
+        ],
+        "precipitation_probability_max": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          22,
+          33
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Nairobi",
+    "country": "Kenya",
+    "lat": -1.2921,
+    "lon": 36.8219,
+    "emoji": "🦒",
+    "timezone": "Africa/Nairobi",
+    "base_temp": 22,
+    "slug": "nairobi",
+    "weather": {
+      "current": {
+        "temperature_2m": 22,
+        "relative_humidity_2m": 44,
+        "apparent_temperature": 21,
+        "weather_code": 3,
+        "wind_speed_10m": 9,
+        "pressure_msl": 1017,
+        "visibility": 28
+      },
+      "air_quality": {
+        "us_aqi": 54,
+        "pm2_5": 10.5,
+        "pm10": 14.0,
+        "uv_index": 0.7
+      },
+      "marine": {
+        "wave_height": 0.0,
+        "wave_period": 0.0
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          23,
+          25,
+          25,
+          24,
+          23,
+          24,
+          23
+        ],
+        "temperature_2m_min": [
+          14,
+          12,
+          13,
+          14,
+          14,
+          14,
+          12
+        ],
+        "weather_code": [
+          51,
+          3,
+          61,
+          61,
+          55,
+          51,
+          3
+        ],
+        "precipitation_probability_max": [
+          22,
+          10,
+          63,
+          74,
+          81,
+          47,
+          22
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Lagos",
+    "country": "Nigeria",
+    "lat": 6.5244,
+    "lon": 3.3792,
+    "emoji": "🌊",
+    "timezone": "Africa/Lagos",
+    "base_temp": 29,
+    "slug": "lagos",
+    "weather": {
+      "current": {
+        "temperature_2m": 27,
+        "relative_humidity_2m": 84,
+        "apparent_temperature": 32,
+        "weather_code": 55,
+        "wind_speed_10m": 10,
+        "pressure_msl": 1013,
+        "visibility": 3
+      },
+      "air_quality": {
+        "us_aqi": 84,
+        "pm2_5": 14.6,
+        "pm10": 17.5,
+        "uv_index": 1.1
+      },
+      "marine": {
+        "wave_height": 0.8,
+        "wave_period": 9.2
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          29,
+          29,
+          29,
+          28,
+          29,
+          28,
+          26
+        ],
+        "temperature_2m_min": [
+          25,
+          24,
+          25,
+          25,
+          25,
+          25,
+          24
+        ],
+        "weather_code": [
+          95,
+          81,
+          81,
+          81,
+          53,
+          55,
+          80
+        ],
+        "precipitation_probability_max": [
+          98,
+          100,
+          92,
+          100,
+          96,
+          96,
+          98
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Casablanca",
+    "country": "Morocco",
+    "lat": 33.5731,
+    "lon": -7.5898,
+    "emoji": "🕌",
+    "timezone": "Africa/Casablanca",
+    "base_temp": 24,
+    "slug": "casablanca",
+    "weather": {
+      "current": {
+        "temperature_2m": 25,
+        "relative_humidity_2m": 57,
+        "apparent_temperature": 27,
+        "weather_code": 1,
+        "wind_speed_10m": 14,
+        "pressure_msl": 1018,
+        "visibility": 39
+      },
+      "air_quality": {
+        "us_aqi": 54,
+        "pm2_5": 12.6,
+        "pm10": 19.7,
+        "uv_index": 8.0
+      },
+      "marine": {
+        "wave_height": 1.0,
+        "wave_period": 8.2
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          26,
+          25,
+          26,
+          26,
+          27,
+          26,
+          25
+        ],
+        "temperature_2m_min": [
+          18,
+          19,
+          20,
+          20,
+          21,
+          21,
+          20
+        ],
+        "weather_code": [
+          3,
+          3,
+          3,
+          45,
+          3,
+          3,
+          3
+        ],
+        "precipitation_probability_max": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          3
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Riyadh",
+    "country": "Saudi Arabia",
+    "lat": 24.7136,
+    "lon": 46.6753,
+    "emoji": "🏜️",
+    "timezone": "Asia/Riyadh",
+    "base_temp": 40,
+    "slug": "riyadh",
+    "weather": {
+      "current": {
+        "temperature_2m": 43,
+        "relative_humidity_2m": 6,
+        "apparent_temperature": 40,
+        "weather_code": 0,
+        "wind_speed_10m": 5,
+        "pressure_msl": 1002,
+        "visibility": 17
+      },
+      "air_quality": {
+        "us_aqi": 480,
+        "pm2_5": 55.9,
+        "pm10": 493.6,
+        "uv_index": 0.6
+      },
+      "marine": {
+        "wave_height": 0.0,
+        "wave_period": 0.0
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          44,
+          45,
+          42,
+          41,
+          42,
+          43,
+          43
+        ],
+        "temperature_2m_min": [
+          32,
+          32,
+          31,
+          30,
+          30,
+          30,
+          30
+        ],
+        "weather_code": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precipitation_probability_max": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Doha",
+    "country": "Qatar",
+    "lat": 25.2854,
+    "lon": 51.531,
+    "emoji": "🌇",
+    "timezone": "Asia/Qatar",
+    "base_temp": 39,
+    "slug": "doha",
+    "weather": {
+      "current": {
+        "temperature_2m": 38,
+        "relative_humidity_2m": 37,
+        "apparent_temperature": 39,
+        "weather_code": 0,
+        "wind_speed_10m": 14,
+        "pressure_msl": 1001,
+        "visibility": 18
+      },
+      "air_quality": {
+        "us_aqi": 85,
+        "pm2_5": 25.9,
+        "pm10": 75.2,
+        "uv_index": 0.5
+      },
+      "marine": {
+        "wave_height": 0.5,
+        "wave_period": 3.0
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          44,
+          44,
+          41,
+          41,
+          40,
+          35,
+          40
+        ],
+        "temperature_2m_min": [
+          32,
+          31,
+          32,
+          32,
+          29,
+          26,
+          26
+        ],
+        "weather_code": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          95,
+          95
+        ],
+        "precipitation_probability_max": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Tel Aviv",
+    "country": "Israel",
+    "lat": 32.0853,
+    "lon": 34.7818,
+    "emoji": "🏖️",
+    "timezone": "Asia/Jerusalem",
+    "base_temp": 29,
+    "slug": "tel-aviv",
+    "weather": {
+      "current": {
+        "temperature_2m": 27,
+        "relative_humidity_2m": 61,
+        "apparent_temperature": 29,
+        "weather_code": 2,
+        "wind_speed_10m": 12,
+        "pressure_msl": 1010,
+        "visibility": 38
+      },
+      "air_quality": {
+        "us_aqi": 43,
+        "pm2_5": 11.3,
+        "pm10": 19.1,
+        "uv_index": 2.2
+      },
+      "marine": {
+        "wave_height": 0.6,
+        "wave_period": 5.2
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          28,
+          28,
+          28,
+          28,
+          28,
+          28,
+          29
+        ],
+        "temperature_2m_min": [
+          20,
+          22,
+          21,
+          22,
+          23,
+          21,
+          22
+        ],
+        "weather_code": [
+          2,
+          3,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "precipitation_probability_max": [
+          0,
+          18,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Mumbai",
+    "country": "India",
+    "lat": 19.076,
+    "lon": 72.8777,
+    "emoji": "🚉",
+    "timezone": "Asia/Kolkata",
+    "base_temp": 32,
+    "slug": "mumbai",
+    "weather": {
+      "current": {
+        "temperature_2m": 30,
+        "relative_humidity_2m": 68,
+        "apparent_temperature": 34,
+        "weather_code": 51,
+        "wind_speed_10m": 14,
+        "pressure_msl": 1008,
+        "visibility": 7
+      },
+      "air_quality": {
+        "us_aqi": 67,
+        "pm2_5": 17.0,
+        "pm10": 33.2,
+        "uv_index": 4.0
+      },
+      "marine": {
+        "wave_height": 1.3,
+        "wave_period": 7.2
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          34,
+          33,
+          33,
+          33,
+          33,
+          34,
+          32
+        ],
+        "temperature_2m_min": [
+          29,
+          29,
+          29,
+          28,
+          29,
+          30,
+          29
+        ],
+        "weather_code": [
+          95,
+          51,
+          51,
+          51,
+          2,
+          2,
+          51
+        ],
+        "precipitation_probability_max": [
+          71,
+          57,
+          42,
+          55,
+          37,
+          51,
+          75
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Delhi",
+    "country": "India",
+    "lat": 28.7041,
+    "lon": 77.1025,
+    "emoji": "🕌",
+    "timezone": "Asia/Kolkata",
+    "base_temp": 36,
+    "slug": "delhi",
+    "weather": {
+      "current": {
+        "temperature_2m": 34,
+        "relative_humidity_2m": 44,
+        "apparent_temperature": 37,
+        "weather_code": 0,
+        "wind_speed_10m": 2,
+        "pressure_msl": 1000,
+        "visibility": 12
+      },
+      "air_quality": {
+        "us_aqi": 241,
+        "pm2_5": 106.6,
+        "pm10": 362.3,
+        "uv_index": 4.0
+      },
+      "marine": {
+        "wave_height": 0.0,
+        "wave_period": 0.0
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          38,
+          38,
+          39,
+          40,
+          40,
+          39,
+          40
+        ],
+        "temperature_2m_min": [
+          27,
+          28,
+          26,
+          28,
+          29,
+          26,
+          30
+        ],
+        "weather_code": [
+          51,
+          53,
+          51,
+          0,
+          3,
+          53,
+          0
+        ],
+        "precipitation_probability_max": [
+          39,
+          37,
+          35,
+          15,
+          33,
+          37,
+          20
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Bengaluru",
+    "country": "India",
+    "lat": 12.9716,
+    "lon": 77.5946,
+    "emoji": "🌳",
+    "timezone": "Asia/Kolkata",
+    "base_temp": 27,
+    "slug": "bengaluru",
+    "weather": {
+      "current": {
+        "temperature_2m": 25,
+        "relative_humidity_2m": 71,
+        "apparent_temperature": 26,
+        "weather_code": 1,
+        "wind_speed_10m": 10,
+        "pressure_msl": 1011,
+        "visibility": 31
+      },
+      "air_quality": {
+        "us_aqi": 49,
+        "pm2_5": 11.6,
+        "pm10": 17.1,
+        "uv_index": 4.0
+      },
+      "marine": {
+        "wave_height": 0.0,
+        "wave_period": 0.0
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          28,
+          31,
+          32,
+          31,
+          30,
+          30,
+          29
+        ],
+        "temperature_2m_min": [
+          21,
+          20,
+          20,
+          21,
+          21,
+          20,
+          20
+        ],
+        "weather_code": [
+          61,
+          51,
+          51,
+          81,
+          53,
+          3,
+          51
+        ],
+        "precipitation_probability_max": [
+          75,
+          25,
+          41,
+          74,
+          57,
+          31,
+          78
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Kathmandu",
+    "country": "Nepal",
+    "lat": 27.7172,
+    "lon": 85.324,
+    "emoji": "🏔️",
+    "timezone": "Asia/Kathmandu",
+    "base_temp": 21,
+    "slug": "kathmandu",
+    "weather": {
+      "current": {
+        "temperature_2m": 21,
+        "relative_humidity_2m": 93,
+        "apparent_temperature": 25,
+        "weather_code": 0,
+        "wind_speed_10m": 3,
+        "pressure_msl": 1007,
+        "visibility": 8
+      },
+      "air_quality": {
+        "us_aqi": 91,
+        "pm2_5": 47.0,
+        "pm10": 66.6,
+        "uv_index": 4.0
+      },
+      "marine": {
+        "wave_height": 0.0,
+        "wave_period": 0.0
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          26,
+          27,
+          27,
+          28,
+          28,
+          28,
+          28
+        ],
+        "temperature_2m_min": [
+          19,
+          18,
+          18,
+          20,
+          19,
+          19,
+          20
+        ],
+        "weather_code": [
+          63,
+          61,
+          53,
+          53,
+          51,
+          53,
+          55
+        ],
+        "precipitation_probability_max": [
+          100,
+          100,
+          78,
+          84,
+          90,
+          99,
+          98
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Colombo",
+    "country": "Sri Lanka",
+    "lat": 6.9271,
+    "lon": 79.8612,
+    "emoji": "🌴",
+    "timezone": "Asia/Colombo",
+    "base_temp": 30,
+    "slug": "colombo",
+    "weather": {
+      "current": {
+        "temperature_2m": 28,
+        "relative_humidity_2m": 85,
+        "apparent_temperature": 32,
+        "weather_code": 2,
+        "wind_speed_10m": 14,
+        "pressure_msl": 1010,
+        "visibility": 15
+      },
+      "air_quality": {
+        "us_aqi": 50,
+        "pm2_5": 18.0,
+        "pm10": 29.0,
+        "uv_index": 4.0
+      },
+      "marine": {
+        "wave_height": 1.5,
+        "wave_period": 7.7
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          30,
+          29,
+          29,
+          28,
+          29,
+          28,
+          28
+        ],
+        "temperature_2m_min": [
+          27,
+          25,
+          24,
+          24,
+          24,
+          25,
+          25
+        ],
+        "weather_code": [
+          51,
+          80,
+          81,
+          80,
+          80,
+          55,
+          53
+        ],
+        "precipitation_probability_max": [
+          92,
+          96,
+          100,
+          100,
+          98,
+          96,
+          84
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Karachi",
+    "country": "Pakistan",
+    "lat": 24.8607,
+    "lon": 67.0011,
+    "emoji": "🌊",
+    "timezone": "Asia/Karachi",
+    "base_temp": 34,
+    "slug": "karachi",
+    "weather": {
+      "current": {
+        "temperature_2m": 30,
+        "relative_humidity_2m": 74,
+        "apparent_temperature": 34,
+        "weather_code": 1,
+        "wind_speed_10m": 20,
+        "pressure_msl": 1004,
+        "visibility": 11
+      },
+      "air_quality": {
+        "us_aqi": 57,
+        "pm2_5": 14.5,
+        "pm10": 34.7,
+        "uv_index": 4.0
+      },
+      "marine": {
+        "wave_height": 2.2,
+        "wave_period": 7.8
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          33,
+          33,
+          33,
+          32,
+          32,
+          33,
+          33
+        ],
+        "temperature_2m_min": [
+          29,
+          29,
+          29,
+          29,
+          29,
+          29,
+          29
+        ],
+        "weather_code": [
+          51,
+          51,
+          51,
+          51,
+          51,
+          51,
+          51
+        ],
+        "precipitation_probability_max": [
+          4,
+          2,
+          2,
+          0,
+          2,
+          0,
+          0
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Dhaka",
+    "country": "Bangladesh",
+    "lat": 23.8103,
+    "lon": 90.4125,
+    "emoji": "🚲",
+    "timezone": "Asia/Dhaka",
+    "base_temp": 31,
+    "slug": "dhaka",
+    "weather": {
+      "current": {
+        "temperature_2m": 28,
+        "relative_humidity_2m": 87,
+        "apparent_temperature": 34,
+        "weather_code": 3,
+        "wind_speed_10m": 9,
+        "pressure_msl": 1003,
+        "visibility": 12
+      },
+      "air_quality": {
+        "us_aqi": 151,
+        "pm2_5": 40.4,
+        "pm10": 41.9,
+        "uv_index": 4.0
+      },
+      "marine": {
+        "wave_height": 0.0,
+        "wave_period": 0.0
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          32,
+          31,
+          33,
+          34,
+          32,
+          32,
+          34
+        ],
+        "temperature_2m_min": [
+          27,
+          27,
+          26,
+          27,
+          27,
+          27,
+          27
+        ],
+        "weather_code": [
+          95,
+          95,
+          95,
+          95,
+          95,
+          95,
+          95
+        ],
+        "precipitation_probability_max": [
+          97,
+          75,
+          68,
+          71,
+          71,
+          86,
+          91
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Jakarta",
+    "country": "Indonesia",
+    "lat": -6.2088,
+    "lon": 106.8456,
+    "emoji": "🌴",
+    "timezone": "Asia/Jakarta",
+    "base_temp": 31,
+    "slug": "jakarta",
+    "weather": {
+      "current": {
+        "temperature_2m": 27,
+        "relative_humidity_2m": 84,
+        "apparent_temperature": 33,
+        "weather_code": 1,
+        "wind_speed_10m": 5,
+        "pressure_msl": 1012,
+        "visibility": 10
+      },
+      "air_quality": {
+        "us_aqi": 161,
+        "pm2_5": 98.5,
+        "pm10": 99.7,
+        "uv_index": 4.0
+      },
+      "marine": {
+        "wave_height": 0.0,
+        "wave_period": 0.0
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          32,
+          31,
+          32,
+          33,
+          33,
+          32,
+          32
+        ],
+        "temperature_2m_min": [
+          26,
+          25,
+          25,
+          25,
+          24,
+          24,
+          24
+        ],
+        "weather_code": [
+          95,
+          95,
+          51,
+          53,
+          53,
+          51,
+          51
+        ],
+        "precipitation_probability_max": [
+          76,
+          98,
+          66,
+          78,
+          71,
+          76,
+          84
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Bali",
+    "country": "Indonesia",
+    "lat": -8.3405,
+    "lon": 115.092,
+    "emoji": "🏝️",
+    "timezone": "Asia/Makassar",
+    "base_temp": 29,
+    "slug": "bali",
+    "weather": {
+      "current": {
+        "temperature_2m": 13,
+        "relative_humidity_2m": 100,
+        "apparent_temperature": 12,
+        "weather_code": 3,
+        "wind_speed_10m": 8,
+        "pressure_msl": 1017,
+        "visibility": 0
+      },
+      "air_quality": {
+        "us_aqi": 54,
+        "pm2_5": 26.6,
+        "pm10": 28.6,
+        "uv_index": 4.0
+      },
+      "marine": {
+        "wave_height": 1.6,
+        "wave_period": 12.5
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          18,
+          19,
+          20,
+          20,
+          20,
+          20,
+          18
+        ],
+        "temperature_2m_min": [
+          13,
+          13,
+          12,
+          13,
+          12,
+          12,
+          13
+        ],
+        "weather_code": [
+          55,
+          53,
+          53,
+          55,
+          51,
+          51,
+          55
+        ],
+        "precipitation_probability_max": [
+          98,
+          91,
+          51,
+          59,
+          61,
+          83,
+          92
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Kuala Lumpur",
+    "country": "Malaysia",
+    "lat": 3.139,
+    "lon": 101.6869,
+    "emoji": "🏙️",
+    "timezone": "Asia/Kuala_Lumpur",
+    "base_temp": 31,
+    "slug": "kuala-lumpur",
+    "weather": {
+      "current": {
+        "temperature_2m": 26,
+        "relative_humidity_2m": 97,
+        "apparent_temperature": 33,
+        "weather_code": 3,
+        "wind_speed_10m": 0,
+        "pressure_msl": 1013,
+        "visibility": 4
+      },
+      "air_quality": {
+        "us_aqi": 111,
+        "pm2_5": 43.3,
+        "pm10": 43.5,
+        "uv_index": 4.0
+      },
+      "marine": {
+        "wave_height": 0.0,
+        "wave_period": 0.0
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          34,
+          32,
+          32,
+          32,
+          29,
+          32,
+          31
+        ],
+        "temperature_2m_min": [
+          25,
+          24,
+          25,
+          23,
+          24,
+          24,
+          23
+        ],
+        "weather_code": [
+          81,
+          81,
+          95,
+          81,
+          81,
+          95,
+          53
+        ],
+        "precipitation_probability_max": [
+          100,
+          86,
+          86,
+          82,
+          88,
+          84,
+          92
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Manila",
+    "country": "Philippines",
+    "lat": 14.5995,
+    "lon": 120.9842,
+    "emoji": "🌊",
+    "timezone": "Asia/Manila",
+    "base_temp": 32,
+    "slug": "manila",
+    "weather": {
+      "current": {
+        "temperature_2m": 29,
+        "relative_humidity_2m": 79,
+        "apparent_temperature": 35,
+        "weather_code": 1,
+        "wind_speed_10m": 6,
+        "pressure_msl": 1012,
+        "visibility": 30
+      },
+      "air_quality": {
+        "us_aqi": 71,
+        "pm2_5": 22.2,
+        "pm10": 23.9,
+        "uv_index": 4.0
+      },
+      "marine": {
+        "wave_height": 0.2,
+        "wave_period": 3.1
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          32,
+          31,
+          33,
+          34,
+          34,
+          33,
+          33
+        ],
+        "temperature_2m_min": [
+          26,
+          27,
+          26,
+          26,
+          26,
+          26,
+          25
+        ],
+        "weather_code": [
+          51,
+          55,
+          55,
+          95,
+          95,
+          95,
+          95
+        ],
+        "precipitation_probability_max": [
+          84,
+          83,
+          91,
+          78,
+          81,
+          85,
+          86
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Hanoi",
+    "country": "Vietnam",
+    "lat": 21.0278,
+    "lon": 105.8342,
+    "emoji": "🌾",
+    "timezone": "Asia/Bangkok",
+    "base_temp": 30,
+    "slug": "hanoi",
+    "weather": {
+      "current": {
+        "temperature_2m": 31,
+        "relative_humidity_2m": 78,
+        "apparent_temperature": 37,
+        "weather_code": 95,
+        "wind_speed_10m": 12,
+        "pressure_msl": 1003,
+        "visibility": 19
+      },
+      "air_quality": {
+        "us_aqi": 98,
+        "pm2_5": 57.9,
+        "pm10": 60.1,
+        "uv_index": 4.0
+      },
+      "marine": {
+        "wave_height": 0.0,
+        "wave_period": 0.0
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          35,
+          35,
+          31,
+          32,
+          33,
+          33,
+          34
+        ],
+        "temperature_2m_min": [
+          28,
+          28,
+          27,
+          27,
+          26,
+          28,
+          27
+        ],
+        "weather_code": [
+          95,
+          95,
+          95,
+          95,
+          95,
+          95,
+          95
+        ],
+        "precipitation_probability_max": [
+          12,
+          59,
+          67,
+          55,
+          45,
+          33,
+          29
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Ho Chi Minh City",
+    "country": "Vietnam",
+    "lat": 10.8231,
+    "lon": 106.6297,
+    "emoji": "🛵",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "base_temp": 33,
+    "slug": "ho-chi-minh-city",
+    "weather": {
+      "current": {
+        "temperature_2m": 27,
+        "relative_humidity_2m": 93,
+        "apparent_temperature": 34,
+        "weather_code": 0,
+        "wind_speed_10m": 1,
+        "pressure_msl": 1011,
+        "visibility": 18
+      },
+      "air_quality": {
+        "us_aqi": 143,
+        "pm2_5": 70.8,
+        "pm10": 72.9,
+        "uv_index": 4.0
+      },
+      "marine": {
+        "wave_height": 0.0,
+        "wave_period": 0.0
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          31,
+          34,
+          32,
+          32,
+          30,
+          32,
+          32
+        ],
+        "temperature_2m_min": [
+          25,
+          25,
+          25,
+          24,
+          24,
+          25,
+          25
+        ],
+        "weather_code": [
+          95,
+          82,
+          95,
+          95,
+          81,
+          80,
+          95
+        ],
+        "precipitation_probability_max": [
+          100,
+          95,
+          94,
+          93,
+          95,
+          90,
+          78
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Taipei",
+    "country": "Taiwan",
+    "lat": 25.033,
+    "lon": 121.5654,
+    "emoji": "🏙️",
+    "timezone": "Asia/Taipei",
+    "base_temp": 29,
+    "slug": "taipei",
+    "weather": {
+      "current": {
+        "temperature_2m": 25,
+        "relative_humidity_2m": 97,
+        "apparent_temperature": 30,
+        "weather_code": 3,
+        "wind_speed_10m": 7,
+        "pressure_msl": 1007,
+        "visibility": 13
+      },
+      "air_quality": {
+        "us_aqi": 89,
+        "pm2_5": 27.2,
+        "pm10": 27.7,
+        "uv_index": 4.0
+      },
+      "marine": {
+        "wave_height": 0.0,
+        "wave_period": 0.0
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          28,
+          30,
+          30,
+          29,
+          30,
+          32,
+          33
+        ],
+        "temperature_2m_min": [
+          24,
+          24,
+          24,
+          24,
+          25,
+          24,
+          23
+        ],
+        "weather_code": [
+          61,
+          63,
+          81,
+          51,
+          51,
+          51,
+          3
+        ],
+        "precipitation_probability_max": [
+          99,
+          90,
+          90,
+          56,
+          66,
+          45,
+          8
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Osaka",
+    "country": "Japan",
+    "lat": 34.6937,
+    "lon": 135.5023,
+    "emoji": "🏯",
+    "timezone": "Asia/Tokyo",
+    "base_temp": 25,
+    "slug": "osaka",
+    "weather": {
+      "current": {
+        "temperature_2m": 21,
+        "relative_humidity_2m": 69,
+        "apparent_temperature": 22,
+        "weather_code": 1,
+        "wind_speed_10m": 7,
+        "pressure_msl": 1014,
+        "visibility": 27
+      },
+      "air_quality": {
+        "us_aqi": 107,
+        "pm2_5": 15.0,
+        "pm10": 21.4,
+        "uv_index": 4.0
+      },
+      "marine": {
+        "wave_height": 0.1,
+        "wave_period": 3.6
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          27,
+          26,
+          28,
+          28,
+          27,
+          30,
+          31
+        ],
+        "temperature_2m_min": [
+          20,
+          20,
+          18,
+          19,
+          20,
+          21,
+          22
+        ],
+        "weather_code": [
+          51,
+          51,
+          3,
+          53,
+          51,
+          3,
+          53
+        ],
+        "precipitation_probability_max": [
+          80,
+          43,
+          3,
+          25,
+          31,
+          20,
+          60
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Kyoto",
+    "country": "Japan",
+    "lat": 35.0116,
+    "lon": 135.7681,
+    "emoji": "⛩️",
+    "timezone": "Asia/Tokyo",
+    "base_temp": 24,
+    "slug": "kyoto",
+    "weather": {
+      "current": {
+        "temperature_2m": 21,
+        "relative_humidity_2m": 74,
+        "apparent_temperature": 22,
+        "weather_code": 2,
+        "wind_speed_10m": 4,
+        "pressure_msl": 1014,
+        "visibility": 23
+      },
+      "air_quality": {
+        "us_aqi": 87,
+        "pm2_5": 10.8,
+        "pm10": 16.6,
+        "uv_index": 4.0
+      },
+      "marine": {
+        "wave_height": 0.0,
+        "wave_period": 0.0
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          27,
+          26,
+          30,
+          28,
+          28,
+          31,
+          30
+        ],
+        "temperature_2m_min": [
+          20,
+          19,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "weather_code": [
+          3,
+          51,
+          3,
+          51,
+          51,
+          3,
+          51
+        ],
+        "precipitation_probability_max": [
+          49,
+          36,
+          4,
+          22,
+          61,
+          33,
+          53
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Melbourne",
+    "country": "Australia",
+    "lat": -37.8136,
+    "lon": 144.9631,
+    "emoji": "☕",
+    "timezone": "Australia/Melbourne",
+    "base_temp": 16,
+    "slug": "melbourne",
+    "weather": {
+      "current": {
+        "temperature_2m": 7,
+        "relative_humidity_2m": 90,
+        "apparent_temperature": 6,
+        "weather_code": 0,
+        "wind_speed_10m": 1,
+        "pressure_msl": 1031,
+        "visibility": 42
+      },
+      "air_quality": {
+        "us_aqi": 35,
+        "pm2_5": 13.2,
+        "pm10": 16.6,
+        "uv_index": 4.0
+      },
+      "marine": {
+        "wave_height": 0.3,
+        "wave_period": 5.6
+      },
+      "daily": {
+        "time": [
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20",
+          "2026-06-21"
+        ],
+        "temperature_2m_max": [
+          16,
+          18,
+          18,
+          17,
+          15,
+          15,
+          13
+        ],
+        "temperature_2m_min": [
+          6,
+          15,
+          16,
+          14,
+          11,
+          10,
+          9
+        ],
+        "weather_code": [
+          3,
+          55,
+          51,
+          53,
+          51,
+          61,
+          51
+        ],
+        "precipitation_probability_max": [
+          2,
+          63,
+          43,
+          58,
+          47,
+          49,
+          34
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Brisbane",
+    "country": "Australia",
+    "lat": -27.4698,
+    "lon": 153.0251,
+    "emoji": "🌞",
+    "timezone": "Australia/Brisbane",
+    "base_temp": 23,
+    "slug": "brisbane",
+    "weather": {
+      "current": {
+        "temperature_2m": 15,
+        "relative_humidity_2m": 90,
+        "apparent_temperature": 16,
+        "weather_code": 1,
+        "wind_speed_10m": 6,
+        "pressure_msl": 1028,
+        "visibility": 42
+      },
+      "air_quality": {
+        "us_aqi": 33,
+        "pm2_5": 8.6,
+        "pm10": 11.4,
+        "uv_index": 4.0
+      },
+      "marine": {
+        "wave_height": 0.0,
+        "wave_period": 0.0
+      },
+      "daily": {
+        "time": [
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20",
+          "2026-06-21"
+        ],
+        "temperature_2m_max": [
+          21,
+          22,
+          21,
+          21,
+          22,
+          22,
+          22
+        ],
+        "temperature_2m_min": [
+          14,
+          14,
+          14,
+          13,
+          13,
+          12,
+          15
+        ],
+        "weather_code": [
+          51,
+          51,
+          3,
+          51,
+          2,
+          51,
+          51
+        ],
+        "precipitation_probability_max": [
+          24,
+          41,
+          10,
+          11,
+          9,
+          29,
+          27
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Auckland",
+    "country": "New Zealand",
+    "lat": -36.8485,
+    "lon": 174.7633,
+    "emoji": "⛵",
+    "timezone": "Pacific/Auckland",
+    "base_temp": 15,
+    "slug": "auckland",
+    "weather": {
+      "current": {
+        "temperature_2m": 11,
+        "relative_humidity_2m": 97,
+        "apparent_temperature": 10,
+        "weather_code": 3,
+        "wind_speed_10m": 10,
+        "pressure_msl": 1031,
+        "visibility": 0
+      },
+      "air_quality": {
+        "us_aqi": 51,
+        "pm2_5": 5.5,
+        "pm10": 6.7,
+        "uv_index": 4.0
+      },
+      "marine": {
+        "wave_height": 0.0,
+        "wave_period": 4.4
+      },
+      "daily": {
+        "time": [
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20",
+          "2026-06-21"
+        ],
+        "temperature_2m_max": [
+          17,
+          15,
+          15,
+          14,
+          16,
+          17,
+          18
+        ],
+        "temperature_2m_min": [
+          11,
+          11,
+          11,
+          8,
+          12,
+          13,
+          13
+        ],
+        "weather_code": [
+          3,
+          63,
+          51,
+          51,
+          51,
+          3,
+          61
+        ],
+        "precipitation_probability_max": [
+          4,
+          67,
+          35,
+          10,
+          10,
+          14,
+          42
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Honolulu",
+    "country": "USA",
+    "lat": 21.3069,
+    "lon": -157.8583,
+    "emoji": "🏝️",
+    "timezone": "Pacific/Honolulu",
+    "base_temp": 28,
+    "slug": "honolulu",
+    "weather": {
+      "current": {
+        "temperature_2m": 22,
+        "relative_humidity_2m": 75,
+        "apparent_temperature": 23,
+        "weather_code": 0,
+        "wind_speed_10m": 10,
+        "pressure_msl": 1014,
+        "visibility": 26
+      },
+      "air_quality": {
+        "us_aqi": 31,
+        "pm2_5": 7.3,
+        "pm10": 12.4,
+        "uv_index": 4.0
+      },
+      "marine": {
+        "wave_height": 1.0,
+        "wave_period": 15.6
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          28,
+          28,
+          28,
+          29,
+          30,
+          30,
+          29
+        ],
+        "temperature_2m_min": [
+          22,
+          21,
+          21,
+          21,
+          22,
+          22,
+          23
+        ],
+        "weather_code": [
+          53,
+          51,
+          51,
+          53,
+          1,
+          51,
+          51
+        ],
+        "precipitation_probability_max": [
+          75,
+          78,
+          61,
+          25,
+          10,
+          20,
+          10
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Anchorage",
+    "country": "USA",
+    "lat": 61.2181,
+    "lon": -149.9003,
+    "emoji": "🗻",
+    "timezone": "America/Anchorage",
+    "base_temp": 9,
+    "slug": "anchorage",
+    "weather": {
+      "current": {
+        "temperature_2m": 11,
+        "relative_humidity_2m": 94,
+        "apparent_temperature": 10,
+        "weather_code": 51,
+        "wind_speed_10m": 8,
+        "pressure_msl": 1003,
+        "visibility": 5
+      },
+      "air_quality": {
+        "us_aqi": 21,
+        "pm2_5": 2.6,
+        "pm10": 3.3,
+        "uv_index": 0.1
+      },
+      "marine": {
+        "wave_height": 0.3,
+        "wave_period": 2.5
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          15,
+          15,
+          18,
+          17,
+          19,
+          20,
+          20
+        ],
+        "temperature_2m_min": [
+          11,
+          9,
+          9,
+          10,
+          10,
+          12,
+          12
+        ],
+        "weather_code": [
+          53,
+          51,
+          1,
+          3,
+          3,
+          51,
+          3
+        ],
+        "precipitation_probability_max": [
+          98,
+          36,
+          0,
+          2,
+          8,
+          5,
+          10
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Chicago",
+    "country": "USA",
+    "lat": 41.8781,
+    "lon": -87.6298,
+    "emoji": "🌬️",
+    "timezone": "America/Chicago",
+    "base_temp": 21,
+    "slug": "chicago",
+    "weather": {
+      "current": {
+        "temperature_2m": 16,
+        "relative_humidity_2m": 89,
+        "apparent_temperature": 16,
+        "weather_code": 3,
+        "wind_speed_10m": 6,
+        "pressure_msl": 1011,
+        "visibility": 16
+      },
+      "air_quality": {
+        "us_aqi": 44,
+        "pm2_5": 8.6,
+        "pm10": 9.1,
+        "uv_index": 2.3
+      },
+      "marine": {
+        "wave_height": 0.2,
+        "wave_period": 2.4
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          21,
+          24,
+          19,
+          20,
+          21,
+          20,
+          17
+        ],
+        "temperature_2m_min": [
+          14,
+          12,
+          14,
+          13,
+          15,
+          12,
+          14
+        ],
+        "weather_code": [
+          63,
+          3,
+          80,
+          81,
+          51,
+          1,
+          51
+        ],
+        "precipitation_probability_max": [
+          59,
+          1,
+          79,
+          88,
+          88,
+          10,
+          17
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Miami",
+    "country": "USA",
+    "lat": 25.7617,
+    "lon": -80.1918,
+    "emoji": "🏖️",
+    "timezone": "America/New_York",
+    "base_temp": 30,
+    "slug": "miami",
+    "weather": {
+      "current": {
+        "temperature_2m": 31,
+        "relative_humidity_2m": 66,
+        "apparent_temperature": 35,
+        "weather_code": 0,
+        "wind_speed_10m": 12,
+        "pressure_msl": 1018,
+        "visibility": 24
+      },
+      "air_quality": {
+        "us_aqi": 28,
+        "pm2_5": 10.0,
+        "pm10": 13.5,
+        "uv_index": 4.7
+      },
+      "marine": {
+        "wave_height": 0.1,
+        "wave_period": 4.5
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          32,
+          32,
+          31,
+          32,
+          31,
+          32,
+          31
+        ],
+        "temperature_2m_min": [
+          25,
+          24,
+          24,
+          28,
+          29,
+          29,
+          24
+        ],
+        "weather_code": [
+          3,
+          65,
+          51,
+          51,
+          51,
+          51,
+          80
+        ],
+        "precipitation_probability_max": [
+          16,
+          31,
+          25,
+          12,
+          8,
+          9,
+          37
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Seattle",
+    "country": "USA",
+    "lat": 47.6062,
+    "lon": -122.3321,
+    "emoji": "☕",
+    "timezone": "America/Los_Angeles",
+    "base_temp": 16,
+    "slug": "seattle",
+    "weather": {
+      "current": {
+        "temperature_2m": 17,
+        "relative_humidity_2m": 76,
+        "apparent_temperature": 18,
+        "weather_code": 0,
+        "wind_speed_10m": 4,
+        "pressure_msl": 1021,
+        "visibility": 20
+      },
+      "air_quality": {
+        "us_aqi": 39,
+        "pm2_5": 9.3,
+        "pm10": 12.4,
+        "uv_index": 0.5
+      },
+      "marine": {
+        "wave_height": 0.0,
+        "wave_period": 1.8
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          30,
+          31,
+          24,
+          24,
+          25,
+          30,
+          27
+        ],
+        "temperature_2m_min": [
+          15,
+          17,
+          12,
+          10,
+          11,
+          13,
+          11
+        ],
+        "weather_code": [
+          3,
+          3,
+          3,
+          0,
+          3,
+          3,
+          3
+        ],
+        "precipitation_probability_max": [
+          0,
+          1,
+          3,
+          4,
+          0,
+          0,
+          1
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Boston",
+    "country": "USA",
+    "lat": 42.3601,
+    "lon": -71.0589,
+    "emoji": "🎓",
+    "timezone": "America/New_York",
+    "base_temp": 19,
+    "slug": "boston",
+    "weather": {
+      "current": {
+        "temperature_2m": 30,
+        "relative_humidity_2m": 23,
+        "apparent_temperature": 30,
+        "weather_code": 0,
+        "wind_speed_10m": 9,
+        "pressure_msl": 1011,
+        "visibility": 73
+      },
+      "air_quality": {
+        "us_aqi": 37,
+        "pm2_5": 5.6,
+        "pm10": 6.1,
+        "uv_index": 5.5
+      },
+      "marine": {
+        "wave_height": 0.2,
+        "wave_period": 8.4
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          34,
+          27,
+          22,
+          25,
+          28,
+          25,
+          24
+        ],
+        "temperature_2m_min": [
+          19,
+          21,
+          15,
+          16,
+          16,
+          17,
+          16
+        ],
+        "weather_code": [
+          3,
+          81,
+          3,
+          3,
+          55,
+          3,
+          3
+        ],
+        "precipitation_probability_max": [
+          3,
+          41,
+          4,
+          11,
+          31,
+          31,
+          12
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Washington DC",
+    "country": "USA",
+    "lat": 38.9072,
+    "lon": -77.0369,
+    "emoji": "🏛️",
+    "timezone": "America/New_York",
+    "base_temp": 24,
+    "slug": "washington-dc",
+    "weather": {
+      "current": {
+        "temperature_2m": 28,
+        "relative_humidity_2m": 62,
+        "apparent_temperature": 32,
+        "weather_code": 0,
+        "wind_speed_10m": 12,
+        "pressure_msl": 1011,
+        "visibility": 28
+      },
+      "air_quality": {
+        "us_aqi": 37,
+        "pm2_5": 12.7,
+        "pm10": 13.3,
+        "uv_index": 5.0
+      },
+      "marine": {
+        "wave_height": 0.0,
+        "wave_period": 0.0
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          34,
+          28,
+          27,
+          32,
+          37,
+          31,
+          27
+        ],
+        "temperature_2m_min": [
+          21,
+          18,
+          14,
+          18,
+          22,
+          20,
+          17
+        ],
+        "weather_code": [
+          53,
+          3,
+          3,
+          51,
+          51,
+          51,
+          1
+        ],
+        "precipitation_probability_max": [
+          46,
+          23,
+          7,
+          16,
+          34,
+          45,
+          14
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Las Vegas",
+    "country": "USA",
+    "lat": 36.1699,
+    "lon": -115.1398,
+    "emoji": "🎰",
+    "timezone": "America/Los_Angeles",
+    "base_temp": 35,
+    "slug": "las-vegas",
+    "weather": {
+      "current": {
+        "temperature_2m": 33,
+        "relative_humidity_2m": 15,
+        "apparent_temperature": 30,
+        "weather_code": 0,
+        "wind_speed_10m": 9,
+        "pressure_msl": 1008,
+        "visibility": 88
+      },
+      "air_quality": {
+        "us_aqi": 27,
+        "pm2_5": 7.5,
+        "pm10": 14.4,
+        "uv_index": 0.8
+      },
+      "marine": {
+        "wave_height": 0.0,
+        "wave_period": 0.0
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          41,
+          43,
+          42,
+          42,
+          42,
+          40,
+          38
+        ],
+        "temperature_2m_min": [
+          30,
+          24,
+          28,
+          33,
+          30,
+          31,
+          27
+        ],
+        "weather_code": [
+          1,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0
+        ],
+        "precipitation_probability_max": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Denver",
+    "country": "USA",
+    "lat": 39.7392,
+    "lon": -104.9903,
+    "emoji": "🏔️",
+    "timezone": "America/Denver",
+    "base_temp": 23,
+    "slug": "denver",
+    "weather": {
+      "current": {
+        "temperature_2m": 13,
+        "relative_humidity_2m": 54,
+        "apparent_temperature": 10,
+        "weather_code": 3,
+        "wind_speed_10m": 10,
+        "pressure_msl": 1023,
+        "visibility": 32
+      },
+      "air_quality": {
+        "us_aqi": 35,
+        "pm2_5": 10.0,
+        "pm10": 12.1,
+        "uv_index": 0.7
+      },
+      "marine": {
+        "wave_height": 0.0,
+        "wave_period": 0.0
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          25,
+          28,
+          34,
+          36,
+          30,
+          36,
+          30
+        ],
+        "temperature_2m_min": [
+          12,
+          13,
+          13,
+          20,
+          16,
+          19,
+          19
+        ],
+        "weather_code": [
+          3,
+          3,
+          3,
+          3,
+          0,
+          2,
+          51
+        ],
+        "precipitation_probability_max": [
+          13,
+          5,
+          5,
+          0,
+          0,
+          10,
+          42
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Dallas",
+    "country": "USA",
+    "lat": 32.7767,
+    "lon": -96.797,
+    "emoji": "🤠",
+    "timezone": "America/Chicago",
+    "base_temp": 32,
+    "slug": "dallas",
+    "weather": {
+      "current": {
+        "temperature_2m": 28,
+        "relative_humidity_2m": 77,
+        "apparent_temperature": 32,
+        "weather_code": 3,
+        "wind_speed_10m": 10,
+        "pressure_msl": 1015,
+        "visibility": 19
+      },
+      "air_quality": {
+        "us_aqi": 41,
+        "pm2_5": 13.2,
+        "pm10": 19.4,
+        "uv_index": 2.5
+      },
+      "marine": {
+        "wave_height": 0.0,
+        "wave_period": 0.0
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          32,
+          30,
+          32,
+          33,
+          33,
+          25,
+          31
+        ],
+        "temperature_2m_min": [
+          25,
+          24,
+          23,
+          23,
+          24,
+          22,
+          22
+        ],
+        "weather_code": [
+          3,
+          3,
+          53,
+          3,
+          95,
+          53,
+          55
+        ],
+        "precipitation_probability_max": [
+          32,
+          28,
+          5,
+          1,
+          34,
+          49,
+          31
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Houston",
+    "country": "USA",
+    "lat": 29.7604,
+    "lon": -95.3698,
+    "emoji": "🚀",
+    "timezone": "America/Chicago",
+    "base_temp": 33,
+    "slug": "houston",
+    "weather": {
+      "current": {
+        "temperature_2m": 29,
+        "relative_humidity_2m": 81,
+        "apparent_temperature": 34,
+        "weather_code": 3,
+        "wind_speed_10m": 11,
+        "pressure_msl": 1015,
+        "visibility": 19
+      },
+      "air_quality": {
+        "us_aqi": 59,
+        "pm2_5": 10.8,
+        "pm10": 14.6,
+        "uv_index": 2.2
+      },
+      "marine": {
+        "wave_height": 0.0,
+        "wave_period": 0.0
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          32,
+          30,
+          29,
+          27,
+          34,
+          35,
+          34
+        ],
+        "temperature_2m_min": [
+          26,
+          25,
+          25,
+          24,
+          26,
+          27,
+          26
+        ],
+        "weather_code": [
+          95,
+          82,
+          81,
+          81,
+          95,
+          95,
+          3
+        ],
+        "precipitation_probability_max": [
+          30,
+          48,
+          88,
+          40,
+          36,
+          45,
+          35
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Phoenix",
+    "country": "USA",
+    "lat": 33.4484,
+    "lon": -112.074,
+    "emoji": "🌵",
+    "timezone": "America/Phoenix",
+    "base_temp": 38,
+    "slug": "phoenix",
+    "weather": {
+      "current": {
+        "temperature_2m": 34,
+        "relative_humidity_2m": 27,
+        "apparent_temperature": 32,
+        "weather_code": 0,
+        "wind_speed_10m": 16,
+        "pressure_msl": 1010,
+        "visibility": 66
+      },
+      "air_quality": {
+        "us_aqi": 59,
+        "pm2_5": 20.8,
+        "pm10": 71.0,
+        "uv_index": 0.9
+      },
+      "marine": {
+        "wave_height": 0.0,
+        "wave_period": 0.0
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          42,
+          42,
+          42,
+          42,
+          41,
+          41,
+          41
+        ],
+        "temperature_2m_min": [
+          32,
+          27,
+          27,
+          32,
+          31,
+          32,
+          32
+        ],
+        "weather_code": [
+          0,
+          63,
+          1,
+          0,
+          2,
+          0,
+          0
+        ],
+        "precipitation_probability_max": [
+          2,
+          5,
+          1,
+          3,
+          2,
+          1,
+          1
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Orlando",
+    "country": "USA",
+    "lat": 28.5383,
+    "lon": -81.3792,
+    "emoji": "🎢",
+    "timezone": "America/New_York",
+    "base_temp": 31,
+    "slug": "orlando",
+    "weather": {
+      "current": {
+        "temperature_2m": 28,
+        "relative_humidity_2m": 76,
+        "apparent_temperature": 33,
+        "weather_code": 0,
+        "wind_speed_10m": 10,
+        "pressure_msl": 1017,
+        "visibility": 21
+      },
+      "air_quality": {
+        "us_aqi": 36,
+        "pm2_5": 8.1,
+        "pm10": 10.2,
+        "uv_index": 4.5
+      },
+      "marine": {
+        "wave_height": 0.0,
+        "wave_period": 0.0
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          35,
+          34,
+          35,
+          38,
+          38,
+          36,
+          33
+        ],
+        "temperature_2m_min": [
+          23,
+          23,
+          24,
+          26,
+          26,
+          24,
+          24
+        ],
+        "weather_code": [
+          53,
+          3,
+          51,
+          51,
+          55,
+          53,
+          3
+        ],
+        "precipitation_probability_max": [
+          35,
+          27,
+          54,
+          35,
+          39,
+          46,
+          47
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Montreal",
+    "country": "Canada",
+    "lat": 45.5017,
+    "lon": -73.5673,
+    "emoji": "🍁",
+    "timezone": "America/Toronto",
+    "base_temp": 18,
+    "slug": "montreal",
+    "weather": {
+      "current": {
+        "temperature_2m": 19,
+        "relative_humidity_2m": 81,
+        "apparent_temperature": 19,
+        "weather_code": 61,
+        "wind_speed_10m": 14,
+        "pressure_msl": 1008,
+        "visibility": 8
+      },
+      "air_quality": {
+        "us_aqi": 36,
+        "pm2_5": 5.4,
+        "pm10": 5.7,
+        "uv_index": 4.4
+      },
+      "marine": {
+        "wave_height": 0.0,
+        "wave_period": 0.0
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          20,
+          18,
+          22,
+          21,
+          21,
+          20,
+          20
+        ],
+        "temperature_2m_min": [
+          17,
+          13,
+          11,
+          13,
+          13,
+          13,
+          12
+        ],
+        "weather_code": [
+          61,
+          61,
+          51,
+          81,
+          81,
+          51,
+          51
+        ],
+        "precipitation_probability_max": [
+          72,
+          46,
+          4,
+          38,
+          80,
+          42,
+          34
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Quebec City",
+    "country": "Canada",
+    "lat": 46.8139,
+    "lon": -71.208,
+    "emoji": "🏰",
+    "timezone": "America/Toronto",
+    "base_temp": 16,
+    "slug": "quebec-city",
+    "weather": {
+      "current": {
+        "temperature_2m": 19,
+        "relative_humidity_2m": 76,
+        "apparent_temperature": 21,
+        "weather_code": 3,
+        "wind_speed_10m": 3,
+        "pressure_msl": 1006,
+        "visibility": 20
+      },
+      "air_quality": {
+        "us_aqi": 27,
+        "pm2_5": 4.5,
+        "pm10": 4.7,
+        "uv_index": 2.4
+      },
+      "marine": {
+        "wave_height": 0.0,
+        "wave_period": 0.0
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          24,
+          20,
+          20,
+          24,
+          18,
+          16,
+          14
+        ],
+        "temperature_2m_min": [
+          11,
+          14,
+          9,
+          11,
+          12,
+          14,
+          11
+        ],
+        "weather_code": [
+          55,
+          61,
+          3,
+          53,
+          82,
+          53,
+          51
+        ],
+        "precipitation_probability_max": [
+          61,
+          75,
+          14,
+          33,
+          85,
+          85,
+          52
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Calgary",
+    "country": "Canada",
+    "lat": 51.0447,
+    "lon": -114.0719,
+    "emoji": "🏔️",
+    "timezone": "America/Edmonton",
+    "base_temp": 14,
+    "slug": "calgary",
+    "weather": {
+      "current": {
+        "temperature_2m": 13,
+        "relative_humidity_2m": 65,
+        "apparent_temperature": 11,
+        "weather_code": 2,
+        "wind_speed_10m": 8,
+        "pressure_msl": 1023,
+        "visibility": 28
+      },
+      "air_quality": {
+        "us_aqi": 26,
+        "pm2_5": 5.3,
+        "pm10": 5.8,
+        "uv_index": 0.8
+      },
+      "marine": {
+        "wave_height": 0.0,
+        "wave_period": 0.0
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          22,
+          23,
+          19,
+          17,
+          17,
+          17,
+          17
+        ],
+        "temperature_2m_min": [
+          8,
+          12,
+          9,
+          9,
+          9,
+          10,
+          12
+        ],
+        "weather_code": [
+          3,
+          3,
+          81,
+          53,
+          55,
+          51,
+          51
+        ],
+        "precipitation_probability_max": [
+          3,
+          13,
+          83,
+          83,
+          49,
+          50,
+          66
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Reykjavik",
+    "country": "Iceland",
+    "lat": 64.1466,
+    "lon": -21.9426,
+    "emoji": "🌋",
+    "timezone": "Atlantic/Reykjavik",
+    "base_temp": 8,
+    "slug": "reykjavik",
+    "weather": {
+      "current": {
+        "temperature_2m": 14,
+        "relative_humidity_2m": 72,
+        "apparent_temperature": 13,
+        "weather_code": 1,
+        "wind_speed_10m": 12,
+        "pressure_msl": 1025,
+        "visibility": 36
+      },
+      "air_quality": {
+        "us_aqi": 26,
+        "pm2_5": 3.3,
+        "pm10": 6.5,
+        "uv_index": 4.0
+      },
+      "marine": {
+        "wave_height": 0.2,
+        "wave_period": 8.2
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          14,
+          12,
+          14,
+          12,
+          13,
+          12,
+          10
+        ],
+        "temperature_2m_min": [
+          10,
+          10,
+          9,
+          8,
+          8,
+          8,
+          7
+        ],
+        "weather_code": [
+          3,
+          3,
+          51,
+          3,
+          51,
+          63,
+          51
+        ],
+        "precipitation_probability_max": [
+          87,
+          29,
+          75,
+          12,
+          20,
+          40,
+          43
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Edinburgh",
+    "country": "United Kingdom",
+    "lat": 55.9533,
+    "lon": -3.1883,
+    "emoji": "🏰",
+    "timezone": "Europe/London",
+    "base_temp": 13,
+    "slug": "edinburgh",
+    "weather": {
+      "current": {
+        "temperature_2m": 16,
+        "relative_humidity_2m": 62,
+        "apparent_temperature": 14,
+        "weather_code": 3,
+        "wind_speed_10m": 12,
+        "pressure_msl": 1021,
+        "visibility": 24
+      },
+      "air_quality": {
+        "us_aqi": 27,
+        "pm2_5": 3.2,
+        "pm10": 5.7,
+        "uv_index": 2.3
+      },
+      "marine": {
+        "wave_height": 0.0,
+        "wave_period": 3.8
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          16,
+          15,
+          20,
+          19,
+          20,
+          17,
+          19
+        ],
+        "temperature_2m_min": [
+          11,
+          10,
+          10,
+          14,
+          13,
+          15,
+          15
+        ],
+        "weather_code": [
+          3,
+          55,
+          63,
+          51,
+          55,
+          61,
+          61
+        ],
+        "precipitation_probability_max": [
+          20,
+          61,
+          80,
+          63,
+          41,
+          55,
+          41
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Manchester",
+    "country": "United Kingdom",
+    "lat": 53.4808,
+    "lon": -2.2426,
+    "emoji": "⚽",
+    "timezone": "Europe/London",
+    "base_temp": 15,
+    "slug": "manchester",
+    "weather": {
+      "current": {
+        "temperature_2m": 18,
+        "relative_humidity_2m": 52,
+        "apparent_temperature": 16,
+        "weather_code": 3,
+        "wind_speed_10m": 10,
+        "pressure_msl": 1020,
+        "visibility": 26
+      },
+      "air_quality": {
+        "us_aqi": 30,
+        "pm2_5": 3.5,
+        "pm10": 8.0,
+        "uv_index": 3.3
+      },
+      "marine": {
+        "wave_height": 0.0,
+        "wave_period": 0.0
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          19,
+          21,
+          22,
+          21,
+          24,
+          24,
+          25
+        ],
+        "temperature_2m_min": [
+          12,
+          12,
+          15,
+          16,
+          13,
+          16,
+          18
+        ],
+        "weather_code": [
+          3,
+          51,
+          51,
+          51,
+          3,
+          51,
+          3
+        ],
+        "precipitation_probability_max": [
+          2,
+          16,
+          51,
+          73,
+          38,
+          72,
+          47
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Nice",
+    "country": "France",
+    "lat": 43.7102,
+    "lon": 7.262,
+    "emoji": "🌊",
+    "timezone": "Europe/Paris",
+    "base_temp": 25,
+    "slug": "nice",
+    "weather": {
+      "current": {
+        "temperature_2m": 24,
+        "relative_humidity_2m": 65,
+        "apparent_temperature": 26,
+        "weather_code": 3,
+        "wind_speed_10m": 10,
+        "pressure_msl": 1014,
+        "visibility": 36
+      },
+      "air_quality": {
+        "us_aqi": 35,
+        "pm2_5": 8.2,
+        "pm10": 14.6,
+        "uv_index": 4.4
+      },
+      "marine": {
+        "wave_height": 0.3,
+        "wave_period": 3.5
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          24,
+          25,
+          25,
+          26,
+          27,
+          29,
+          29
+        ],
+        "temperature_2m_min": [
+          19,
+          20,
+          19,
+          20,
+          22,
+          22,
+          23
+        ],
+        "weather_code": [
+          45,
+          3,
+          3,
+          3,
+          1,
+          1,
+          3
+        ],
+        "precipitation_probability_max": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Lyon",
+    "country": "France",
+    "lat": 45.764,
+    "lon": 4.8357,
+    "emoji": "🍽️",
+    "timezone": "Europe/Paris",
+    "base_temp": 24,
+    "slug": "lyon",
+    "weather": {
+      "current": {
+        "temperature_2m": 30,
+        "relative_humidity_2m": 22,
+        "apparent_temperature": 28,
+        "weather_code": 1,
+        "wind_speed_10m": 16,
+        "pressure_msl": 1015,
+        "visibility": 52
+      },
+      "air_quality": {
+        "us_aqi": 28,
+        "pm2_5": 5.7,
+        "pm10": 10.6,
+        "uv_index": 5.2
+      },
+      "marine": {
+        "wave_height": 0.0,
+        "wave_period": 0.0
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          30,
+          30,
+          33,
+          37,
+          38,
+          36,
+          37
+        ],
+        "temperature_2m_min": [
+          18,
+          17,
+          16,
+          19,
+          21,
+          21,
+          20
+        ],
+        "weather_code": [
+          3,
+          1,
+          3,
+          2,
+          2,
+          3,
+          3
+        ],
+        "precipitation_probability_max": [
+          0,
+          0,
+          0,
+          0,
+          3,
+          7,
+          8
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Venice",
+    "country": "Italy",
+    "lat": 45.4408,
+    "lon": 12.3155,
+    "emoji": "🚤",
+    "timezone": "Europe/Rome",
+    "base_temp": 26,
+    "slug": "venice",
+    "weather": {
+      "current": {
+        "temperature_2m": 26,
+        "relative_humidity_2m": 60,
+        "apparent_temperature": 28,
+        "weather_code": 3,
+        "wind_speed_10m": 12,
+        "pressure_msl": 1010,
+        "visibility": 40
+      },
+      "air_quality": {
+        "us_aqi": 45,
+        "pm2_5": 7.2,
+        "pm10": 10.7,
+        "uv_index": 4.0
+      },
+      "marine": {
+        "wave_height": 0.2,
+        "wave_period": 2.6
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          26,
+          26,
+          28,
+          29,
+          31,
+          33,
+          33
+        ],
+        "temperature_2m_min": [
+          20,
+          21,
+          20,
+          19,
+          21,
+          21,
+          21
+        ],
+        "weather_code": [
+          3,
+          3,
+          3,
+          3,
+          0,
+          2,
+          1
+        ],
+        "precipitation_probability_max": [
+          3,
+          5,
+          8,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Florence",
+    "country": "Italy",
+    "lat": 43.7696,
+    "lon": 11.2558,
+    "emoji": "🎨",
+    "timezone": "Europe/Rome",
+    "base_temp": 27,
+    "slug": "florence",
+    "weather": {
+      "current": {
+        "temperature_2m": 30,
+        "relative_humidity_2m": 31,
+        "apparent_temperature": 29,
+        "weather_code": 0,
+        "wind_speed_10m": 17,
+        "pressure_msl": 1013,
+        "visibility": 46
+      },
+      "air_quality": {
+        "us_aqi": 40,
+        "pm2_5": 3.9,
+        "pm10": 6.3,
+        "uv_index": 4.7
+      },
+      "marine": {
+        "wave_height": 0.0,
+        "wave_period": 0.0
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          30,
+          31,
+          32,
+          34,
+          37,
+          37,
+          36
+        ],
+        "temperature_2m_min": [
+          12,
+          13,
+          14,
+          17,
+          16,
+          18,
+          15
+        ],
+        "weather_code": [
+          3,
+          45,
+          45,
+          2,
+          0,
+          1,
+          3
+        ],
+        "precipitation_probability_max": [
+          0,
+          3,
+          3,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Budapest",
+    "country": "Hungary",
+    "lat": 47.4979,
+    "lon": 19.0402,
+    "emoji": "♨️",
+    "timezone": "Europe/Budapest",
+    "base_temp": 22,
+    "slug": "budapest",
+    "weather": {
+      "current": {
+        "temperature_2m": 21,
+        "relative_humidity_2m": 63,
+        "apparent_temperature": 19,
+        "weather_code": 3,
+        "wind_speed_10m": 19,
+        "pressure_msl": 1009,
+        "visibility": 18
+      },
+      "air_quality": {
+        "us_aqi": 34,
+        "pm2_5": 4.5,
+        "pm10": 7.1,
+        "uv_index": 3.5
+      },
+      "marine": {
+        "wave_height": 0.0,
+        "wave_period": 0.0
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          24,
+          25,
+          28,
+          27,
+          30,
+          32,
+          34
+        ],
+        "temperature_2m_min": [
+          18,
+          16,
+          18,
+          18,
+          17,
+          20,
+          22
+        ],
+        "weather_code": [
+          63,
+          0,
+          2,
+          53,
+          2,
+          2,
+          0
+        ],
+        "precipitation_probability_max": [
+          51,
+          2,
+          2,
+          12,
+          2,
+          2,
+          2
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Bucharest",
+    "country": "Romania",
+    "lat": 44.4268,
+    "lon": 26.1025,
+    "emoji": "🏛️",
+    "timezone": "Europe/Bucharest",
+    "base_temp": 24,
+    "slug": "bucharest",
+    "weather": {
+      "current": {
+        "temperature_2m": 28,
+        "relative_humidity_2m": 34,
+        "apparent_temperature": 27,
+        "weather_code": 3,
+        "wind_speed_10m": 11,
+        "pressure_msl": 1010,
+        "visibility": 44
+      },
+      "air_quality": {
+        "us_aqi": 35,
+        "pm2_5": 5.0,
+        "pm10": 7.7,
+        "uv_index": 2.8
+      },
+      "marine": {
+        "wave_height": 0.0,
+        "wave_period": 0.0
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          28,
+          28,
+          27,
+          29,
+          29,
+          30,
+          30
+        ],
+        "temperature_2m_min": [
+          15,
+          19,
+          16,
+          16,
+          18,
+          19,
+          19
+        ],
+        "weather_code": [
+          3,
+          61,
+          3,
+          3,
+          2,
+          3,
+          3
+        ],
+        "precipitation_probability_max": [
+          0,
+          35,
+          28,
+          0,
+          8,
+          0,
+          0
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Belgrade",
+    "country": "Serbia",
+    "lat": 44.7866,
+    "lon": 20.4489,
+    "emoji": "🌉",
+    "timezone": "Europe/Belgrade",
+    "base_temp": 25,
+    "slug": "belgrade",
+    "weather": {
+      "current": {
+        "temperature_2m": 32,
+        "relative_humidity_2m": 21,
+        "apparent_temperature": 30,
+        "weather_code": 1,
+        "wind_speed_10m": 13,
+        "pressure_msl": 1008,
+        "visibility": 42
+      },
+      "air_quality": {
+        "us_aqi": 42,
+        "pm2_5": 11.2,
+        "pm10": 15.2,
+        "uv_index": 3.5
+      },
+      "marine": {
+        "wave_height": 0.0,
+        "wave_period": 0.0
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          32,
+          24,
+          27,
+          27,
+          26,
+          28,
+          30
+        ],
+        "temperature_2m_min": [
+          18,
+          18,
+          17,
+          16,
+          17,
+          18,
+          18
+        ],
+        "weather_code": [
+          63,
+          3,
+          3,
+          3,
+          51,
+          0,
+          0
+        ],
+        "precipitation_probability_max": [
+          100,
+          76,
+          63,
+          17,
+          33,
+          4,
+          0
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Zagreb",
+    "country": "Croatia",
+    "lat": 45.815,
+    "lon": 15.9819,
+    "emoji": "🏰",
+    "timezone": "Europe/Zagreb",
+    "base_temp": 22,
+    "slug": "zagreb",
+    "weather": {
+      "current": {
+        "temperature_2m": 30,
+        "relative_humidity_2m": 35,
+        "apparent_temperature": 28,
+        "weather_code": 1,
+        "wind_speed_10m": 19,
+        "pressure_msl": 1008,
+        "visibility": 44
+      },
+      "air_quality": {
+        "us_aqi": 45,
+        "pm2_5": 4.9,
+        "pm10": 7.4,
+        "uv_index": 3.5
+      },
+      "marine": {
+        "wave_height": 0.0,
+        "wave_period": 0.0
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          31,
+          22,
+          27,
+          31,
+          31,
+          33,
+          36
+        ],
+        "temperature_2m_min": [
+          18,
+          15,
+          13,
+          17,
+          18,
+          21,
+          23
+        ],
+        "weather_code": [
+          80,
+          95,
+          3,
+          3,
+          2,
+          2,
+          2
+        ],
+        "precipitation_probability_max": [
+          98,
+          100,
+          3,
+          3,
+          3,
+          0,
+          0
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Sofia",
+    "country": "Bulgaria",
+    "lat": 42.6977,
+    "lon": 23.3219,
+    "emoji": "⛰️",
+    "timezone": "Europe/Sofia",
+    "base_temp": 23,
+    "slug": "sofia",
+    "weather": {
+      "current": {
+        "temperature_2m": 27,
+        "relative_humidity_2m": 31,
+        "apparent_temperature": 26,
+        "weather_code": 1,
+        "wind_speed_10m": 5,
+        "pressure_msl": 1012,
+        "visibility": 46
+      },
+      "air_quality": {
+        "us_aqi": 35,
+        "pm2_5": 5.0,
+        "pm10": 7.7,
+        "uv_index": 3.3
+      },
+      "marine": {
+        "wave_height": 0.0,
+        "wave_period": 0.0
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          27,
+          28,
+          25,
+          25,
+          27,
+          29,
+          31
+        ],
+        "temperature_2m_min": [
+          12,
+          16,
+          16,
+          14,
+          14,
+          16,
+          13
+        ],
+        "weather_code": [
+          2,
+          3,
+          3,
+          3,
+          3,
+          2,
+          45
+        ],
+        "precipitation_probability_max": [
+          0,
+          13,
+          18,
+          3,
+          2,
+          0,
+          0
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Tallinn",
+    "country": "Estonia",
+    "lat": 59.437,
+    "lon": 24.7536,
+    "emoji": "🏰",
+    "timezone": "Europe/Tallinn",
+    "base_temp": 13,
+    "slug": "tallinn",
+    "weather": {
+      "current": {
+        "temperature_2m": 16,
+        "relative_humidity_2m": 72,
+        "apparent_temperature": 15,
+        "weather_code": 3,
+        "wind_speed_10m": 10,
+        "pressure_msl": 999,
+        "visibility": 5
+      },
+      "air_quality": {
+        "us_aqi": 33,
+        "pm2_5": 4.3,
+        "pm10": 4.8,
+        "uv_index": 1.5
+      },
+      "marine": {
+        "wave_height": 0.2,
+        "wave_period": 2.9
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          18,
+          17,
+          16,
+          16,
+          20,
+          21,
+          21
+        ],
+        "temperature_2m_min": [
+          10,
+          12,
+          11,
+          12,
+          13,
+          12,
+          12
+        ],
+        "weather_code": [
+          61,
+          63,
+          63,
+          63,
+          2,
+          0,
+          3
+        ],
+        "precipitation_probability_max": [
+          100,
+          100,
+          78,
+          47,
+          16,
+          14,
+          8
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Vilnius",
+    "country": "Lithuania",
+    "lat": 54.6872,
+    "lon": 25.2797,
+    "emoji": "⛪",
+    "timezone": "Europe/Vilnius",
+    "base_temp": 15,
+    "slug": "vilnius",
+    "weather": {
+      "current": {
+        "temperature_2m": 16,
+        "relative_humidity_2m": 69,
+        "apparent_temperature": 14,
+        "weather_code": 3,
+        "wind_speed_10m": 14,
+        "pressure_msl": 1001,
+        "visibility": 17
+      },
+      "air_quality": {
+        "us_aqi": 27,
+        "pm2_5": 2.0,
+        "pm10": 2.6,
+        "uv_index": 1.6
+      },
+      "marine": {
+        "wave_height": 0.0,
+        "wave_period": 0.0
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          16,
+          15,
+          16,
+          17,
+          20,
+          23,
+          24
+        ],
+        "temperature_2m_min": [
+          13,
+          12,
+          12,
+          11,
+          10,
+          15,
+          14
+        ],
+        "weather_code": [
+          63,
+          63,
+          61,
+          53,
+          3,
+          51,
+          3
+        ],
+        "precipitation_probability_max": [
+          100,
+          97,
+          100,
+          90,
+          18,
+          44,
+          8
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  },
+  {
+    "name": "Riga",
+    "country": "Latvia",
+    "lat": 56.9496,
+    "lon": 24.1052,
+    "emoji": "🌲",
+    "timezone": "Europe/Riga",
+    "base_temp": 14,
+    "slug": "riga",
+    "weather": {
+      "current": {
+        "temperature_2m": 18,
+        "relative_humidity_2m": 75,
+        "apparent_temperature": 17,
+        "weather_code": 61,
+        "wind_speed_10m": 12,
+        "pressure_msl": 998,
+        "visibility": 11
+      },
+      "air_quality": {
+        "us_aqi": 30,
+        "pm2_5": 3.6,
+        "pm10": 4.7,
+        "uv_index": 0.9
+      },
+      "marine": {
+        "wave_height": 0.0,
+        "wave_period": 0.0
+      },
+      "daily": {
+        "time": [
+          "2026-06-14",
+          "2026-06-15",
+          "2026-06-16",
+          "2026-06-17",
+          "2026-06-18",
+          "2026-06-19",
+          "2026-06-20"
+        ],
+        "temperature_2m_max": [
+          18,
+          17,
+          18,
+          18,
+          20,
+          21,
+          23
+        ],
+        "temperature_2m_min": [
+          12,
+          12,
+          12,
+          12,
+          13,
+          14,
+          13
+        ],
+        "weather_code": [
+          61,
+          61,
+          51,
+          51,
+          51,
+          51,
+          3
+        ],
+        "precipitation_probability_max": [
+          100,
+          99,
+          27,
+          31,
+          19,
+          14,
+          2
+        ]
+      },
+      "source": "open-meteo",
+      "api_status": [
+        {
+          "source": "open-meteo",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-air-quality",
+          "ok": "true",
+          "error": ""
+        },
+        {
+          "source": "open-meteo-marine",
+          "ok": "true",
+          "error": ""
+        }
+      ]
+    }
+  }
+]
