@@ -85,6 +85,13 @@ def write_json(path: Path, payload: Any) -> None:
     path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
+def load_wiki_article_seeds() -> list[dict[str, Any]]:
+    seed_path = CONFIG_DIR / "wiki-topic-seeds.json"
+    if seed_path.exists():
+        return json.loads(seed_path.read_text(encoding="utf-8"))
+    return WIKI_ARTICLE_SEEDS
+
+
 def display_path(path: Path) -> str:
     try:
         return path.resolve().relative_to(ROOT).as_posix()
@@ -130,7 +137,7 @@ def prepare_wiki_assets() -> dict[str, Any]:
     refreshed = []
     assets = []
     reviewed = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-    for item in WIKI_ARTICLE_SEEDS:
+    for item in load_wiki_article_seeds():
         article = dict(item)
         article["last_reviewed"] = reviewed
         refreshed.append(article)
@@ -154,7 +161,7 @@ def audit_static_inputs() -> list[dict[str, str]]:
     if wiki_path.exists():
         payload = json.loads(wiki_path.read_text(encoding="utf-8"))
         articles = payload.get("articles", [])
-        expected = {"typhoon-naming", "el-nino", "climate-change"}
+        expected = {article.get("slug") for article in load_wiki_article_seeds()}
         found = {a.get("slug") for a in articles}
         checks.append({"name": "wiki-required-topics", "ok": str(expected <= found).lower(), "detail": ", ".join(sorted(found))})
         for article in articles:

@@ -1,0 +1,88 @@
+name: Update Weather Knowledge Wiki
+
+on:
+  schedule:
+    # Wake up at 02:00 Beijing time. The job gates itself to day 1 and 15.
+    - cron: "0 18 * * *"
+  workflow_dispatch:
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: weatherindex-wiki-refresh
+  cancel-in-progress: false
+
+jobs:
+  update-wiki:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - id: due
+        name: Check Beijing refresh day
+        run: |
+          day="$(TZ=Asia/Shanghai date +%d)"
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] || [ "$day" = "01" ] || [ "$day" = "15" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "run=false" >> "$GITHUB_OUTPUT"
+            echo "Wiki refresh is not due on Beijing day $day."
+          fi
+      - uses: actions/checkout@v4
+        if: steps.due.outputs.run == 'true'
+      - uses: actions/setup-python@v5
+        if: steps.due.outputs.run == 'true'
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        if: steps.due.outputs.run == 'true'
+        run: pip install jinja2
+      - name: Refresh wiki articles and assets
+        if: steps.due.outputs.run == 'true'
+        run: python3 scripts/daily_maintenance.py --prepare
+        env:
+          SITE_URL: https://weatherindex.xyz
+          WEATHER_FETCH_WORKERS: "4"
+          OPENWEATHER_API_KEY: ${{ secrets.OPENWEATHER_API_KEY }}
+          VISUALCROSSING_KEY: ${{ secrets.VISUALCROSSING_KEY }}
+          WEATHERBIT_API_KEY: ${{ secrets.WEATHERBIT_API_KEY }}
+      - name: Build static site
+        if: steps.due.outputs.run == 'true'
+        run: python3 scripts/build.py
+        env:
+          SITE_URL: https://weatherindex.xyz
+          WEATHER_FETCH_WORKERS: "4"
+          GA_ID: ${{ vars.GA_ID }}
+          ADS_CLIENT: ${{ vars.ADS_CLIENT }}
+          ADS_TOP_SLOT: ${{ vars.ADS_TOP_SLOT }}
+          ADS_BOTTOM_SLOT: ${{ vars.ADS_BOTTOM_SLOT }}
+          OPENWEATHER_API_KEY: ${{ secrets.OPENWEATHER_API_KEY }}
+          VISUALCROSSING_KEY: ${{ secrets.VISUALCROSSING_KEY }}
+          WEATHERBIT_API_KEY: ${{ secrets.WEATHERBIT_API_KEY }}
+      - name: Audit generated wiki output
+        if: steps.due.outputs.run == 'true'
+        run: python3 scripts/daily_maintenance.py --audit
+      - name: Commit wiki update
+        if: steps.due.outputs.run == 'true'
+        run: |
+          git config user.name "WikiBot"
+          git config user.email "wiki@weatherindex.xyz"
+          git add -A
+          git diff --quiet && git diff --staged --quiet || git commit -m "auto: wiki update $(date -u +%Y-%m-%d)"
+          git push
+      - uses: actions/configure-pages@v5
+        if: steps.due.outputs.run == 'true'
+      - uses: actions/upload-pages-artifact@v3
+        if: steps.due.outputs.run == 'true'
+        with:
+          path: "dist"
+      - id: deployment
+        uses: actions/deploy-pages@v4
+        if: steps.due.outputs.run == 'true'
