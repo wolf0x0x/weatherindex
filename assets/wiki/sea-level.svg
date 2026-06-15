@@ -72,7 +72,7 @@
 	<text class="title" systemLanguage="sv" id="trsvg225"><tspan id="trsvg132">Global land-ocean temperatur index</tspan></text>
 	<text class="title" systemLanguage="tr" id="trsvg226"><tspan id="trsvg133">Küresel yer-okyanus sıcaklık indeksi</tspan></text>
 	<text class="title" systemLanguage="zh" id="trsvg227"><tspan id="trsvg134">全球土地，海溫指數</tspan></text>
-
+      
     <text class="title" id="trsvg118-ca" systemLanguage="ca"><tspan id="trsvg19-ca">Índex de temperatura global terra-oceà</tspan></text>
 <text class="title" id="trsvg228-ro" systemLanguage="ro"><tspan id="trsvg135-ro">Temperatura medie globală</tspan></text><text class="title" id="trsvg228-bn" systemLanguage="bn"><tspan id="trsvg135-bn">বৈশ্বিক গড় তাপমাত্রা</tspan></text><text class="title" id="trsvg228"><tspan id="trsvg135">Global Average Temperature</tspan></text></switch>
   </g>
@@ -211,7 +211,7 @@
 	<text dy="0.5ex" systemLanguage="ca" id="trsvg303"><tspan id="trsvg210">Mitjana mòbil de 5 anys</tspan></text>
 	<text dy="0.5ex" systemLanguage="ro" id="trsvg304-ro"><tspan id="trsvg211-ro">Media a 5 ani</tspan></text>
 	<text dy="0.5ex" id="trsvg304-bn" systemLanguage="bn"><tspan id="trsvg211-bn">পঞ্চবার্ষিক মসৃণায়ন</tspan></text><text dy="0.5ex" id="trsvg304"><tspan id="trsvg211">Five-year smoothing</tspan></text></switch>
-
+ 
   <!-- annual mean line graph -->
   <path class="annual_line" d="M80 585L88 545L96 555L104 585L112 640L120 665L128 655L136 680L144 585L152 550L160 675L168 610L176 635L184 655L192 655L200 615L208 555L216 555L224 635L232 585L240 540L248 575L256 640L264 685L272 735L280 630L288 610L296 695L304 715L312 740L320 720L328 720L336 685L344 670L352 575L360 570L368 680L376 730L384 645L392 635L400 635L408 595L416 640L424 630L432 635L440 610L448 555L456 610L464 600L472 680L480 580L488 545L496 580L504 645L512 560L520 600L528 575L536 515L544 500L552 510L560 440L568 410L576 470L584 455L592 400L600 455L608 535L616 515L624 555L632 555L640 585L648 535L656 495L664 460L672 565L680 570L688 595L696 475L704 470L712 485L720 515L728 470L736 485L744 475L752 600L760 555L768 530L776 510L784 540L792 475L800 485L808 540L816 495L824 420L832 535L840 505L848 550L856 410L864 465L872 420L880 370L888 340L896 430L904 345L912 420L920 440L928 410L936 340L944 305L952 365L960 275L968 295L976 390L984 385L992 345L1000 275L1008 335L1016 270L1024 195L1032 310L1040 305L1048 230L1056 185L1064 190L1072 235L1080 160L1088 180L1096 170L1104 230L1112 170L1120 140L1128 195L1136 175L1144 160L1152 130L1160 50L1168 -5L1176 40L1184 75L1192 10L1200 -5L1208 75L1216 55L1224 -85"/>
 
