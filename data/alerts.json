@@ -3,8 +3,17 @@
     {
       "city": "Vancouver, Canada",
       "slug": "vancouver",
-      "time": "2026-06-16 20:14 UTC",
+      "time": "2026-06-16 20:57 UTC",
       "text": "High Wind Signal: sustained forecast wind speeds reached 35 km/h. Forecast-derived signal, not an official government alert.",
+      "icon": "💨",
+      "border": "border-red-500",
+      "source": "open-meteo"
+    },
+    {
+      "city": "Chicago, USA",
+      "slug": "chicago",
+      "time": "2026-06-16 20:57 UTC",
+      "text": "High Wind Signal: sustained forecast wind speeds reached 32 km/h. Forecast-derived signal, not an official government alert.",
       "icon": "💨",
       "border": "border-red-500",
       "source": "open-meteo"
@@ -12,8 +21,8 @@
     {
       "city": "Las Vegas, USA",
       "slug": "las-vegas",
-      "time": "2026-06-16 20:14 UTC",
-      "text": "Extreme Heat Signal: forecast temperature reached 42°C. Forecast-derived signal, not an official government alert.",
+      "time": "2026-06-16 20:57 UTC",
+      "text": "Extreme Heat Signal: forecast temperature reached 43°C. Forecast-derived signal, not an official government alert.",
       "icon": "🌡️",
       "border": "border-orange-500",
       "source": "open-meteo"
@@ -21,19 +30,10 @@
     {
       "city": "Phoenix, USA",
       "slug": "phoenix",
-      "time": "2026-06-16 20:14 UTC",
-      "text": "Extreme Heat Signal: forecast temperature reached 42°C. Forecast-derived signal, not an official government alert.",
+      "time": "2026-06-16 20:57 UTC",
+      "text": "Extreme Heat Signal: forecast temperature reached 43°C. Forecast-derived signal, not an official government alert.",
       "icon": "🌡️",
       "border": "border-orange-500",
-      "source": "open-meteo"
-    },
-    {
-      "city": "Orlando, USA",
-      "slug": "orlando",
-      "time": "2026-06-16 20:14 UTC",
-      "text": "High Wind Signal: sustained forecast wind speeds reached 32 km/h. Forecast-derived signal, not an official government alert.",
-      "icon": "💨",
-      "border": "border-red-500",
       "source": "open-meteo"
     }
   ],
