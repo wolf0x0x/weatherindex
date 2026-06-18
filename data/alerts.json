@@ -3,26 +3,8 @@
     {
       "city": "New York, USA",
       "slug": "new-york",
-      "time": "2026-06-18 20:32 UTC",
-      "text": "High Wind Signal: sustained forecast wind speeds reached 39 km/h. Forecast-derived signal, not an official government alert.",
-      "icon": "💨",
-      "border": "border-red-500",
-      "source": "open-meteo"
-    },
-    {
-      "city": "Toronto, Canada",
-      "slug": "toronto",
-      "time": "2026-06-18 20:32 UTC",
-      "text": "High Wind Signal: sustained forecast wind speeds reached 32 km/h. Forecast-derived signal, not an official government alert.",
-      "icon": "💨",
-      "border": "border-red-500",
-      "source": "open-meteo"
-    },
-    {
-      "city": "Boston, USA",
-      "slug": "boston",
-      "time": "2026-06-18 20:32 UTC",
-      "text": "High Wind Signal: sustained forecast wind speeds reached 31 km/h. Forecast-derived signal, not an official government alert.",
+      "time": "2026-06-18 22:59 UTC",
+      "text": "High Wind Signal: sustained forecast wind speeds reached 34 km/h. Forecast-derived signal, not an official government alert.",
       "icon": "💨",
       "border": "border-red-500",
       "source": "open-meteo"
@@ -30,7 +12,7 @@
     {
       "city": "Las Vegas, USA",
       "slug": "las-vegas",
-      "time": "2026-06-18 20:32 UTC",
+      "time": "2026-06-18 22:59 UTC",
       "text": "Extreme Heat Signal: forecast temperature reached 41°C. Forecast-derived signal, not an official government alert.",
       "icon": "🌡️",
       "border": "border-orange-500",
@@ -39,8 +21,8 @@
     {
       "city": "Phoenix, USA",
       "slug": "phoenix",
-      "time": "2026-06-18 20:32 UTC",
-      "text": "Extreme Heat Signal: forecast temperature reached 39°C. Forecast-derived signal, not an official government alert.",
+      "time": "2026-06-18 22:59 UTC",
+      "text": "Extreme Heat Signal: forecast temperature reached 40°C. Forecast-derived signal, not an official government alert.",
       "icon": "🌡️",
       "border": "border-orange-500",
       "source": "open-meteo"
