@@ -1,12 +1,12 @@
 {
   "alerts": [
     {
-      "city": "Riyadh, Saudi Arabia",
-      "slug": "riyadh",
-      "time": "2026-06-19 15:28 UTC",
-      "text": "Extreme Heat Signal: forecast temperature reached 41°C. Forecast-derived signal, not an official government alert.",
-      "icon": "🌡️",
-      "border": "border-orange-500",
+      "city": "Brussels, Belgium",
+      "slug": "brussels",
+      "time": "2026-06-19 18:56 UTC",
+      "text": "High Wind Signal: sustained forecast wind speeds reached 44 km/h. Forecast-derived signal, not an official government alert.",
+      "icon": "💨",
+      "border": "border-red-500",
       "source": "open-meteo"
     }
   ],
