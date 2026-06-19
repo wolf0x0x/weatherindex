@@ -1,12 +1,21 @@
 {
   "alerts": [
     {
-      "city": "Orlando, USA",
-      "slug": "orlando",
-      "time": "2026-06-19 19:54 UTC",
-      "text": "High Wind Signal: sustained forecast wind speeds reached 47 km/h. Forecast-derived signal, not an official government alert.",
-      "icon": "💨",
-      "border": "border-red-500",
+      "city": "Las Vegas, USA",
+      "slug": "las-vegas",
+      "time": "2026-06-19 22:09 UTC",
+      "text": "Extreme Heat Signal: forecast temperature reached 39°C. Forecast-derived signal, not an official government alert.",
+      "icon": "🌡️",
+      "border": "border-orange-500",
+      "source": "open-meteo"
+    },
+    {
+      "city": "Phoenix, USA",
+      "slug": "phoenix",
+      "time": "2026-06-19 22:09 UTC",
+      "text": "Extreme Heat Signal: forecast temperature reached 40°C. Forecast-derived signal, not an official government alert.",
+      "icon": "🌡️",
+      "border": "border-orange-500",
       "source": "open-meteo"
     }
   ],
