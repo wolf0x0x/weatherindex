@@ -1,13 +1,13 @@
 {
   "alerts": [
     {
-      "city": "Boston, USA",
-      "slug": "boston",
-      "time": "2026-06-20 18:13 UTC",
-      "text": "High Wind Signal: sustained forecast wind speeds reached 31 km/h. Forecast-derived signal, not an official government alert.",
-      "icon": "💨",
-      "border": "border-red-500",
-      "source": "open-meteo"
+      "city": "Riyadh, Saudi Arabia",
+      "slug": "riyadh",
+      "time": "2026-06-20 19:43 UTC",
+      "text": "Extreme Heat Signal: forecast temperature reached 40°C. Forecast-derived signal, not an official government alert.",
+      "icon": "🌡️",
+      "border": "border-orange-500",
+      "source": "7timer"
     }
   ],
   "notice": "Forecast-derived signals only; not official government alerts."
