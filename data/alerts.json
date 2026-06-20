@@ -1,28 +1,10 @@
 {
   "alerts": [
     {
-      "city": "Dubai, UAE",
-      "slug": "dubai",
-      "time": "2026-06-20 09:23 UTC",
-      "text": "Extreme Heat Signal: forecast temperature reached 40°C. Forecast-derived signal, not an official government alert.",
-      "icon": "🌡️",
-      "border": "border-orange-500",
-      "source": "open-meteo"
-    },
-    {
       "city": "Riyadh, Saudi Arabia",
       "slug": "riyadh",
-      "time": "2026-06-20 09:23 UTC",
-      "text": "Extreme Heat Signal: forecast temperature reached 41°C. Forecast-derived signal, not an official government alert.",
-      "icon": "🌡️",
-      "border": "border-orange-500",
-      "source": "open-meteo"
-    },
-    {
-      "city": "Delhi, India",
-      "slug": "delhi",
-      "time": "2026-06-20 09:23 UTC",
-      "text": "Extreme Heat Signal: forecast temperature reached 39°C. Forecast-derived signal, not an official government alert.",
+      "time": "2026-06-20 14:12 UTC",
+      "text": "Extreme Heat Signal: forecast temperature reached 42°C. Forecast-derived signal, not an official government alert.",
       "icon": "🌡️",
       "border": "border-orange-500",
       "source": "open-meteo"
