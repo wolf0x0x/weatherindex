@@ -1,9 +1,9 @@
 {
   "alerts": [
     {
-      "city": "Riyadh, Saudi Arabia",
-      "slug": "riyadh",
-      "time": "2026-06-21 18:21 UTC",
+      "city": "Phoenix, USA",
+      "slug": "phoenix",
+      "time": "2026-06-21 19:49 UTC",
       "text": "Extreme Heat Signal: forecast temperature reached 39°C. Forecast-derived signal, not an official government alert.",
       "icon": "🌡️",
       "border": "border-orange-500",
