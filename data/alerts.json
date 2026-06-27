@@ -3,7 +3,7 @@
     {
       "city": "Berlin, Germany",
       "slug": "berlin",
-      "time": "2026-06-27 13:51 UTC",
+      "time": "2026-06-27 16:10 UTC",
       "text": "Extreme Heat Signal: forecast temperature reached 39°C. Forecast-derived signal, not an official government alert.",
       "icon": "🌡️",
       "border": "border-orange-500",
@@ -12,16 +12,16 @@
     {
       "city": "Riyadh, Saudi Arabia",
       "slug": "riyadh",
-      "time": "2026-06-27 13:51 UTC",
-      "text": "Extreme Heat Signal: forecast temperature reached 43°C. Forecast-derived signal, not an official government alert.",
+      "time": "2026-06-27 16:10 UTC",
+      "text": "Extreme Heat Signal: forecast temperature reached 40°C. Forecast-derived signal, not an official government alert.",
       "icon": "🌡️",
       "border": "border-orange-500",
-      "source": "open-meteo"
+      "source": "7timer"
     },
     {
       "city": "Budapest, Hungary",
       "slug": "budapest",
-      "time": "2026-06-27 13:51 UTC",
+      "time": "2026-06-27 16:10 UTC",
       "text": "Extreme Heat Signal: forecast temperature reached 39°C. Forecast-derived signal, not an official government alert.",
       "icon": "🌡️",
       "border": "border-orange-500",
