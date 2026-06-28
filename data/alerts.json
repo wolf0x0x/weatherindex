@@ -1,9 +1,9 @@
 {
   "alerts": [
     {
-      "city": "Vienna, Austria",
-      "slug": "vienna",
-      "time": "2026-06-28 13:55 UTC",
+      "city": "Prague, Czech Republic",
+      "slug": "prague",
+      "time": "2026-06-28 16:15 UTC",
       "text": "Extreme Heat Signal: forecast temperature reached 39°C. Forecast-derived signal, not an official government alert.",
       "icon": "🌡️",
       "border": "border-orange-500",
@@ -12,26 +12,26 @@
     {
       "city": "Riyadh, Saudi Arabia",
       "slug": "riyadh",
-      "time": "2026-06-28 13:55 UTC",
-      "text": "Extreme Heat Signal: forecast temperature reached 42°C. Forecast-derived signal, not an official government alert.",
+      "time": "2026-06-28 16:15 UTC",
+      "text": "Extreme Heat Signal: forecast temperature reached 40°C. Forecast-derived signal, not an official government alert.",
       "icon": "🌡️",
       "border": "border-orange-500",
       "source": "open-meteo"
     },
     {
-      "city": "Florence, Italy",
-      "slug": "florence",
-      "time": "2026-06-28 13:55 UTC",
-      "text": "Extreme Heat Signal: forecast temperature reached 39°C. Forecast-derived signal, not an official government alert.",
-      "icon": "🌡️",
-      "border": "border-orange-500",
+      "city": "Calgary, Canada",
+      "slug": "calgary",
+      "time": "2026-06-28 16:15 UTC",
+      "text": "High Wind Signal: sustained forecast wind speeds reached 32 km/h. Forecast-derived signal, not an official government alert.",
+      "icon": "💨",
+      "border": "border-red-500",
       "source": "open-meteo"
     },
     {
       "city": "Budapest, Hungary",
       "slug": "budapest",
-      "time": "2026-06-28 13:55 UTC",
-      "text": "Extreme Heat Signal: forecast temperature reached 40°C. Forecast-derived signal, not an official government alert.",
+      "time": "2026-06-28 16:15 UTC",
+      "text": "Extreme Heat Signal: forecast temperature reached 39°C. Forecast-derived signal, not an official government alert.",
       "icon": "🌡️",
       "border": "border-orange-500",
       "source": "open-meteo"
