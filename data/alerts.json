@@ -3,25 +3,7 @@
     {
       "city": "Riyadh, Saudi Arabia",
       "slug": "riyadh",
-      "time": "2026-06-29 11:08 UTC",
-      "text": "Extreme Heat Signal: forecast temperature reached 42°C. Forecast-derived signal, not an official government alert.",
-      "icon": "🌡️",
-      "border": "border-orange-500",
-      "source": "open-meteo"
-    },
-    {
-      "city": "Doha, Qatar",
-      "slug": "doha",
-      "time": "2026-06-29 11:08 UTC",
-      "text": "Extreme Heat Signal: forecast temperature reached 42°C. Forecast-derived signal, not an official government alert.",
-      "icon": "🌡️",
-      "border": "border-orange-500",
-      "source": "open-meteo"
-    },
-    {
-      "city": "Delhi, India",
-      "slug": "delhi",
-      "time": "2026-06-29 11:08 UTC",
+      "time": "2026-06-29 15:54 UTC",
       "text": "Extreme Heat Signal: forecast temperature reached 40°C. Forecast-derived signal, not an official government alert.",
       "icon": "🌡️",
       "border": "border-orange-500",
@@ -30,8 +12,8 @@
     {
       "city": "Budapest, Hungary",
       "slug": "budapest",
-      "time": "2026-06-29 11:08 UTC",
-      "text": "Extreme Heat Signal: forecast temperature reached 39°C. Forecast-derived signal, not an official government alert.",
+      "time": "2026-06-29 15:54 UTC",
+      "text": "Extreme Heat Signal: forecast temperature reached 40°C. Forecast-derived signal, not an official government alert.",
       "icon": "🌡️",
       "border": "border-orange-500",
       "source": "open-meteo"
