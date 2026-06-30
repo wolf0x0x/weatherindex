@@ -56,25 +56,27 @@
     <switch>
 	<text class="title" systemLanguage="ar" id="trsvg212"><tspan id="trsvg119">مؤشر عالمي درجة الحرارة لاند-المحيط</tspan></text>
 	<text class="title" systemLanguage="cs" id="trsvg213"><tspan id="trsvg120">Globální teplotní index pevnina–oceán</tspan></text>
-	<text class="title" id="trsvg102" systemLanguage="da"><tspan id="trsvg3">Global middeltemperatur</tspan></text>
+	<text class="title" systemLanguage="da" id="trsvg102"><tspan id="trsvg3">Global middeltemperatur</tspan></text>
 	<text class="title" systemLanguage="de" id="trsvg214"><tspan id="trsvg121">Weltweiter Land-Ozean Temperaturindex</tspan></text>
 	<text class="title" systemLanguage="es" id="trsvg215"><tspan id="trsvg122">Temperatura media global en superficie</tspan></text>
 	<text class="title" systemLanguage="eu" id="trsvg216"><tspan id="trsvg123">Lurreko batezbesteko tenperatura lurrazalean eta ozeanoetan</tspan></text>
 	<text class="title" systemLanguage="fi" id="trsvg217"><tspan id="trsvg124">Maailmanlaajuinen maa-merilämpötilaindeksi</tspan></text>
 	<text class="title" systemLanguage="fr" id="trsvg218"><tspan id="trsvg125">Indice mondial de température terre-océan</tspan></text>
-	<text class="title" systemLanguage="it" id="trsvg219"><tspan id="trsvg126">Global land-ocean index temperatura</tspan></text>
+	<text class="title" systemLanguage="it" id="trsvg219"><tspan id="trsvg126">Temperatura media globale</tspan></text>
 	<text class="title" systemLanguage="ja" id="trsvg220"><tspan id="trsvg127">グローバル土地海洋温度指標</tspan></text>
 	<text class="title" systemLanguage="nl" id="trsvg221"><tspan id="trsvg128">Wereldwijde land–oceaan temperatuurindex</tspan></text>
 	<text class="title" systemLanguage="no" id="trsvg222"><tspan id="trsvg129">Global land-hav temperaturindeks</tspan></text>
 	<text class="title" systemLanguage="pl" id="trsvg223"><tspan id="trsvg130">Global index temperatura land-ocean</tspan></text>
-	<text class="title" id="trsvg113" systemLanguage="pt"><tspan id="trsvg14">Índice da temperatura global terra-oceano</tspan></text>
+	<text class="title" systemLanguage="pt" id="trsvg102" ><tspan id="trsvg14">Índice da temperatura global terra-oceano</tspan></text>
 	<text class="title" systemLanguage="ru" id="trsvg224"><tspan id="trsvg131">Глобальный индекс температуры суши и океанов</tspan></text>
 	<text class="title" systemLanguage="sv" id="trsvg225"><tspan id="trsvg132">Global land-ocean temperatur index</tspan></text>
 	<text class="title" systemLanguage="tr" id="trsvg226"><tspan id="trsvg133">Küresel yer-okyanus sıcaklık indeksi</tspan></text>
 	<text class="title" systemLanguage="zh" id="trsvg227"><tspan id="trsvg134">全球土地，海溫指數</tspan></text>
-      
-    <text class="title" id="trsvg118-ca" systemLanguage="ca"><tspan id="trsvg19-ca">Índex de temperatura global terra-oceà</tspan></text>
-<text class="title" id="trsvg228-ro" systemLanguage="ro"><tspan id="trsvg135-ro">Temperatura medie globală</tspan></text><text class="title" id="trsvg228-bn" systemLanguage="bn"><tspan id="trsvg135-bn">বৈশ্বিক গড় তাপমাত্রা</tspan></text><text class="title" id="trsvg228"><tspan id="trsvg135">Global Average Temperature</tspan></text></switch>
+  <text class="title" id="trsvg118-ca" systemLanguage="ca"><tspan id="trsvg19-ca">Índex de temperatura global terra-oceà</tspan></text>
+  <text class="title" id="trsvg228-ro" systemLanguage="ro"><tspan id="trsvg135-ro">Temperatura medie globală</tspan></text>
+  <text class="title" id="trsvg228-bn" systemLanguage="bn"><tspan id="trsvg135-bn">বৈশ্বিক গড় তাপমাত্রা</tspan></text>
+  <text class="title" id="trsvg228"><tspan id="trsvg135">Global Average Temperature</tspan></text>
+</switch>
   </g>
   <!-- x-axis: pixel scale is 8*year -->
   <switch><text class="scale x" x="80" y="820" id="trsvg229-ro" systemLanguage="ro"><tspan id="trsvg136-ro">1880</tspan></text><text class="scale x" x="80" y="820" id="trsvg229-bn" systemLanguage="bn"><tspan id="trsvg136-bn">১৮৮০</tspan></text><text class="scale x" x="80" y="820" id="trsvg229"><tspan id="trsvg136">1880</tspan></text></switch>
@@ -110,7 +112,7 @@
 	<text systemLanguage="eu" id="trsvg242"><tspan id="trsvg149">Anomalia termikoa (°C)</tspan></text>
 	<text systemLanguage="fi" id="trsvg243"><tspan id="trsvg150">Lämpötila-anomalia (°C)</tspan></text>
 	<text systemLanguage="fr" id="trsvg244"><tspan id="trsvg151">Anomalie de température (°C)</tspan></text>
-	<text systemLanguage="it" id="trsvg245"><tspan id="trsvg152">Temperatura anomaly (°C)</tspan></text>
+	<text systemLanguage="it" id="trsvg245"><tspan id="trsvg152" font-size="40px">Scostamento dalla temperatura di riferimento (°C)</tspan></text>
 	<text systemLanguage="ja" id="trsvg246"><tspan id="trsvg153">温度異常（°C）</tspan></text>
 	<text systemLanguage="nl" id="trsvg247"><tspan id="trsvg154">Temperatuuranomalie (°C)</tspan></text>
 	<text systemLanguage="no" id="trsvg248"><tspan id="trsvg155">Temperaturavvik (°C)</tspan></text>
@@ -122,7 +124,8 @@
 	<text systemLanguage="zh" id="trsvg254"><tspan id="trsvg161">溫度異常（°C）</tspan></text>
 	<text systemLanguage="ca" id="trsvg255"><tspan id="trsvg162">Anomalia de temperatura [°C]</tspan></text>
 	<text systemLanguage="ro" id="trsvg256-ro"><tspan id="trsvg163-ro">Temperatura față de referință (°C)</tspan></text>
-	<text id="trsvg256-bn" systemLanguage="bn"><tspan id="trsvg163-bn">তাপমাত্রা ব ভিত্তিরেখা (°সে)</tspan></text><text id="trsvg256"><tspan id="trsvg163">Temperature vs baseline (°C)</tspan></text></switch>
+	<text systemLanguage="bn" id="trsvg256-bn" ><tspan id="trsvg163-bn">তাপমাত্রা ব ভিত্তিরেখা (°সে)</tspan></text>
+  <text id="trsvg256"><tspan id="trsvg163">Temperature vs baseline (°C)</tspan></text></switch>
   </g>
   <!-- y-axis: pixels = −500*temp, default systemLanguage must be en for less buggy behavior -->
   <line class="graticule" x1="80" x2="1240" y1="750" y2="750"/>
@@ -175,7 +178,7 @@
 	<text dy="0.5ex" systemLanguage="eu" id="trsvg270"><tspan id="trsvg177">Urteko batezbestekoa</tspan></text>
 	<text dy="0.5ex" systemLanguage="fi" id="trsvg271"><tspan id="trsvg178">Vuosikeskiarvo</tspan></text>
 	<text dy="0.5ex" systemLanguage="fr" id="trsvg272"><tspan id="trsvg179">Moyenne annuelle</tspan></text>
-	<text dy="0.5ex" systemLanguage="it" id="trsvg273"><tspan id="trsvg180">Media annua</tspan></text>
+	<text dy="0.5ex" systemLanguage="it" id="trsvg273"><tspan id="trsvg180">Media annuale</tspan></text>
 	<text dy="0.5ex" systemLanguage="ja" id="trsvg274"><tspan id="trsvg181">年平均</tspan></text>
 	<text dy="0.5ex" systemLanguage="nl" id="trsvg275"><tspan id="trsvg182">Jaarlijks gemiddelde</tspan></text>
 	<text dy="0.5ex" systemLanguage="no" id="trsvg276"><tspan id="trsvg183">Årsgjennomsnitt</tspan></text>
@@ -198,7 +201,7 @@
 	<text dy="0.5ex" systemLanguage="eu" id="trsvg290"><tspan id="trsvg197">Lowess leunketa (5 urte)</tspan></text>
 	<text dy="0.5ex" systemLanguage="fi" id="trsvg291"><tspan id="trsvg198">5 vuoden liukuva keskiarvo</tspan></text>
 	<text dy="0.5ex" systemLanguage="fr" id="trsvg292"><tspan id="trsvg199">Courbe lissée sur 5 ans</tspan></text>
-	<text dy="0.5ex" systemLanguage="it" id="trsvg293"><tspan id="trsvg200">5 anni di corsa medio</tspan></text>
+	<text dy="0.5ex" systemLanguage="it" id="trsvg293"><tspan id="trsvg200">Media mobile su 5 anni</tspan></text>
 	<text dy="0.5ex" systemLanguage="ja" id="trsvg294"><tspan id="trsvg201">平均を実行している5年</tspan></text>
 	<text dy="0.5ex" systemLanguage="nl" id="trsvg295"><tspan id="trsvg202">5‐jaar lopend gemiddelde</tspan></text>
 	<text dy="0.5ex" systemLanguage="no" id="trsvg296"><tspan id="trsvg203">Årsgjennomsnitt</tspan></text>

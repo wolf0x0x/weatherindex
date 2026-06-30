@@ -3,29 +3,11 @@
     {
       "city": "Riyadh, Saudi Arabia",
       "slug": "riyadh",
-      "time": "2026-06-30 17:09 UTC",
+      "time": "2026-06-30 18:58 UTC",
       "text": "Extreme Heat Signal: forecast temperature reached 39°C. Forecast-derived signal, not an official government alert.",
       "icon": "🌡️",
       "border": "border-orange-500",
-      "source": "open-meteo"
-    },
-    {
-      "city": "Delhi, India",
-      "slug": "delhi",
-      "time": "2026-06-30 17:09 UTC",
-      "text": "Extreme Heat Signal: forecast temperature reached 43°C. Forecast-derived signal, not an official government alert.",
-      "icon": "🌡️",
-      "border": "border-orange-500",
       "source": "7timer"
-    },
-    {
-      "city": "Reykjavik, Iceland",
-      "slug": "reykjavik",
-      "time": "2026-06-30 17:09 UTC",
-      "text": "High Wind Signal: sustained forecast wind speeds reached 32 km/h. Forecast-derived signal, not an official government alert.",
-      "icon": "💨",
-      "border": "border-red-500",
-      "source": "open-meteo"
     }
   ],
   "notice": "Forecast-derived signals only; not official government alerts."
