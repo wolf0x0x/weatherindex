@@ -3,8 +3,17 @@
     {
       "city": "Riyadh, Saudi Arabia",
       "slug": "riyadh",
-      "time": "2026-07-01 09:56 UTC",
+      "time": "2026-07-01 14:44 UTC",
       "text": "Extreme Heat Signal: forecast temperature reached 42°C. Forecast-derived signal, not an official government alert.",
+      "icon": "🌡️",
+      "border": "border-orange-500",
+      "source": "open-meteo"
+    },
+    {
+      "city": "Doha, Qatar",
+      "slug": "doha",
+      "time": "2026-07-01 14:44 UTC",
+      "text": "Extreme Heat Signal: forecast temperature reached 40°C. Forecast-derived signal, not an official government alert.",
       "icon": "🌡️",
       "border": "border-orange-500",
       "source": "open-meteo"
