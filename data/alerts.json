@@ -3,26 +3,17 @@
     {
       "city": "Riyadh, Saudi Arabia",
       "slug": "riyadh",
-      "time": "2026-07-02 09:19 UTC",
-      "text": "Extreme Heat Signal: forecast temperature reached 42°C. Forecast-derived signal, not an official government alert.",
+      "time": "2026-07-02 14:10 UTC",
+      "text": "Extreme Heat Signal: forecast temperature reached 41°C. Forecast-derived signal, not an official government alert.",
       "icon": "🌡️",
       "border": "border-orange-500",
-      "source": "open-meteo"
-    },
-    {
-      "city": "Doha, Qatar",
-      "slug": "doha",
-      "time": "2026-07-02 09:19 UTC",
-      "text": "Extreme Heat Signal: forecast temperature reached 44°C. Forecast-derived signal, not an official government alert.",
-      "icon": "🌡️",
-      "border": "border-orange-500",
-      "source": "open-meteo"
+      "source": "7timer"
     },
     {
       "city": "Reykjavik, Iceland",
       "slug": "reykjavik",
-      "time": "2026-07-02 09:19 UTC",
-      "text": "High Wind Signal: sustained forecast wind speeds reached 36 km/h. Forecast-derived signal, not an official government alert.",
+      "time": "2026-07-02 14:10 UTC",
+      "text": "High Wind Signal: sustained forecast wind speeds reached 34 km/h. Forecast-derived signal, not an official government alert.",
       "icon": "💨",
       "border": "border-red-500",
       "source": "open-meteo"
