@@ -1,31 +1,13 @@
 {
   "alerts": [
     {
-      "city": "Dubai, UAE",
-      "slug": "dubai",
-      "time": "2026-07-03 09:24 UTC",
-      "text": "Extreme Heat Signal: forecast temperature reached 40°C. Forecast-derived signal, not an official government alert.",
-      "icon": "🌡️",
-      "border": "border-orange-500",
-      "source": "open-meteo"
-    },
-    {
-      "city": "Copenhagen, Denmark",
-      "slug": "copenhagen",
-      "time": "2026-07-03 09:24 UTC",
-      "text": "High Wind Signal: sustained forecast wind speeds reached 35 km/h. Forecast-derived signal, not an official government alert.",
-      "icon": "💨",
-      "border": "border-red-500",
-      "source": "open-meteo"
-    },
-    {
       "city": "Riyadh, Saudi Arabia",
       "slug": "riyadh",
-      "time": "2026-07-03 09:24 UTC",
-      "text": "Extreme Heat Signal: forecast temperature reached 42°C. Forecast-derived signal, not an official government alert.",
+      "time": "2026-07-03 14:19 UTC",
+      "text": "Extreme Heat Signal: forecast temperature reached 41°C. Forecast-derived signal, not an official government alert.",
       "icon": "🌡️",
       "border": "border-orange-500",
-      "source": "open-meteo"
+      "source": "7timer"
     }
   ],
   "notice": "Forecast-derived signals only; not official government alerts."
