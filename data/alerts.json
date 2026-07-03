@@ -1,28 +1,10 @@
 {
   "alerts": [
     {
-      "city": "New York, USA",
-      "slug": "new-york",
-      "time": "2026-07-03 19:28 UTC",
-      "text": "Extreme Heat Signal: forecast temperature reached 39°C. Forecast-derived signal, not an official government alert.",
-      "icon": "🌡️",
-      "border": "border-orange-500",
-      "source": "open-meteo"
-    },
-    {
-      "city": "Copenhagen, Denmark",
-      "slug": "copenhagen",
-      "time": "2026-07-03 19:28 UTC",
-      "text": "High Wind Signal: sustained forecast wind speeds reached 31 km/h. Forecast-derived signal, not an official government alert.",
-      "icon": "💨",
-      "border": "border-red-500",
-      "source": "open-meteo"
-    },
-    {
-      "city": "Washington DC, USA",
-      "slug": "washington-dc",
-      "time": "2026-07-03 19:28 UTC",
-      "text": "Extreme Heat Signal: forecast temperature reached 39°C. Forecast-derived signal, not an official government alert.",
+      "city": "Phoenix, USA",
+      "slug": "phoenix",
+      "time": "2026-07-03 22:09 UTC",
+      "text": "Extreme Heat Signal: forecast temperature reached 41°C. Forecast-derived signal, not an official government alert.",
       "icon": "🌡️",
       "border": "border-orange-500",
       "source": "open-meteo"
