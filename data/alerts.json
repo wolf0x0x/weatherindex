@@ -1,31 +1,13 @@
 {
   "alerts": [
     {
-      "city": "New York, USA",
-      "slug": "new-york",
-      "time": "2026-07-04 03:33 UTC",
-      "text": "Extreme Heat Signal: forecast temperature reached 39°C. Forecast-derived signal, not an official government alert.",
+      "city": "Riyadh, Saudi Arabia",
+      "slug": "riyadh",
+      "time": "2026-07-04 08:43 UTC",
+      "text": "Extreme Heat Signal: forecast temperature reached 43°C. Forecast-derived signal, not an official government alert.",
       "icon": "🌡️",
       "border": "border-orange-500",
-      "source": "7timer"
-    },
-    {
-      "city": "Washington DC, USA",
-      "slug": "washington-dc",
-      "time": "2026-07-04 03:33 UTC",
-      "text": "Extreme Heat Signal: forecast temperature reached 39°C. Forecast-derived signal, not an official government alert.",
-      "icon": "🌡️",
-      "border": "border-orange-500",
-      "source": "7timer"
-    },
-    {
-      "city": "Phoenix, USA",
-      "slug": "phoenix",
-      "time": "2026-07-04 03:33 UTC",
-      "text": "Extreme Heat Signal: forecast temperature reached 39°C. Forecast-derived signal, not an official government alert.",
-      "icon": "🌡️",
-      "border": "border-orange-500",
-      "source": "7timer"
+      "source": "open-meteo"
     }
   ],
   "notice": "Forecast-derived signals only; not official government alerts."
