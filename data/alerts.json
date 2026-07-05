@@ -1,10 +1,28 @@
 {
   "alerts": [
     {
+      "city": "Riyadh, Saudi Arabia",
+      "slug": "riyadh",
+      "time": "2026-07-05 08:58 UTC",
+      "text": "Extreme Heat Signal: forecast temperature reached 42°C. Forecast-derived signal, not an official government alert.",
+      "icon": "🌡️",
+      "border": "border-orange-500",
+      "source": "open-meteo"
+    },
+    {
+      "city": "Doha, Qatar",
+      "slug": "doha",
+      "time": "2026-07-05 08:58 UTC",
+      "text": "Extreme Heat Signal: forecast temperature reached 46°C. Forecast-derived signal, not an official government alert.",
+      "icon": "🌡️",
+      "border": "border-orange-500",
+      "source": "open-meteo"
+    },
+    {
       "city": "Mumbai, India",
       "slug": "mumbai",
-      "time": "2026-07-05 03:44 UTC",
-      "text": "High Wind Signal: sustained forecast wind speeds reached 31 km/h. Forecast-derived signal, not an official government alert.",
+      "time": "2026-07-05 08:58 UTC",
+      "text": "High Wind Signal: sustained forecast wind speeds reached 34 km/h. Forecast-derived signal, not an official government alert.",
       "icon": "💨",
       "border": "border-red-500",
       "source": "open-meteo"
