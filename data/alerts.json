@@ -1,21 +1,12 @@
 {
   "alerts": [
     {
-      "city": "Washington DC, USA",
-      "slug": "washington-dc",
-      "time": "2026-07-04 22:02 UTC",
-      "text": "Extreme Heat Signal: forecast temperature reached 39°C. Forecast-derived signal, not an official government alert.",
-      "icon": "🌡️",
-      "border": "border-orange-500",
-      "source": "open-meteo"
-    },
-    {
-      "city": "Las Vegas, USA",
-      "slug": "las-vegas",
-      "time": "2026-07-04 22:02 UTC",
-      "text": "Extreme Heat Signal: forecast temperature reached 40°C. Forecast-derived signal, not an official government alert.",
-      "icon": "🌡️",
-      "border": "border-orange-500",
+      "city": "Mumbai, India",
+      "slug": "mumbai",
+      "time": "2026-07-05 03:44 UTC",
+      "text": "High Wind Signal: sustained forecast wind speeds reached 31 km/h. Forecast-derived signal, not an official government alert.",
+      "icon": "💨",
+      "border": "border-red-500",
       "source": "open-meteo"
     }
   ],
