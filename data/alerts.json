@@ -1,9 +1,9 @@
 {
   "alerts": [
     {
-      "city": "Phoenix, USA",
-      "slug": "phoenix",
-      "time": "2026-07-08 02:58 UTC",
+      "city": "Doha, Qatar",
+      "slug": "doha",
+      "time": "2026-07-08 06:05 UTC",
       "text": "Extreme Heat Signal: forecast temperature reached 40°C. Forecast-derived signal, not an official government alert.",
       "icon": "🌡️",
       "border": "border-orange-500",
