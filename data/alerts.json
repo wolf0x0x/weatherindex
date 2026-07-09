@@ -1,19 +1,19 @@
 {
   "alerts": [
     {
-      "city": "Las Vegas, USA",
-      "slug": "las-vegas",
-      "time": "2026-07-09 03:37 UTC",
-      "text": "Extreme Heat Signal: forecast temperature reached 40°C. Forecast-derived signal, not an official government alert.",
+      "city": "Riyadh, Saudi Arabia",
+      "slug": "riyadh",
+      "time": "2026-07-09 09:47 UTC",
+      "text": "Extreme Heat Signal: forecast temperature reached 41°C. Forecast-derived signal, not an official government alert.",
       "icon": "🌡️",
       "border": "border-orange-500",
-      "source": "7timer"
+      "source": "open-meteo"
     },
     {
-      "city": "Phoenix, USA",
-      "slug": "phoenix",
-      "time": "2026-07-09 03:37 UTC",
-      "text": "Extreme Heat Signal: forecast temperature reached 39°C. Forecast-derived signal, not an official government alert.",
+      "city": "Doha, Qatar",
+      "slug": "doha",
+      "time": "2026-07-09 09:47 UTC",
+      "text": "Extreme Heat Signal: forecast temperature reached 44°C. Forecast-derived signal, not an official government alert.",
       "icon": "🌡️",
       "border": "border-orange-500",
       "source": "open-meteo"
