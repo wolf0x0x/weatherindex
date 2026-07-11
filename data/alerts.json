@@ -1,10 +1,28 @@
 {
   "alerts": [
     {
-      "city": "Doha, Qatar",
-      "slug": "doha",
-      "time": "2026-07-11 16:00 UTC",
+      "city": "Shanghai, China",
+      "slug": "shanghai",
+      "time": "2026-07-11 17:56 UTC",
+      "text": "High Wind Signal: sustained forecast wind speeds reached 33 km/h. Forecast-derived signal, not an official government alert.",
+      "icon": "💨",
+      "border": "border-red-500",
+      "source": "open-meteo"
+    },
+    {
+      "city": "Las Vegas, USA",
+      "slug": "las-vegas",
+      "time": "2026-07-11 17:56 UTC",
       "text": "Extreme Heat Signal: forecast temperature reached 40°C. Forecast-derived signal, not an official government alert.",
+      "icon": "🌡️",
+      "border": "border-orange-500",
+      "source": "open-meteo"
+    },
+    {
+      "city": "Phoenix, USA",
+      "slug": "phoenix",
+      "time": "2026-07-11 17:56 UTC",
+      "text": "Extreme Heat Signal: forecast temperature reached 39°C. Forecast-derived signal, not an official government alert.",
       "icon": "🌡️",
       "border": "border-orange-500",
       "source": "open-meteo"

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T18:22:53.406189+00:00",
+  "generated_at": "2026-07-11T17:54:33.662245+00:00",
   "articles": [
     {
       "slug": "typhoon-naming",
@@ -21,7 +21,7 @@
         "en": "<p>Typhoon names are maintained by regional meteorological committees so warnings stay clear across countries and languages.</p><h2>Core rules</h2><ul><li>Names come from rotating regional lists.</li><li>Names may be retired after severe impacts.</li><li>Name-based alerts should be paired with local official warnings.</li></ul>",
         "zh": "<p>台风名称通常由区域气象委员会维护，目的是让跨国家、跨语言的预警沟通更清晰。</p><h2>核心规则</h2><ul><li>名称来自轮换区域清单。</li><li>造成重大影响的名称可能被退役。</li><li>名称信息应与当地官方预警结合使用。</li></ul>"
       },
-      "last_reviewed": "2026-07-10"
+      "last_reviewed": "2026-07-11"
     },
     {
       "slug": "cyclone-scale",
@@ -43,7 +43,7 @@
         "en": "<p>Tropical cyclone classification converts sustained wind into risk language that emergency teams and the public can act on.</p><h2>What differs by basin</h2><ul><li>The Atlantic commonly uses the Saffir-Simpson hurricane wind scale.</li><li>Western Pacific agencies use typhoon intensity terms and local warning signals.</li><li>Impact depends on rainfall, storm surge, terrain, and exposure, not wind alone.</li></ul>",
         "zh": "<p>热带气旋分级把持续风速转化为公众和应急部门可理解的风险语言。</p><h2>不同海区的差异</h2><ul><li>大西洋常用萨菲尔-辛普森飓风等级。</li><li>西北太平洋会结合台风强度术语和本地预警信号。</li><li>影响不只取决于风速，还与降雨、风暴潮、地形和暴露度有关。</li></ul>"
       },
-      "last_reviewed": "2026-07-10"
+      "last_reviewed": "2026-07-11"
     },
     {
       "slug": "typhoon-archive",
@@ -65,7 +65,7 @@
         "en": "<p>Historical typhoon archives help compare landfall risk, rainfall extremes, surge damage, and recovery lessons.</p><h2>How to read an archive</h2><ul><li>Track intensity together with landfall timing and population exposure.</li><li>Separate meteorological strength from social impact.</li><li>Use archives for planning, not for assuming a future storm will repeat exactly.</li></ul>",
         "zh": "<p>历史台风档案有助于比较登陆风险、极端降雨、风暴潮损失和恢复经验。</p><h2>阅读档案的方法</h2><ul><li>把强度、登陆时间和人口暴露度一起看。</li><li>区分气象强度与社会影响。</li><li>档案适合风险规划，不代表未来风暴会完全重复。</li></ul>"
       },
-      "last_reviewed": "2026-07-10"
+      "last_reviewed": "2026-07-11"
     },
     {
       "slug": "el-nino",
@@ -87,7 +87,7 @@
         "en": "<p>El Niño is a recurring warming of the central and eastern tropical Pacific. It shifts atmospheric circulation and can change weather risks far beyond the Pacific basin.</p><h2>Signals to track</h2><ul><li>Niño 3.4 sea-surface temperature anomalies.</li><li>Trade wind weakening and convection moving eastward.</li><li>Regional rainfall and temperature departures.</li></ul>",
         "zh": "<p>厄尔尼诺是中东太平洋热带海域周期性偏暖现象，会改变大气环流，并把天气风险影响扩展到太平洋以外地区。</p><h2>重点信号</h2><ul><li>Niño 3.4 区域海温距平。</li><li>信风减弱以及对流区东移。</li><li>各地区降雨和气温相对常年的偏离。</li></ul>"
       },
-      "last_reviewed": "2026-07-10"
+      "last_reviewed": "2026-07-11"
     },
     {
       "slug": "la-nina",
@@ -109,7 +109,7 @@
         "en": "<p>La Niña is the cool phase of ENSO, usually linked to stronger Pacific trade winds and shifted rainfall patterns.</p><h2>Planning notes</h2><ul><li>Effects vary by region and season.</li><li>It can alter tropical cyclone formation zones.</li><li>Local forecasts remain necessary for day-to-day decisions.</li></ul>",
         "zh": "<p>拉尼娜是 ENSO 的冷位相，通常与太平洋信风增强和降雨带移动有关。</p><h2>规划提示</h2><ul><li>影响会随地区和季节变化。</li><li>可能改变热带气旋生成区域。</li><li>日常决策仍需要查看本地预报。</li></ul>"
       },
-      "last_reviewed": "2026-07-10"
+      "last_reviewed": "2026-07-11"
     },
     {
       "slug": "enso-cycle",
@@ -131,7 +131,7 @@
         "en": "<p>ENSO links ocean temperature, winds, and tropical rainfall into a repeating but irregular climate pattern.</p><h2>Three phases</h2><ul><li>El Niño: warmer central and eastern Pacific.</li><li>La Niña: cooler central and eastern Pacific.</li><li>Neutral: neither warm nor cool thresholds persist.</li></ul>",
         "zh": "<p>ENSO 把海温、风场和热带降雨连接成一种重复但不规则的气候振荡。</p><h2>三种位相</h2><ul><li>厄尔尼诺：中东太平洋偏暖。</li><li>拉尼娜：中东太平洋偏冷。</li><li>中性：冷暖信号都未持续达到阈值。</li></ul>"
       },
-      "last_reviewed": "2026-07-10"
+      "last_reviewed": "2026-07-11"
     },
     {
       "slug": "climate-change",
@@ -153,7 +153,7 @@
         "en": "<p>Climate change data combines long-term observations with near-real-time weather monitoring. WeatherIndex treats climate context as background information while city pages remain driven by live forecast APIs.</p><h2>Data points to watch</h2><ul><li>Temperature anomalies against a historical baseline.</li><li>Heat-wave frequency and duration.</li><li>Extreme rainfall intensity and drought persistence.</li></ul>",
         "zh": "<p>气候变化数据把长期观测与近实时天气监测结合起来。WeatherIndex 将气候内容作为背景知识，城市页面仍以实时预报 API 为核心。</p><h2>重点数据</h2><ul><li>相对历史基准的气温距平。</li><li>热浪频率和持续时间。</li><li>极端降雨强度与干旱持续性。</li></ul>"
       },
-      "last_reviewed": "2026-07-10"
+      "last_reviewed": "2026-07-11"
     },
     {
       "slug": "global-warming",
@@ -175,7 +175,7 @@
         "en": "<p>Global warming describes the long-term rise in Earth's average temperature, driven mainly by increasing greenhouse gases.</p><h2>Why weather users care</h2><ul><li>A warmer atmosphere can hold more water vapor.</li><li>Heat extremes become more likely in many regions.</li><li>Baseline climate shifts change how forecasts are interpreted.</li></ul>",
         "zh": "<p>全球变暖指地球平均温度长期上升，主要由温室气体浓度增加驱动。</p><h2>天气用户为什么要关心</h2><ul><li>更暖的大气可容纳更多水汽。</li><li>许多地区高温极端事件概率上升。</li><li>气候基线变化会影响我们解读预报的方式。</li></ul>"
       },
-      "last_reviewed": "2026-07-10"
+      "last_reviewed": "2026-07-11"
     },
     {
       "slug": "sea-level",
@@ -197,7 +197,7 @@
         "en": "<p>Sea level rise is shaped by melting land ice and thermal expansion of seawater. It turns ordinary coastal storms into higher-impact flood events.</p><h2>Key signals</h2><ul><li>Satellite altimetry tracks global mean sea level.</li><li>Local land motion can amplify or reduce relative rise.</li><li>Storm surge risk grows when baseline water levels rise.</li></ul>",
         "zh": "<p>海平面上升受陆地冰融化和海水热膨胀共同影响，会让普通沿海风暴造成更高影响的洪涝事件。</p><h2>关键信号</h2><ul><li>卫星测高追踪全球平均海平面。</li><li>本地地面升降会改变相对海平面变化。</li><li>基线水位上升会放大风暴潮风险。</li></ul>"
       },
-      "last_reviewed": "2026-07-10"
+      "last_reviewed": "2026-07-11"
     },
     {
       "slug": "carbon-neutral",
@@ -219,7 +219,7 @@
         "en": "<p>Carbon neutrality means balancing remaining emissions with removals or verified offsets, while reducing emissions as much as possible first.</p><h2>What to compare</h2><ul><li>Target year and legal status.</li><li>Power, transport, buildings, and industry pathways.</li><li>Whether plans include adaptation for unavoidable weather risk.</li></ul>",
         "zh": "<p>碳中和指在尽可能减排之后，通过移除或可信抵消来平衡剩余排放。</p><h2>比较重点</h2><ul><li>目标年份和法律约束力。</li><li>电力、交通、建筑和工业路径。</li><li>是否包含应对不可避免天气风险的适应计划。</li></ul>"
       },
-      "last_reviewed": "2026-07-10"
+      "last_reviewed": "2026-07-11"
     },
     {
       "slug": "extreme-weather",
@@ -241,7 +241,7 @@
         "en": "<p>Extreme weather archives organize events by hazard, location, exposure, and confirmed impacts.</p><h2>Review checklist</h2><ul><li>Separate forecast signals from verified observations.</li><li>Track human exposure and infrastructure vulnerability.</li><li>Compare events with local historical percentiles.</li></ul>",
         "zh": "<p>极端天气档案按灾害类型、地点、暴露度和已确认影响来整理事件。</p><h2>复盘清单</h2><ul><li>区分预报信号和已验证观测。</li><li>记录人口暴露和基础设施脆弱性。</li><li>与本地历史百分位进行比较。</li></ul>"
       },
-      "last_reviewed": "2026-07-10"
+      "last_reviewed": "2026-07-11"
     },
     {
       "slug": "heat-cold-waves",
@@ -263,7 +263,7 @@
         "en": "<p>Heat waves and cold waves are sustained temperature extremes relative to local climate, not just single hot or cold days.</p><h2>Risk factors</h2><ul><li>Duration often matters as much as peak temperature.</li><li>Nighttime temperatures affect health recovery.</li><li>Wind, humidity, snow, and power demand change impacts.</li></ul>",
         "zh": "<p>热浪和寒潮是相对本地气候而言持续出现的温度极端，并不只是某一天特别热或特别冷。</p><h2>风险因素</h2><ul><li>持续时间常常和峰值温度一样重要。</li><li>夜间温度影响人体恢复。</li><li>风、湿度、积雪和用电需求会改变影响。</li></ul>"
       },
-      "last_reviewed": "2026-07-10"
+      "last_reviewed": "2026-07-11"
     },
     {
       "slug": "tornado-science",
@@ -285,7 +285,7 @@
         "en": "<p>Tornadoes are most often linked to severe thunderstorms where instability and wind shear organize rotating updrafts.</p><h2>Ingredients</h2><ul><li>Warm, moist low-level air.</li><li>Cooler air aloft and strong instability.</li><li>Changing wind speed or direction with height.</li></ul>",
         "zh": "<p>龙卷风通常与强雷暴有关，当不稳定能量和风切变组织出旋转上升气流时风险升高。</p><h2>形成条件</h2><ul><li>低层暖湿空气。</li><li>高空较冷空气和强不稳定能量。</li><li>风速或风向随高度明显变化。</li></ul>"
       },
-      "last_reviewed": "2026-07-10"
+      "last_reviewed": "2026-07-11"
     },
     {
       "slug": "solar-terms",
@@ -307,7 +307,7 @@
         "en": "<p>The 24 solar terms divide the year by the Sun's apparent motion and preserve long-running seasonal knowledge.</p><h2>Modern reading</h2><ul><li>Solar terms describe seasonal tendency, not exact local weather.</li><li>Latitude and terrain change how each term feels.</li><li>Forecast data turns cultural timing into practical planning.</li></ul>",
         "zh": "<p>二十四节气根据太阳周年视运动划分一年，保存了长期季节经验。</p><h2>现代解读</h2><ul><li>节气描述季节趋势，不等于精确本地天气。</li><li>纬度和地形会改变节气体感。</li><li>预报数据能把文化时间转化为实际安排。</li></ul>"
       },
-      "last_reviewed": "2026-07-10"
+      "last_reviewed": "2026-07-11"
     },
     {
       "slug": "urban-heat",
@@ -329,7 +329,7 @@
         "en": "<p>Urban heat islands form when buildings, roads, and limited vegetation store heat and slow nighttime cooling.</p><h2>Mitigation tools</h2><ul><li>Shade trees and connected green space.</li><li>Cool roofs and reflective paving.</li><li>Heat-health alerts tied to local vulnerability.</li></ul>",
         "zh": "<p>城市热岛来自建筑、道路和植被不足导致的蓄热，以及夜间降温变慢。</p><h2>缓解工具</h2><ul><li>遮荫树木和连续绿地。</li><li>冷屋顶和高反射铺装。</li><li>结合本地脆弱性的高温健康预警。</li></ul>"
       },
-      "last_reviewed": "2026-07-10"
+      "last_reviewed": "2026-07-11"
     },
     {
       "slug": "forecast-tech",
@@ -351,7 +351,7 @@
         "en": "<p>Modern forecasting blends observations, physics-based numerical models, human expertise, and increasingly AI-assisted pattern recognition.</p><h2>Core pipeline</h2><ul><li>Observe the atmosphere with stations, radar, satellites, and aircraft.</li><li>Assimilate data into model initial conditions.</li><li>Compare ensembles to express uncertainty.</li></ul>",
         "zh": "<p>现代天气预报结合观测、物理数值模式、预报员经验，以及越来越多的 AI 辅助模式识别。</p><h2>核心流程</h2><ul><li>通过气象站、雷达、卫星和飞机观测大气。</li><li>把数据同化为模式初始场。</li><li>比较集合预报来表达不确定性。</li></ul>"
       },
-      "last_reviewed": "2026-07-10"
+      "last_reviewed": "2026-07-11"
     }
   ]
 }
