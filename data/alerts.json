@@ -1,12 +1,30 @@
 {
   "alerts": [
     {
-      "city": "Shanghai, China",
-      "slug": "shanghai",
-      "time": "2026-07-12 03:18 UTC",
-      "text": "High Wind Signal: sustained forecast wind speeds reached 34 km/h. Forecast-derived signal, not an official government alert.",
-      "icon": "💨",
-      "border": "border-red-500",
+      "city": "Dubai, UAE",
+      "slug": "dubai",
+      "time": "2026-07-12 08:24 UTC",
+      "text": "Extreme Heat Signal: forecast temperature reached 39°C. Forecast-derived signal, not an official government alert.",
+      "icon": "🌡️",
+      "border": "border-orange-500",
+      "source": "open-meteo"
+    },
+    {
+      "city": "Riyadh, Saudi Arabia",
+      "slug": "riyadh",
+      "time": "2026-07-12 08:24 UTC",
+      "text": "Extreme Heat Signal: forecast temperature reached 39°C. Forecast-derived signal, not an official government alert.",
+      "icon": "🌡️",
+      "border": "border-orange-500",
+      "source": "open-meteo"
+    },
+    {
+      "city": "Doha, Qatar",
+      "slug": "doha",
+      "time": "2026-07-12 08:24 UTC",
+      "text": "Extreme Heat Signal: forecast temperature reached 45°C. Forecast-derived signal, not an official government alert.",
+      "icon": "🌡️",
+      "border": "border-orange-500",
       "source": "open-meteo"
     }
   ],
