@@ -1,0 +1,138 @@
+{
+  "stage": "audit",
+  "generated_at": "2026-07-15T18:09:22.002216+00:00",
+  "issue_count": 0,
+  "warning_count": 0,
+  "issues": [],
+  "warnings": [],
+  "cache_refresh": {
+    "updated": true,
+    "live_entries": 104,
+    "total": 104
+  },
+  "input_checks": [
+    {
+      "name": "city-seeds",
+      "ok": "true",
+      "detail": "config/city-seeds.json"
+    },
+    {
+      "name": "wiki-articles",
+      "ok": "true",
+      "detail": "config/wiki-articles.json"
+    },
+    {
+      "name": "city-count",
+      "ok": "true",
+      "detail": "104"
+    },
+    {
+      "name": "city-required-fields",
+      "ok": "true",
+      "detail": ""
+    },
+    {
+      "name": "wiki-required-topics",
+      "ok": "true",
+      "detail": "carbon-neutral, climate-change, cyclone-scale, el-nino, enso-cycle, extreme-weather, forecast-tech, global-warming, heat-cold-waves, la-nina, sea-level, solar-terms, tornado-science, typhoon-archive, typhoon-naming, urban-heat"
+    },
+    {
+      "name": "asset:typhoon-naming",
+      "ok": "true",
+      "detail": "assets/wiki/typhoon-naming.svg"
+    },
+    {
+      "name": "asset:cyclone-scale",
+      "ok": "true",
+      "detail": "assets/wiki/cyclone-scale.svg"
+    },
+    {
+      "name": "asset:typhoon-archive",
+      "ok": "true",
+      "detail": "assets/wiki/typhoon-archive.svg"
+    },
+    {
+      "name": "asset:el-nino",
+      "ok": "true",
+      "detail": "assets/wiki/el-nino.png"
+    },
+    {
+      "name": "asset:la-nina",
+      "ok": "true",
+      "detail": "assets/wiki/la-nina.png"
+    },
+    {
+      "name": "asset:enso-cycle",
+      "ok": "true",
+      "detail": "assets/wiki/enso-cycle.png"
+    },
+    {
+      "name": "asset:climate-change",
+      "ok": "true",
+      "detail": "assets/wiki/climate-change.svg"
+    },
+    {
+      "name": "asset:global-warming",
+      "ok": "true",
+      "detail": "assets/wiki/global-warming.svg"
+    },
+    {
+      "name": "asset:sea-level",
+      "ok": "true",
+      "detail": "assets/wiki/sea-level.svg"
+    },
+    {
+      "name": "asset:carbon-neutral",
+      "ok": "true",
+      "detail": "assets/wiki/carbon-neutral.svg"
+    },
+    {
+      "name": "asset:extreme-weather",
+      "ok": "true",
+      "detail": "assets/wiki/extreme-weather.svg"
+    },
+    {
+      "name": "asset:heat-cold-waves",
+      "ok": "true",
+      "detail": "assets/wiki/heat-cold-waves.svg"
+    },
+    {
+      "name": "asset:tornado-science",
+      "ok": "true",
+      "detail": "assets/wiki/tornado-science.svg"
+    },
+    {
+      "name": "asset:solar-terms",
+      "ok": "true",
+      "detail": "assets/wiki/solar-terms.svg"
+    },
+    {
+      "name": "asset:urban-heat",
+      "ok": "true",
+      "detail": "assets/wiki/urban-heat.svg"
+    },
+    {
+      "name": "asset:forecast-tech",
+      "ok": "true",
+      "detail": "assets/wiki/forecast-tech.svg"
+    }
+  ],
+  "generated_checks": [
+    {
+      "name": "generated-city-count",
+      "ok": "true",
+      "detail": "104"
+    },
+    {
+      "name": "live-weather-coverage",
+      "ok": "true",
+      "severity": "ok",
+      "detail": "live=104 stale=0 ratio=1.00"
+    },
+    {
+      "name": "daily-forecast-present",
+      "ok": "true",
+      "detail": ""
+    }
+  ]
+}
