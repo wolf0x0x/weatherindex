@@ -1,10 +1,10 @@
 {
   "alerts": [
     {
-      "city": "Phoenix, USA",
-      "slug": "phoenix",
-      "time": "2026-07-15 02:44 UTC",
-      "text": "Extreme Heat Signal: forecast temperature reached 39°C. Forecast-derived signal, not an official government alert.",
+      "city": "Dubai, UAE",
+      "slug": "dubai",
+      "time": "2026-07-15 05:37 UTC",
+      "text": "Extreme Heat Signal: forecast temperature reached 40°C. Forecast-derived signal, not an official government alert.",
       "icon": "🌡️",
       "border": "border-orange-500",
       "source": "open-meteo"
@@ -12,8 +12,8 @@
     {
       "city": "Reykjavik, Iceland",
       "slug": "reykjavik",
-      "time": "2026-07-15 02:44 UTC",
-      "text": "High Wind Signal: sustained forecast wind speeds reached 35 km/h. Forecast-derived signal, not an official government alert.",
+      "time": "2026-07-15 05:37 UTC",
+      "text": "High Wind Signal: sustained forecast wind speeds reached 36 km/h. Forecast-derived signal, not an official government alert.",
       "icon": "💨",
       "border": "border-red-500",
       "source": "open-meteo"
