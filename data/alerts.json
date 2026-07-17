@@ -1,23 +1,4 @@
 {
-  "alerts": [
-    {
-      "city": "Las Vegas, USA",
-      "slug": "las-vegas",
-      "time": "2026-07-16 22:07 UTC",
-      "text": "High Wind Signal: sustained forecast wind speeds reached 34 km/h. Forecast-derived signal, not an official government alert.",
-      "icon": "💨",
-      "border": "border-red-500",
-      "source": "open-meteo"
-    },
-    {
-      "city": "Phoenix, USA",
-      "slug": "phoenix",
-      "time": "2026-07-16 22:07 UTC",
-      "text": "Extreme Heat Signal: forecast temperature reached 39°C. Forecast-derived signal, not an official government alert.",
-      "icon": "🌡️",
-      "border": "border-orange-500",
-      "source": "open-meteo"
-    }
-  ],
+  "alerts": [],
   "notice": "Forecast-derived signals only; not official government alerts."
 }
