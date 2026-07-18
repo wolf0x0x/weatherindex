@@ -1,4 +1,14 @@
 {
-  "alerts": [],
+  "alerts": [
+    {
+      "city": "Oslo, Norway",
+      "slug": "oslo",
+      "time": "2026-07-18 05:31 UTC",
+      "text": "High Wind Signal: sustained forecast wind speeds reached 31 km/h. Forecast-derived signal, not an official government alert.",
+      "icon": "💨",
+      "border": "border-red-500",
+      "source": "open-meteo"
+    }
+  ],
   "notice": "Forecast-derived signals only; not official government alerts."
 }
