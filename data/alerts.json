@@ -1,28 +1,10 @@
 {
   "alerts": [
     {
-      "city": "Cairo, Egypt",
-      "slug": "cairo",
-      "time": "2026-07-20 14:13 UTC",
-      "text": "Extreme Heat Signal: forecast temperature reached 40°C. Forecast-derived signal, not an official government alert.",
-      "icon": "🌡️",
-      "border": "border-orange-500",
-      "source": "open-meteo"
-    },
-    {
       "city": "Riyadh, Saudi Arabia",
       "slug": "riyadh",
-      "time": "2026-07-20 14:13 UTC",
-      "text": "Extreme Heat Signal: forecast temperature reached 44°C. Forecast-derived signal, not an official government alert.",
-      "icon": "🌡️",
-      "border": "border-orange-500",
-      "source": "7timer"
-    },
-    {
-      "city": "Doha, Qatar",
-      "slug": "doha",
-      "time": "2026-07-20 14:13 UTC",
-      "text": "Extreme Heat Signal: forecast temperature reached 39°C. Forecast-derived signal, not an official government alert.",
+      "time": "2026-07-20 16:26 UTC",
+      "text": "Extreme Heat Signal: forecast temperature reached 42°C. Forecast-derived signal, not an official government alert.",
       "icon": "🌡️",
       "border": "border-orange-500",
       "source": "open-meteo"
