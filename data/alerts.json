@@ -1,19 +1,10 @@
 {
   "alerts": [
     {
-      "city": "Riyadh, Saudi Arabia",
-      "slug": "riyadh",
-      "time": "2026-07-20 19:48 UTC",
-      "text": "Extreme Heat Signal: forecast temperature reached 39°C. Forecast-derived signal, not an official government alert.",
-      "icon": "🌡️",
-      "border": "border-orange-500",
-      "source": "open-meteo"
-    },
-    {
       "city": "Las Vegas, USA",
       "slug": "las-vegas",
-      "time": "2026-07-20 19:48 UTC",
-      "text": "Extreme Heat Signal: forecast temperature reached 41°C. Forecast-derived signal, not an official government alert.",
+      "time": "2026-07-20 22:04 UTC",
+      "text": "Extreme Heat Signal: forecast temperature reached 42°C. Forecast-derived signal, not an official government alert.",
       "icon": "🌡️",
       "border": "border-orange-500",
       "source": "open-meteo"
@@ -21,16 +12,7 @@
     {
       "city": "Denver, USA",
       "slug": "denver",
-      "time": "2026-07-20 19:48 UTC",
-      "text": "Extreme Heat Signal: forecast temperature reached 39°C. Forecast-derived signal, not an official government alert.",
-      "icon": "🌡️",
-      "border": "border-orange-500",
-      "source": "open-meteo"
-    },
-    {
-      "city": "Dallas, USA",
-      "slug": "dallas",
-      "time": "2026-07-20 19:48 UTC",
+      "time": "2026-07-20 22:04 UTC",
       "text": "Extreme Heat Signal: forecast temperature reached 39°C. Forecast-derived signal, not an official government alert.",
       "icon": "🌡️",
       "border": "border-orange-500",
@@ -39,8 +21,8 @@
     {
       "city": "Phoenix, USA",
       "slug": "phoenix",
-      "time": "2026-07-20 19:48 UTC",
-      "text": "Extreme Heat Signal: forecast temperature reached 40°C. Forecast-derived signal, not an official government alert.",
+      "time": "2026-07-20 22:04 UTC",
+      "text": "Extreme Heat Signal: forecast temperature reached 41°C. Forecast-derived signal, not an official government alert.",
       "icon": "🌡️",
       "border": "border-orange-500",
       "source": "open-meteo"
