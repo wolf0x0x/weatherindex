@@ -1,32 +1,4 @@
 {
-  "alerts": [
-    {
-      "city": "Santiago, Chile",
-      "slug": "santiago",
-      "time": "2026-07-21 22:08 UTC",
-      "text": "Extreme Heat Signal: forecast temperature reached 40°C. Forecast-derived signal, not an official government alert.",
-      "icon": "🌡️",
-      "border": "border-orange-500",
-      "source": "wttr.in"
-    },
-    {
-      "city": "Mumbai, India",
-      "slug": "mumbai",
-      "time": "2026-07-21 22:08 UTC",
-      "text": "High Wind Signal: sustained forecast wind speeds reached 40 km/h. Forecast-derived signal, not an official government alert.",
-      "icon": "💨",
-      "border": "border-red-500",
-      "source": "wttr.in"
-    },
-    {
-      "city": "Dallas, USA",
-      "slug": "dallas",
-      "time": "2026-07-21 22:08 UTC",
-      "text": "Extreme Heat Signal: forecast temperature reached 41°C. Forecast-derived signal, not an official government alert.",
-      "icon": "🌡️",
-      "border": "border-orange-500",
-      "source": "open-meteo"
-    }
-  ],
+  "alerts": [],
   "notice": "Forecast-derived signals only; not official government alerts."
 }
