@@ -1,10 +1,10 @@
 {
   "alerts": [
     {
-      "city": "Dubai, UAE",
-      "slug": "dubai",
-      "time": "2026-07-23 08:36 UTC",
-      "text": "Extreme Heat Signal: forecast temperature reached 40°C. Forecast-derived signal, not an official government alert.",
+      "city": "Cairo, Egypt",
+      "slug": "cairo",
+      "time": "2026-07-23 11:14 UTC",
+      "text": "Extreme Heat Signal: forecast temperature reached 39°C. Forecast-derived signal, not an official government alert.",
       "icon": "🌡️",
       "border": "border-orange-500",
       "source": "open-meteo"
@@ -12,8 +12,8 @@
     {
       "city": "Riyadh, Saudi Arabia",
       "slug": "riyadh",
-      "time": "2026-07-23 08:36 UTC",
-      "text": "Extreme Heat Signal: forecast temperature reached 43°C. Forecast-derived signal, not an official government alert.",
+      "time": "2026-07-23 11:14 UTC",
+      "text": "Extreme Heat Signal: forecast temperature reached 45°C. Forecast-derived signal, not an official government alert.",
       "icon": "🌡️",
       "border": "border-orange-500",
       "source": "open-meteo"
@@ -21,20 +21,11 @@
     {
       "city": "Doha, Qatar",
       "slug": "doha",
-      "time": "2026-07-23 08:36 UTC",
+      "time": "2026-07-23 11:14 UTC",
       "text": "Extreme Heat Signal: forecast temperature reached 47°C. Forecast-derived signal, not an official government alert.",
       "icon": "🌡️",
       "border": "border-orange-500",
       "source": "open-meteo"
-    },
-    {
-      "city": "Phoenix, USA",
-      "slug": "phoenix",
-      "time": "2026-07-23 08:36 UTC",
-      "text": "Extreme Heat Signal: forecast temperature reached 39°C. Forecast-derived signal, not an official government alert.",
-      "icon": "🌡️",
-      "border": "border-orange-500",
-      "source": "7timer"
     }
   ],
   "notice": "Forecast-derived signals only; not official government alerts."
