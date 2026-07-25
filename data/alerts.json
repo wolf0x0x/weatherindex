@@ -1,19 +1,28 @@
 {
   "alerts": [
     {
-      "city": "Cairo, Egypt",
-      "slug": "cairo",
-      "time": "2026-07-25 13:42 UTC",
+      "city": "Riyadh, Saudi Arabia",
+      "slug": "riyadh",
+      "time": "2026-07-25 16:07 UTC",
+      "text": "Extreme Heat Signal: forecast temperature reached 40°C. Forecast-derived signal, not an official government alert.",
+      "icon": "🌡️",
+      "border": "border-orange-500",
+      "source": "open-meteo"
+    },
+    {
+      "city": "Las Vegas, USA",
+      "slug": "las-vegas",
+      "time": "2026-07-25 16:07 UTC",
       "text": "Extreme Heat Signal: forecast temperature reached 39°C. Forecast-derived signal, not an official government alert.",
       "icon": "🌡️",
       "border": "border-orange-500",
       "source": "open-meteo"
     },
     {
-      "city": "Riyadh, Saudi Arabia",
-      "slug": "riyadh",
-      "time": "2026-07-25 13:42 UTC",
-      "text": "Extreme Heat Signal: forecast temperature reached 41°C. Forecast-derived signal, not an official government alert.",
+      "city": "Phoenix, USA",
+      "slug": "phoenix",
+      "time": "2026-07-25 16:07 UTC",
+      "text": "Extreme Heat Signal: forecast temperature reached 39°C. Forecast-derived signal, not an official government alert.",
       "icon": "🌡️",
       "border": "border-orange-500",
       "source": "7timer"
