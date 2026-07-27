@@ -1,13 +1,40 @@
 {
   "alerts": [
     {
-      "city": "Riyadh, Saudi Arabia",
-      "slug": "riyadh",
-      "time": "2026-07-27 17:02 UTC",
-      "text": "Extreme Heat Signal: forecast temperature reached 40°C. Forecast-derived signal, not an official government alert.",
+      "city": "Chicago, USA",
+      "slug": "chicago",
+      "time": "2026-07-27 18:25 UTC",
+      "text": "High Wind Signal: sustained forecast wind speeds reached 82 km/h. Forecast-derived signal, not an official government alert.",
+      "icon": "💨",
+      "border": "border-red-500",
+      "source": "open-meteo"
+    },
+    {
+      "city": "Las Vegas, USA",
+      "slug": "las-vegas",
+      "time": "2026-07-27 18:25 UTC",
+      "text": "Extreme Heat Signal: forecast temperature reached 41°C. Forecast-derived signal, not an official government alert.",
       "icon": "🌡️",
       "border": "border-orange-500",
-      "source": "7timer"
+      "source": "open-meteo"
+    },
+    {
+      "city": "Phoenix, USA",
+      "slug": "phoenix",
+      "time": "2026-07-27 18:25 UTC",
+      "text": "Extreme Heat Signal: forecast temperature reached 41°C. Forecast-derived signal, not an official government alert.",
+      "icon": "🌡️",
+      "border": "border-orange-500",
+      "source": "open-meteo"
+    },
+    {
+      "city": "Reykjavik, Iceland",
+      "slug": "reykjavik",
+      "time": "2026-07-27 18:25 UTC",
+      "text": "High Wind Signal: sustained forecast wind speeds reached 35 km/h. Forecast-derived signal, not an official government alert.",
+      "icon": "💨",
+      "border": "border-red-500",
+      "source": "open-meteo"
     }
   ],
   "notice": "Forecast-derived signals only; not official government alerts."
