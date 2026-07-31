@@ -1,10 +1,10 @@
 {
   "alerts": [
     {
-      "city": "Phoenix, USA",
-      "slug": "phoenix",
-      "time": "2026-07-31 03:19 UTC",
-      "text": "Extreme Heat Signal: forecast temperature reached 39°C. Forecast-derived signal, not an official government alert.",
+      "city": "Dubai, UAE",
+      "slug": "dubai",
+      "time": "2026-07-31 08:55 UTC",
+      "text": "Extreme Heat Signal: forecast temperature reached 43°C. Forecast-derived signal, not an official government alert.",
       "icon": "🌡️",
       "border": "border-orange-500",
       "source": "open-meteo"
