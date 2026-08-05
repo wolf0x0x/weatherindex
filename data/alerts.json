@@ -3,8 +3,17 @@
     {
       "city": "Dubai, UAE",
       "slug": "dubai",
-      "time": "2026-08-05 11:24 UTC",
-      "text": "Extreme Heat Signal: forecast temperature reached 42°C. Forecast-derived signal, not an official government alert.",
+      "time": "2026-08-05 14:16 UTC",
+      "text": "Extreme Heat Signal: forecast temperature reached 39°C. Forecast-derived signal, not an official government alert.",
+      "icon": "🌡️",
+      "border": "border-orange-500",
+      "source": "open-meteo"
+    },
+    {
+      "city": "Vienna, Austria",
+      "slug": "vienna",
+      "time": "2026-08-05 14:16 UTC",
+      "text": "Extreme Heat Signal: forecast temperature reached 40°C. Forecast-derived signal, not an official government alert.",
       "icon": "🌡️",
       "border": "border-orange-500",
       "source": "open-meteo"
@@ -12,17 +21,17 @@
     {
       "city": "Riyadh, Saudi Arabia",
       "slug": "riyadh",
-      "time": "2026-08-05 11:24 UTC",
-      "text": "Extreme Heat Signal: forecast temperature reached 45°C. Forecast-derived signal, not an official government alert.",
+      "time": "2026-08-05 14:16 UTC",
+      "text": "Extreme Heat Signal: forecast temperature reached 44°C. Forecast-derived signal, not an official government alert.",
       "icon": "🌡️",
       "border": "border-orange-500",
       "source": "open-meteo"
     },
     {
-      "city": "Doha, Qatar",
-      "slug": "doha",
-      "time": "2026-08-05 11:24 UTC",
-      "text": "Extreme Heat Signal: forecast temperature reached 42°C. Forecast-derived signal, not an official government alert.",
+      "city": "Florence, Italy",
+      "slug": "florence",
+      "time": "2026-08-05 14:16 UTC",
+      "text": "Extreme Heat Signal: forecast temperature reached 39°C. Forecast-derived signal, not an official government alert.",
       "icon": "🌡️",
       "border": "border-orange-500",
       "source": "open-meteo"
@@ -30,8 +39,8 @@
     {
       "city": "Budapest, Hungary",
       "slug": "budapest",
-      "time": "2026-08-05 11:24 UTC",
-      "text": "Extreme Heat Signal: forecast temperature reached 39°C. Forecast-derived signal, not an official government alert.",
+      "time": "2026-08-05 14:16 UTC",
+      "text": "Extreme Heat Signal: forecast temperature reached 40°C. Forecast-derived signal, not an official government alert.",
       "icon": "🌡️",
       "border": "border-orange-500",
       "source": "open-meteo"
