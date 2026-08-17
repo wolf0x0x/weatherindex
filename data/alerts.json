@@ -3,11 +3,11 @@
     {
       "city": "Phoenix, USA",
       "slug": "phoenix",
-      "time": "2026-08-17 01:26 UTC",
+      "time": "2026-08-17 03:54 UTC",
       "text": "Extreme Heat Signal: forecast temperature reached 41°C. Forecast-derived signal, not an official government alert.",
       "icon": "🌡️",
       "border": "border-orange-500",
-      "source": "open-meteo"
+      "source": "7timer"
     }
   ],
   "notice": "Forecast-derived signals only; not official government alerts."
