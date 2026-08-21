@@ -1,22 +1,13 @@
 {
   "alerts": [
     {
-      "city": "Las Vegas, USA",
-      "slug": "las-vegas",
-      "time": "2026-08-21 03:53 UTC",
-      "text": "Extreme Heat Signal: forecast temperature reached 39°C. Forecast-derived signal, not an official government alert.",
+      "city": "Dubai, UAE",
+      "slug": "dubai",
+      "time": "2026-08-21 06:53 UTC",
+      "text": "Extreme Heat Signal: forecast temperature reached 40°C. Forecast-derived signal, not an official government alert.",
       "icon": "🌡️",
       "border": "border-orange-500",
-      "source": "7timer"
-    },
-    {
-      "city": "Houston, USA",
-      "slug": "houston",
-      "time": "2026-08-21 03:53 UTC",
-      "text": "Extreme Heat Signal: forecast temperature reached 39°C. Forecast-derived signal, not an official government alert.",
-      "icon": "🌡️",
-      "border": "border-orange-500",
-      "source": "7timer"
+      "source": "open-meteo"
     }
   ],
   "notice": "Forecast-derived signals only; not official government alerts."
