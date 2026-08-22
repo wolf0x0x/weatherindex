@@ -3,8 +3,8 @@
     {
       "city": "Helsinki, Finland",
       "slug": "helsinki",
-      "time": "2026-08-22 17:21 UTC",
-      "text": "High Wind Signal: sustained forecast wind speeds reached 33 km/h. Forecast-derived signal, not an official government alert.",
+      "time": "2026-08-22 18:35 UTC",
+      "text": "High Wind Signal: sustained forecast wind speeds reached 35 km/h. Forecast-derived signal, not an official government alert.",
       "icon": "💨",
       "border": "border-red-500",
       "source": "open-meteo"
@@ -12,8 +12,8 @@
     {
       "city": "Las Vegas, USA",
       "slug": "las-vegas",
-      "time": "2026-08-22 17:21 UTC",
-      "text": "Extreme Heat Signal: forecast temperature reached 39°C. Forecast-derived signal, not an official government alert.",
+      "time": "2026-08-22 18:35 UTC",
+      "text": "Extreme Heat Signal: forecast temperature reached 42°C. Forecast-derived signal, not an official government alert.",
       "icon": "🌡️",
       "border": "border-orange-500",
       "source": "open-meteo"
@@ -21,8 +21,8 @@
     {
       "city": "Dallas, USA",
       "slug": "dallas",
-      "time": "2026-08-22 17:21 UTC",
-      "text": "Extreme Heat Signal: forecast temperature reached 39°C. Forecast-derived signal, not an official government alert.",
+      "time": "2026-08-22 18:35 UTC",
+      "text": "Extreme Heat Signal: forecast temperature reached 40°C. Forecast-derived signal, not an official government alert.",
       "icon": "🌡️",
       "border": "border-orange-500",
       "source": "open-meteo"
@@ -30,8 +30,8 @@
     {
       "city": "Phoenix, USA",
       "slug": "phoenix",
-      "time": "2026-08-22 17:21 UTC",
-      "text": "Extreme Heat Signal: forecast temperature reached 40°C. Forecast-derived signal, not an official government alert.",
+      "time": "2026-08-22 18:35 UTC",
+      "text": "Extreme Heat Signal: forecast temperature reached 43°C. Forecast-derived signal, not an official government alert.",
       "icon": "🌡️",
       "border": "border-orange-500",
       "source": "open-meteo"
@@ -39,8 +39,8 @@
     {
       "city": "Reykjavik, Iceland",
       "slug": "reykjavik",
-      "time": "2026-08-22 17:21 UTC",
-      "text": "High Wind Signal: sustained forecast wind speeds reached 38 km/h. Forecast-derived signal, not an official government alert.",
+      "time": "2026-08-22 18:35 UTC",
+      "text": "High Wind Signal: sustained forecast wind speeds reached 37 km/h. Forecast-derived signal, not an official government alert.",
       "icon": "💨",
       "border": "border-red-500",
       "source": "open-meteo"
@@ -48,8 +48,17 @@
     {
       "city": "Tallinn, Estonia",
       "slug": "tallinn",
-      "time": "2026-08-22 17:21 UTC",
-      "text": "High Wind Signal: sustained forecast wind speeds reached 32 km/h. Forecast-derived signal, not an official government alert.",
+      "time": "2026-08-22 18:35 UTC",
+      "text": "High Wind Signal: sustained forecast wind speeds reached 33 km/h. Forecast-derived signal, not an official government alert.",
+      "icon": "💨",
+      "border": "border-red-500",
+      "source": "open-meteo"
+    },
+    {
+      "city": "Riga, Latvia",
+      "slug": "riga",
+      "time": "2026-08-22 18:35 UTC",
+      "text": "High Wind Signal: sustained forecast wind speeds reached 47 km/h. Forecast-derived signal, not an official government alert.",
       "icon": "💨",
       "border": "border-red-500",
       "source": "open-meteo"
