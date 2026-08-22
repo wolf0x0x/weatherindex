@@ -3,8 +3,8 @@
     {
       "city": "Dubai, UAE",
       "slug": "dubai",
-      "time": "2026-08-22 09:31 UTC",
-      "text": "Extreme Heat Signal: forecast temperature reached 42°C. Forecast-derived signal, not an official government alert.",
+      "time": "2026-08-22 12:45 UTC",
+      "text": "Extreme Heat Signal: forecast temperature reached 41°C. Forecast-derived signal, not an official government alert.",
       "icon": "🌡️",
       "border": "border-orange-500",
       "source": "open-meteo"
@@ -12,10 +12,28 @@
     {
       "city": "Riyadh, Saudi Arabia",
       "slug": "riyadh",
-      "time": "2026-08-22 09:31 UTC",
+      "time": "2026-08-22 12:45 UTC",
       "text": "Extreme Heat Signal: forecast temperature reached 42°C. Forecast-derived signal, not an official government alert.",
       "icon": "🌡️",
       "border": "border-orange-500",
+      "source": "open-meteo"
+    },
+    {
+      "city": "Doha, Qatar",
+      "slug": "doha",
+      "time": "2026-08-22 12:45 UTC",
+      "text": "Extreme Heat Signal: forecast temperature reached 39°C. Forecast-derived signal, not an official government alert.",
+      "icon": "🌡️",
+      "border": "border-orange-500",
+      "source": "open-meteo"
+    },
+    {
+      "city": "Vilnius, Lithuania",
+      "slug": "vilnius",
+      "time": "2026-08-22 12:45 UTC",
+      "text": "High Wind Signal: sustained forecast wind speeds reached 35 km/h. Forecast-derived signal, not an official government alert.",
+      "icon": "💨",
+      "border": "border-red-500",
       "source": "open-meteo"
     }
   ],
