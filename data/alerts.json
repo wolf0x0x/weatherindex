@@ -3,7 +3,16 @@
     {
       "city": "Dubai, UAE",
       "slug": "dubai",
-      "time": "2026-08-23 06:46 UTC",
+      "time": "2026-08-23 09:32 UTC",
+      "text": "Extreme Heat Signal: forecast temperature reached 41°C. Forecast-derived signal, not an official government alert.",
+      "icon": "🌡️",
+      "border": "border-orange-500",
+      "source": "open-meteo"
+    },
+    {
+      "city": "Riyadh, Saudi Arabia",
+      "slug": "riyadh",
+      "time": "2026-08-23 09:32 UTC",
       "text": "Extreme Heat Signal: forecast temperature reached 42°C. Forecast-derived signal, not an official government alert.",
       "icon": "🌡️",
       "border": "border-orange-500",
@@ -12,28 +21,10 @@
     {
       "city": "Doha, Qatar",
       "slug": "doha",
-      "time": "2026-08-23 06:46 UTC",
-      "text": "Extreme Heat Signal: forecast temperature reached 41°C. Forecast-derived signal, not an official government alert.",
+      "time": "2026-08-23 09:32 UTC",
+      "text": "Extreme Heat Signal: forecast temperature reached 43°C. Forecast-derived signal, not an official government alert.",
       "icon": "🌡️",
       "border": "border-orange-500",
-      "source": "open-meteo"
-    },
-    {
-      "city": "Tallinn, Estonia",
-      "slug": "tallinn",
-      "time": "2026-08-23 06:46 UTC",
-      "text": "High Wind Signal: sustained forecast wind speeds reached 34 km/h. Forecast-derived signal, not an official government alert.",
-      "icon": "💨",
-      "border": "border-red-500",
-      "source": "open-meteo"
-    },
-    {
-      "city": "Riga, Latvia",
-      "slug": "riga",
-      "time": "2026-08-23 06:46 UTC",
-      "text": "High Wind Signal: sustained forecast wind speeds reached 31 km/h. Forecast-derived signal, not an official government alert.",
-      "icon": "💨",
-      "border": "border-red-500",
       "source": "open-meteo"
     }
   ],
