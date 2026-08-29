@@ -1,9 +1,27 @@
 {
   "alerts": [
     {
+      "city": "Amsterdam, Netherlands",
+      "slug": "amsterdam",
+      "time": "2026-08-29 23:06 UTC",
+      "text": "High Wind Signal: sustained forecast wind speeds reached 31 km/h. Forecast-derived signal, not an official government alert.",
+      "icon": "💨",
+      "border": "border-red-500",
+      "source": "open-meteo"
+    },
+    {
+      "city": "Auckland, New Zealand",
+      "slug": "auckland",
+      "time": "2026-08-29 23:06 UTC",
+      "text": "High Wind Signal: sustained forecast wind speeds reached 32 km/h. Forecast-derived signal, not an official government alert.",
+      "icon": "💨",
+      "border": "border-red-500",
+      "source": "open-meteo"
+    },
+    {
       "city": "Las Vegas, USA",
       "slug": "las-vegas",
-      "time": "2026-08-29 20:40 UTC",
+      "time": "2026-08-29 23:06 UTC",
       "text": "Extreme Heat Signal: forecast temperature reached 40°C. Forecast-derived signal, not an official government alert.",
       "icon": "🌡️",
       "border": "border-orange-500",
@@ -12,8 +30,8 @@
     {
       "city": "Phoenix, USA",
       "slug": "phoenix",
-      "time": "2026-08-29 20:40 UTC",
-      "text": "Extreme Heat Signal: forecast temperature reached 43°C. Forecast-derived signal, not an official government alert.",
+      "time": "2026-08-29 23:06 UTC",
+      "text": "Extreme Heat Signal: forecast temperature reached 40°C. Forecast-derived signal, not an official government alert.",
       "icon": "🌡️",
       "border": "border-orange-500",
       "source": "open-meteo"
