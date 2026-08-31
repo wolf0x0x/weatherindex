@@ -1,22 +1,22 @@
 {
   "alerts": [
     {
-      "city": "Dallas, USA",
-      "slug": "dallas",
-      "time": "2026-08-31 04:32 UTC",
-      "text": "Extreme Heat Signal: forecast temperature reached 39°C. Forecast-derived signal, not an official government alert.",
+      "city": "Riyadh, Saudi Arabia",
+      "slug": "riyadh",
+      "time": "2026-08-31 13:06 UTC",
+      "text": "Extreme Heat Signal: forecast temperature reached 44°C. Forecast-derived signal, not an official government alert.",
       "icon": "🌡️",
       "border": "border-orange-500",
-      "source": "7timer"
+      "source": "open-meteo"
     },
     {
-      "city": "Houston, USA",
-      "slug": "houston",
-      "time": "2026-08-31 04:32 UTC",
-      "text": "Extreme Heat Signal: forecast temperature reached 39°C. Forecast-derived signal, not an official government alert.",
+      "city": "Doha, Qatar",
+      "slug": "doha",
+      "time": "2026-08-31 13:06 UTC",
+      "text": "Extreme Heat Signal: forecast temperature reached 40°C. Forecast-derived signal, not an official government alert.",
       "icon": "🌡️",
       "border": "border-orange-500",
-      "source": "7timer"
+      "source": "open-meteo"
     }
   ],
   "notice": "Forecast-derived signals only; not official government alerts."
