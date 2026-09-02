@@ -1,12 +1,12 @@
 {
   "alerts": [
     {
-      "city": "Manila, Philippines",
-      "slug": "manila",
-      "time": "2026-09-02 03:37 UTC",
-      "text": "High Wind Signal: sustained forecast wind speeds reached 31 km/h. Forecast-derived signal, not an official government alert.",
-      "icon": "💨",
-      "border": "border-red-500",
+      "city": "Doha, Qatar",
+      "slug": "doha",
+      "time": "2026-09-02 10:55 UTC",
+      "text": "Extreme Heat Signal: forecast temperature reached 42°C. Forecast-derived signal, not an official government alert.",
+      "icon": "🌡️",
+      "border": "border-orange-500",
       "source": "open-meteo"
     }
   ],
