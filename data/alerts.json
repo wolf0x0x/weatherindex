@@ -3,8 +3,8 @@
     {
       "city": "Cape Town, South Africa",
       "slug": "cape-town",
-      "time": "2026-09-03 23:05 UTC",
-      "text": "High Wind Signal: sustained forecast wind speeds reached 33 km/h. Forecast-derived signal, not an official government alert.",
+      "time": "2026-09-04 03:37 UTC",
+      "text": "High Wind Signal: sustained forecast wind speeds reached 31 km/h. Forecast-derived signal, not an official government alert.",
       "icon": "💨",
       "border": "border-red-500",
       "source": "open-meteo"
