@@ -3,8 +3,26 @@
     {
       "city": "Cape Town, South Africa",
       "slug": "cape-town",
-      "time": "2026-09-04 03:37 UTC",
+      "time": "2026-09-04 10:54 UTC",
       "text": "High Wind Signal: sustained forecast wind speeds reached 31 km/h. Forecast-derived signal, not an official government alert.",
+      "icon": "💨",
+      "border": "border-red-500",
+      "source": "open-meteo"
+    },
+    {
+      "city": "Riyadh, Saudi Arabia",
+      "slug": "riyadh",
+      "time": "2026-09-04 10:54 UTC",
+      "text": "Extreme Heat Signal: forecast temperature reached 41°C. Forecast-derived signal, not an official government alert.",
+      "icon": "🌡️",
+      "border": "border-orange-500",
+      "source": "open-meteo"
+    },
+    {
+      "city": "Edinburgh, United Kingdom",
+      "slug": "edinburgh",
+      "time": "2026-09-04 10:54 UTC",
+      "text": "High Wind Signal: sustained forecast wind speeds reached 33 km/h. Forecast-derived signal, not an official government alert.",
       "icon": "💨",
       "border": "border-red-500",
       "source": "open-meteo"
