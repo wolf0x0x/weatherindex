@@ -1,4 +1,14 @@
 {
-  "alerts": [],
+  "alerts": [
+    {
+      "city": "Phoenix, USA",
+      "slug": "phoenix",
+      "time": "2026-09-06 20:11 UTC",
+      "text": "Extreme Heat Signal: forecast temperature reached 40°C. Forecast-derived signal, not an official government alert.",
+      "icon": "🌡️",
+      "border": "border-orange-500",
+      "source": "open-meteo"
+    }
+  ],
   "notice": "Forecast-derived signals only; not official government alerts."
 }
