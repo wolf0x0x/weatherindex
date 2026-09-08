@@ -1,18 +1,9 @@
 {
   "alerts": [
     {
-      "city": "Helsinki, Finland",
-      "slug": "helsinki",
-      "time": "2026-09-08 19:46 UTC",
-      "text": "High Wind Signal: sustained forecast wind speeds reached 34 km/h. Forecast-derived signal, not an official government alert.",
-      "icon": "💨",
-      "border": "border-red-500",
-      "source": "open-meteo"
-    },
-    {
       "city": "Phoenix, USA",
       "slug": "phoenix",
-      "time": "2026-09-08 19:46 UTC",
+      "time": "2026-09-08 20:54 UTC",
       "text": "Extreme Heat Signal: forecast temperature reached 41°C. Forecast-derived signal, not an official government alert.",
       "icon": "🌡️",
       "border": "border-orange-500",
