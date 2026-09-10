@@ -1,21 +1,12 @@
 {
   "alerts": [
     {
-      "city": "Las Vegas, USA",
-      "slug": "las-vegas",
-      "time": "2026-09-09 23:04 UTC",
-      "text": "Extreme Heat Signal: forecast temperature reached 40°C. Forecast-derived signal, not an official government alert.",
-      "icon": "🌡️",
-      "border": "border-orange-500",
-      "source": "open-meteo"
-    },
-    {
-      "city": "Phoenix, USA",
-      "slug": "phoenix",
-      "time": "2026-09-09 23:04 UTC",
-      "text": "Extreme Heat Signal: forecast temperature reached 40°C. Forecast-derived signal, not an official government alert.",
-      "icon": "🌡️",
-      "border": "border-orange-500",
+      "city": "Reykjavik, Iceland",
+      "slug": "reykjavik",
+      "time": "2026-09-10 03:46 UTC",
+      "text": "High Wind Signal: sustained forecast wind speeds reached 35 km/h. Forecast-derived signal, not an official government alert.",
+      "icon": "💨",
+      "border": "border-red-500",
       "source": "open-meteo"
     }
   ],
