@@ -3,8 +3,8 @@
     {
       "city": "Anchorage, USA",
       "slug": "anchorage",
-      "time": "2026-09-16 16:27 UTC",
-      "text": "High Wind Signal: sustained forecast wind speeds reached 34 km/h. Forecast-derived signal, not an official government alert.",
+      "time": "2026-09-16 19:52 UTC",
+      "text": "High Wind Signal: sustained forecast wind speeds reached 31 km/h. Forecast-derived signal, not an official government alert.",
       "icon": "💨",
       "border": "border-red-500",
       "source": "open-meteo"
