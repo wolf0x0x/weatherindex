@@ -1,10 +1,37 @@
 {
   "alerts": [
     {
+      "city": "Riyadh, Saudi Arabia",
+      "slug": "riyadh",
+      "time": "2026-09-16 11:06 UTC",
+      "text": "Extreme Heat Signal: forecast temperature reached 40°C. Forecast-derived signal, not an official government alert.",
+      "icon": "🌡️",
+      "border": "border-orange-500",
+      "source": "open-meteo"
+    },
+    {
+      "city": "Doha, Qatar",
+      "slug": "doha",
+      "time": "2026-09-16 11:06 UTC",
+      "text": "Extreme Heat Signal: forecast temperature reached 40°C. Forecast-derived signal, not an official government alert.",
+      "icon": "🌡️",
+      "border": "border-orange-500",
+      "source": "open-meteo"
+    },
+    {
+      "city": "Anchorage, USA",
+      "slug": "anchorage",
+      "time": "2026-09-16 11:06 UTC",
+      "text": "High Wind Signal: sustained forecast wind speeds reached 38 km/h. Forecast-derived signal, not an official government alert.",
+      "icon": "💨",
+      "border": "border-red-500",
+      "source": "open-meteo"
+    },
+    {
       "city": "Reykjavik, Iceland",
       "slug": "reykjavik",
-      "time": "2026-09-16 04:00 UTC",
-      "text": "High Wind Signal: sustained forecast wind speeds reached 33 km/h. Forecast-derived signal, not an official government alert.",
+      "time": "2026-09-16 11:06 UTC",
+      "text": "High Wind Signal: sustained forecast wind speeds reached 41 km/h. Forecast-derived signal, not an official government alert.",
       "icon": "💨",
       "border": "border-red-500",
       "source": "open-meteo"
