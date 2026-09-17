@@ -1,4 +1,14 @@
 {
-  "alerts": [],
+  "alerts": [
+    {
+      "city": "Las Vegas, USA",
+      "slug": "las-vegas",
+      "time": "2026-09-17 04:06 UTC",
+      "text": "High Wind Signal: sustained forecast wind speeds reached 34 km/h. Forecast-derived signal, not an official government alert.",
+      "icon": "💨",
+      "border": "border-red-500",
+      "source": "open-meteo"
+    }
+  ],
   "notice": "Forecast-derived signals only; not official government alerts."
 }
