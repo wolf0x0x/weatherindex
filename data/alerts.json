@@ -3,8 +3,8 @@
     {
       "city": "Helsinki, Finland",
       "slug": "helsinki",
-      "time": "2026-09-19 19:12 UTC",
-      "text": "High Wind Signal: sustained forecast wind speeds reached 40 km/h. Forecast-derived signal, not an official government alert.",
+      "time": "2026-09-19 20:16 UTC",
+      "text": "High Wind Signal: sustained forecast wind speeds reached 42 km/h. Forecast-derived signal, not an official government alert.",
       "icon": "💨",
       "border": "border-red-500",
       "source": "open-meteo"
@@ -12,7 +12,7 @@
     {
       "city": "Auckland, New Zealand",
       "slug": "auckland",
-      "time": "2026-09-19 19:12 UTC",
+      "time": "2026-09-19 20:16 UTC",
       "text": "High Wind Signal: sustained forecast wind speeds reached 32 km/h. Forecast-derived signal, not an official government alert.",
       "icon": "💨",
       "border": "border-red-500",
@@ -21,7 +21,7 @@
     {
       "city": "Tallinn, Estonia",
       "slug": "tallinn",
-      "time": "2026-09-19 19:12 UTC",
+      "time": "2026-09-19 20:16 UTC",
       "text": "High Wind Signal: sustained forecast wind speeds reached 31 km/h. Forecast-derived signal, not an official government alert.",
       "icon": "💨",
       "border": "border-red-500",
