@@ -3,26 +3,26 @@
     {
       "city": "Helsinki, Finland",
       "slug": "helsinki",
-      "time": "2026-09-19 15:37 UTC",
-      "text": "High Wind Signal: sustained forecast wind speeds reached 37 km/h. Forecast-derived signal, not an official government alert.",
+      "time": "2026-09-19 19:12 UTC",
+      "text": "High Wind Signal: sustained forecast wind speeds reached 40 km/h. Forecast-derived signal, not an official government alert.",
       "icon": "💨",
       "border": "border-red-500",
       "source": "open-meteo"
     },
     {
-      "city": "Riyadh, Saudi Arabia",
-      "slug": "riyadh",
-      "time": "2026-09-19 15:37 UTC",
-      "text": "Extreme Heat Signal: forecast temperature reached 40°C. Forecast-derived signal, not an official government alert.",
-      "icon": "🌡️",
-      "border": "border-orange-500",
+      "city": "Auckland, New Zealand",
+      "slug": "auckland",
+      "time": "2026-09-19 19:12 UTC",
+      "text": "High Wind Signal: sustained forecast wind speeds reached 32 km/h. Forecast-derived signal, not an official government alert.",
+      "icon": "💨",
+      "border": "border-red-500",
       "source": "open-meteo"
     },
     {
-      "city": "Edinburgh, United Kingdom",
-      "slug": "edinburgh",
-      "time": "2026-09-19 15:37 UTC",
-      "text": "High Wind Signal: sustained forecast wind speeds reached 32 km/h. Forecast-derived signal, not an official government alert.",
+      "city": "Tallinn, Estonia",
+      "slug": "tallinn",
+      "time": "2026-09-19 19:12 UTC",
+      "text": "High Wind Signal: sustained forecast wind speeds reached 31 km/h. Forecast-derived signal, not an official government alert.",
       "icon": "💨",
       "border": "border-red-500",
       "source": "open-meteo"
