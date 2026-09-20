@@ -1,21 +1,21 @@
 {
   "alerts": [
     {
-      "city": "Helsinki, Finland",
-      "slug": "helsinki",
-      "time": "2026-09-20 04:05 UTC",
-      "text": "High Wind Signal: sustained forecast wind speeds reached 40 km/h. Forecast-derived signal, not an official government alert.",
-      "icon": "💨",
-      "border": "border-red-500",
+      "city": "Dubai, UAE",
+      "slug": "dubai",
+      "time": "2026-09-20 10:55 UTC",
+      "text": "Extreme Heat Signal: forecast temperature reached 39°C. Forecast-derived signal, not an official government alert.",
+      "icon": "🌡️",
+      "border": "border-orange-500",
       "source": "open-meteo"
     },
     {
-      "city": "Melbourne, Australia",
-      "slug": "melbourne",
-      "time": "2026-09-20 04:05 UTC",
-      "text": "High Wind Signal: sustained forecast wind speeds reached 31 km/h. Forecast-derived signal, not an official government alert.",
-      "icon": "💨",
-      "border": "border-red-500",
+      "city": "Riyadh, Saudi Arabia",
+      "slug": "riyadh",
+      "time": "2026-09-20 10:55 UTC",
+      "text": "Extreme Heat Signal: forecast temperature reached 42°C. Forecast-derived signal, not an official government alert.",
+      "icon": "🌡️",
+      "border": "border-orange-500",
       "source": "open-meteo"
     }
   ],
