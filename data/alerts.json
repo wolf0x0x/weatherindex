@@ -1,14 +1,4 @@
 {
-  "alerts": [
-    {
-      "city": "Helsinki, Finland",
-      "slug": "helsinki",
-      "time": "2026-09-25 16:51 UTC",
-      "text": "High Wind Signal: sustained forecast wind speeds reached 35 km/h. Forecast-derived signal, not an official government alert.",
-      "icon": "💨",
-      "border": "border-red-500",
-      "source": "open-meteo"
-    }
-  ],
+  "alerts": [],
   "notice": "Forecast-derived signals only; not official government alerts."
 }
