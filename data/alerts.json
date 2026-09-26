@@ -1,21 +1,12 @@
 {
   "alerts": [
     {
-      "city": "Riyadh, Saudi Arabia",
-      "slug": "riyadh",
-      "time": "2026-09-26 11:02 UTC",
-      "text": "Extreme Heat Signal: forecast temperature reached 41°C. Forecast-derived signal, not an official government alert.",
-      "icon": "🌡️",
-      "border": "border-orange-500",
-      "source": "open-meteo"
-    },
-    {
-      "city": "Doha, Qatar",
-      "slug": "doha",
-      "time": "2026-09-26 11:02 UTC",
-      "text": "Extreme Heat Signal: forecast temperature reached 42°C. Forecast-derived signal, not an official government alert.",
-      "icon": "🌡️",
-      "border": "border-orange-500",
+      "city": "Helsinki, Finland",
+      "slug": "helsinki",
+      "time": "2026-09-26 16:03 UTC",
+      "text": "High Wind Signal: sustained forecast wind speeds reached 40 km/h. Forecast-derived signal, not an official government alert.",
+      "icon": "💨",
+      "border": "border-red-500",
       "source": "open-meteo"
     }
   ],
