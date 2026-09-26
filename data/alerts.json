@@ -1,10 +1,10 @@
 {
   "alerts": [
     {
-      "city": "Helsinki, Finland",
-      "slug": "helsinki",
-      "time": "2026-09-26 16:03 UTC",
-      "text": "High Wind Signal: sustained forecast wind speeds reached 40 km/h. Forecast-derived signal, not an official government alert.",
+      "city": "New York, USA",
+      "slug": "new-york",
+      "time": "2026-09-26 19:33 UTC",
+      "text": "High Wind Signal: sustained forecast wind speeds reached 33 km/h. Forecast-derived signal, not an official government alert.",
       "icon": "💨",
       "border": "border-red-500",
       "source": "open-meteo"
