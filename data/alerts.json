@@ -3,17 +3,8 @@
     {
       "city": "Auckland, New Zealand",
       "slug": "auckland",
-      "time": "2026-09-26 23:26 UTC",
-      "text": "High Wind Signal: sustained forecast wind speeds reached 35 km/h. Forecast-derived signal, not an official government alert.",
-      "icon": "💨",
-      "border": "border-red-500",
-      "source": "open-meteo"
-    },
-    {
-      "city": "Honolulu, USA",
-      "slug": "honolulu",
-      "time": "2026-09-26 23:26 UTC",
-      "text": "High Wind Signal: sustained forecast wind speeds reached 34 km/h. Forecast-derived signal, not an official government alert.",
+      "time": "2026-09-27 04:26 UTC",
+      "text": "High Wind Signal: sustained forecast wind speeds reached 32 km/h. Forecast-derived signal, not an official government alert.",
       "icon": "💨",
       "border": "border-red-500",
       "source": "open-meteo"
@@ -21,8 +12,8 @@
     {
       "city": "Boston, USA",
       "slug": "boston",
-      "time": "2026-09-26 23:26 UTC",
-      "text": "High Wind Signal: sustained forecast wind speeds reached 31 km/h. Forecast-derived signal, not an official government alert.",
+      "time": "2026-09-27 04:26 UTC",
+      "text": "High Wind Signal: sustained forecast wind speeds reached 33 km/h. Forecast-derived signal, not an official government alert.",
       "icon": "💨",
       "border": "border-red-500",
       "source": "open-meteo"
