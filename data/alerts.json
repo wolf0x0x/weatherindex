@@ -3,8 +3,8 @@
     {
       "city": "Reykjavik, Iceland",
       "slug": "reykjavik",
-      "time": "2026-10-04 04:58 UTC",
-      "text": "High Wind Signal: sustained forecast wind speeds reached 39 km/h. Forecast-derived signal, not an official government alert.",
+      "time": "2026-10-04 11:59 UTC",
+      "text": "High Wind Signal: sustained forecast wind speeds reached 33 km/h. Forecast-derived signal, not an official government alert.",
       "icon": "💨",
       "border": "border-red-500",
       "source": "open-meteo"
