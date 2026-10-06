@@ -1,19 +1,10 @@
 {
   "alerts": [
     {
-      "city": "Stockholm, Sweden",
-      "slug": "stockholm",
-      "time": "2026-10-05 23:04 UTC",
-      "text": "High Wind Signal: sustained forecast wind speeds reached 36 km/h. Forecast-derived signal, not an official government alert.",
-      "icon": "💨",
-      "border": "border-red-500",
-      "source": "open-meteo"
-    },
-    {
-      "city": "Helsinki, Finland",
-      "slug": "helsinki",
-      "time": "2026-10-05 23:04 UTC",
-      "text": "High Wind Signal: sustained forecast wind speeds reached 40 km/h. Forecast-derived signal, not an official government alert.",
+      "city": "Tallinn, Estonia",
+      "slug": "tallinn",
+      "time": "2026-10-06 05:32 UTC",
+      "text": "High Wind Signal: sustained forecast wind speeds reached 33 km/h. Forecast-derived signal, not an official government alert.",
       "icon": "💨",
       "border": "border-red-500",
       "source": "open-meteo"
