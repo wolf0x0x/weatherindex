@@ -1,10 +1,10 @@
 {
   "alerts": [
     {
-      "city": "Tallinn, Estonia",
-      "slug": "tallinn",
-      "time": "2026-10-06 05:32 UTC",
-      "text": "High Wind Signal: sustained forecast wind speeds reached 33 km/h. Forecast-derived signal, not an official government alert.",
+      "city": "Helsinki, Finland",
+      "slug": "helsinki",
+      "time": "2026-10-06 13:01 UTC",
+      "text": "High Wind Signal: sustained forecast wind speeds reached 32 km/h. Forecast-derived signal, not an official government alert.",
       "icon": "💨",
       "border": "border-red-500",
       "source": "open-meteo"
