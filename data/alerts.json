@@ -1,41 +1,4 @@
 {
-  "alerts": [
-    {
-      "city": "Vancouver, Canada",
-      "slug": "vancouver",
-      "time": "2026-10-09 21:31 UTC",
-      "text": "High Wind Signal: sustained forecast wind speeds reached 37 km/h. Forecast-derived signal, not an official government alert.",
-      "icon": "💨",
-      "border": "border-red-500",
-      "source": "open-meteo"
-    },
-    {
-      "city": "Phoenix, USA",
-      "slug": "phoenix",
-      "time": "2026-10-09 21:31 UTC",
-      "text": "Extreme Heat Signal: forecast temperature reached 39°C. Forecast-derived signal, not an official government alert.",
-      "icon": "🌡️",
-      "border": "border-orange-500",
-      "source": "open-meteo"
-    },
-    {
-      "city": "Reykjavik, Iceland",
-      "slug": "reykjavik",
-      "time": "2026-10-09 21:31 UTC",
-      "text": "High Wind Signal: sustained forecast wind speeds reached 32 km/h. Forecast-derived signal, not an official government alert.",
-      "icon": "💨",
-      "border": "border-red-500",
-      "source": "open-meteo"
-    },
-    {
-      "city": "Riga, Latvia",
-      "slug": "riga",
-      "time": "2026-10-09 21:31 UTC",
-      "text": "High Wind Signal: sustained forecast wind speeds reached 33 km/h. Forecast-derived signal, not an official government alert.",
-      "icon": "💨",
-      "border": "border-red-500",
-      "source": "open-meteo"
-    }
-  ],
+  "alerts": [],
   "notice": "Forecast-derived signals only; not official government alerts."
 }
