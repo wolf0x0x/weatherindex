@@ -1,9 +1,18 @@
 {
   "alerts": [
     {
-      "city": "Helsinki, Finland",
-      "slug": "helsinki",
-      "time": "2026-10-14 11:28 UTC",
+      "city": "Calgary, Canada",
+      "slug": "calgary",
+      "time": "2026-10-14 16:50 UTC",
+      "text": "High Wind Signal: sustained forecast wind speeds reached 31 km/h. Forecast-derived signal, not an official government alert.",
+      "icon": "💨",
+      "border": "border-red-500",
+      "source": "open-meteo"
+    },
+    {
+      "city": "Edinburgh, United Kingdom",
+      "slug": "edinburgh",
+      "time": "2026-10-14 16:50 UTC",
       "text": "High Wind Signal: sustained forecast wind speeds reached 31 km/h. Forecast-derived signal, not an official government alert.",
       "icon": "💨",
       "border": "border-red-500",
