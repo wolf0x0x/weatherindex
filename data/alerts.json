@@ -3,17 +3,8 @@
     {
       "city": "Istanbul, Turkey",
       "slug": "istanbul",
-      "time": "2026-10-14 21:03 UTC",
-      "text": "High Wind Signal: sustained forecast wind speeds reached 32 km/h. Forecast-derived signal, not an official government alert.",
-      "icon": "💨",
-      "border": "border-red-500",
-      "source": "open-meteo"
-    },
-    {
-      "city": "Calgary, Canada",
-      "slug": "calgary",
-      "time": "2026-10-14 21:03 UTC",
-      "text": "High Wind Signal: sustained forecast wind speeds reached 31 km/h. Forecast-derived signal, not an official government alert.",
+      "time": "2026-10-14 21:24 UTC",
+      "text": "High Wind Signal: sustained forecast wind speeds reached 35 km/h. Forecast-derived signal, not an official government alert.",
       "icon": "💨",
       "border": "border-red-500",
       "source": "open-meteo"
@@ -21,8 +12,8 @@
     {
       "city": "Reykjavik, Iceland",
       "slug": "reykjavik",
-      "time": "2026-10-14 21:03 UTC",
-      "text": "High Wind Signal: sustained forecast wind speeds reached 51 km/h. Forecast-derived signal, not an official government alert.",
+      "time": "2026-10-14 21:24 UTC",
+      "text": "High Wind Signal: sustained forecast wind speeds reached 54 km/h. Forecast-derived signal, not an official government alert.",
       "icon": "💨",
       "border": "border-red-500",
       "source": "open-meteo"
