@@ -1,4 +1,23 @@
 {
-  "alerts": [],
+  "alerts": [
+    {
+      "city": "Helsinki, Finland",
+      "slug": "helsinki",
+      "time": "2026-10-15 20:13 UTC",
+      "text": "High Wind Signal: sustained forecast wind speeds reached 32 km/h. Forecast-derived signal, not an official government alert.",
+      "icon": "💨",
+      "border": "border-red-500",
+      "source": "open-meteo"
+    },
+    {
+      "city": "Las Vegas, USA",
+      "slug": "las-vegas",
+      "time": "2026-10-15 20:13 UTC",
+      "text": "High Wind Signal: sustained forecast wind speeds reached 33 km/h. Forecast-derived signal, not an official government alert.",
+      "icon": "💨",
+      "border": "border-red-500",
+      "source": "open-meteo"
+    }
+  ],
   "notice": "Forecast-derived signals only; not official government alerts."
 }
