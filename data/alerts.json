@@ -1,18 +1,9 @@
 {
   "alerts": [
     {
-      "city": "Las Vegas, USA",
-      "slug": "las-vegas",
-      "time": "2026-10-16 20:42 UTC",
-      "text": "High Wind Signal: sustained forecast wind speeds reached 31 km/h. Forecast-derived signal, not an official government alert.",
-      "icon": "💨",
-      "border": "border-red-500",
-      "source": "open-meteo"
-    },
-    {
-      "city": "Phoenix, USA",
-      "slug": "phoenix",
-      "time": "2026-10-16 20:42 UTC",
+      "city": "Helsinki, Finland",
+      "slug": "helsinki",
+      "time": "2026-10-16 23:21 UTC",
       "text": "High Wind Signal: sustained forecast wind speeds reached 31 km/h. Forecast-derived signal, not an official government alert.",
       "icon": "💨",
       "border": "border-red-500",
