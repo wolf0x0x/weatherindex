@@ -1,10 +1,19 @@
 {
   "alerts": [
     {
+      "city": "Calgary, Canada",
+      "slug": "calgary",
+      "time": "2026-10-17 19:03 UTC",
+      "text": "High Wind Signal: sustained forecast wind speeds reached 47 km/h. Forecast-derived signal, not an official government alert.",
+      "icon": "💨",
+      "border": "border-red-500",
+      "source": "open-meteo"
+    },
+    {
       "city": "Reykjavik, Iceland",
       "slug": "reykjavik",
-      "time": "2026-10-17 15:14 UTC",
-      "text": "High Wind Signal: sustained forecast wind speeds reached 57 km/h. Forecast-derived signal, not an official government alert.",
+      "time": "2026-10-17 19:03 UTC",
+      "text": "High Wind Signal: sustained forecast wind speeds reached 48 km/h. Forecast-derived signal, not an official government alert.",
       "icon": "💨",
       "border": "border-red-500",
       "source": "open-meteo"
