@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T03:43:20.189060+00:00",
+  "generated_at": "2026-10-18T10:40:31.557444+00:00",
   "providers": [
     "Open-Meteo Forecast",
     "Open-Meteo Air Quality",
@@ -29,8 +29,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error [Errno 101] Network is unreachable>"
         },
         {
           "source": "open-meteo-marine",
@@ -50,8 +50,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error [Errno 101] Network is unreachable>"
         },
         {
           "source": "open-meteo-marine",
@@ -71,8 +71,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error [Errno 101] Network is unreachable>"
         },
         {
           "source": "open-meteo-marine",
@@ -92,8 +92,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error [Errno 101] Network is unreachable>"
         },
         {
           "source": "open-meteo-marine",
@@ -113,8 +113,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error [Errno 101] Network is unreachable>"
         },
         {
           "source": "open-meteo-marine",
@@ -134,8 +134,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error [Errno 101] Network is unreachable>"
         },
         {
           "source": "open-meteo-marine",
@@ -155,8 +155,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error [Errno 101] Network is unreachable>"
         },
         {
           "source": "open-meteo-marine",
@@ -176,8 +176,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error [Errno 101] Network is unreachable>"
         },
         {
           "source": "open-meteo-marine",
@@ -197,8 +197,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error [Errno 101] Network is unreachable>"
         },
         {
           "source": "open-meteo-marine",
@@ -218,8 +218,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error [Errno 101] Network is unreachable>"
         },
         {
           "source": "open-meteo-marine",
@@ -239,8 +239,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error [Errno 101] Network is unreachable>"
         },
         {
           "source": "open-meteo-marine",
@@ -260,8 +260,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error [Errno 101] Network is unreachable>"
         },
         {
           "source": "open-meteo-marine",
@@ -281,8 +281,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error [Errno 101] Network is unreachable>"
         },
         {
           "source": "open-meteo-marine",
@@ -302,8 +302,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error [Errno 101] Network is unreachable>"
         },
         {
           "source": "open-meteo-marine",
@@ -323,8 +323,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error [Errno 101] Network is unreachable>"
         },
         {
           "source": "open-meteo-marine",
@@ -344,8 +344,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error [Errno 101] Network is unreachable>"
         },
         {
           "source": "open-meteo-marine",
@@ -356,27 +356,17 @@
     },
     {
       "city": "Mexico City",
-      "source": "7timer",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
-        },
-        {
-          "source": "visual-crossing",
-          "ok": "false",
-          "error": "VISUALCROSSING_KEY not configured"
-        },
-        {
-          "source": "7timer",
           "ok": "true",
           "error": ""
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error [Errno 101] Network is unreachable>"
         },
         {
           "source": "open-meteo-marine",
@@ -387,27 +377,17 @@
     },
     {
       "city": "São Paulo",
-      "source": "7timer",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
-        },
-        {
-          "source": "visual-crossing",
-          "ok": "false",
-          "error": "VISUALCROSSING_KEY not configured"
-        },
-        {
-          "source": "7timer",
           "ok": "true",
           "error": ""
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error [Errno 101] Network is unreachable>"
         },
         {
           "source": "open-meteo-marine",
@@ -418,27 +398,17 @@
     },
     {
       "city": "Rio de Janeiro",
-      "source": "7timer",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
-        },
-        {
-          "source": "visual-crossing",
-          "ok": "false",
-          "error": "VISUALCROSSING_KEY not configured"
-        },
-        {
-          "source": "7timer",
           "ok": "true",
           "error": ""
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error [Errno 101] Network is unreachable>"
         },
         {
           "source": "open-meteo-marine",
@@ -449,27 +419,17 @@
     },
     {
       "city": "Buenos Aires",
-      "source": "7timer",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
-        },
-        {
-          "source": "visual-crossing",
-          "ok": "false",
-          "error": "VISUALCROSSING_KEY not configured"
-        },
-        {
-          "source": "7timer",
           "ok": "true",
           "error": ""
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error [Errno 101] Network is unreachable>"
         },
         {
           "source": "open-meteo-marine",
@@ -489,8 +449,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error [Errno 101] Network is unreachable>"
         },
         {
           "source": "open-meteo-marine",
@@ -510,8 +470,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error [Errno 101] Network is unreachable>"
         },
         {
           "source": "open-meteo-marine",
@@ -531,8 +491,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error [Errno 101] Network is unreachable>"
         },
         {
           "source": "open-meteo-marine",
@@ -552,8 +512,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error [Errno 101] Network is unreachable>"
         },
         {
           "source": "open-meteo-marine",
@@ -573,8 +533,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error [Errno 101] Network is unreachable>"
         },
         {
           "source": "open-meteo-marine",
@@ -594,8 +554,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error [Errno 101] Network is unreachable>"
         },
         {
           "source": "open-meteo-marine",
@@ -615,8 +575,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error [Errno 101] Network is unreachable>"
         },
         {
           "source": "open-meteo-marine",
@@ -636,8 +596,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error [Errno 101] Network is unreachable>"
         },
         {
           "source": "open-meteo-marine",
@@ -657,8 +617,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error [Errno 101] Network is unreachable>"
         },
         {
           "source": "open-meteo-marine",
@@ -678,8 +638,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error [Errno 101] Network is unreachable>"
         },
         {
           "source": "open-meteo-marine",
@@ -699,8 +659,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error [Errno 101] Network is unreachable>"
         },
         {
           "source": "open-meteo-marine",
@@ -720,8 +680,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error [Errno 101] Network is unreachable>"
         },
         {
           "source": "open-meteo-marine",
@@ -742,7 +702,7 @@
         {
           "source": "open-meteo-air-quality",
           "ok": "false",
-          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
+          "error": "<urlopen error [Errno 101] Network is unreachable>"
         },
         {
           "source": "open-meteo-marine",
@@ -763,7 +723,7 @@
         {
           "source": "open-meteo-air-quality",
           "ok": "false",
-          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
+          "error": "<urlopen error [Errno 101] Network is unreachable>"
         },
         {
           "source": "open-meteo-marine",
@@ -784,7 +744,7 @@
         {
           "source": "open-meteo-air-quality",
           "ok": "false",
-          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
+          "error": "<urlopen error [Errno 101] Network is unreachable>"
         },
         {
           "source": "open-meteo-marine",
@@ -805,7 +765,7 @@
         {
           "source": "open-meteo-air-quality",
           "ok": "false",
-          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
+          "error": "<urlopen error [Errno 101] Network is unreachable>"
         },
         {
           "source": "open-meteo-marine",
@@ -825,8 +785,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error [Errno 101] Network is unreachable>"
         },
         {
           "source": "open-meteo-marine",
@@ -846,8 +806,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error [Errno 101] Network is unreachable>"
         },
         {
           "source": "open-meteo-marine",
@@ -867,8 +827,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error [Errno 101] Network is unreachable>"
         },
         {
           "source": "open-meteo-marine",
@@ -888,8 +848,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error [Errno 101] Network is unreachable>"
         },
         {
           "source": "open-meteo-marine",
@@ -909,8 +869,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error [Errno 101] Network is unreachable>"
         },
         {
           "source": "open-meteo-marine",
@@ -930,8 +890,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error [Errno 101] Network is unreachable>"
         },
         {
           "source": "open-meteo-marine",
@@ -951,8 +911,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error [Errno 101] Network is unreachable>"
         },
         {
           "source": "open-meteo-marine",
@@ -972,8 +932,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error [Errno 101] Network is unreachable>"
         },
         {
           "source": "open-meteo-marine",
@@ -993,8 +953,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error [Errno 101] Network is unreachable>"
         },
         {
           "source": "open-meteo-marine",
@@ -1014,8 +974,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error [Errno 101] Network is unreachable>"
         },
         {
           "source": "open-meteo-marine",
@@ -1035,8 +995,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error [Errno 101] Network is unreachable>"
         },
         {
           "source": "open-meteo-marine",
@@ -1056,8 +1016,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error [Errno 101] Network is unreachable>"
         },
         {
           "source": "open-meteo-marine",
@@ -1077,13 +1037,13 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error [Errno 101] Network is unreachable>"
         },
         {
           "source": "open-meteo-marine",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
+          "ok": "true",
+          "error": ""
         }
       ]
     },
@@ -1098,13 +1058,13 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error [Errno 101] Network is unreachable>"
         },
         {
           "source": "open-meteo-marine",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
+          "ok": "true",
+          "error": ""
         }
       ]
     },
@@ -1119,13 +1079,13 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error [Errno 101] Network is unreachable>"
         },
         {
           "source": "open-meteo-marine",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
+          "ok": "true",
+          "error": ""
         }
       ]
     },
@@ -1140,8 +1100,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error [Errno 101] Network is unreachable>"
         },
         {
           "source": "open-meteo-marine",
@@ -1152,27 +1112,17 @@
     },
     {
       "city": "Doha",
-      "source": "7timer",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
-        },
-        {
-          "source": "visual-crossing",
-          "ok": "false",
-          "error": "VISUALCROSSING_KEY not configured"
-        },
-        {
-          "source": "7timer",
           "ok": "true",
           "error": ""
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error [Errno 101] Network is unreachable>"
         },
         {
           "source": "open-meteo-marine",
@@ -1192,8 +1142,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error [Errno 101] Network is unreachable>"
         },
         {
           "source": "open-meteo-marine",
@@ -1213,8 +1163,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error [Errno 101] Network is unreachable>"
         },
         {
           "source": "open-meteo-marine",
@@ -1234,8 +1184,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error [Errno 101] Network is unreachable>"
         },
         {
           "source": "open-meteo-marine",
@@ -1255,8 +1205,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error [Errno 101] Network is unreachable>"
         },
         {
           "source": "open-meteo-marine",
@@ -1276,8 +1226,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error [Errno 101] Network is unreachable>"
         },
         {
           "source": "open-meteo-marine",
@@ -1297,8 +1247,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error [Errno 101] Network is unreachable>"
         },
         {
           "source": "open-meteo-marine",
@@ -1318,8 +1268,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error [Errno 101] Network is unreachable>"
         },
         {
           "source": "open-meteo-marine",
@@ -1339,8 +1289,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error [Errno 101] Network is unreachable>"
         },
         {
           "source": "open-meteo-marine",
@@ -1360,8 +1310,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error [Errno 101] Network is unreachable>"
         },
         {
           "source": "open-meteo-marine",
@@ -1381,8 +1331,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error [Errno 101] Network is unreachable>"
         },
         {
           "source": "open-meteo-marine",
@@ -1402,8 +1352,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error [Errno 101] Network is unreachable>"
         },
         {
           "source": "open-meteo-marine",
@@ -1477,20 +1427,10 @@
     },
     {
       "city": "Taipei",
-      "source": "7timer",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
-        },
-        {
-          "source": "visual-crossing",
-          "ok": "false",
-          "error": "VISUALCROSSING_KEY not configured"
-        },
-        {
-          "source": "7timer",
           "ok": "true",
           "error": ""
         },
@@ -1508,20 +1448,10 @@
     },
     {
       "city": "Osaka",
-      "source": "7timer",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
-        },
-        {
-          "source": "visual-crossing",
-          "ok": "false",
-          "error": "VISUALCROSSING_KEY not configured"
-        },
-        {
-          "source": "7timer",
           "ok": "true",
           "error": ""
         },
@@ -1532,27 +1462,17 @@
         },
         {
           "source": "open-meteo-marine",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
         }
       ]
     },
     {
       "city": "Kyoto",
-      "source": "7timer",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
-        },
-        {
-          "source": "visual-crossing",
-          "ok": "false",
-          "error": "VISUALCROSSING_KEY not configured"
-        },
-        {
-          "source": "7timer",
           "ok": "true",
           "error": ""
         },
@@ -1563,8 +1483,8 @@
         },
         {
           "source": "open-meteo-marine",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
         }
       ]
     },
@@ -1579,13 +1499,13 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
+          "ok": "true",
+          "error": ""
         },
         {
           "source": "open-meteo-marine",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
         }
       ]
     },
@@ -1605,8 +1525,8 @@
         },
         {
           "source": "open-meteo-marine",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
         }
       ]
     },
@@ -1831,8 +1751,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
+          "ok": "true",
+          "error": ""
         },
         {
           "source": "open-meteo-marine",
@@ -1885,20 +1805,10 @@
     },
     {
       "city": "Orlando",
-      "source": "7timer",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
-        },
-        {
-          "source": "visual-crossing",
-          "ok": "false",
-          "error": "VISUALCROSSING_KEY not configured"
-        },
-        {
-          "source": "7timer",
           "ok": "true",
           "error": ""
         },
@@ -1916,20 +1826,10 @@
     },
     {
       "city": "Montreal",
-      "source": "7timer",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
-        },
-        {
-          "source": "visual-crossing",
-          "ok": "false",
-          "error": "VISUALCROSSING_KEY not configured"
-        },
-        {
-          "source": "7timer",
           "ok": "true",
           "error": ""
         },
@@ -1956,8 +1856,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
+          "ok": "true",
+          "error": ""
         },
         {
           "source": "open-meteo-marine",
@@ -1968,10 +1868,20 @@
     },
     {
       "city": "Calgary",
-      "source": "open-meteo",
+      "source": "7timer",
       "status": [
         {
           "source": "open-meteo",
+          "ok": "false",
+          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
+        },
+        {
+          "source": "visual-crossing",
+          "ok": "false",
+          "error": "VISUALCROSSING_KEY not configured"
+        },
+        {
+          "source": "7timer",
           "ok": "true",
           "error": ""
         },
@@ -1989,10 +1899,20 @@
     },
     {
       "city": "Reykjavik",
-      "source": "open-meteo",
+      "source": "7timer",
       "status": [
         {
           "source": "open-meteo",
+          "ok": "false",
+          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
+        },
+        {
+          "source": "visual-crossing",
+          "ok": "false",
+          "error": "VISUALCROSSING_KEY not configured"
+        },
+        {
+          "source": "7timer",
           "ok": "true",
           "error": ""
         },
@@ -2010,10 +1930,20 @@
     },
     {
       "city": "Edinburgh",
-      "source": "open-meteo",
+      "source": "7timer",
       "status": [
         {
           "source": "open-meteo",
+          "ok": "false",
+          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
+        },
+        {
+          "source": "visual-crossing",
+          "ok": "false",
+          "error": "VISUALCROSSING_KEY not configured"
+        },
+        {
+          "source": "7timer",
           "ok": "true",
           "error": ""
         },
@@ -2031,10 +1961,20 @@
     },
     {
       "city": "Manchester",
-      "source": "open-meteo",
+      "source": "7timer",
       "status": [
         {
           "source": "open-meteo",
+          "ok": "false",
+          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
+        },
+        {
+          "source": "visual-crossing",
+          "ok": "false",
+          "error": "VISUALCROSSING_KEY not configured"
+        },
+        {
+          "source": "7timer",
           "ok": "true",
           "error": ""
         },
@@ -2150,8 +2090,8 @@
         },
         {
           "source": "open-meteo-marine",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
+          "ok": "true",
+          "error": ""
         }
       ]
     },
@@ -2220,20 +2160,10 @@
     },
     {
       "city": "Sofia",
-      "source": "7timer",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
-        },
-        {
-          "source": "visual-crossing",
-          "ok": "false",
-          "error": "VISUALCROSSING_KEY not configured"
-        },
-        {
-          "source": "7timer",
           "ok": "true",
           "error": ""
         },
@@ -2260,8 +2190,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
+          "ok": "true",
+          "error": ""
         },
         {
           "source": "open-meteo-marine",
@@ -2286,8 +2216,8 @@
         },
         {
           "source": "open-meteo-marine",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
+          "ok": "true",
+          "error": ""
         }
       ]
     },
