@@ -1,4 +1,14 @@
 {
-  "alerts": [],
+  "alerts": [
+    {
+      "city": "Budapest, Hungary",
+      "slug": "budapest",
+      "time": "2026-10-22 11:25 UTC",
+      "text": "High Wind Signal: sustained forecast wind speeds reached 33 km/h. Forecast-derived signal, not an official government alert.",
+      "icon": "💨",
+      "border": "border-red-500",
+      "source": "open-meteo"
+    }
+  ],
   "notice": "Forecast-derived signals only; not official government alerts."
 }
