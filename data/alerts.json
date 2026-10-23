@@ -3,8 +3,8 @@
     {
       "city": "Brussels, Belgium",
       "slug": "brussels",
-      "time": "2026-10-23 16:44 UTC",
-      "text": "High Wind Signal: sustained forecast wind speeds reached 40 km/h. Forecast-derived signal, not an official government alert.",
+      "time": "2026-10-23 20:13 UTC",
+      "text": "High Wind Signal: sustained forecast wind speeds reached 37 km/h. Forecast-derived signal, not an official government alert.",
       "icon": "💨",
       "border": "border-red-500",
       "source": "open-meteo"
