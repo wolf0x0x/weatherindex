@@ -1,10 +1,19 @@
 {
   "alerts": [
     {
-      "city": "Dublin, Ireland",
-      "slug": "dublin",
-      "time": "2026-10-24 15:37 UTC",
-      "text": "High Wind Signal: sustained forecast wind speeds reached 34 km/h. Forecast-derived signal, not an official government alert.",
+      "city": "Amsterdam, Netherlands",
+      "slug": "amsterdam",
+      "time": "2026-10-24 19:17 UTC",
+      "text": "High Wind Signal: sustained forecast wind speeds reached 38 km/h. Forecast-derived signal, not an official government alert.",
+      "icon": "💨",
+      "border": "border-red-500",
+      "source": "open-meteo"
+    },
+    {
+      "city": "Brussels, Belgium",
+      "slug": "brussels",
+      "time": "2026-10-24 19:17 UTC",
+      "text": "High Wind Signal: sustained forecast wind speeds reached 33 km/h. Forecast-derived signal, not an official government alert.",
       "icon": "💨",
       "border": "border-red-500",
       "source": "open-meteo"
