@@ -3,7 +3,7 @@
     {
       "city": "Amsterdam, Netherlands",
       "slug": "amsterdam",
-      "time": "2026-10-25 10:59 UTC",
+      "time": "2026-10-25 15:47 UTC",
       "text": "High Wind Signal: sustained forecast wind speeds reached 39 km/h. Forecast-derived signal, not an official government alert.",
       "icon": "💨",
       "border": "border-red-500",
@@ -12,17 +12,17 @@
     {
       "city": "Stockholm, Sweden",
       "slug": "stockholm",
-      "time": "2026-10-25 10:59 UTC",
-      "text": "High Wind Signal: sustained forecast wind speeds reached 33 km/h. Forecast-derived signal, not an official government alert.",
+      "time": "2026-10-25 15:47 UTC",
+      "text": "High Wind Signal: sustained forecast wind speeds reached 34 km/h. Forecast-derived signal, not an official government alert.",
       "icon": "💨",
       "border": "border-red-500",
       "source": "open-meteo"
     },
     {
-      "city": "Oslo, Norway",
-      "slug": "oslo",
-      "time": "2026-10-25 10:59 UTC",
-      "text": "High Wind Signal: sustained forecast wind speeds reached 31 km/h. Forecast-derived signal, not an official government alert.",
+      "city": "Helsinki, Finland",
+      "slug": "helsinki",
+      "time": "2026-10-25 15:47 UTC",
+      "text": "High Wind Signal: sustained forecast wind speeds reached 32 km/h. Forecast-derived signal, not an official government alert.",
       "icon": "💨",
       "border": "border-red-500",
       "source": "open-meteo"
@@ -30,8 +30,8 @@
     {
       "city": "Edinburgh, United Kingdom",
       "slug": "edinburgh",
-      "time": "2026-10-25 10:59 UTC",
-      "text": "High Wind Signal: sustained forecast wind speeds reached 43 km/h. Forecast-derived signal, not an official government alert.",
+      "time": "2026-10-25 15:47 UTC",
+      "text": "High Wind Signal: sustained forecast wind speeds reached 40 km/h. Forecast-derived signal, not an official government alert.",
       "icon": "💨",
       "border": "border-red-500",
       "source": "open-meteo"
@@ -39,8 +39,8 @@
     {
       "city": "Manchester, United Kingdom",
       "slug": "manchester",
-      "time": "2026-10-25 10:59 UTC",
-      "text": "High Wind Signal: sustained forecast wind speeds reached 35 km/h. Forecast-derived signal, not an official government alert.",
+      "time": "2026-10-25 15:47 UTC",
+      "text": "High Wind Signal: sustained forecast wind speeds reached 31 km/h. Forecast-derived signal, not an official government alert.",
       "icon": "💨",
       "border": "border-red-500",
       "source": "open-meteo"
