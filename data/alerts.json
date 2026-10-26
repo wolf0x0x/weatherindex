@@ -1,19 +1,10 @@
 {
   "alerts": [
     {
-      "city": "Amsterdam, Netherlands",
-      "slug": "amsterdam",
-      "time": "2026-10-25 23:06 UTC",
-      "text": "High Wind Signal: sustained forecast wind speeds reached 34 km/h. Forecast-derived signal, not an official government alert.",
-      "icon": "💨",
-      "border": "border-red-500",
-      "source": "open-meteo"
-    },
-    {
       "city": "Helsinki, Finland",
       "slug": "helsinki",
-      "time": "2026-10-25 23:06 UTC",
-      "text": "High Wind Signal: sustained forecast wind speeds reached 33 km/h. Forecast-derived signal, not an official government alert.",
+      "time": "2026-10-26 03:54 UTC",
+      "text": "High Wind Signal: sustained forecast wind speeds reached 35 km/h. Forecast-derived signal, not an official government alert.",
       "icon": "💨",
       "border": "border-red-500",
       "source": "open-meteo"
