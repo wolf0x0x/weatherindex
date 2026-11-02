@@ -1,9 +1,9 @@
 {
   "alerts": [
     {
-      "city": "Barcelona, Spain",
-      "slug": "barcelona",
-      "time": "2026-11-02 00:26 UTC",
+      "city": "Reykjavik, Iceland",
+      "slug": "reykjavik",
+      "time": "2026-11-02 10:43 UTC",
       "text": "High Wind Signal: sustained forecast wind speeds reached 31 km/h. Forecast-derived signal, not an official government alert.",
       "icon": "💨",
       "border": "border-red-500",
