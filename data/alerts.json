@@ -1,10 +1,10 @@
 {
   "alerts": [
     {
-      "city": "Reykjavik, Iceland",
-      "slug": "reykjavik",
-      "time": "2026-11-03 05:52 UTC",
-      "text": "High Wind Signal: sustained forecast wind speeds reached 38 km/h. Forecast-derived signal, not an official government alert.",
+      "city": "Tallinn, Estonia",
+      "slug": "tallinn",
+      "time": "2026-11-03 13:51 UTC",
+      "text": "High Wind Signal: sustained forecast wind speeds reached 32 km/h. Forecast-derived signal, not an official government alert.",
       "icon": "💨",
       "border": "border-red-500",
       "source": "open-meteo"
