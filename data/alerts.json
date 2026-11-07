@@ -3,8 +3,17 @@
     {
       "city": "Quebec City, Canada",
       "slug": "quebec-city",
-      "time": "2026-11-07 17:37 UTC",
-      "text": "High Wind Signal: sustained forecast wind speeds reached 34 km/h. Forecast-derived signal, not an official government alert.",
+      "time": "2026-11-07 20:42 UTC",
+      "text": "High Wind Signal: sustained forecast wind speeds reached 31 km/h. Forecast-derived signal, not an official government alert.",
+      "icon": "💨",
+      "border": "border-red-500",
+      "source": "open-meteo"
+    },
+    {
+      "city": "Reykjavik, Iceland",
+      "slug": "reykjavik",
+      "time": "2026-11-07 20:42 UTC",
+      "text": "High Wind Signal: sustained forecast wind speeds reached 33 km/h. Forecast-derived signal, not an official government alert.",
       "icon": "💨",
       "border": "border-red-500",
       "source": "open-meteo"
