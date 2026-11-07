@@ -1,10 +1,10 @@
 {
   "alerts": [
     {
-      "city": "Calgary, Canada",
-      "slug": "calgary",
-      "time": "2026-11-07 09:46 UTC",
-      "text": "High Wind Signal: sustained forecast wind speeds reached 49 km/h. Forecast-derived signal, not an official government alert.",
+      "city": "Quebec City, Canada",
+      "slug": "quebec-city",
+      "time": "2026-11-07 17:37 UTC",
+      "text": "High Wind Signal: sustained forecast wind speeds reached 34 km/h. Forecast-derived signal, not an official government alert.",
       "icon": "💨",
       "border": "border-red-500",
       "source": "open-meteo"
