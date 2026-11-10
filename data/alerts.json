@@ -3,8 +3,8 @@
     {
       "city": "Auckland, New Zealand",
       "slug": "auckland",
-      "time": "2026-11-09 22:05 UTC",
-      "text": "High Wind Signal: sustained forecast wind speeds reached 34 km/h. Forecast-derived signal, not an official government alert.",
+      "time": "2026-11-10 00:34 UTC",
+      "text": "High Wind Signal: sustained forecast wind speeds reached 32 km/h. Forecast-derived signal, not an official government alert.",
       "icon": "💨",
       "border": "border-red-500",
       "source": "open-meteo"
