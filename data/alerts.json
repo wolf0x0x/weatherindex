@@ -3,8 +3,17 @@
     {
       "city": "Helsinki, Finland",
       "slug": "helsinki",
-      "time": "2026-11-12 17:27 UTC",
-      "text": "High Wind Signal: sustained forecast wind speeds reached 31 km/h. Forecast-derived signal, not an official government alert.",
+      "time": "2026-11-12 22:36 UTC",
+      "text": "High Wind Signal: sustained forecast wind speeds reached 34 km/h. Forecast-derived signal, not an official government alert.",
+      "icon": "💨",
+      "border": "border-red-500",
+      "source": "open-meteo"
+    },
+    {
+      "city": "Istanbul, Turkey",
+      "slug": "istanbul",
+      "time": "2026-11-12 22:36 UTC",
+      "text": "High Wind Signal: sustained forecast wind speeds reached 32 km/h. Forecast-derived signal, not an official government alert.",
       "icon": "💨",
       "border": "border-red-500",
       "source": "open-meteo"
