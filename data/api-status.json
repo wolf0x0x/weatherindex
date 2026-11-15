@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T00:53:21.493083+00:00",
+  "generated_at": "2026-11-15T10:31:55.985280+00:00",
   "providers": [
     "Open-Meteo Forecast",
     "Open-Meteo Air Quality",
@@ -398,20 +398,10 @@
     },
     {
       "city": "Rio de Janeiro",
-      "source": "7timer",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
-        },
-        {
-          "source": "visual-crossing",
-          "ok": "false",
-          "error": "VISUALCROSSING_KEY not configured"
-        },
-        {
-          "source": "7timer",
           "ok": "true",
           "error": ""
         },
@@ -450,20 +440,10 @@
     },
     {
       "city": "Santiago",
-      "source": "7timer",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
-        },
-        {
-          "source": "visual-crossing",
-          "ok": "false",
-          "error": "VISUALCROSSING_KEY not configured"
-        },
-        {
-          "source": "7timer",
           "ok": "true",
           "error": ""
         },
@@ -481,20 +461,10 @@
     },
     {
       "city": "Lima",
-      "source": "7timer",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
-        },
-        {
-          "source": "visual-crossing",
-          "ok": "false",
-          "error": "VISUALCROSSING_KEY not configured"
-        },
-        {
-          "source": "7timer",
           "ok": "true",
           "error": ""
         },
@@ -512,20 +482,10 @@
     },
     {
       "city": "Bogotá",
-      "source": "7timer",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
-        },
-        {
-          "source": "visual-crossing",
-          "ok": "false",
-          "error": "VISUALCROSSING_KEY not configured"
-        },
-        {
-          "source": "7timer",
           "ok": "true",
           "error": ""
         },
@@ -594,8 +554,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
         },
         {
           "source": "open-meteo-marine",
@@ -615,8 +575,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
         },
         {
           "source": "open-meteo-marine",
@@ -636,8 +596,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
         },
         {
           "source": "open-meteo-marine",
@@ -657,8 +617,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
         },
         {
           "source": "open-meteo-marine",
@@ -825,8 +785,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+          "ok": "true",
+          "error": ""
         },
         {
           "source": "open-meteo-marine",
@@ -872,8 +832,8 @@
         },
         {
           "source": "open-meteo-marine",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+          "ok": "true",
+          "error": ""
         }
       ]
     },
@@ -900,20 +860,10 @@
     },
     {
       "city": "Lisbon",
-      "source": "7timer",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
-        },
-        {
-          "source": "visual-crossing",
-          "ok": "false",
-          "error": "VISUALCROSSING_KEY not configured"
-        },
-        {
-          "source": "7timer",
           "ok": "true",
           "error": ""
         },
@@ -940,8 +890,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+          "ok": "true",
+          "error": ""
         },
         {
           "source": "open-meteo-marine",
@@ -1155,8 +1105,8 @@
         },
         {
           "source": "open-meteo-marine",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
         }
       ]
     },
@@ -1176,8 +1126,8 @@
         },
         {
           "source": "open-meteo-marine",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
         }
       ]
     },
@@ -1197,8 +1147,8 @@
         },
         {
           "source": "open-meteo-marine",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
         }
       ]
     },
@@ -1288,20 +1238,10 @@
     },
     {
       "city": "Colombo",
-      "source": "7timer",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
-        },
-        {
-          "source": "visual-crossing",
-          "ok": "false",
-          "error": "VISUALCROSSING_KEY not configured"
-        },
-        {
-          "source": "7timer",
           "ok": "true",
           "error": ""
         },
@@ -1328,8 +1268,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+          "ok": "true",
+          "error": ""
         },
         {
           "source": "open-meteo-marine",
@@ -1340,20 +1280,10 @@
     },
     {
       "city": "Dhaka",
-      "source": "7timer",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
-        },
-        {
-          "source": "visual-crossing",
-          "ok": "false",
-          "error": "VISUALCROSSING_KEY not configured"
-        },
-        {
-          "source": "7timer",
           "ok": "true",
           "error": ""
         },
@@ -1644,20 +1574,10 @@
     },
     {
       "city": "Anchorage",
-      "source": "7timer",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
-        },
-        {
-          "source": "visual-crossing",
-          "ok": "false",
-          "error": "VISUALCROSSING_KEY not configured"
-        },
-        {
-          "source": "7timer",
           "ok": "true",
           "error": ""
         },
@@ -1684,8 +1604,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+          "ok": "true",
+          "error": ""
         },
         {
           "source": "open-meteo-marine",
@@ -1710,8 +1630,8 @@
         },
         {
           "source": "open-meteo-marine",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+          "ok": "true",
+          "error": ""
         }
       ]
     },
@@ -1731,8 +1651,8 @@
         },
         {
           "source": "open-meteo-marine",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+          "ok": "true",
+          "error": ""
         }
       ]
     },
@@ -1794,8 +1714,8 @@
         },
         {
           "source": "open-meteo-marine",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
         }
       ]
     },
@@ -1810,8 +1730,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
         },
         {
           "source": "open-meteo-marine",
@@ -1831,8 +1751,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
         },
         {
           "source": "open-meteo-marine",
@@ -1873,8 +1793,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
         },
         {
           "source": "open-meteo-marine",
@@ -2046,8 +1966,8 @@
         },
         {
           "source": "open-meteo-marine",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+          "ok": "true",
+          "error": ""
         }
       ]
     },
@@ -2095,20 +2015,10 @@
     },
     {
       "city": "Florence",
-      "source": "7timer",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
-        },
-        {
-          "source": "visual-crossing",
-          "ok": "false",
-          "error": "VISUALCROSSING_KEY not configured"
-        },
-        {
-          "source": "7timer",
           "ok": "true",
           "error": ""
         },
@@ -2156,8 +2066,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+          "ok": "true",
+          "error": ""
         },
         {
           "source": "open-meteo-marine",
@@ -2168,20 +2078,10 @@
     },
     {
       "city": "Belgrade",
-      "source": "7timer",
+      "source": "open-meteo",
       "status": [
         {
           "source": "open-meteo",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
-        },
-        {
-          "source": "visual-crossing",
-          "ok": "false",
-          "error": "VISUALCROSSING_KEY not configured"
-        },
-        {
-          "source": "7timer",
           "ok": "true",
           "error": ""
         },
