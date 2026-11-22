@@ -3,26 +3,8 @@
     {
       "city": "Stockholm, Sweden",
       "slug": "stockholm",
-      "time": "2026-11-22 10:53 UTC",
-      "text": "High Wind Signal: sustained forecast wind speeds reached 33 km/h. Forecast-derived signal, not an official government alert.",
-      "icon": "💨",
-      "border": "border-red-500",
-      "source": "open-meteo"
-    },
-    {
-      "city": "Calgary, Canada",
-      "slug": "calgary",
-      "time": "2026-11-22 10:53 UTC",
-      "text": "Severe Cold Signal: forecast temperature dropped to -12°C. Forecast-derived signal, not an official government alert.",
-      "icon": "❄️",
-      "border": "border-blue-500",
-      "source": "open-meteo"
-    },
-    {
-      "city": "Reykjavik, Iceland",
-      "slug": "reykjavik",
-      "time": "2026-11-22 10:53 UTC",
-      "text": "High Wind Signal: sustained forecast wind speeds reached 50 km/h. Forecast-derived signal, not an official government alert.",
+      "time": "2026-11-22 19:14 UTC",
+      "text": "High Wind Signal: sustained forecast wind speeds reached 31 km/h. Forecast-derived signal, not an official government alert.",
       "icon": "💨",
       "border": "border-red-500",
       "source": "open-meteo"
