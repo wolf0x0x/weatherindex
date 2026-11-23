@@ -1,12 +1,21 @@
 {
   "alerts": [
     {
-      "city": "Calgary, Canada",
-      "slug": "calgary",
-      "time": "2026-11-23 01:28 UTC",
-      "text": "Severe Cold Signal: forecast temperature dropped to -12°C. Forecast-derived signal, not an official government alert.",
-      "icon": "❄️",
-      "border": "border-blue-500",
+      "city": "Istanbul, Turkey",
+      "slug": "istanbul",
+      "time": "2026-11-23 12:00 UTC",
+      "text": "High Wind Signal: sustained forecast wind speeds reached 37 km/h. Forecast-derived signal, not an official government alert.",
+      "icon": "💨",
+      "border": "border-red-500",
+      "source": "open-meteo"
+    },
+    {
+      "city": "Tallinn, Estonia",
+      "slug": "tallinn",
+      "time": "2026-11-23 12:00 UTC",
+      "text": "High Wind Signal: sustained forecast wind speeds reached 31 km/h. Forecast-derived signal, not an official government alert.",
+      "icon": "💨",
+      "border": "border-red-500",
       "source": "open-meteo"
     }
   ],
