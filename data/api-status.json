@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T22:19:10.353272+00:00",
+  "generated_at": "2026-11-23T01:28:26.946511+00:00",
   "providers": [
     "Open-Meteo Forecast",
     "Open-Meteo Air Quality",
@@ -365,8 +365,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
         },
         {
           "source": "open-meteo-marine",
@@ -386,8 +386,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
         },
         {
           "source": "open-meteo-marine",
@@ -412,8 +412,8 @@
         },
         {
           "source": "open-meteo-marine",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
         }
       ]
     },
@@ -428,8 +428,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
         },
         {
           "source": "open-meteo-marine",
@@ -491,8 +491,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+          "ok": "true",
+          "error": ""
         },
         {
           "source": "open-meteo-marine",
@@ -533,8 +533,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+          "ok": "true",
+          "error": ""
         },
         {
           "source": "open-meteo-marine",
@@ -554,8 +554,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+          "ok": "true",
+          "error": ""
         },
         {
           "source": "open-meteo-marine",
@@ -575,8 +575,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+          "ok": "true",
+          "error": ""
         },
         {
           "source": "open-meteo-marine",
@@ -874,8 +874,8 @@
         },
         {
           "source": "open-meteo-marine",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
         }
       ]
     },
@@ -895,8 +895,8 @@
         },
         {
           "source": "open-meteo-marine",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+          "ok": "true",
+          "error": ""
         }
       ]
     },
@@ -916,8 +916,8 @@
         },
         {
           "source": "open-meteo-marine",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+          "ok": "true",
+          "error": ""
         }
       ]
     },
@@ -937,8 +937,8 @@
         },
         {
           "source": "open-meteo-marine",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+          "ok": "true",
+          "error": ""
         }
       ]
     },
@@ -953,8 +953,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
         },
         {
           "source": "open-meteo-marine",
@@ -995,8 +995,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
         },
         {
           "source": "open-meteo-marine",
@@ -1394,8 +1394,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
         },
         {
           "source": "open-meteo-marine",
@@ -1462,8 +1462,8 @@
         },
         {
           "source": "open-meteo-marine",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
         }
       ]
     },
@@ -1478,8 +1478,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+          "ok": "true",
+          "error": ""
         },
         {
           "source": "open-meteo-marine",
@@ -1499,8 +1499,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+          "ok": "true",
+          "error": ""
         },
         {
           "source": "open-meteo-marine",
@@ -1520,13 +1520,13 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
         },
         {
           "source": "open-meteo-marine",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+          "ok": "true",
+          "error": ""
         }
       ]
     },
@@ -1966,8 +1966,8 @@
         },
         {
           "source": "open-meteo-marine",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
         }
       ]
     },
@@ -2008,8 +2008,8 @@
         },
         {
           "source": "open-meteo-marine",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+          "ok": "true",
+          "error": ""
         }
       ]
     },
@@ -2045,13 +2045,13 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
         },
         {
           "source": "open-meteo-marine",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+          "ok": "true",
+          "error": ""
         }
       ]
     },
@@ -2066,8 +2066,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
         },
         {
           "source": "open-meteo-marine",
@@ -2087,13 +2087,13 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+          "ok": "true",
+          "error": ""
         },
         {
           "source": "open-meteo-marine",
-          "ok": "true",
-          "error": ""
+          "ok": "false",
+          "error": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
         }
       ]
     },
@@ -2108,8 +2108,8 @@
         },
         {
           "source": "open-meteo-air-quality",
-          "ok": "false",
-          "error": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+          "ok": "true",
+          "error": ""
         },
         {
           "source": "open-meteo-marine",

@@ -1,12 +1,12 @@
 {
   "alerts": [
     {
-      "city": "Reykjavik, Iceland",
-      "slug": "reykjavik",
-      "time": "2026-11-22 22:19 UTC",
-      "text": "High Wind Signal: sustained forecast wind speeds reached 34 km/h. Forecast-derived signal, not an official government alert.",
-      "icon": "💨",
-      "border": "border-red-500",
+      "city": "Calgary, Canada",
+      "slug": "calgary",
+      "time": "2026-11-23 01:28 UTC",
+      "text": "Severe Cold Signal: forecast temperature dropped to -12°C. Forecast-derived signal, not an official government alert.",
+      "icon": "❄️",
+      "border": "border-blue-500",
       "source": "open-meteo"
     }
   ],
