@@ -1,4 +1,23 @@
 {
-  "alerts": [],
+  "alerts": [
+    {
+      "city": "Anchorage, USA",
+      "slug": "anchorage",
+      "time": "2026-11-25 16:57 UTC",
+      "text": "Severe Cold Signal: forecast temperature dropped to -11°C. Forecast-derived signal, not an official government alert.",
+      "icon": "❄️",
+      "border": "border-blue-500",
+      "source": "open-meteo"
+    },
+    {
+      "city": "Reykjavik, Iceland",
+      "slug": "reykjavik",
+      "time": "2026-11-25 16:57 UTC",
+      "text": "High Wind Signal: sustained forecast wind speeds reached 46 km/h. Forecast-derived signal, not an official government alert.",
+      "icon": "💨",
+      "border": "border-red-500",
+      "source": "open-meteo"
+    }
+  ],
   "notice": "Forecast-derived signals only; not official government alerts."
 }
