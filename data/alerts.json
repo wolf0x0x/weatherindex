@@ -3,17 +3,8 @@
     {
       "city": "Quebec City, Canada",
       "slug": "quebec-city",
-      "time": "2026-11-27 18:45 UTC",
+      "time": "2026-11-28 00:23 UTC",
       "text": "High Wind Signal: sustained forecast wind speeds reached 33 km/h. Forecast-derived signal, not an official government alert.",
-      "icon": "💨",
-      "border": "border-red-500",
-      "source": "open-meteo"
-    },
-    {
-      "city": "Calgary, Canada",
-      "slug": "calgary",
-      "time": "2026-11-27 18:45 UTC",
-      "text": "High Wind Signal: sustained forecast wind speeds reached 32 km/h. Forecast-derived signal, not an official government alert.",
       "icon": "💨",
       "border": "border-red-500",
       "source": "open-meteo"
